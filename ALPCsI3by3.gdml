@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:/Users/shsu/Documents/James/Projects/MINER/GEANT/geant4_10_06_p02/examples/extended/persistency/gdml/G01-build/gdml.xsd">
+
+    <define>
+        <position name="det_in_sky" unit="cm" x="0" y="0" z="0" />
+        <constant name="HLFPI" value="0.5*pi"/>
+        <rotation name="rotatebyx" z="HLFPI" />
+        <position name="subtraction_position" x ="0.0" y = "0.0" z = "0.0"/>
+        <quantity name="CsILength"  value="12*2.54" />
+        <quantity name="CsIWidth"  value="2*2.54" />
+        <quantity name="CsIHeight"  value="2*2.54" />
+
+    </define>
+    
+    <materials>
+        <material name="Cs" Z="55">
+            <D value="1.93"/>
+            <atom value="132.905"/>
+        </material>
+            
+        <material name="I" Z="53">
+            <D value="4.933"/>
+            <atom value="126.904"/>
+        </material>
+        
+        <material name="CsI" formula="CsI">
+            <D value="4.51"/>
+            <composite n="1" ref="Cs"/>
+            <composite n="1" ref="I"/>
+        </material>
+        
+        <isotope name="Sc46" Z="21" N="46">
+        </isotope>
+        
+    </materials>
+    
+    <solids>
+        
+<!--    ADD A HOLLOW BOX TO CATCH EVERYTHING COMING OUT OF THE 3 X 3-->
+
+        <box aunit="radian" lunit="cm" name="outerbrick" x = "400.0" y = "400.0" z = "400.0" />
+        <box aunit="radian" lunit="cm" name="innerbrick" x = "100.0" y = "100.0" z = "100.0" />
+        
+        <subtraction name ="hollowbrick">
+            <first ref = "outerbrick"/>
+            <second ref = "innerbrick"/>
+            <positionref ref="subtraction_position"/>
+        </subtraction>
+
+
+<!--                                                                 -->
+        
+        <box aunit="radian" lunit="m" name="world" x="8" y="8" z="8" />
+        
+        <box aunit="radian" lunit="cm" name="brck1" x="CsILength" y="CsIWidth" z="CsIHeight" />
+        <box aunit="radian" lunit="cm" name="brck2" x="CsILength" y="CsIWidth" z="CsIHeight" />
+        <box aunit="radian" lunit="cm" name="brck3" x="CsILength" y="CsIWidth" z="CsIHeight" />
+        
+        
+        
+        <box aunit="radian" lunit="cm" name="brck4" x="CsILength" y="CsIWidth" z="CsIHeight" />
+        <box aunit="radian" lunit="cm" name="brck5" x="CsILength" y="CsIWidth" z="CsIHeight" />
+        <box aunit="radian" lunit="cm" name="brck6" x="CsILength" y="CsIWidth" z="CsIHeight" />
+        
+        
+        
+        <box aunit="radian" lunit="cm" name="brck7" x="CsILength" y="CsIWidth" z="CsIHeight" />
+        <box aunit="radian" lunit="cm" name="brck8" x="CsILength" y="CsIWidth" z="CsIHeight" />
+        
+        
+        
+        <box aunit="radian" lunit="cm" name="brck9" x="0.3*CsILength" y="CsIWidth" z="CsIHeight" />
+        <box aunit="radian" lunit="cm" name="brck10" x="0.3*CsILength" y="CsIWidth" z="CsIHeight" />
+        
+        
+        
+    </solids>
+    
+    <structure>
+        
+        
+        
+        <volume name ="Vol1" >
+            <materialref ref ="G4_CESIUM_IODIDE" />
+            <solidref ref="brck1" />
+            <auxiliary auxtype="SensDet" auxvalue="brck1SD"/>
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol2" >
+            <materialref ref ="G4_CESIUM_IODIDE" />
+            <solidref ref="brck2" />
+            <auxiliary auxtype="SensDet" auxvalue="brck2SD"/>
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol3" >
+            <materialref ref ="G4_CESIUM_IODIDE" />
+            <solidref ref="brck3" />
+            <auxiliary auxtype="SensDet" auxvalue="brck3SD"/>
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        
+        
+        
+        <volume name ="Vol4" >
+            <materialref ref ="G4_CESIUM_IODIDE" />
+            <solidref ref="brck4" />
+            <auxiliary auxtype="SensDet" auxvalue="brck4SD"/>
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        <volume name ="Vol5" >
+            <materialref ref ="G4_CESIUM_IODIDE" />
+            <solidref ref="brck5" />
+            <auxiliary auxtype="SensDet" auxvalue="brck5SD"/>
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        <volume name ="Vol6" >
+            <materialref ref ="G4_CESIUM_IODIDE" />
+            <solidref ref="brck6" />
+            <auxiliary auxtype="SensDet" auxvalue="brck6SD"/>
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        
+        
+        
+        <volume name ="Vol7" >
+            <materialref ref ="G4_CESIUM_IODIDE" />
+            <solidref ref="brck7" />
+            <auxiliary auxtype="SensDet" auxvalue="brck7SD"/>
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        <volume name ="Vol8" >
+            <materialref ref ="G4_CESIUM_IODIDE" />
+            <solidref ref="brck8" />
+            <auxiliary auxtype="SensDet" auxvalue="brck8SD"/>
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        
+        <volume name ="Vol9" >
+            <materialref ref ="G4_CESIUM_IODIDE" />
+            <solidref ref="brck9" />
+            <auxiliary auxtype="SensDet" auxvalue="brck9SD"/>
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        <volume name ="Vol10" >
+            <materialref ref ="G4_CESIUM_IODIDE" />
+            <solidref ref="brck10" />
+            <auxiliary auxtype="SensDet" auxvalue="brck10SD"/>
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+                            <!--     Hollow Volume   -->
+
+                            <volume name ="VolHollow" >
+                                <materialref ref ="G4_CESIUM_IODIDE" />
+                                <solidref ref="hollowbrick" />
+                                <auxiliary auxtype="SensDet" auxvalue="hollowSD"/>
+                                <auxiliary auxtype="Color" auxvalue="Blue"/>
+                            </volume>
+        
+        
+        <assembly name="AssemblyVol">
+            
+            
+<!--    Hollow Volume        -->
+            <physvol>
+                <volumeref ref="VolHollow" />
+                <position name="posHollow" unit="cm" x="0.0" y="0.0" z="1.5*CsIHeight" />
+            </physvol>
+<!--            -->
+            
+            
+            <physvol>
+                <volumeref ref="Vol1" />
+                <position name="posA" unit="cm" x="0.0" y="1*CsIWidth" z="0.5*CsIHeight" />
+            </physvol>
+            <physvol>
+                <volumeref ref="Vol2" />
+                <position name="posB" unit="cm" x="0.0" y="1*CsIWidth" z="1.5*CsIHeight" />
+            </physvol>
+            <physvol>
+                <volumeref ref="Vol3" />
+                <position name="posC" unit="cm" x="0.0" y="1*CsIWidth" z="2.5*CsIHeight" />
+            </physvol>
+            
+            
+            
+            
+            <physvol>
+                <volumeref ref="Vol4" />
+                <position name="posD" unit="cm" x="0.0" y="-1*CsIWidth" z="0.5*CsIHeight" />
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol5" />
+                <position name="posE" unit="cm" x="0.0" y="-1*CsIWidth" z="1.5*CsIHeight" />
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol6" />
+                <position name="posF" unit="cm" x="0.0" y="-1*CsIWidth" z="2.5*CsIHeight" />
+            </physvol>
+            
+            
+            
+            
+           <physvol>
+                <volumeref ref="Vol7" />
+                <position name="posG" unit="cm" x="0.0" y="0" z="0.5*CsIHeight" />
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol8" />
+                <position name="posH" unit="cm" x="0.0" y="0.0" z="2.5*CsIHeight" />
+            </physvol>
+      
+           
+           
+            
+            <physvol>
+                 <volumeref ref="Vol9" />
+                 <position name="posI" unit="cm" x="0.35*CsILength" y="0.0" z="1.5*CsIHeight" />
+             </physvol>
+             
+             <physvol>
+                 <volumeref ref="Vol10" />
+                 <position name="posJ" unit="cm" x="-0.35*CsILength" y="0.0" z="1.5*CsIHeight" />
+             </physvol>
+            
+        </assembly>
+        
+        
+            
+        
+        
+        <volume name="World" >
+            <materialref ref="G4_AIR" />
+            <solidref ref="world" />
+            
+            <physvol>
+                <volumeref ref="AssemblyVol"/>
+                <position x="0" y="0" z="0"/>
+                </physvol>
+        </volume>
+    </structure>
+    
+    <setup version="1.0" name="Default">
+        <world ref="World"/>
+    </setup>
+    
+</gdml>

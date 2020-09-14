@@ -1,0 +1,53 @@
+# example run with visualization
+/run/initialize
+
+/vis/open OGLSX 1200x1200-0+0
+/vis/drawVolume
+/vis/scene/add/trajectories
+#/vis/viewer/set/viewpointThetaPhi -90 0. deg
+#/vis/viewer/set/viewpointThetaPhi 40 40 deg
+/vis/viewer/set/upVector 0 0 1
+/vis/viewer/set/viewpointVector .7 -.7 .2
+#/vis/viewer/set/viewpointVector .9 -.7 .2
+/vis/viewer/zoom 2
+
+#/vis/scene/add/axes -4 -4 1 2 m
+/vis/viewer/set/style surface
+/vis/modeling/trajectories/create/drawByCharge
+
+#/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+#/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 5
+#/vis/modeling/trajectories/drawByCharge-0/default/setDrawAuxPts true
+#/vis/modeling/trajectories/drawByCharge-0/default/setAuxPtsSize 5
+#/vis/modeling/trajectories/drawByCharge-0/default/setTimeSliceInterval 0.001 ns
+
+#/vis/modeling/trajectories/list
+
+
+
+
+
+#/gps/source/list
+
+#/run/printProgress 100
+#/tracking/verbose 1
+#/event/verbose 1
+
+#/root/fileName neutron_15cmLead_15cmPoly.root
+#/root/fileName photon_15cmLead_15cmPoly.root
+/root/fileName test.root
+
+/run/verbose 0
+
+#/run/beamOn 100
+
+
+#/vis/ogl/set/fade 1
+#/vis/ogl/set/displayHeadTime true
+#/control/alias timeRange 10.
+#/vis/verbose warnings
+#/control/verbose 0
+#/control/loop movie.loop startTime -{timeRange} 40 0.05
+#/control/verbose 2
+#/vis/verbose confirmations
+#/vis/ogl/set/displayHeadTime false

@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
+    
+    <define>
+        <position name="det_in_sky" unit="cm" x="0" y="0" z="0" />
+        <constant name="HLFPI" value="-pi/2."/>
+        <constant name="QRTRPI" value="pi/4."/>
+        <constant name="SXTHPI" value="pi/6."/>
+        <constant name="THRDPI" value="pi/3."/>
+        <constant name="TWOPITHRD" value="2*pi/3."/>
+        <constant name="FVPISXTH" value="5*pi/6."/>
+        <rotation name="rotatebyx" x="HLFPI" />
+        <rotation name="rotatebyy" y="QRTRPI"/>
+        <rotation name="rotatebyy5" y="THRDPI"/>
+        <rotation name="rotatebyy2" y="SXTHPI"/>
+        <rotation name="rotatebyy3" y="FVPISXTH"/>
+        <rotation name="rotatebyy4" y="TWOPITHRD"/>
+        <variable name="x1" value="50"/>
+        <position name="pos" unit="mm" x="100" y="100" z="10" />
+        <variable name="x" value="0" />
+        <variable name="x4" value="0" />
+        <variable name="x2" value="0" />
+        <variable name="x3" value="0" />
+        <variable name="x5" value="0" />
+        <variable name="x6" value="0" />
+        
+        
+        <quantity name="detRad" value="50.8/2" unit="mm" />
+        <quantity name="detHalfZ"  value="48.05/2" unit="mm"/>
+        
+        <constant name="TWOPI" value="2.*pi"/>
+        
+        <position name="zeroOffset" unit="mm" x="0" y="0" z="0"/>
+        <position name="targetOffset" unit="mm" x="0" y="0" z="-1*(detHalfZ-15.0)"/>
+        <position name="casingOffset" unit="mm" x="0" y="0" z="3"/>
+        
+        <quantity name ="cuCasingThick" value="0.76" unit="mm"/>
+        <quantity name ="cuRingThick" value="2.7 - 0.76" unit="mm"/>
+        <quantity name ="cuRingHeight" value="8.6" unit="mm"/>
+        
+        
+        <position name="ringOffsetT" unit="mm" x="0" y="0" z="35.5/2. + detHalfZ + cuCasingThick/2.-cuRingHeight/6"/>
+        <position name="ringOffset1" unit="mm" x="0" y="0" z="(35.5/2. + detHalfZ + cuCasingThick/2.)/3."/>
+        <position name="ringOffset2" unit="mm" x="0" y="0" z="-1*(35.5/2. + detHalfZ + cuCasingThick/2.)/3."/>
+        <position name="cuHousingPos" unit="mm" x="0" y="0" z="123"/>
+        
+        <quantity name ="tubeAThick" value="1.59" unit="mm"/>
+        <quantity name ="tubeAlen" value="111.25" unit="mm"/>
+        <quantity name ="tubeAdia" value="76.2" unit="mm"/>
+        <quantity name ="tubeBthick" value="3.18" unit="mm"/>
+        <quantity name ="tubeBlen" value="127" unit="mm"/>
+        <quantity name ="tubeBdia" value="79.5" unit="mm"/>
+        <quantity name ="tubeCThick" value="3.18" unit="mm"/>
+        <quantity name ="tubeClen" value="22.35" unit="mm"/>
+        <quantity name ="tubeCdia" value="28.7" unit="mm"/>
+        <quantity name ="tubeDthick" value="3.18" unit="mm"/>
+        <quantity name ="tubeDlen" value="349.25" unit="mm"/>
+        <quantity name ="tubeDdia" value="228.6" unit="mm"/>
+        
+        <position name="inTubeAOffset" unit="mm" x="0" y="0" z="-.795" />
+        <position name="inTubeBOffset" unit="mm" x="0" y="0" z="tubeBthick/2." />
+        
+        
+        <position name="tubeAPos" unit="mm" x="0" y="0" z="193" />
+        <position name="tubeBPos" unit="mm" x="0" y="0" z="272 + (-19.25 - tubeAlen/2. - tubeBlen/2.)"/>
+        <position name="tubeCPos" unit="mm" x="0" y="-(tubeBdia/3.)" z="483 + (-19.25 - tubeAlen/2. - tubeBlen - tubeClen/2.)"/>
+        <position name="tubeDPos" unit="mm" x="0" y="0" z="575 + (-19.25 - tubeAlen/2. - tubeBlen - tubeClen - tubeDlen/2)"/>
+        
+        <position name="tubeA_N2_Pos" unit="mm" x="0" y="0" z="-64.518"/>
+        <position name="tubeB_N2_Pos" unit="mm" x="0" y="0" z="-142.545 "/>
+        <position name="bHC_Pos" unit="mm" x="0" y="0" z="-1*(1.6 + 1.0 + 101.6 + 9.5)/2. - 203."/>
+        
+        <position name="ShieldCanberra_Pos" unit="mm" x="0" y="0" z="433.402"/>
+        
+        <position name="fLogicDetPos" unit="mm" x="0" y="0" z="-460.0"/>
+        
+        
+        
+    </define>
+    <materials>
+        <material name="Pb" Z="82">
+            <D value="11.34"/>
+            <atom value="207.2"/>
+        </material>
+        
+        <material name="Al" Z="13">
+            <D value="2.70"/>
+            <atom value="26.98"/>
+        </material>
+        
+        <material name="Fe" Z="26">
+            <D value="7.874"/>
+            <atom value="55.85"/>
+        </material>
+        
+        <material name="Cu" Z="29">
+            <D value="8.96"/>
+            <atom value="63.55"/>
+        </material>
+        
+        <material name="Co" Z="27">
+            <D value="8.90"/>
+            <atom value="58.93"/>
+        </material>
+        
+        <material name="Ge" Z="32">
+            <D value="5.323"/>
+            <atom value="72.63"/>
+        </material>
+        
+        <material name="Cd" Z="48">
+            <D value="8.65"/>
+            <atom value="112.414"/>
+        </material>
+        
+        <material name="C" Z="6">
+            <D value="2.0"/>
+            <atom value="12.011"/>
+        </material>
+        
+        <material name="LN" Z="7">
+            <D value=".808"/>
+            <atom value="14.0"/>
+        </material>
+        
+        <material name="SSteel">
+            <D value="8.96"/>
+            <fraction n=".04" ref="C"/>
+            <fraction n=".88" ref="Fe"/>
+            <fraction n=".08" ref="Co"/>
+        </material>
+        
+        <material name="Sn" Z="50">
+            <D value="5.769"/>
+            <atom value="118.71"/>
+        </material>
+    </materials>
+    
+    <solids>
+        
+        <box aunit="radian" lunit="m" name="world" x="8" y="8" z="8" />
+        
+        <box aunit="radian" lunit="cm" name="testbox" x="300" y="300" z="300" />
+        
+        <box aunit="radian" lunit="cm" name="brck1" x="20.32" y="5.08" z="10.16" />
+        <box aunit="radian" lunit="cm" name="brck2" x="20.32" y="5.08" z="10.16" />
+        <box aunit="radian" lunit="cm" name="brck3" x="20.32" y="5.08" z="10.16" />
+        <box aunit="radian" lunit="cm" name="brck4" x="20.32" y="5.08" z="10.16" />
+        <box aunit="radian" lunit="cm" name="brck5" x="20.32" y="5.08" z="10.16" />
+        <box aunit="radian" lunit="cm" name="brck6" x="20.32" y="5.08" z="10.16" />
+        <box aunit="radian" lunit="cm" name="brck7" x="20.32" y="5.08" z="10.16" />
+        <box aunit="radian" lunit="cm" name="brck8" x="20.32" y="5.08" z="10.16" />
+        <box aunit="radian" lunit="cm" name="brck9" x="20.32" y="5.08" z="10.16" />
+        <box aunit="radian" lunit="cm" name="brck10" x="20.32" y="5.08" z="10.16" />
+        <box aunit="radian" lunit="cm" name="brck11" x="20.32" y="5.08" z="10.16" />
+        <box aunit="radian" lunit="cm" name="brck12" x="20.32" y="5.08" z="10.16" />
+        
+        
+        <box aunit="radian" lunit="cm" name="box1" x="30.48" y="5.08" z="30.48" />
+        <box aunit="radian" lunit="cm" name="brck13" x="10.16" y="5.08" z="20.32" />
+        <box aunit="radian" lunit="cm" name="brck14" x="10.16" y="5.08" z="20.32" />
+        <box aunit="radian" lunit="cm" name="brck15" x="10.16" y="5.08" z="20.32" />
+        <box aunit="radian" lunit="cm" name="brck16" x="10.16" y="5.08" z="20.32" />
+        <box aunit="radian" lunit="cm" name="brck17" x="10.16" y="5.08" z="20.32" />
+        <box aunit="radian" lunit="cm" name="brck18" x="10.16" y="5.08" z="20.32" />
+        
+        <box aunit="radian" lunit="cm" name="brck19" x="20.32" y="5.08" z="10.16" />
+        <box aunit="radian" lunit="cm" name="brck20" x="20.32" y="5.08" z="10.16" />
+        <box aunit="radian" lunit="cm" name="brck21" x="20.32" y="5.08" z="10.16" />
+        
+        
+        <box aunit="radian" lunit="cm" name="brck22" x="20.32" y="5.08" z="10.16" />
+        <box aunit="radian" lunit="cm" name="brck23" x="20.32" y="5.08" z="10.16" />
+        <box aunit="radian" lunit="cm" name="brck24" x="20.32" y="5.08" z="10.16" />
+        <box aunit="radian" lunit="cm" name="brck25" x="20.32" y="5.08" z="10.16" />
+        <box aunit="radian" lunit="cm" name="brck26" x="20.32" y="5.08" z="10.16" />
+        
+        <box aunit="radian" lunit="cm" name="rctngl2" x="10.16" y="5.08" z="50.80" />
+        <box aunit="radian" lunit="cm" name="rctngl3" x="10.16" y="5.08" z="50.80" />
+        <box aunit="radian" lunit="cm" name="rctngl4" x="10.16" y="5.08" z="50.80" />
+        <box aunit="radian" lunit="cm" name="rctngl5" x="10.16" y="5.08" z="30.48" />
+        
+        <box aunit="radian" lunit="cm" name="brck27" x="10.16" y="5.08" z="20.32" />
+        <box aunit="radian" lunit="cm" name="brck28" x="20.32" y="5.08" z="10.16" />
+        <box aunit="radian" lunit="cm" name="brck29" x="20.32" y="5.08" z="10.16" />
+        <box aunit="radian" lunit="cm" name="brck30" x="20.32" y="5.08" z="10.16" />
+        <box aunit="radian" lunit="cm" name="brck31" x="20.32" y="5.08" z="10.16" />
+        <box aunit="radian" lunit="cm" name="brck32" x="20.32" y="5.08" z="10.16" />
+        <box aunit="radian" lunit="cm" name="brck33" x="20.32" y="5.08" z="10.16" />
+        
+        
+        
+        <tube name="Target1" rmin="0" rmax="detRad" z="detHalfZ" deltaphi="TWOPI" aunit="radian"/>
+        <tube name="Target2" rmin="0" rmax="4.75" z="15" deltaphi="TWOPI" aunit="radian" lunit="mm"/>
+        <subtraction name="target">
+            <first ref="Target1"/>
+            <second ref="Target2"/>
+            <positionref ref="targetOffset"/>
+        </subtraction>
+        
+        <tube name="cuCasing1" rmin="0" rmax="detRad+cuCasingThick" z="35.5/2+detHalfZ+cuCasingThick/2" deltaphi="TWOPI" lunit="mm"/>
+        <tube name="cuCasing2" rmin="0" rmax="detRad+.001" z="35.5/2. + detHalfZ + cuCasingThick/2" deltaphi="TWOPI" lunit="mm" />
+        <subtraction name="cuCasing">
+            <first ref="cuCasing1"/>
+            <second ref="cuCasing2"/>
+            <positionref ref="casingOffset"/>
+        </subtraction>
+        
+        <tube name="cuRing" rmin="detRad+cuCasingThick" rmax="detRad+cuCasingThick+cuRingThick" z="cuRingHeight/2" deltaphi="TWOPI"/>
+        <tube name="cuRingT" rmin="detRad+cuCasingThick" rmax="detRad+cuCasingThick+cuRingThick" z="cuRingHeight/6" deltaphi="TWOPI"/>
+        <union name ="cuDetHousing1">
+            <first ref ="cuCasing"/>
+            <second ref ="cuRingT"/>
+            <positionref ref="ringOffsetT"/>
+        </union>
+        <union name ="cuDetHousing2">
+            <first ref ="cuDetHousing1"/>
+            <second ref ="cuRing"/>
+            <positionref ref="ringOffset1"/>
+        </union>
+        <union name ="cuDetHousing">
+            <first ref ="cuDetHousing2"/>
+            <second ref ="cuRing"/>
+            <positionref ref="ringOffset2"/>
+        </union>
+        
+        <tube name="outTubeA" rmin="0" rmax="tubeAdia/2" z="tubeAlen/2" deltaphi="TWOPI" />
+        <tube name="inTubeA" rmin="0" rmax="36.51" z="54.83" deltaphi="TWOPI" />
+        
+        <subtraction name="detTubeA">
+            <first ref="outTubeA"/>
+            <second ref="inTubeA"/>
+            <positionref ref="inTubeAOffset"/>
+        </subtraction>
+        
+        <tube name="outTubeB" rmin="0" rmax="tubeBdia/2" z="tubeBlen/2" deltaphi="TWOPI" />
+        <tube name="inTubeB" rmin="0" rmax="tubeBdia/2. - tubeBthick" z="tubeBlen/2. - tubeBthick/2" deltaphi="TWOPI" />
+        
+        <subtraction name="detTubeB">
+            <first ref="outTubeB"/>
+            <second ref="inTubeB"/>
+            <positionref ref="inTubeBOffset"/>
+        </subtraction>
+        
+        <tube name="detTubeC" rmin="11.17" rmax="tubeCdia/2." z="tubeClen/2" deltaphi="TWOPI" />
+        <tube name="outTubeD" rmin="0" rmax="tubeDdia/2" z="tubeDlen/2" deltaphi="TWOPI" />
+        <tube name="inTubeD" rmin="0" rmax="tubeDdia/2. - tubeDthick" z="tubeDlen/2. - tubeDthick" deltaphi="TWOPI" />
+        
+        <subtraction name="detTubeD">
+            <first ref="outTubeD"/>
+            <second ref="inTubeD"/>
+            <positionref ref="zeroOffset"/>
+        </subtraction>
+        
+        <tube name ="liqN2_TubeD" rmin="0" rmax="tubeDdia/2. - tubeDthick" z="tubeDlen/2. - tubeDthick" deltaphi="TWOPI"/>
+        
+        <tube name ="InnerCanberra" rmin="0" rmax="(279.)/2" z="203. + 1.6" deltaphi="TWOPI" lunit="mm"/>
+        
+        <tube name="CopperCanberraI" rmin="0" rmax="(279.)/2. + 1.6" z="203. + 1.6" deltaphi="TWOPI" lunit="mm"/>
+        <tube name="TinCanberraI" rmin="0" rmax="(279.)/2. + 1.6 + 1." z="203. + 1.6 + 1.0" deltaphi="TWOPI" lunit="mm"/>
+        <tube name="LeadCanberraI" rmin="0" rmax="(279.)/2. + 1.6 + 1.0 + 101.6" z="203. + 1.6 + 1.0 + 101.6" deltaphi="TWOPI" lunit="mm"/>
+        <tube name="SteelCanberraI" rmin="0" rmax="(279.)/2. + 1.6 + 1.0 + 101.6 + 9.5" z="203. + 1.6 + 1.0 + 101.6 + 9.5" deltaphi="TWOPI" lunit="mm"/>
+        
+        <subtraction name="CopperCanberraI2">
+            <first ref="CopperCanberraI"/>
+            <second ref="InnerCanberra"/>
+            <positionref ref="zeroOffset"/>
+        </subtraction>
+        
+        <subtraction name="TinCanberraI2">
+            <first ref="TinCanberraI"/>
+            <second ref="CopperCanberraI"/>
+            <positionref ref="zeroOffset"/>
+        </subtraction>
+        
+        <subtraction name="LeadCanberraI2">
+            <first ref="LeadCanberraI"/>
+            <second ref="TinCanberraI"/>
+            <positionref ref="zeroOffset"/>
+        </subtraction>
+        
+        <subtraction name="SteelCanberraI2">
+            <first ref="SteelCanberraI"/>
+            <second ref="LeadCanberraI"/>
+            <positionref ref="zeroOffset"/>
+        </subtraction>
+        
+        
+        <tube name ="bottomHoleCanberra" rmin="0" rmax="(3.25)/2." z="(1.6 + 1.0 + 101.6 + 9.5)/2." deltaphi="TWOPI" lunit="mm"/>
+        
+        <subtraction name="CopperCanberra">
+            <first ref="CopperCanberraI2"/>
+            <second ref="bottomHoleCanberra"/>
+            <positionref ref="bHC_Pos"/>
+        </subtraction>
+        
+        <subtraction name="TinCanberra">
+            <first ref="TinCanberraI2"/>
+            <second ref="bottomHoleCanberra"/>
+            <positionref ref="bHC_Pos"/>
+        </subtraction>
+        
+        <subtraction name="LeadCanberra">
+            <first ref="LeadCanberraI2"/>
+            <second ref="bottomHoleCanberra"/>
+            <positionref ref="bHC_Pos"/>
+        </subtraction>
+        
+        <subtraction name="SteelCanberra">
+            <first ref="SteelCanberraI2"/>
+            <second ref="bottomHoleCanberra"/>
+            <positionref ref="bHC_Pos"/>
+        </subtraction>
+        
+    </solids>
+    
+    <structure>
+        
+        <volume name ="Vol1" >
+            <materialref ref ="Pb" />
+            <solidref ref="brck1" />
+        </volume>
+        <volume name ="Vol2" >
+            <materialref ref ="Pb" />
+            <solidref ref="brck2" />
+        </volume>
+        <volume name ="Vol3" >
+            <materialref ref ="Pb" />
+            <solidref ref="brck3" />
+           
+        </volume>
+        <volume name ="Vol4" >
+            <materialref ref ="Pb" />
+            <solidref ref="brck4" />
+           
+        </volume>
+        <volume name ="Vol5" >
+            <materialref ref ="Pb" />
+            <solidref ref="brck5" />
+            
+        </volume>
+        <volume name ="Vol7" >
+            <materialref ref ="Pb" />
+            <solidref ref="brck6" />
+           
+        </volume>
+        <volume name ="Vol8" >
+            <materialref ref ="Pb" />
+            <solidref ref="brck7" />
+            
+        </volume>
+        <volume name ="Vol9" >
+            <materialref ref ="Pb" />
+            <solidref ref="brck8" />
+           
+        </volume>
+        <volume name ="Vol10" >
+            <materialref ref ="Pb" />
+            <solidref ref="brck9" />
+            
+        </volume>
+        <volume name ="Vol6" >
+            <materialref ref ="Pb" />
+            <solidref ref="brck10" />
+           
+        </volume>
+        <volume name ="Vol11" >
+            <materialref ref ="Pb" />
+            <solidref ref="brck11" />
+            
+        </volume>
+        <volume name ="Vol12" >
+            <materialref ref ="Pb" />
+            <solidref ref="brck12" />
+           
+        </volume>
+        
+        <volume name ="Vol13" >
+            <materialref ref ="Pb" />
+            <solidref ref="box1" />
+        
+        </volume>
+        <volume name ="Vol14" >
+            <materialref ref ="Pb" />
+            <solidref ref="brck13" />
+            
+        </volume>
+        <volume name ="Vol15" >
+            <materialref ref ="Pb" />
+            <solidref ref="brck14" />
+           
+        </volume>
+        <volume name ="Vol16" >
+            <materialref ref ="Pb" />
+            <solidref ref="brck15" />
+            
+        </volume>
+        
+        <volume name ="Vol17" >
+            <materialref ref ="Pb" />
+            <solidref ref="brck16" />
+           
+        </volume>
+        <volume name ="Vol18" >
+            <materialref ref ="Pb" />
+            <solidref ref="brck17" />
+            
+        </volume>
+        <volume name ="Vol19" >
+            <materialref ref ="Pb" />
+            <solidref ref="brck18" />
+            
+        </volume>
+        
+        <volume name ="Vol20" >
+            <materialref ref ="Pb" />
+            <solidref ref="brck19" />
+            
+        </volume>
+        <volume name ="Vol21" >
+            <materialref ref ="Pb" />
+            <solidref ref="brck20" />
+           
+        </volume>
+        <volume name ="Vol22" >
+            <materialref ref ="Pb" />
+            <solidref ref="brck21" />
+            
+        </volume>
+        
+        <volume name ="Vol23" >
+            <materialref ref ="Pb" />
+            <solidref ref="brck22" />
+            
+        </volume>
+        
+        <volume name ="Vol24" >
+            <materialref ref ="Pb" />
+            <solidref ref="brck23" />
+           
+        </volume>
+        
+        <volume name ="Vol25" >
+            <materialref ref ="Pb" />
+            <solidref ref="brck24" />
+          
+        </volume>
+        
+        <volume name ="Vol26" >
+            <materialref ref ="Pb" />
+            <solidref ref="brck25" />
+            
+        </volume>
+        
+        <volume name ="Vol27" >
+            <materialref ref ="Pb" />
+            <solidref ref="brck26" />
+           
+        </volume>
+        
+        <volume name ="Vol40" >
+            <materialref ref ="Pb" />
+            <solidref ref="brck27" />
+           
+        </volume>
+        
+        <volume name ="Vol41" >
+            <materialref ref ="Pb" />
+            <solidref ref="brck28" />
+            
+        </volume>
+        <volume name ="Vol42" >
+            <materialref ref ="Pb" />
+            <solidref ref="brck29" />
+            
+        </volume>
+        
+        <volume name ="Vol43" >
+            <materialref ref ="Pb" />
+            <solidref ref="brck30" />
+          
+        </volume>
+        <volume name ="Vol44" >
+            <materialref ref ="Pb" />
+            <solidref ref="brck31" />
+           
+        </volume>
+        
+        <volume name ="Vol45" >
+            <materialref ref ="Pb" />
+            <solidref ref="brck32" />
+           
+        </volume>
+        
+        <volume name ="Vol46" >
+            <materialref ref ="Pb" />
+            <solidref ref="brck33" />
+          
+        </volume>
+        
+        <volume name ="Vol50" >
+            <materialref ref ="Pb" />
+            <solidref ref="rctngl2" />
+          
+        </volume>
+        
+        <volume name ="Vol51" >
+            <materialref ref ="Pb" />
+            <solidref ref="rctngl3" />
+           
+        </volume>
+        
+        <volume name ="Vol52" >
+            <materialref ref ="Pb" />
+            <solidref ref="rctngl4" />
+           
+        </volume>
+        
+        <volume name ="Vol53" >
+            <materialref ref ="Pb" />
+            <solidref ref="rctngl5" />
+           
+        </volume>
+        
+        <volume name ="TubeA" >
+            <materialref ref ="Al" />
+            <solidref ref="detTubeA" />
+            <auxiliary auxtype="SensDet" auxvalue="/MINERsim/Craig"/>
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="TubeB">
+            <materialref ref ="Al"/>
+            <solidref ref="detTubeB"/>
+            <auxiliary auxtype="SensDet" auxvalue="/MINERsim/Craig"/>
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="TubeC" >
+            <materialref ref ="SSteel" />
+            <solidref ref="detTubeC" />
+            <auxiliary auxtype="SensDet" auxvalue="/MINERsim/Craig"/>
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="TubeD">
+            <materialref ref ="SSteel"/>
+            <solidref ref="detTubeD"/>
+            <auxiliary auxtype="SensDet" auxvalue="/MINERsim/Craig"/>
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="liqN2Tube" >
+            <materialref ref ="LN" />
+            <solidref ref="liqN2_TubeD" />
+            <auxiliary auxtype="SensDet" auxvalue="/MINERsim/Craig"/>
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="CuCanberra">
+            <materialref ref ="Cu"/>
+            <solidref ref="CopperCanberra"/>
+            <auxiliary auxtype="SensDet" auxvalue="/MINERsim/Craig"/>
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="SnCanberra" >
+            <materialref ref ="Sn" />
+            <solidref ref="TinCanberra" />
+            <auxiliary auxtype="SensDet" auxvalue="/MINERsim/Craig"/>
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="PbCanberra">
+            <materialref ref ="Pb"/>
+            <solidref ref="LeadCanberra"/>
+            <auxiliary auxtype="SensDet" auxvalue="/MINERsim/Craig"/>
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        <volume name ="SSteelCanberra">
+            <materialref ref ="SSteel"/>
+            <solidref ref="SteelCanberra"/>
+            <auxiliary auxtype="SensDet" auxvalue="/MINERsim/Craig"/>
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        <volume name ="fLogicCasing">
+            <materialref ref ="Cu"/>
+            <solidref ref="cuDetHousing2"/>
+            <auxiliary auxtype="SensDet" auxvalue="/MINERsim/Craig"/>
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        <volume name ="fLogicDet">
+            <materialref ref ="Ge"/>
+            <solidref ref="target"/>
+            <auxiliary auxtype="SensDet" auxvalue="/MINERsim/Craig"/>
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="TestBox">
+            <materialref ref ="Ge"/>
+            <solidref ref="testbox"/>
+            <auxiliary auxtype="SensDet" auxvalue="/MINERsim/Craig"/>
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <assembly name="AssemblyVol">
+            <physvol>
+                <volumeref ref="Vol1" />
+                <position name="posA" unit="mm" x="310" y="0" z="375" />
+                <rotationref ref="rotatebyy4"/>
+            </physvol>
+            <physvol>
+                <volumeref ref="Vol2" />
+                <position name="posB" unit="mm" x="-310" y="0" z="375" />
+                <rotationref ref="rotatebyy5"/>
+            </physvol>
+            <physvol>
+                <volumeref ref="Vol3" />
+                <position name="posC" unit="mm" x="0" y="0" z="-169" />
+            </physvol>
+            <physvol>
+                <volumeref ref="Vol4" />
+                <position name="posD" unit="mm" x="-196" y="0" z="-155" />
+                <rotationref ref="rotatebyy4"/>
+            </physvol>
+            <physvol>
+                <volumeref ref="Vol5" />
+                <position name="posE" unit="mm" x="196" y="0" z="-155" />
+                <rotationref ref="rotatebyy5"/>
+            </physvol>
+            <physvol>
+                <volumeref ref="Vol7" />
+                <position name="posF" unit="mm" x="298" y="0" z="23" />
+                <rotationref ref="rotatebyy5"/>
+            </physvol>
+            <physvol>
+                <volumeref ref="Vol8" />
+                <position name="posG" unit="mm" x="-298" y="0" z="23" />
+                <rotationref ref="rotatebyy4"/>
+            </physvol>
+            <physvol>
+                <volumeref ref="Vol9" />
+                <position name="posH" unit="mm" x="400" y="0" z="200" />
+                <rotationref ref="rotatebyy5"/>
+            </physvol>
+            <physvol>
+                <volumeref ref="Vol10" />
+                <position name="posI" unit="mm" x="-400" y="0" z="200" />
+                <rotationref ref="rotatebyy4"/>
+            </physvol>
+            <physvol>
+                <volumeref ref="Vol6" />
+                <position name="posJ" unit="mm" x="0" y="0" z="540" />
+            </physvol>
+            <physvol>
+                <volumeref ref="Vol11" />
+                <position name="posK" unit="mm" x="-203" y="0" z="540" />
+            </physvol>
+            <physvol>
+                <volumeref ref="Vol12" />
+                <position name="posL" unit="mm" x="203" y="0" z="540" />
+            </physvol>
+        </assembly>
+        
+        
+        <assembly name="Base">
+            
+            <physvol>
+                <volumeref ref="Vol13" />
+                <position name="pos1" unit="mm" x="0.5" y="0" z="400" />
+            </physvol>
+            <physvol>
+                <volumeref ref="Vol14" />
+                <position name="pos2" unit="mm" x="102" y="0" z="146" />
+            </physvol>
+            <physvol>
+                <volumeref ref="Vol15" />
+                <position name="pos3" unit="mm" x="0.5" y="0" z="146" />
+            </physvol>
+            <physvol>
+                <volumeref ref="Vol16" />
+                <position name="pos4" unit="mm" x="-101" y="0" z="146" />
+            </physvol>
+            <physvol>
+                <volumeref ref="Vol17" />
+                <position name="pos5" unit="mm" x="-202.5" y="0" z="146" />
+            </physvol>
+            <physvol>
+                <volumeref ref="Vol18" />
+                <position name="pos6" unit="mm" x="-304" y="0" z="146" />
+            </physvol>
+            <physvol>
+                <volumeref ref="Vol19" />
+                <position name="pos7" unit="mm" x="-405.5" y="0" z="146" />
+            </physvol>
+            
+            
+            
+            <physvol>
+                <volumeref ref="Vol20" />
+                <position name="pos8" unit="mm" x="-253.5" y="0" z="298.5" />
+            </physvol>
+            <physvol>
+                <volumeref ref="Vol21" />
+                <position name="pos9" unit="mm" x="-253.5" y="0" z="400" />
+            </physvol>
+            <physvol>
+                <volumeref ref="Vol22" />
+                <position name="pos10" unit="mm" x="-253.5" y="0" z="501.5" />
+            </physvol>
+            <physvol>
+                <volumeref ref="Vol23" />
+                <position name="pos11" unit="mm" x="202" y="0" z="-7" />
+            </physvol>
+            <physvol>
+                <volumeref ref="Vol24" />
+                <position name="pos12" unit="mm" x="-1" y="0" z="-7" />
+            </physvol>
+            <physvol>
+                <volumeref ref="Vol25" />
+                <position name="pos13" unit="mm" x="-204" y="0" z="-7" />
+            </physvol>
+            <physvol>
+                <volumeref ref="Vol26" />
+                <position name="pos14" unit="mm" x="-407" y="0" z="-7" />
+            </physvol>
+            <physvol>
+                <volumeref ref="Vol27" />
+                <position name="pos15" unit="mm" x="405" y="0" z="-7" />
+            </physvol>
+            
+            
+            
+            
+            <physvol>
+                <volumeref ref="Vol50" />
+                <position name="pos16" unit="mm" x="204" y="0" z="298.5" />
+            </physvol>
+            <physvol>
+                <volumeref ref="Vol51" />
+                <position name="pos17" unit="mm" x="306" y="0" z="298.5" />
+            </physvol>
+            <physvol>
+                <volumeref ref="Vol52" />
+                <position name="pos18" unit="mm" x="408" y="0" z="298.5" />
+            </physvol>
+            <physvol>
+                <volumeref ref="Vol53" />
+                <position name="pos19" unit="mm" x="-405.5" y="0" z="400" />
+            </physvol>
+            
+            
+            
+            
+            <physvol>
+                <volumeref ref="Vol40" />
+                <position name="pos20" unit="mm" x=".5" y="0" z="-159.5" />
+            </physvol>
+            <physvol>
+                <volumeref ref="Vol41" />
+                <position name="pos21" unit="mm" x="153" y="0" z="-109" />
+            </physvol>
+            <physvol>
+                <volumeref ref="Vol42" />
+                <position name="pos22" unit="mm" x="-152" y="0" z="-109" />
+            </physvol>
+            <physvol>
+                <volumeref ref="Vol43" />
+                <position name="pos23" unit="mm" x="-356" y="0" z="-109" />
+            </physvol>
+            <physvol>
+                <volumeref ref="Vol44" />
+                <position name="pos24" unit="mm" x="357" y="0" z="-109" />
+            </physvol>
+            <physvol>
+                <volumeref ref="Vol45" />
+                <position name="pos25" unit="mm" x="153" y="0" z="-211" />
+            </physvol>
+            <physvol>
+                <volumeref ref="Vol46" />
+                <position name="pos26" unit="mm" x="-152" y="0" z="-211" />
+            </physvol>
+        </assembly>
+        <assembly name="detector">
+            
+            <physvol>
+                <volumeref ref="TubeA" />
+                <positionref ref="tubeAPos" />
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="TubeB" />
+                <positionref ref = "tubeBPos" />
+            </physvol>
+            <physvol>
+                <volumeref ref="TubeC" />
+                <positionref ref="tubeCPos" />
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="TubeD" />
+                <positionref ref = "tubeDPos" />
+            </physvol>
+            <physvol>
+                <volumeref ref="liqN2Tube" />
+                <positionref ref="tubeDPos" />
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="CuCanberra" />
+                <positionref ref = "ShieldCanberra_Pos" />
+            </physvol>
+            <physvol>
+                <volumeref ref="SnCanberra" />
+                <positionref ref="ShieldCanberra_Pos" />
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="PbCanberra" />
+                <positionref ref = "ShieldCanberra_Pos" />
+            </physvol>
+            <physvol>
+                <volumeref ref="SSteelCanberra" />
+                <positionref ref="ShieldCanberra_Pos" />
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="fLogicCasing" />
+                <positionref ref = "cuHousingPos" />
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="fLogicDet" />
+                <positionref ref = "cuHousingPos" />
+            </physvol>
+            
+            
+        </assembly>
+        
+        
+        
+        
+        
+        
+        <volume name="World" >
+            <materialref ref="G4_AIR" />
+            <solidref ref="world" />
+            
+            <loop for="x1" to="969" step="51">
+                <physvol>
+                    <volumeref ref="AssemblyVol" />
+                    <position unit="mm" x="0" y="x1" z="-200" />
+                </physvol>
+            </loop>
+            
+            <physvol>
+                <volumeref ref="Base" />
+                <position unit="mm" x="0" y="-1" z="-160" />
+            </physvol>
+            <physvol>
+                <volumeref ref="Base" />
+                <position unit="mm" x="0" y="-52" z="-160" />
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="detector" />
+                <position unit="mm" x="0" y="1507" z="0" />
+                <rotationref ref= "rotatebyx"/>
+                
+            </physvol>
+            
+           
+            
+        </volume>
+    </structure>
+    
+    <setup version="1.0" name="Default">
+        <world ref="World"/>
+    </setup>
+    
+</gdml>
