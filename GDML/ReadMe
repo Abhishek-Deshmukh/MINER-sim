@@ -5,7 +5,8 @@ At the top of each GDML file one needs to use:
 <gdml   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:noNamespaceSchemaLocation="/.../geant4_10_06_p02/source/persistency/gdml/schema/gdml.xsd">
 
-in order to have local schema accessed, where /.../ is filled in with the path to your geant4 installation. The XML parser looks for the schema within a /gdml/schema/files.xsd pattern.
+in order to have local schema accessed, where /.../ is filled in with the path to your geant4 installation. The XML parser looks for the schema within 
+a /gdml/schema/files.xsd pattern.
 
 HybridShieldingHVShielding.gdml Has the Si hybrid and HV detectors along with their copper shielding.
 
