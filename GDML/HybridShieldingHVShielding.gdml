@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:/Users/shsu/Documents/James/Projects/MINER/GEANT/geant4_10_06_p02/examples/extended/persistency/gdml/G01-build/gdml">
+
+    <define>
+        <position name="det_in_sky" unit="cm" x="0" y="0" z="0" />
+        <constant name="HLFPI" value="0.5*pi"/>
+        <rotation name="rotatebyx" z="HLFPI" />
+        <position name="subtraction_position" unit="cm" x ="0.0" y = "0.0" z = "0.0"/>
+        <position name="hybrid_subtraction" unit = "cm" x = "0.0" y = "0.0" z = "-1.016*0.5"/>
+        <position name="neckOffset" unit="cm" x ="0.0" y = "0.0" z = "0.7239"/>
+        <position name="topOffset" unit="cm" x ="0.0" y = "0.0" z = "1.25222"/>
+        <constant name="TWOPI" value="2.*pi"/>
+    </define>
+    
+    <materials>
+        
+        
+        <material name="Cs" Z="55">
+            <D value="1.93"/>
+            <atom value="132.905"/>
+        </material>
+            
+        <material name="I" Z="53">
+            <D value="4.933"/>
+            <atom value="126.904"/>
+        </material>
+        
+        <material name="Si" Z="14">
+            <D value="2.329" unit = "g/cm3"/>
+            <atom value="28.0855"/>
+        </material>
+        
+        <material name="CsI" formula="CsI">
+            <D value="4.51"/>
+            <composite n="1" ref="Cs"/>
+            <composite n="1" ref="I"/>
+        </material>
+        
+        <material name="Cu" Z="29">
+            <D value="8.96"/>
+            <atom value="63.55"/>
+        </material>
+        
+        <isotope name="Sc46" Z="21" N="46">
+        </isotope>
+        
+    </materials>
+    
+    <solids>
+        
+        <box aunit="radian" lunit="m" name="world" x="8" y="8" z="8" />
+        
+<!--  HV Silicon Detector  7.62 cm radius    -->
+        
+        <tube name="SiDetector" rmin="0" rmax="7.62*0.5" z="2.54*0.5" deltaphi="TWOPI" aunit="radian" lunit="cm"/>
+        
+<!--  Cu Housing for HV Detector 1mm thickness -->
+        <tube name = "OuterCopper" min="0" rmax="7.62*0.5+0.11" z="2.54*0.5+0.11" deltaphi="TWOPI" aunit="radian" lunit="cm"/>
+        <tube name = "InnerCopper" min="0" rmax="7.62*0.5+0.01" z="2.54*0.5+0.01" deltaphi="TWOPI" aunit="radian" lunit="cm"/>
+        
+        <subtraction name ="HVhollowTube">
+            <first ref = "OuterCopper"/>
+            <second ref = "InnerCopper"/>
+            <positionref ref="subtraction_position"/>
+        </subtraction>
+        
+<!--  Hybrid Detector      -->
+        
+        <cone name = "basecone" rmin1 = "0" rmax1 = "7.62*0.5" rmin2 = "0" rmax2 = "5.57251*0.5" z = "1.4478" startphi = "0" deltaphi ="TWOPI" aunit = "rad" lunit = "cm" />
+               
+        <tube name="topPiece" rmin="0" rmax="2.54*0.5" z="1.016" deltaphi="TWOPI" aunit="radian" lunit="cm"/>
+        <tube name="neck" rmin="0" rmax="1.2*0.57" z="0.04064" deltaphi="TWOPI" aunit="radian" lunit="cm"/>
+              
+        
+        <union name ="BottomPart">
+            <first ref ="basecone"/>
+            <second ref ="neck"/>
+            <positionref ref="neckOffset"/>
+        </union>
+        
+        <union name ="hybrid">
+            <first ref ="BottomPart"/>
+            <second ref ="topPiece"/>
+            <positionref ref="topOffset"/>
+        </union>
+        
+<!--        <cone name = "basecone" rmin1 = "0" rmax1 = "7.62" rmin2 = "0" rmax2 = "1.02375" z = "1.4478" startphi = "0" deltaphi ="TWOPI" aunit = "rad" lunit = "cm" />-->
+               
+              
+              
+              
+<!--  Cu Solid Hybrid Detector  -->
+
+        <tube name="CuSolid" rmin="0" rmax="7.62*0.5+0.11" z="1.4478+0.04064+1.016+0.11" deltaphi="TWOPI" aunit="radian" lunit="cm"/>
+
+        <cone name = "Cubasecone" rmin1 = "0" rmax1 = "7.62*0.5+0.11" rmin2 = "0" rmax2 = "5.57251*0.5+0.11" z = "1.4478+0.11" startphi = "0" deltaphi ="TWOPI" aunit = "rad" lunit = "cm" />
+               
+        <tube name="CutopPiece" rmin="0" rmax="2.54*0.5+0.11" z="1.016+0.15" deltaphi="TWOPI" aunit="radian" lunit="cm"/>
+        <tube name="Cuneck" rmin="0" rmax="1.2*0.57+0.11" z="0.04064" deltaphi="TWOPI" aunit="radian" lunit="cm"/>
+              
+        
+<!--        <union name ="CuBottomPart">-->
+<!--            <first ref ="Cubasecone"/>-->
+<!--            <second ref ="Cuneck"/>-->
+<!--            <positionref ref="neckOffset"/>-->
+<!--        </union>-->
+        
+<!--        <union name ="CuSolid">-->
+<!--            <first ref ="Cubasecone"/>-->
+<!--            <second ref ="CutopPiece"/>-->
+<!--            <positionref ref="topOffset"/>-->
+<!--        </union>-->
+        
+        
+        
+<!--  Cu Hollow for Hybrid Detector -->
+
+             
+        <cone name = "Hollowbasecone" rmin1 = "0" rmax1 = "7.62*0.5+0.01" rmin2 = "0" rmax2 = "5.57251*0.5+0.01" z = "1.4478+0.01" startphi = "0" deltaphi ="TWOPI" aunit = "rad" lunit = "cm" />
+               
+        <tube name="HollowtopPiece" rmin="0" rmax="2.54*0.5+0.01" z="1.016+0.05" deltaphi="TWOPI" aunit="radian" lunit="cm"/>
+        <tube name="Hollowneck" rmin="0" rmax="1.2*0.57+0.01" z="0.04064" deltaphi="TWOPI" aunit="radian" lunit="cm"/>
+              
+        
+        <union name ="HollowBottomPart">
+            <first ref ="Hollowbasecone"/>
+            <second ref ="Hollowneck"/>
+            <positionref ref="neckOffset"/>
+        </union>
+        
+        <union name ="HollowSolid">
+            <first ref ="HollowBottomPart"/>
+            <second ref ="HollowtopPiece"/>
+            <positionref ref="topOffset"/>
+        </union>
+        
+<!--  Cu Housing for Hybrid Detector -->
+
+        <subtraction name ="HybridHollowTube">
+            <first ref = "CuSolid"/>
+            <second ref = "HollowSolid"/>
+            <positionref ref="hybrid_subtraction"/>
+        </subtraction>
+
+        
+    </solids>
+    
+    <structure>
+        
+        <volume name ="hybridDetector" >
+            <materialref ref ="Si" />
+            <solidref ref="hybrid" />
+            <auxiliary auxtype="SensDet" auxvalue="veloSD"/>
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="HVDetector" >
+            <materialref ref ="Si" />
+            <solidref ref="SiDetector" />
+            <auxiliary auxtype="SensDet" auxvalue="veloSD"/>
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="HVHousing" >
+            <materialref ref ="Cu" />
+            <solidref ref="HVhollowTube" />
+            <auxiliary auxtype="SensDet" auxvalue="veloSD"/>
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="HybridHousing" >
+            <materialref ref ="Cu" />
+            <solidref ref="HybridHollowTube" />
+            <auxiliary auxtype="SensDet" auxvalue="veloSD"/>
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        
+        <assembly name="AssemblyVol">
+            
+            
+            <physvol>
+                <volumeref ref="hybridDetector" />
+                <position name="A" unit="mm" x = "0.0" y = "0.0" z = "0" />
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="HVDetector" />
+                <position name="B" unit="cm" x = "0.0" y = "0.0" z = "8.0" />
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="HVHousing" />
+                <position name="B" unit="cm" x = "0.0" y = "0.0" z = "8.0" />
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="HybridHousing" />
+                <position name="B" unit="cm" x = "0.0" y = "0.0" z = "1.016*0.5" />
+            </physvol>
+            
+        </assembly>
+        
+        
+            
+        
+        
+        <volume name="World" >
+            <materialref ref="G4_AIR" />
+            <solidref ref="world" />
+            
+            <physvol>
+                <volumeref ref="AssemblyVol"/>
+                <position x="0" y="0" z="0"/>
+                </physvol>
+        </volume>
+    </structure>
+    
+    <setup version="1.0" name="Default">
+        <world ref="World"/>
+    </setup>
+    
+</gdml>
