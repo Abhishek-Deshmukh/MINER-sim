@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
+ <define>
+ <position name="Cylinder1_v0" unit="mm" x="-0.6026834012766267" y="-4.963544370490268" z="10.0"/>
+ <position name="Cylinder1_v1" unit="mm" x="-1.7730244352126878" y="-4.67508121342707" z="10.0"/>
+ <position name="Cylinder1_v2" unit="mm" x="-1.7730244352126878" y="-4.67508121342707" z="-10.0"/>
+ <position name="Cylinder1_v3" unit="mm" x="-0.6026834012766267" y="-4.963544370490268" z="-10.0"/>
+ <position name="Cylinder1_v4" unit="mm" x="0.6026834012766028" y="-4.963544370490272" z="10.0"/>
+ <position name="Cylinder1_v5" unit="mm" x="5.0" y="-1.224646799147e-15" z="10.0"/>
+ <position name="Cylinder1_v6" unit="mm" x="5.0" y="-1.224646799147e-15" z="-10.0"/>
+ <position name="Cylinder1_v7" unit="mm" x="4.85470908713026" y="1.1965783214377888" z="-10.0"/>
+ <position name="Cylinder1_v8" unit="mm" x="0.6026834012766028" y="-4.963544370490272" z="-10.0"/>
+ <position name="Cylinder1_v9" unit="mm" x="1.7730244352126654" y="-4.675081213427079" z="10.0"/>
+ <position name="Cylinder1_v10" unit="mm" x="4.85470908713026" y="1.1965783214377888" z="10.0"/>
+ <position name="Cylinder1_v11" unit="mm" x="1.7730244352126654" y="-4.675081213427079" z="-10.0"/>
+ <position name="Cylinder1_v12" unit="mm" x="4.42728012826605" y="2.3236158602188426" z="10.0"/>
+ <position name="Cylinder1_v13" unit="mm" x="4.42728012826605" y="2.3236158602188426" z="-10.0"/>
+ <position name="Cylinder1_v14" unit="mm" x="2.840323733655767" y="-4.11491932946829" z="10.0"/>
+ <position name="Cylinder1_v15" unit="mm" x="2.840323733655767" y="-4.11491932946829" z="-10.0"/>
+ <position name="Cylinder1_v16" unit="mm" x="3.7425537408554947" y="-3.3156132912039875" z="10.0"/>
+ <position name="Cylinder1_v17" unit="mm" x="3.742553740855506" y="3.3156132912039755" z="10.0"/>
+ <position name="Cylinder1_v18" unit="mm" x="3.742553740855506" y="3.3156132912039755" z="-10.0"/>
+ <position name="Cylinder1_v19" unit="mm" x="3.7425537408554947" y="-3.3156132912039875" z="-10.0"/>
+ <position name="Cylinder1_v20" unit="mm" x="4.427280128266042" y="-2.3236158602188577" z="10.0"/>
+ <position name="Cylinder1_v21" unit="mm" x="4.427280128266042" y="-2.3236158602188577" z="-10.0"/>
+ <position name="Cylinder1_v22" unit="mm" x="2.8403237336557794" y="4.1149193294682815" z="10.0"/>
+ <position name="Cylinder1_v23" unit="mm" x="2.8403237336557794" y="4.1149193294682815" z="-10.0"/>
+ <position name="Cylinder1_v24" unit="mm" x="4.854709087130256" y="-1.1965783214378063" z="10.0"/>
+ <position name="Cylinder1_v25" unit="mm" x="4.854709087130256" y="-1.1965783214378063" z="-10.0"/>
+ <position name="Cylinder1_v26" unit="mm" x="1.773024435212679" y="4.675081213427074" z="10.0"/>
+ <position name="Cylinder1_v27" unit="mm" x="1.773024435212679" y="4.675081213427074" z="-10.0"/>
+ <position name="Cylinder1_v28" unit="mm" x="0.6026834012766161" y="4.96354437049027" z="10.0"/>
+ <position name="Cylinder1_v29" unit="mm" x="0.6026834012766161" y="4.96354437049027" z="-10.0"/>
+ <position name="Cylinder1_v30" unit="mm" x="-0.6026834012766145" y="4.96354437049027" z="10.0"/>
+ <position name="Cylinder1_v31" unit="mm" x="-0.6026834012766145" y="4.96354437049027" z="-10.0"/>
+ <position name="Cylinder1_v32" unit="mm" x="-1.7730244352126774" y="4.675081213427074" z="10.0"/>
+ <position name="Cylinder1_v33" unit="mm" x="-1.7730244352126774" y="4.675081213427074" z="-10.0"/>
+ <position name="Cylinder1_v34" unit="mm" x="-2.8403237336557785" y="4.114919329468282" z="10.0"/>
+ <position name="Cylinder1_v35" unit="mm" x="-2.8403237336557785" y="4.114919329468282" z="-10.0"/>
+ <position name="Cylinder1_v36" unit="mm" x="-3.742553740855504" y="3.3156132912039773" z="10.0"/>
+ <position name="Cylinder1_v37" unit="mm" x="-3.742553740855504" y="3.3156132912039773" z="-10.0"/>
+ <position name="Cylinder1_v38" unit="mm" x="-4.427280128266048" y="2.3236158602188453" z="10.0"/>
+ <position name="Cylinder1_v39" unit="mm" x="-4.427280128266048" y="2.3236158602188453" z="-10.0"/>
+ <position name="Cylinder1_v40" unit="mm" x="-4.854709087130259" y="1.1965783214377927" z="10.0"/>
+ <position name="Cylinder1_v41" unit="mm" x="-4.854709087130259" y="1.1965783214377927" z="-10.0"/>
+ <position name="Cylinder1_v42" unit="mm" x="-5.0" y="5.053215498074303e-15" z="10.0"/>
+ <position name="Cylinder1_v43" unit="mm" x="-5.0" y="5.053215498074303e-15" z="-10.0"/>
+ <position name="Cylinder1_v44" unit="mm" x="-4.854709087130262" y="-1.1965783214377828" z="10.0"/>
+ <position name="Cylinder1_v45" unit="mm" x="-4.854709087130262" y="-1.1965783214377828" z="-10.0"/>
+ <position name="Cylinder1_v46" unit="mm" x="-4.4272801282660526" y="-2.3236158602188364" z="10.0"/>
+ <position name="Cylinder1_v47" unit="mm" x="-4.4272801282660526" y="-2.3236158602188364" z="-10.0"/>
+ <position name="Cylinder1_v48" unit="mm" x="-3.742553740855511" y="-3.3156132912039697" z="10.0"/>
+ <position name="Cylinder1_v49" unit="mm" x="-3.742553740855511" y="-3.3156132912039697" z="-10.0"/>
+ <position name="Cylinder1_v50" unit="mm" x="-2.840323733655787" y="-4.114919329468277" z="10.0"/>
+ <position name="Cylinder1_v51" unit="mm" x="-2.840323733655787" y="-4.114919329468277" z="-10.0"/>
+ </define>
+
+ <solids>
+ <tessellated aunit="deg" lunit="mm" name="Cylinder1_solid">
+ <triangular vertex1="Cylinder1_v0" vertex2="Cylinder1_v1" vertex3="Cylinder1_v2"/>
+ <triangular vertex1="Cylinder1_v0" vertex2="Cylinder1_v2" vertex3="Cylinder1_v3"/>
+ <triangular vertex1="Cylinder1_v4" vertex2="Cylinder1_v0" vertex3="Cylinder1_v3"/>
+ <triangular vertex1="Cylinder1_v5" vertex2="Cylinder1_v6" vertex3="Cylinder1_v7"/>
+ <triangular vertex1="Cylinder1_v4" vertex2="Cylinder1_v3" vertex3="Cylinder1_v8"/>
+ <triangular vertex1="Cylinder1_v9" vertex2="Cylinder1_v4" vertex3="Cylinder1_v8"/>
+ <triangular vertex1="Cylinder1_v10" vertex2="Cylinder1_v5" vertex3="Cylinder1_v7"/>
+ <triangular vertex1="Cylinder1_v9" vertex2="Cylinder1_v8" vertex3="Cylinder1_v11"/>
+ <triangular vertex1="Cylinder1_v12" vertex2="Cylinder1_v7" vertex3="Cylinder1_v13"/>
+ <triangular vertex1="Cylinder1_v14" vertex2="Cylinder1_v9" vertex3="Cylinder1_v11"/>
+ <triangular vertex1="Cylinder1_v14" vertex2="Cylinder1_v11" vertex3="Cylinder1_v15"/>
+ <triangular vertex1="Cylinder1_v12" vertex2="Cylinder1_v10" vertex3="Cylinder1_v7"/>
+ <triangular vertex1="Cylinder1_v16" vertex2="Cylinder1_v14" vertex3="Cylinder1_v15"/>
+ <triangular vertex1="Cylinder1_v17" vertex2="Cylinder1_v13" vertex3="Cylinder1_v18"/>
+ <triangular vertex1="Cylinder1_v16" vertex2="Cylinder1_v15" vertex3="Cylinder1_v19"/>
+ <triangular vertex1="Cylinder1_v17" vertex2="Cylinder1_v12" vertex3="Cylinder1_v13"/>
+ <triangular vertex1="Cylinder1_v20" vertex2="Cylinder1_v16" vertex3="Cylinder1_v19"/>
+ <triangular vertex1="Cylinder1_v20" vertex2="Cylinder1_v19" vertex3="Cylinder1_v21"/>
+ <triangular vertex1="Cylinder1_v22" vertex2="Cylinder1_v18" vertex3="Cylinder1_v23"/>
+ <triangular vertex1="Cylinder1_v22" vertex2="Cylinder1_v17" vertex3="Cylinder1_v18"/>
+ <triangular vertex1="Cylinder1_v24" vertex2="Cylinder1_v21" vertex3="Cylinder1_v25"/>
+ <triangular vertex1="Cylinder1_v24" vertex2="Cylinder1_v20" vertex3="Cylinder1_v21"/>
+ <triangular vertex1="Cylinder1_v26" vertex2="Cylinder1_v23" vertex3="Cylinder1_v27"/>
+ <triangular vertex1="Cylinder1_v26" vertex2="Cylinder1_v22" vertex3="Cylinder1_v23"/>
+ <triangular vertex1="Cylinder1_v5" vertex2="Cylinder1_v25" vertex3="Cylinder1_v6"/>
+ <triangular vertex1="Cylinder1_v5" vertex2="Cylinder1_v24" vertex3="Cylinder1_v25"/>
+ <triangular vertex1="Cylinder1_v28" vertex2="Cylinder1_v27" vertex3="Cylinder1_v29"/>
+ <triangular vertex1="Cylinder1_v28" vertex2="Cylinder1_v26" vertex3="Cylinder1_v27"/>
+ <triangular vertex1="Cylinder1_v30" vertex2="Cylinder1_v29" vertex3="Cylinder1_v31"/>
+ <triangular vertex1="Cylinder1_v30" vertex2="Cylinder1_v28" vertex3="Cylinder1_v29"/>
+ <triangular vertex1="Cylinder1_v32" vertex2="Cylinder1_v31" vertex3="Cylinder1_v33"/>
+ <triangular vertex1="Cylinder1_v32" vertex2="Cylinder1_v30" vertex3="Cylinder1_v31"/>
+ <triangular vertex1="Cylinder1_v34" vertex2="Cylinder1_v33" vertex3="Cylinder1_v35"/>
+ <triangular vertex1="Cylinder1_v34" vertex2="Cylinder1_v32" vertex3="Cylinder1_v33"/>
+ <triangular vertex1="Cylinder1_v36" vertex2="Cylinder1_v35" vertex3="Cylinder1_v37"/>
+ <triangular vertex1="Cylinder1_v36" vertex2="Cylinder1_v34" vertex3="Cylinder1_v35"/>
+ <triangular vertex1="Cylinder1_v38" vertex2="Cylinder1_v36" vertex3="Cylinder1_v37"/>
+ <triangular vertex1="Cylinder1_v38" vertex2="Cylinder1_v37" vertex3="Cylinder1_v39"/>
+ <triangular vertex1="Cylinder1_v40" vertex2="Cylinder1_v38" vertex3="Cylinder1_v39"/>
+ <triangular vertex1="Cylinder1_v40" vertex2="Cylinder1_v39" vertex3="Cylinder1_v41"/>
+ <triangular vertex1="Cylinder1_v42" vertex2="Cylinder1_v40" vertex3="Cylinder1_v41"/>
+ <triangular vertex1="Cylinder1_v42" vertex2="Cylinder1_v41" vertex3="Cylinder1_v43"/>
+ <triangular vertex1="Cylinder1_v44" vertex2="Cylinder1_v42" vertex3="Cylinder1_v43"/>
+ <triangular vertex1="Cylinder1_v44" vertex2="Cylinder1_v43" vertex3="Cylinder1_v45"/>
+ <triangular vertex1="Cylinder1_v46" vertex2="Cylinder1_v44" vertex3="Cylinder1_v45"/>
+ <triangular vertex1="Cylinder1_v46" vertex2="Cylinder1_v45" vertex3="Cylinder1_v47"/>
+ <triangular vertex1="Cylinder1_v48" vertex2="Cylinder1_v46" vertex3="Cylinder1_v47"/>
+ <triangular vertex1="Cylinder1_v48" vertex2="Cylinder1_v47" vertex3="Cylinder1_v49"/>
+ <triangular vertex1="Cylinder1_v50" vertex2="Cylinder1_v48" vertex3="Cylinder1_v49"/>
+ <triangular vertex1="Cylinder1_v50" vertex2="Cylinder1_v49" vertex3="Cylinder1_v51"/>
+ <triangular vertex1="Cylinder1_v1" vertex2="Cylinder1_v50" vertex3="Cylinder1_v51"/>
+ <triangular vertex1="Cylinder1_v1" vertex2="Cylinder1_v51" vertex3="Cylinder1_v2"/>
+ <triangular vertex1="Cylinder1_v1" vertex2="Cylinder1_v48" vertex3="Cylinder1_v50"/>
+ <triangular vertex1="Cylinder1_v0" vertex2="Cylinder1_v46" vertex3="Cylinder1_v48"/>
+ <triangular vertex1="Cylinder1_v0" vertex2="Cylinder1_v48" vertex3="Cylinder1_v1"/>
+ <triangular vertex1="Cylinder1_v42" vertex2="Cylinder1_v44" vertex3="Cylinder1_v46"/>
+ <triangular vertex1="Cylinder1_v36" vertex2="Cylinder1_v38" vertex3="Cylinder1_v40"/>
+ <triangular vertex1="Cylinder1_v16" vertex2="Cylinder1_v0" vertex3="Cylinder1_v4"/>
+ <triangular vertex1="Cylinder1_v16" vertex2="Cylinder1_v4" vertex3="Cylinder1_v9"/>
+ <triangular vertex1="Cylinder1_v16" vertex2="Cylinder1_v9" vertex3="Cylinder1_v14"/>
+ <triangular vertex1="Cylinder1_v16" vertex2="Cylinder1_v46" vertex3="Cylinder1_v0"/>
+ <triangular vertex1="Cylinder1_v20" vertex2="Cylinder1_v46" vertex3="Cylinder1_v16"/>
+ <triangular vertex1="Cylinder1_v32" vertex2="Cylinder1_v34" vertex3="Cylinder1_v36"/>
+ <triangular vertex1="Cylinder1_v32" vertex2="Cylinder1_v36" vertex3="Cylinder1_v40"/>
+ <triangular vertex1="Cylinder1_v30" vertex2="Cylinder1_v40" vertex3="Cylinder1_v42"/>
+ <triangular vertex1="Cylinder1_v30" vertex2="Cylinder1_v32" vertex3="Cylinder1_v40"/>
+ <triangular vertex1="Cylinder1_v5" vertex2="Cylinder1_v20" vertex3="Cylinder1_v24"/>
+ <triangular vertex1="Cylinder1_v10" vertex2="Cylinder1_v46" vertex3="Cylinder1_v20"/>
+ <triangular vertex1="Cylinder1_v10" vertex2="Cylinder1_v20" vertex3="Cylinder1_v5"/>
+ <triangular vertex1="Cylinder1_v26" vertex2="Cylinder1_v28" vertex3="Cylinder1_v30"/>
+ <triangular vertex1="Cylinder1_v17" vertex2="Cylinder1_v10" vertex3="Cylinder1_v12"/>
+ <triangular vertex1="Cylinder1_v17" vertex2="Cylinder1_v22" vertex3="Cylinder1_v26"/>
+ <triangular vertex1="Cylinder1_v17" vertex2="Cylinder1_v42" vertex3="Cylinder1_v46"/>
+ <triangular vertex1="Cylinder1_v17" vertex2="Cylinder1_v26" vertex3="Cylinder1_v30"/>
+ <triangular vertex1="Cylinder1_v17" vertex2="Cylinder1_v30" vertex3="Cylinder1_v42"/>
+ <triangular vertex1="Cylinder1_v17" vertex2="Cylinder1_v46" vertex3="Cylinder1_v10"/>
+ <triangular vertex1="Cylinder1_v49" vertex2="Cylinder1_v2" vertex3="Cylinder1_v51"/>
+ <triangular vertex1="Cylinder1_v47" vertex2="Cylinder1_v3" vertex3="Cylinder1_v49"/>
+ <triangular vertex1="Cylinder1_v49" vertex2="Cylinder1_v3" vertex3="Cylinder1_v2"/>
+ <triangular vertex1="Cylinder1_v45" vertex2="Cylinder1_v43" vertex3="Cylinder1_v47"/>
+ <triangular vertex1="Cylinder1_v39" vertex2="Cylinder1_v37" vertex3="Cylinder1_v41"/>
+ <triangular vertex1="Cylinder1_v3" vertex2="Cylinder1_v19" vertex3="Cylinder1_v8"/>
+ <triangular vertex1="Cylinder1_v8" vertex2="Cylinder1_v19" vertex3="Cylinder1_v11"/>
+ <triangular vertex1="Cylinder1_v11" vertex2="Cylinder1_v19" vertex3="Cylinder1_v15"/>
+ <triangular vertex1="Cylinder1_v47" vertex2="Cylinder1_v19" vertex3="Cylinder1_v3"/>
+ <triangular vertex1="Cylinder1_v47" vertex2="Cylinder1_v21" vertex3="Cylinder1_v19"/>
+ <triangular vertex1="Cylinder1_v35" vertex2="Cylinder1_v33" vertex3="Cylinder1_v37"/>
+ <triangular vertex1="Cylinder1_v37" vertex2="Cylinder1_v33" vertex3="Cylinder1_v41"/>
+ <triangular vertex1="Cylinder1_v41" vertex2="Cylinder1_v31" vertex3="Cylinder1_v43"/>
+ <triangular vertex1="Cylinder1_v33" vertex2="Cylinder1_v31" vertex3="Cylinder1_v41"/>
+ <triangular vertex1="Cylinder1_v21" vertex2="Cylinder1_v6" vertex3="Cylinder1_v25"/>
+ <triangular vertex1="Cylinder1_v47" vertex2="Cylinder1_v7" vertex3="Cylinder1_v21"/>
+ <triangular vertex1="Cylinder1_v21" vertex2="Cylinder1_v7" vertex3="Cylinder1_v6"/>
+ <triangular vertex1="Cylinder1_v29" vertex2="Cylinder1_v27" vertex3="Cylinder1_v31"/>
+ <triangular vertex1="Cylinder1_v7" vertex2="Cylinder1_v18" vertex3="Cylinder1_v13"/>
+ <triangular vertex1="Cylinder1_v23" vertex2="Cylinder1_v18" vertex3="Cylinder1_v27"/>
+ <triangular vertex1="Cylinder1_v43" vertex2="Cylinder1_v18" vertex3="Cylinder1_v47"/>
+ <triangular vertex1="Cylinder1_v27" vertex2="Cylinder1_v18" vertex3="Cylinder1_v31"/>
+ <triangular vertex1="Cylinder1_v31" vertex2="Cylinder1_v18" vertex3="Cylinder1_v43"/>
+ <triangular vertex1="Cylinder1_v47" vertex2="Cylinder1_v18" vertex3="Cylinder1_v7"/>
+ </tessellated>
+ <box lunit="mm" name="worldsolid" x="1000" y="1000" z="1000"/>
+ </solids>
+ <structure>
+ <volume name="Cylinder1">
+ <materialref ref="G4_Si"/>
+ <solidref ref="Cylinder1_solid"/>
+ </volume>
+ </structure>
+ <setup name="Default" version="1.0">
+ <world ref="Cylinder1"/>
+ </setup>
+</gdml>

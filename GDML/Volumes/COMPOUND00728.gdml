@@ -1,0 +1,1115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gdml   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="/Users/shsu/Documents/James/Projects/MINER/GEANT/geant4_10_06_p02/source/persistency/gdml/schema/gdml.xsd">
+
+<!--<gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">-->
+ <define>
+ <position name="COMPOUND00728_v0" unit="mm" x="-242.0" y="-476.0" z="0.0"/>
+ <position name="COMPOUND00728_v1" unit="mm" x="-242.0" y="-486.0" z="0.0"/>
+ <position name="COMPOUND00728_v2" unit="mm" x="-241.8837672697042" y="-476.0" z="-0.957262657150231"/>
+ <position name="COMPOUND00728_v3" unit="mm" x="-241.8837672697042" y="-486.0" z="-0.9572626571502342"/>
+ <position name="COMPOUND00728_v4" unit="mm" x="-241.54182410261285" y="-476.0" z="-1.858892688175074"/>
+ <position name="COMPOUND00728_v5" unit="mm" x="-241.54182410261285" y="-486.0" z="-1.8588926881750762"/>
+ <position name="COMPOUND00728_v6" unit="mm" x="-240.9940429926844" y="-476.0" z="-2.6524906329631803"/>
+ <position name="COMPOUND00728_v7" unit="mm" x="-240.9940429926844" y="-486.0" z="-2.6524906329631817"/>
+ <position name="COMPOUND00728_v8" unit="mm" x="-240.2722589869246" y="-476.0" z="-3.2919354635746254"/>
+ <position name="COMPOUND00728_v9" unit="mm" x="-240.2722589869246" y="-486.0" z="-3.291935463574626"/>
+ <position name="COMPOUND00728_v10" unit="mm" x="-239.41841954817014" y="-486.0" z="-3.7400649707416593"/>
+ <position name="COMPOUND00728_v11" unit="mm" x="-239.41841954817014" y="-476.0" z="-3.740064970741659"/>
+ <position name="COMPOUND00728_v12" unit="mm" x="-238.48214672102128" y="-476.0" z="-3.970835496392216"/>
+ <position name="COMPOUND00728_v13" unit="mm" x="-238.48214672102128" y="-486.0" z="-3.970835496392216"/>
+ <position name="COMPOUND00728_v14" unit="mm" x="-237.51785327897872" y="-476.0" z="-3.970835496392216"/>
+ <position name="COMPOUND00728_v15" unit="mm" x="-237.51785327897872" y="-486.0" z="-3.970835496392216"/>
+ <position name="COMPOUND00728_v16" unit="mm" x="-236.58158045182986" y="-476.0" z="-3.7400649707416593"/>
+ <position name="COMPOUND00728_v17" unit="mm" x="-236.58158045182986" y="-486.0" z="-3.740064970741659"/>
+ <position name="COMPOUND00728_v18" unit="mm" x="-235.7277410130754" y="-486.0" z="-3.2919354635746254"/>
+ <position name="COMPOUND00728_v19" unit="mm" x="-235.7277410130754" y="-476.0" z="-3.291935463574626"/>
+ <position name="COMPOUND00728_v20" unit="mm" x="-235.0059570073156" y="-476.0" z="-2.6524906329631817"/>
+ <position name="COMPOUND00728_v21" unit="mm" x="-235.0059570073156" y="-486.0" z="-2.6524906329631803"/>
+ <position name="COMPOUND00728_v22" unit="mm" x="-234.45817589738715" y="-476.0" z="-1.8588926881750762"/>
+ <position name="COMPOUND00728_v23" unit="mm" x="-234.45817589738715" y="-486.0" z="-1.858892688175074"/>
+ <position name="COMPOUND00728_v24" unit="mm" x="-234.1162327302958" y="-476.0" z="-0.9572626571502342"/>
+ <position name="COMPOUND00728_v25" unit="mm" x="-234.1162327302958" y="-486.0" z="-0.957262657150231"/>
+ <position name="COMPOUND00728_v26" unit="mm" x="-234.0" y="-476.0" z="0.0"/>
+ <position name="COMPOUND00728_v27" unit="mm" x="-234.0" y="-486.0" z="0.0"/>
+ <position name="COMPOUND00728_v28" unit="mm" x="-234.1162327302958" y="-486.0" z="0.9572626571502342"/>
+ <position name="COMPOUND00728_v29" unit="mm" x="-234.1162327302958" y="-476.0" z="0.9572626571502342"/>
+ <position name="COMPOUND00728_v30" unit="mm" x="-234.45817589738715" y="-486.0" z="1.8588926881750762"/>
+ <position name="COMPOUND00728_v31" unit="mm" x="-234.45817589738715" y="-476.0" z="1.8588926881750762"/>
+ <position name="COMPOUND00728_v32" unit="mm" x="-235.0059570073156" y="-486.0" z="2.6524906329631817"/>
+ <position name="COMPOUND00728_v33" unit="mm" x="-235.0059570073156" y="-476.0" z="2.6524906329631817"/>
+ <position name="COMPOUND00728_v34" unit="mm" x="-235.7277410130754" y="-486.0" z="3.291935463574626"/>
+ <position name="COMPOUND00728_v35" unit="mm" x="-235.7277410130754" y="-476.0" z="3.291935463574626"/>
+ <position name="COMPOUND00728_v36" unit="mm" x="-236.58158045182986" y="-486.0" z="3.7400649707416593"/>
+ <position name="COMPOUND00728_v37" unit="mm" x="-236.58158045182986" y="-476.0" z="3.7400649707416593"/>
+ <position name="COMPOUND00728_v38" unit="mm" x="-237.51785327897872" y="-476.0" z="3.970835496392216"/>
+ <position name="COMPOUND00728_v39" unit="mm" x="-237.51785327897872" y="-486.0" z="3.970835496392216"/>
+ <position name="COMPOUND00728_v40" unit="mm" x="-238.48214672102128" y="-476.0" z="3.970835496392216"/>
+ <position name="COMPOUND00728_v41" unit="mm" x="-238.48214672102128" y="-486.0" z="3.970835496392216"/>
+ <position name="COMPOUND00728_v42" unit="mm" x="-239.41841954817014" y="-486.0" z="3.740064970741659"/>
+ <position name="COMPOUND00728_v43" unit="mm" x="-239.41841954817014" y="-476.0" z="3.740064970741659"/>
+ <position name="COMPOUND00728_v44" unit="mm" x="-240.2722589869246" y="-486.0" z="3.2919354635746254"/>
+ <position name="COMPOUND00728_v45" unit="mm" x="-240.2722589869246" y="-476.0" z="3.2919354635746254"/>
+ <position name="COMPOUND00728_v46" unit="mm" x="-240.9940429926844" y="-486.0" z="2.6524906329631803"/>
+ <position name="COMPOUND00728_v47" unit="mm" x="-240.9940429926844" y="-476.0" z="2.6524906329631803"/>
+ <position name="COMPOUND00728_v48" unit="mm" x="-241.54182410261285" y="-486.0" z="1.858892688175074"/>
+ <position name="COMPOUND00728_v49" unit="mm" x="-241.54182410261285" y="-476.0" z="1.858892688175074"/>
+ <position name="COMPOUND00728_v50" unit="mm" x="-241.8837672697042" y="-486.0" z="0.957262657150231"/>
+ <position name="COMPOUND00728_v51" unit="mm" x="-241.8837672697042" y="-476.0" z="0.957262657150231"/>
+ <position name="COMPOUND00728_v52" unit="mm" x="-241.39829636099117" y="-476.0" z="0.837604825006455"/>
+ <position name="COMPOUND00728_v53" unit="mm" x="-236.75888289535112" y="-476.0" z="-3.272556849398952"/>
+ <position name="COMPOUND00728_v54" unit="mm" x="-235.38021238140115" y="-476.0" z="2.320929303842783"/>
+ <position name="COMPOUND00728_v55" unit="mm" x="-237.57812161910638" y="-476.0" z="-3.474481059343189"/>
+ <position name="COMPOUND00728_v56" unit="mm" x="-236.01177338644095" y="-476.0" z="2.8804435306277973"/>
+ <position name="COMPOUND00728_v57" unit="mm" x="-234.90090391021377" y="-476.0" z="1.6265311021531899"/>
+ <position name="COMPOUND00728_v58" unit="mm" x="-241.5" y="-476.0" z="0.0"/>
+ <position name="COMPOUND00728_v59" unit="mm" x="-238.42187838089365" y="-476.0" z="-3.474481059343189"/>
+ <position name="COMPOUND00728_v60" unit="mm" x="-236.75888289535112" y="-476.0" z="3.2725568493989514"/>
+ <position name="COMPOUND00728_v61" unit="mm" x="-234.6017036390088" y="-476.0" z="0.8376048250064521"/>
+ <position name="COMPOUND00728_v62" unit="mm" x="-237.57812161910635" y="-476.0" z="3.474481059343189"/>
+ <position name="COMPOUND00728_v63" unit="mm" x="-234.5" y="-476.0" z="0.0"/>
+ <position name="COMPOUND00728_v64" unit="mm" x="-241.3982963609912" y="-476.0" z="-0.8376048250064521"/>
+ <position name="COMPOUND00728_v65" unit="mm" x="-238.42187838089362" y="-476.0" z="3.474481059343189"/>
+ <position name="COMPOUND00728_v66" unit="mm" x="-234.60170363900883" y="-476.0" z="-0.837604825006455"/>
+ <position name="COMPOUND00728_v67" unit="mm" x="-239.24111710464888" y="-476.0" z="-3.2725568493989514"/>
+ <position name="COMPOUND00728_v68" unit="mm" x="-241.09909608978623" y="-476.0" z="-1.6265311021531899"/>
+ <position name="COMPOUND00728_v69" unit="mm" x="-240.61978761859885" y="-476.0" z="-2.320929303842783"/>
+ <position name="COMPOUND00728_v70" unit="mm" x="-239.24111710464888" y="-476.0" z="3.272556849398952"/>
+ <position name="COMPOUND00728_v71" unit="mm" x="-239.98822661355905" y="-476.0" z="-2.8804435306277973"/>
+ <position name="COMPOUND00728_v72" unit="mm" x="-234.90090391021377" y="-476.0" z="-1.6265311021531916"/>
+ <position name="COMPOUND00728_v73" unit="mm" x="-239.98822661355905" y="-476.0" z="2.880443530627798"/>
+ <position name="COMPOUND00728_v74" unit="mm" x="-235.38021238140115" y="-476.0" z="-2.320929303842784"/>
+ <position name="COMPOUND00728_v75" unit="mm" x="-240.61978761859885" y="-476.0" z="2.320929303842784"/>
+ <position name="COMPOUND00728_v76" unit="mm" x="-236.01177338644095" y="-476.0" z="-2.880443530627798"/>
+ <position name="COMPOUND00728_v77" unit="mm" x="-241.09909608978623" y="-476.0" z="1.6265311021531916"/>
+ <position name="COMPOUND00728_v78" unit="mm" x="-123.0" y="-476.0" z="206.1140461007"/>
+ <position name="COMPOUND00728_v79" unit="mm" x="-123.0" y="-486.0" z="206.1140461007"/>
+ <position name="COMPOUND00728_v80" unit="mm" x="-122.88376726970421" y="-476.0" z="205.15678344354976"/>
+ <position name="COMPOUND00728_v81" unit="mm" x="-122.88376726970421" y="-486.0" z="205.15678344354976"/>
+ <position name="COMPOUND00728_v82" unit="mm" x="-122.54182410261284" y="-476.0" z="204.25515341252492"/>
+ <position name="COMPOUND00728_v83" unit="mm" x="-122.54182410261284" y="-486.0" z="204.25515341252492"/>
+ <position name="COMPOUND00728_v84" unit="mm" x="-121.9940429926844" y="-476.0" z="203.46155546773682"/>
+ <position name="COMPOUND00728_v85" unit="mm" x="-121.9940429926844" y="-486.0" z="203.46155546773682"/>
+ <position name="COMPOUND00728_v86" unit="mm" x="-121.27225898692463" y="-476.0" z="202.82211063712538"/>
+ <position name="COMPOUND00728_v87" unit="mm" x="-121.27225898692463" y="-486.0" z="202.82211063712538"/>
+ <position name="COMPOUND00728_v88" unit="mm" x="-120.41841954817014" y="-486.0" z="202.37398112995834"/>
+ <position name="COMPOUND00728_v89" unit="mm" x="-120.41841954817015" y="-476.0" z="202.37398112995834"/>
+ <position name="COMPOUND00728_v90" unit="mm" x="-119.4821467210213" y="-476.0" z="202.14321060430777"/>
+ <position name="COMPOUND00728_v91" unit="mm" x="-119.4821467210213" y="-486.0" z="202.14321060430777"/>
+ <position name="COMPOUND00728_v92" unit="mm" x="-118.5178532789787" y="-476.0" z="202.14321060430777"/>
+ <position name="COMPOUND00728_v93" unit="mm" x="-118.5178532789787" y="-486.0" z="202.14321060430777"/>
+ <position name="COMPOUND00728_v94" unit="mm" x="-117.58158045182986" y="-476.0" z="202.37398112995834"/>
+ <position name="COMPOUND00728_v95" unit="mm" x="-117.58158045182985" y="-486.0" z="202.37398112995834"/>
+ <position name="COMPOUND00728_v96" unit="mm" x="-116.72774101307537" y="-486.0" z="202.82211063712538"/>
+ <position name="COMPOUND00728_v97" unit="mm" x="-116.72774101307537" y="-476.0" z="202.82211063712538"/>
+ <position name="COMPOUND00728_v98" unit="mm" x="-116.0059570073156" y="-476.0" z="203.46155546773682"/>
+ <position name="COMPOUND00728_v99" unit="mm" x="-116.0059570073156" y="-486.0" z="203.46155546773682"/>
+ <position name="COMPOUND00728_v100" unit="mm" x="-115.45817589738716" y="-476.0" z="204.25515341252492"/>
+ <position name="COMPOUND00728_v101" unit="mm" x="-115.45817589738716" y="-486.0" z="204.25515341252492"/>
+ <position name="COMPOUND00728_v102" unit="mm" x="-115.11623273029579" y="-476.0" z="205.15678344354976"/>
+ <position name="COMPOUND00728_v103" unit="mm" x="-115.11623273029579" y="-486.0" z="205.15678344354976"/>
+ <position name="COMPOUND00728_v104" unit="mm" x="-115.0" y="-476.0" z="206.1140461007"/>
+ <position name="COMPOUND00728_v105" unit="mm" x="-115.0" y="-486.0" z="206.1140461007"/>
+ <position name="COMPOUND00728_v106" unit="mm" x="-115.11623273029579" y="-486.0" z="207.07130875785023"/>
+ <position name="COMPOUND00728_v107" unit="mm" x="-115.11623273029579" y="-476.0" z="207.07130875785023"/>
+ <position name="COMPOUND00728_v108" unit="mm" x="-115.45817589738716" y="-486.0" z="207.97293878887507"/>
+ <position name="COMPOUND00728_v109" unit="mm" x="-115.45817589738716" y="-476.0" z="207.97293878887507"/>
+ <position name="COMPOUND00728_v110" unit="mm" x="-116.0059570073156" y="-486.0" z="208.76653673366317"/>
+ <position name="COMPOUND00728_v111" unit="mm" x="-116.0059570073156" y="-476.0" z="208.76653673366317"/>
+ <position name="COMPOUND00728_v112" unit="mm" x="-116.72774101307537" y="-486.0" z="209.4059815642746"/>
+ <position name="COMPOUND00728_v113" unit="mm" x="-116.72774101307537" y="-476.0" z="209.4059815642746"/>
+ <position name="COMPOUND00728_v114" unit="mm" x="-117.58158045182986" y="-486.0" z="209.85411107144165"/>
+ <position name="COMPOUND00728_v115" unit="mm" x="-117.58158045182986" y="-476.0" z="209.85411107144165"/>
+ <position name="COMPOUND00728_v116" unit="mm" x="-118.5178532789787" y="-476.0" z="210.08488159709222"/>
+ <position name="COMPOUND00728_v117" unit="mm" x="-118.5178532789787" y="-486.0" z="210.08488159709222"/>
+ <position name="COMPOUND00728_v118" unit="mm" x="-119.4821467210213" y="-476.0" z="210.08488159709222"/>
+ <position name="COMPOUND00728_v119" unit="mm" x="-119.4821467210213" y="-486.0" z="210.08488159709222"/>
+ <position name="COMPOUND00728_v120" unit="mm" x="-120.41841954817015" y="-486.0" z="209.85411107144165"/>
+ <position name="COMPOUND00728_v121" unit="mm" x="-120.41841954817015" y="-476.0" z="209.85411107144165"/>
+ <position name="COMPOUND00728_v122" unit="mm" x="-121.27225898692463" y="-486.0" z="209.4059815642746"/>
+ <position name="COMPOUND00728_v123" unit="mm" x="-121.27225898692463" y="-476.0" z="209.4059815642746"/>
+ <position name="COMPOUND00728_v124" unit="mm" x="-121.9940429926844" y="-486.0" z="208.76653673366317"/>
+ <position name="COMPOUND00728_v125" unit="mm" x="-121.9940429926844" y="-476.0" z="208.76653673366317"/>
+ <position name="COMPOUND00728_v126" unit="mm" x="-122.54182410261284" y="-486.0" z="207.97293878887507"/>
+ <position name="COMPOUND00728_v127" unit="mm" x="-122.54182410261284" y="-476.0" z="207.97293878887507"/>
+ <position name="COMPOUND00728_v128" unit="mm" x="-122.88376726970421" y="-486.0" z="207.07130875785023"/>
+ <position name="COMPOUND00728_v129" unit="mm" x="-122.88376726970421" y="-476.0" z="207.07130875785023"/>
+ <position name="COMPOUND00728_v130" unit="mm" x="-117.75888289535112" y="-476.0" z="202.84148925130106"/>
+ <position name="COMPOUND00728_v131" unit="mm" x="-122.39829636099118" y="-476.0" z="206.95165092570645"/>
+ <position name="COMPOUND00728_v132" unit="mm" x="-122.09909608978623" y="-476.0" z="207.7405772028532"/>
+ <position name="COMPOUND00728_v133" unit="mm" x="-118.57812161910637" y="-476.0" z="202.6395650413568"/>
+ <position name="COMPOUND00728_v134" unit="mm" x="-116.38021238140115" y="-476.0" z="208.43497540454277"/>
+ <position name="COMPOUND00728_v135" unit="mm" x="-117.01177338644095" y="-476.0" z="208.99448963132778"/>
+ <position name="COMPOUND00728_v136" unit="mm" x="-115.90090391021377" y="-476.0" z="207.7405772028532"/>
+ <position name="COMPOUND00728_v137" unit="mm" x="-122.5" y="-476.0" z="206.1140461007"/>
+ <position name="COMPOUND00728_v138" unit="mm" x="-117.75888289535112" y="-476.0" z="209.38660295009893"/>
+ <position name="COMPOUND00728_v139" unit="mm" x="-119.42187838089363" y="-476.0" z="202.6395650413568"/>
+ <position name="COMPOUND00728_v140" unit="mm" x="-115.60170363900882" y="-476.0" z="206.95165092570645"/>
+ <position name="COMPOUND00728_v141" unit="mm" x="-118.57812161910637" y="-476.0" z="209.58852716004318"/>
+ <position name="COMPOUND00728_v142" unit="mm" x="-115.5" y="-476.0" z="206.1140461007"/>
+ <position name="COMPOUND00728_v143" unit="mm" x="-119.42187838089363" y="-476.0" z="209.58852716004318"/>
+ <position name="COMPOUND00728_v144" unit="mm" x="-122.39829636099118" y="-476.0" z="205.27644127569354"/>
+ <position name="COMPOUND00728_v145" unit="mm" x="-122.09909608978623" y="-476.0" z="204.4875149985468"/>
+ <position name="COMPOUND00728_v146" unit="mm" x="-115.60170363900882" y="-476.0" z="205.27644127569354"/>
+ <position name="COMPOUND00728_v147" unit="mm" x="-120.24111710464888" y="-476.0" z="209.38660295009893"/>
+ <position name="COMPOUND00728_v148" unit="mm" x="-120.24111710464888" y="-476.0" z="202.84148925130106"/>
+ <position name="COMPOUND00728_v149" unit="mm" x="-121.61978761859885" y="-476.0" z="203.79311679685722"/>
+ <position name="COMPOUND00728_v150" unit="mm" x="-120.98822661355905" y="-476.0" z="203.2336025700722"/>
+ <position name="COMPOUND00728_v151" unit="mm" x="-115.90090391021377" y="-476.0" z="204.4875149985468"/>
+ <position name="COMPOUND00728_v152" unit="mm" x="-120.98822661355905" y="-476.0" z="208.99448963132778"/>
+ <position name="COMPOUND00728_v153" unit="mm" x="-116.38021238140115" y="-476.0" z="203.79311679685722"/>
+ <position name="COMPOUND00728_v154" unit="mm" x="-121.61978761859885" y="-476.0" z="208.43497540454277"/>
+ <position name="COMPOUND00728_v155" unit="mm" x="-117.01177338644095" y="-476.0" z="203.2336025700722"/>
+ <position name="COMPOUND00728_v156" unit="mm" x="115.0" y="-476.0" z="206.1140461007"/>
+ <position name="COMPOUND00728_v157" unit="mm" x="115.0" y="-486.0" z="206.1140461007"/>
+ <position name="COMPOUND00728_v158" unit="mm" x="115.11623273029579" y="-476.0" z="205.15678344354976"/>
+ <position name="COMPOUND00728_v159" unit="mm" x="115.11623273029579" y="-486.0" z="205.15678344354976"/>
+ <position name="COMPOUND00728_v160" unit="mm" x="115.45817589738716" y="-476.0" z="204.25515341252492"/>
+ <position name="COMPOUND00728_v161" unit="mm" x="115.45817589738716" y="-486.0" z="204.25515341252492"/>
+ <position name="COMPOUND00728_v162" unit="mm" x="116.0059570073156" y="-476.0" z="203.46155546773682"/>
+ <position name="COMPOUND00728_v163" unit="mm" x="116.0059570073156" y="-486.0" z="203.46155546773682"/>
+ <position name="COMPOUND00728_v164" unit="mm" x="116.72774101307537" y="-476.0" z="202.82211063712538"/>
+ <position name="COMPOUND00728_v165" unit="mm" x="116.72774101307537" y="-486.0" z="202.82211063712538"/>
+ <position name="COMPOUND00728_v166" unit="mm" x="117.58158045182986" y="-486.0" z="202.37398112995834"/>
+ <position name="COMPOUND00728_v167" unit="mm" x="117.58158045182985" y="-476.0" z="202.37398112995834"/>
+ <position name="COMPOUND00728_v168" unit="mm" x="118.5178532789787" y="-476.0" z="202.14321060430777"/>
+ <position name="COMPOUND00728_v169" unit="mm" x="118.5178532789787" y="-486.0" z="202.14321060430777"/>
+ <position name="COMPOUND00728_v170" unit="mm" x="119.4821467210213" y="-476.0" z="202.14321060430777"/>
+ <position name="COMPOUND00728_v171" unit="mm" x="119.4821467210213" y="-486.0" z="202.14321060430777"/>
+ <position name="COMPOUND00728_v172" unit="mm" x="120.41841954817014" y="-476.0" z="202.37398112995834"/>
+ <position name="COMPOUND00728_v173" unit="mm" x="120.41841954817015" y="-486.0" z="202.37398112995834"/>
+ <position name="COMPOUND00728_v174" unit="mm" x="121.27225898692463" y="-486.0" z="202.82211063712538"/>
+ <position name="COMPOUND00728_v175" unit="mm" x="121.27225898692463" y="-476.0" z="202.82211063712538"/>
+ <position name="COMPOUND00728_v176" unit="mm" x="121.9940429926844" y="-476.0" z="203.46155546773682"/>
+ <position name="COMPOUND00728_v177" unit="mm" x="121.9940429926844" y="-486.0" z="203.46155546773682"/>
+ <position name="COMPOUND00728_v178" unit="mm" x="122.54182410261284" y="-476.0" z="204.25515341252492"/>
+ <position name="COMPOUND00728_v179" unit="mm" x="122.54182410261284" y="-486.0" z="204.25515341252492"/>
+ <position name="COMPOUND00728_v180" unit="mm" x="122.88376726970421" y="-476.0" z="205.15678344354976"/>
+ <position name="COMPOUND00728_v181" unit="mm" x="122.88376726970421" y="-486.0" z="205.15678344354976"/>
+ <position name="COMPOUND00728_v182" unit="mm" x="123.0" y="-476.0" z="206.1140461007"/>
+ <position name="COMPOUND00728_v183" unit="mm" x="123.0" y="-486.0" z="206.1140461007"/>
+ <position name="COMPOUND00728_v184" unit="mm" x="122.88376726970421" y="-486.0" z="207.07130875785023"/>
+ <position name="COMPOUND00728_v185" unit="mm" x="122.88376726970421" y="-476.0" z="207.07130875785023"/>
+ <position name="COMPOUND00728_v186" unit="mm" x="122.54182410261284" y="-486.0" z="207.97293878887507"/>
+ <position name="COMPOUND00728_v187" unit="mm" x="122.54182410261284" y="-476.0" z="207.97293878887507"/>
+ <position name="COMPOUND00728_v188" unit="mm" x="121.9940429926844" y="-486.0" z="208.76653673366317"/>
+ <position name="COMPOUND00728_v189" unit="mm" x="121.9940429926844" y="-476.0" z="208.76653673366317"/>
+ <position name="COMPOUND00728_v190" unit="mm" x="121.27225898692463" y="-486.0" z="209.4059815642746"/>
+ <position name="COMPOUND00728_v191" unit="mm" x="121.27225898692463" y="-476.0" z="209.4059815642746"/>
+ <position name="COMPOUND00728_v192" unit="mm" x="120.41841954817014" y="-486.0" z="209.85411107144165"/>
+ <position name="COMPOUND00728_v193" unit="mm" x="120.41841954817014" y="-476.0" z="209.85411107144165"/>
+ <position name="COMPOUND00728_v194" unit="mm" x="119.4821467210213" y="-476.0" z="210.08488159709222"/>
+ <position name="COMPOUND00728_v195" unit="mm" x="119.4821467210213" y="-486.0" z="210.08488159709222"/>
+ <position name="COMPOUND00728_v196" unit="mm" x="118.5178532789787" y="-476.0" z="210.08488159709222"/>
+ <position name="COMPOUND00728_v197" unit="mm" x="118.5178532789787" y="-486.0" z="210.08488159709222"/>
+ <position name="COMPOUND00728_v198" unit="mm" x="117.58158045182985" y="-486.0" z="209.85411107144165"/>
+ <position name="COMPOUND00728_v199" unit="mm" x="117.58158045182985" y="-476.0" z="209.85411107144165"/>
+ <position name="COMPOUND00728_v200" unit="mm" x="116.72774101307537" y="-486.0" z="209.4059815642746"/>
+ <position name="COMPOUND00728_v201" unit="mm" x="116.72774101307537" y="-476.0" z="209.4059815642746"/>
+ <position name="COMPOUND00728_v202" unit="mm" x="116.0059570073156" y="-486.0" z="208.76653673366317"/>
+ <position name="COMPOUND00728_v203" unit="mm" x="116.0059570073156" y="-476.0" z="208.76653673366317"/>
+ <position name="COMPOUND00728_v204" unit="mm" x="115.45817589738716" y="-486.0" z="207.97293878887507"/>
+ <position name="COMPOUND00728_v205" unit="mm" x="115.45817589738716" y="-476.0" z="207.97293878887507"/>
+ <position name="COMPOUND00728_v206" unit="mm" x="115.11623273029579" y="-486.0" z="207.07130875785023"/>
+ <position name="COMPOUND00728_v207" unit="mm" x="115.11623273029579" y="-476.0" z="207.07130875785023"/>
+ <position name="COMPOUND00728_v208" unit="mm" x="120.24111710464888" y="-476.0" z="202.84148925130106"/>
+ <position name="COMPOUND00728_v209" unit="mm" x="115.60170363900882" y="-476.0" z="206.95165092570645"/>
+ <position name="COMPOUND00728_v210" unit="mm" x="115.90090391021377" y="-476.0" z="207.7405772028532"/>
+ <position name="COMPOUND00728_v211" unit="mm" x="119.42187838089363" y="-476.0" z="202.6395650413568"/>
+ <position name="COMPOUND00728_v212" unit="mm" x="121.61978761859885" y="-476.0" z="208.43497540454277"/>
+ <position name="COMPOUND00728_v213" unit="mm" x="120.98822661355905" y="-476.0" z="208.99448963132778"/>
+ <position name="COMPOUND00728_v214" unit="mm" x="122.09909608978623" y="-476.0" z="207.7405772028532"/>
+ <position name="COMPOUND00728_v215" unit="mm" x="115.5" y="-476.0" z="206.1140461007"/>
+ <position name="COMPOUND00728_v216" unit="mm" x="120.24111710464888" y="-476.0" z="209.38660295009893"/>
+ <position name="COMPOUND00728_v217" unit="mm" x="118.57812161910637" y="-476.0" z="202.6395650413568"/>
+ <position name="COMPOUND00728_v218" unit="mm" x="122.39829636099118" y="-476.0" z="206.95165092570645"/>
+ <position name="COMPOUND00728_v219" unit="mm" x="119.42187838089363" y="-476.0" z="209.58852716004318"/>
+ <position name="COMPOUND00728_v220" unit="mm" x="122.5" y="-476.0" z="206.1140461007"/>
+ <position name="COMPOUND00728_v221" unit="mm" x="118.57812161910637" y="-476.0" z="209.58852716004318"/>
+ <position name="COMPOUND00728_v222" unit="mm" x="115.60170363900882" y="-476.0" z="205.27644127569354"/>
+ <position name="COMPOUND00728_v223" unit="mm" x="115.90090391021377" y="-476.0" z="204.4875149985468"/>
+ <position name="COMPOUND00728_v224" unit="mm" x="122.39829636099118" y="-476.0" z="205.27644127569354"/>
+ <position name="COMPOUND00728_v225" unit="mm" x="117.75888289535112" y="-476.0" z="209.38660295009893"/>
+ <position name="COMPOUND00728_v226" unit="mm" x="117.75888289535112" y="-476.0" z="202.84148925130106"/>
+ <position name="COMPOUND00728_v227" unit="mm" x="116.38021238140115" y="-476.0" z="203.79311679685722"/>
+ <position name="COMPOUND00728_v228" unit="mm" x="117.01177338644095" y="-476.0" z="203.2336025700722"/>
+ <position name="COMPOUND00728_v229" unit="mm" x="122.09909608978623" y="-476.0" z="204.4875149985468"/>
+ <position name="COMPOUND00728_v230" unit="mm" x="117.01177338644095" y="-476.0" z="208.99448963132778"/>
+ <position name="COMPOUND00728_v231" unit="mm" x="121.61978761859885" y="-476.0" z="203.79311679685722"/>
+ <position name="COMPOUND00728_v232" unit="mm" x="116.38021238140115" y="-476.0" z="208.43497540454277"/>
+ <position name="COMPOUND00728_v233" unit="mm" x="120.98822661355905" y="-476.0" z="203.2336025700722"/>
+ <position name="COMPOUND00728_v234" unit="mm" x="234.0" y="-476.0" z="2.914659381971e-14"/>
+ <position name="COMPOUND00728_v235" unit="mm" x="234.0" y="-486.0" z="2.914659381971e-14"/>
+ <position name="COMPOUND00728_v236" unit="mm" x="234.1162327302958" y="-476.0" z="-0.9572626571502018"/>
+ <position name="COMPOUND00728_v237" unit="mm" x="234.1162327302958" y="-486.0" z="-0.957262657150205"/>
+ <position name="COMPOUND00728_v238" unit="mm" x="234.45817589738715" y="-476.0" z="-1.858892688175045"/>
+ <position name="COMPOUND00728_v239" unit="mm" x="234.45817589738715" y="-486.0" z="-1.8588926881750472"/>
+ <position name="COMPOUND00728_v240" unit="mm" x="235.0059570073156" y="-476.0" z="-2.652490632963151"/>
+ <position name="COMPOUND00728_v241" unit="mm" x="235.0059570073156" y="-486.0" z="-2.6524906329631524"/>
+ <position name="COMPOUND00728_v242" unit="mm" x="235.7277410130754" y="-476.0" z="-3.291935463574596"/>
+ <position name="COMPOUND00728_v243" unit="mm" x="235.7277410130754" y="-486.0" z="-3.2919354635745965"/>
+ <position name="COMPOUND00728_v244" unit="mm" x="236.58158045182986" y="-486.0" z="-3.74006497074163"/>
+ <position name="COMPOUND00728_v245" unit="mm" x="236.58158045182986" y="-476.0" z="-3.7400649707416296"/>
+ <position name="COMPOUND00728_v246" unit="mm" x="237.51785327897872" y="-476.0" z="-3.9708354963921866"/>
+ <position name="COMPOUND00728_v247" unit="mm" x="237.51785327897872" y="-486.0" z="-3.9708354963921866"/>
+ <position name="COMPOUND00728_v248" unit="mm" x="238.48214672102128" y="-476.0" z="-3.9708354963921866"/>
+ <position name="COMPOUND00728_v249" unit="mm" x="238.48214672102128" y="-486.0" z="-3.9708354963921866"/>
+ <position name="COMPOUND00728_v250" unit="mm" x="239.41841954817014" y="-476.0" z="-3.74006497074163"/>
+ <position name="COMPOUND00728_v251" unit="mm" x="239.41841954817014" y="-486.0" z="-3.7400649707416296"/>
+ <position name="COMPOUND00728_v252" unit="mm" x="240.2722589869246" y="-486.0" z="-3.291935463574596"/>
+ <position name="COMPOUND00728_v253" unit="mm" x="240.2722589869246" y="-476.0" z="-3.2919354635745965"/>
+ <position name="COMPOUND00728_v254" unit="mm" x="240.9940429926844" y="-476.0" z="-2.6524906329631524"/>
+ <position name="COMPOUND00728_v255" unit="mm" x="240.9940429926844" y="-486.0" z="-2.652490632963151"/>
+ <position name="COMPOUND00728_v256" unit="mm" x="241.54182410261285" y="-476.0" z="-1.8588926881750472"/>
+ <position name="COMPOUND00728_v257" unit="mm" x="241.54182410261285" y="-486.0" z="-1.858892688175045"/>
+ <position name="COMPOUND00728_v258" unit="mm" x="241.8837672697042" y="-476.0" z="-0.957262657150205"/>
+ <position name="COMPOUND00728_v259" unit="mm" x="241.8837672697042" y="-486.0" z="-0.9572626571502018"/>
+ <position name="COMPOUND00728_v260" unit="mm" x="242.0" y="-476.0" z="2.855447487324e-14"/>
+ <position name="COMPOUND00728_v261" unit="mm" x="242.0" y="-486.0" z="2.825841540001e-14"/>
+ <position name="COMPOUND00728_v262" unit="mm" x="241.8837672697042" y="-486.0" z="0.9572626571502634"/>
+ <position name="COMPOUND00728_v263" unit="mm" x="241.8837672697042" y="-476.0" z="0.9572626571502634"/>
+ <position name="COMPOUND00728_v264" unit="mm" x="241.54182410261285" y="-486.0" z="1.8588926881751053"/>
+ <position name="COMPOUND00728_v265" unit="mm" x="241.54182410261285" y="-476.0" z="1.8588926881751053"/>
+ <position name="COMPOUND00728_v266" unit="mm" x="240.9940429926844" y="-486.0" z="2.652490632963211"/>
+ <position name="COMPOUND00728_v267" unit="mm" x="240.9940429926844" y="-476.0" z="2.652490632963211"/>
+ <position name="COMPOUND00728_v268" unit="mm" x="240.2722589869246" y="-486.0" z="3.291935463574655"/>
+ <position name="COMPOUND00728_v269" unit="mm" x="240.2722589869246" y="-476.0" z="3.291935463574655"/>
+ <position name="COMPOUND00728_v270" unit="mm" x="239.41841954817014" y="-486.0" z="3.7400649707416886"/>
+ <position name="COMPOUND00728_v271" unit="mm" x="239.41841954817014" y="-476.0" z="3.7400649707416886"/>
+ <position name="COMPOUND00728_v272" unit="mm" x="238.48214672102128" y="-476.0" z="3.970835496392245"/>
+ <position name="COMPOUND00728_v273" unit="mm" x="238.48214672102128" y="-486.0" z="3.970835496392245"/>
+ <position name="COMPOUND00728_v274" unit="mm" x="237.51785327897872" y="-476.0" z="3.970835496392245"/>
+ <position name="COMPOUND00728_v275" unit="mm" x="237.51785327897872" y="-486.0" z="3.970835496392245"/>
+ <position name="COMPOUND00728_v276" unit="mm" x="236.58158045182986" y="-486.0" z="3.740064970741688"/>
+ <position name="COMPOUND00728_v277" unit="mm" x="236.58158045182986" y="-476.0" z="3.740064970741688"/>
+ <position name="COMPOUND00728_v278" unit="mm" x="235.7277410130754" y="-486.0" z="3.2919354635746547"/>
+ <position name="COMPOUND00728_v279" unit="mm" x="235.7277410130754" y="-476.0" z="3.2919354635746547"/>
+ <position name="COMPOUND00728_v280" unit="mm" x="235.0059570073156" y="-486.0" z="2.6524906329632096"/>
+ <position name="COMPOUND00728_v281" unit="mm" x="235.0059570073156" y="-476.0" z="2.6524906329632096"/>
+ <position name="COMPOUND00728_v282" unit="mm" x="234.45817589738715" y="-486.0" z="1.8588926881751031"/>
+ <position name="COMPOUND00728_v283" unit="mm" x="234.45817589738715" y="-476.0" z="1.8588926881751031"/>
+ <position name="COMPOUND00728_v284" unit="mm" x="234.1162327302958" y="-486.0" z="0.9572626571502602"/>
+ <position name="COMPOUND00728_v285" unit="mm" x="234.1162327302958" y="-476.0" z="0.9572626571502602"/>
+ <position name="COMPOUND00728_v286" unit="mm" x="234.60170363900883" y="-476.0" z="0.8376048250064841"/>
+ <position name="COMPOUND00728_v287" unit="mm" x="239.24111710464888" y="-476.0" z="-3.2725568493989226"/>
+ <position name="COMPOUND00728_v288" unit="mm" x="238.42187838089362" y="-476.0" z="-3.4744810593431597"/>
+ <position name="COMPOUND00728_v289" unit="mm" x="240.61978761859885" y="-476.0" z="2.3209293038428123"/>
+ <position name="COMPOUND00728_v290" unit="mm" x="234.5" y="-476.0" z="2.914659381971e-14"/>
+ <position name="COMPOUND00728_v291" unit="mm" x="239.98822661355905" y="-476.0" z="2.8804435306278267"/>
+ <position name="COMPOUND00728_v292" unit="mm" x="237.57812161910635" y="-476.0" z="-3.4744810593431597"/>
+ <position name="COMPOUND00728_v293" unit="mm" x="241.09909608978623" y="-476.0" z="1.626531102153219"/>
+ <position name="COMPOUND00728_v294" unit="mm" x="239.24111710464888" y="-476.0" z="3.2725568493989807"/>
+ <position name="COMPOUND00728_v295" unit="mm" x="241.3982963609912" y="-476.0" z="0.8376048250064813"/>
+ <position name="COMPOUND00728_v296" unit="mm" x="238.42187838089365" y="-476.0" z="3.4744810593432183"/>
+ <position name="COMPOUND00728_v297" unit="mm" x="241.5" y="-476.0" z="2.871796744001e-14"/>
+ <position name="COMPOUND00728_v298" unit="mm" x="234.6017036390088" y="-476.0" z="-0.8376048250064229"/>
+ <position name="COMPOUND00728_v299" unit="mm" x="237.57812161910638" y="-476.0" z="3.4744810593432183"/>
+ <position name="COMPOUND00728_v300" unit="mm" x="241.39829636099117" y="-476.0" z="-0.8376048250064257"/>
+ <position name="COMPOUND00728_v301" unit="mm" x="236.75888289535112" y="-476.0" z="-3.272556849398922"/>
+ <position name="COMPOUND00728_v302" unit="mm" x="236.75888289535112" y="-476.0" z="3.272556849398981"/>
+ <position name="COMPOUND00728_v303" unit="mm" x="234.90090391021377" y="-476.0" z="-1.6265311021531608"/>
+ <position name="COMPOUND00728_v304" unit="mm" x="236.01177338644095" y="-476.0" z="-2.880443530627768"/>
+ <position name="COMPOUND00728_v305" unit="mm" x="235.38021238140115" y="-476.0" z="-2.3209293038427536"/>
+ <position name="COMPOUND00728_v306" unit="mm" x="241.09909608978623" y="-476.0" z="-1.6265311021531625"/>
+ <position name="COMPOUND00728_v307" unit="mm" x="236.01177338644095" y="-476.0" z="2.880443530627827"/>
+ <position name="COMPOUND00728_v308" unit="mm" x="240.61978761859885" y="-476.0" z="-2.3209293038427545"/>
+ <position name="COMPOUND00728_v309" unit="mm" x="235.38021238140115" y="-476.0" z="2.320929303842813"/>
+ <position name="COMPOUND00728_v310" unit="mm" x="239.98822661355905" y="-476.0" z="-2.8804435306277685"/>
+ <position name="COMPOUND00728_v311" unit="mm" x="234.90090391021377" y="-476.0" z="1.6265311021532207"/>
+ <position name="COMPOUND00728_v312" unit="mm" x="115.0" y="-476.0" z="-206.1140461007"/>
+ <position name="COMPOUND00728_v313" unit="mm" x="115.0" y="-486.0" z="-206.1140461007"/>
+ <position name="COMPOUND00728_v314" unit="mm" x="115.11623273029579" y="-476.0" z="-207.07130875785023"/>
+ <position name="COMPOUND00728_v315" unit="mm" x="115.11623273029579" y="-486.0" z="-207.07130875785023"/>
+ <position name="COMPOUND00728_v316" unit="mm" x="115.45817589738716" y="-476.0" z="-207.97293878887507"/>
+ <position name="COMPOUND00728_v317" unit="mm" x="115.45817589738716" y="-486.0" z="-207.97293878887507"/>
+ <position name="COMPOUND00728_v318" unit="mm" x="116.0059570073156" y="-476.0" z="-208.76653673366317"/>
+ <position name="COMPOUND00728_v319" unit="mm" x="116.0059570073156" y="-486.0" z="-208.76653673366317"/>
+ <position name="COMPOUND00728_v320" unit="mm" x="116.72774101307537" y="-476.0" z="-209.4059815642746"/>
+ <position name="COMPOUND00728_v321" unit="mm" x="116.72774101307537" y="-486.0" z="-209.4059815642746"/>
+ <position name="COMPOUND00728_v322" unit="mm" x="117.58158045182986" y="-486.0" z="-209.85411107144165"/>
+ <position name="COMPOUND00728_v323" unit="mm" x="117.58158045182985" y="-476.0" z="-209.85411107144165"/>
+ <position name="COMPOUND00728_v324" unit="mm" x="118.5178532789787" y="-476.0" z="-210.08488159709222"/>
+ <position name="COMPOUND00728_v325" unit="mm" x="118.5178532789787" y="-486.0" z="-210.08488159709222"/>
+ <position name="COMPOUND00728_v326" unit="mm" x="119.4821467210213" y="-476.0" z="-210.08488159709222"/>
+ <position name="COMPOUND00728_v327" unit="mm" x="119.4821467210213" y="-486.0" z="-210.08488159709222"/>
+ <position name="COMPOUND00728_v328" unit="mm" x="120.41841954817014" y="-476.0" z="-209.85411107144165"/>
+ <position name="COMPOUND00728_v329" unit="mm" x="120.41841954817015" y="-486.0" z="-209.85411107144165"/>
+ <position name="COMPOUND00728_v330" unit="mm" x="121.27225898692463" y="-486.0" z="-209.4059815642746"/>
+ <position name="COMPOUND00728_v331" unit="mm" x="121.27225898692463" y="-476.0" z="-209.4059815642746"/>
+ <position name="COMPOUND00728_v332" unit="mm" x="121.9940429926844" y="-476.0" z="-208.76653673366317"/>
+ <position name="COMPOUND00728_v333" unit="mm" x="121.9940429926844" y="-486.0" z="-208.76653673366317"/>
+ <position name="COMPOUND00728_v334" unit="mm" x="122.54182410261284" y="-476.0" z="-207.97293878887507"/>
+ <position name="COMPOUND00728_v335" unit="mm" x="122.54182410261284" y="-486.0" z="-207.97293878887507"/>
+ <position name="COMPOUND00728_v336" unit="mm" x="122.88376726970421" y="-476.0" z="-207.07130875785023"/>
+ <position name="COMPOUND00728_v337" unit="mm" x="122.88376726970421" y="-486.0" z="-207.07130875785023"/>
+ <position name="COMPOUND00728_v338" unit="mm" x="123.0" y="-476.0" z="-206.1140461007"/>
+ <position name="COMPOUND00728_v339" unit="mm" x="123.0" y="-486.0" z="-206.1140461007"/>
+ <position name="COMPOUND00728_v340" unit="mm" x="122.88376726970421" y="-486.0" z="-205.15678344354976"/>
+ <position name="COMPOUND00728_v341" unit="mm" x="122.88376726970421" y="-476.0" z="-205.15678344354976"/>
+ <position name="COMPOUND00728_v342" unit="mm" x="122.54182410261284" y="-486.0" z="-204.25515341252492"/>
+ <position name="COMPOUND00728_v343" unit="mm" x="122.54182410261284" y="-476.0" z="-204.25515341252492"/>
+ <position name="COMPOUND00728_v344" unit="mm" x="121.9940429926844" y="-486.0" z="-203.46155546773682"/>
+ <position name="COMPOUND00728_v345" unit="mm" x="121.9940429926844" y="-476.0" z="-203.46155546773682"/>
+ <position name="COMPOUND00728_v346" unit="mm" x="121.27225898692463" y="-486.0" z="-202.82211063712538"/>
+ <position name="COMPOUND00728_v347" unit="mm" x="121.27225898692463" y="-476.0" z="-202.82211063712538"/>
+ <position name="COMPOUND00728_v348" unit="mm" x="120.41841954817014" y="-486.0" z="-202.37398112995834"/>
+ <position name="COMPOUND00728_v349" unit="mm" x="120.41841954817014" y="-476.0" z="-202.37398112995834"/>
+ <position name="COMPOUND00728_v350" unit="mm" x="119.4821467210213" y="-476.0" z="-202.14321060430777"/>
+ <position name="COMPOUND00728_v351" unit="mm" x="119.4821467210213" y="-486.0" z="-202.14321060430777"/>
+ <position name="COMPOUND00728_v352" unit="mm" x="118.5178532789787" y="-476.0" z="-202.14321060430777"/>
+ <position name="COMPOUND00728_v353" unit="mm" x="118.5178532789787" y="-486.0" z="-202.14321060430777"/>
+ <position name="COMPOUND00728_v354" unit="mm" x="117.58158045182985" y="-486.0" z="-202.37398112995834"/>
+ <position name="COMPOUND00728_v355" unit="mm" x="117.58158045182985" y="-476.0" z="-202.37398112995834"/>
+ <position name="COMPOUND00728_v356" unit="mm" x="116.72774101307537" y="-486.0" z="-202.82211063712538"/>
+ <position name="COMPOUND00728_v357" unit="mm" x="116.72774101307537" y="-476.0" z="-202.82211063712538"/>
+ <position name="COMPOUND00728_v358" unit="mm" x="116.0059570073156" y="-486.0" z="-203.46155546773682"/>
+ <position name="COMPOUND00728_v359" unit="mm" x="116.0059570073156" y="-476.0" z="-203.46155546773682"/>
+ <position name="COMPOUND00728_v360" unit="mm" x="115.45817589738716" y="-486.0" z="-204.25515341252492"/>
+ <position name="COMPOUND00728_v361" unit="mm" x="115.45817589738716" y="-476.0" z="-204.25515341252492"/>
+ <position name="COMPOUND00728_v362" unit="mm" x="115.11623273029579" y="-486.0" z="-205.15678344354976"/>
+ <position name="COMPOUND00728_v363" unit="mm" x="115.11623273029579" y="-476.0" z="-205.15678344354976"/>
+ <position name="COMPOUND00728_v364" unit="mm" x="120.24111710464888" y="-476.0" z="-209.38660295009893"/>
+ <position name="COMPOUND00728_v365" unit="mm" x="115.60170363900882" y="-476.0" z="-205.27644127569354"/>
+ <position name="COMPOUND00728_v366" unit="mm" x="115.90090391021377" y="-476.0" z="-204.4875149985468"/>
+ <position name="COMPOUND00728_v367" unit="mm" x="119.42187838089363" y="-476.0" z="-209.58852716004318"/>
+ <position name="COMPOUND00728_v368" unit="mm" x="121.61978761859885" y="-476.0" z="-203.79311679685722"/>
+ <position name="COMPOUND00728_v369" unit="mm" x="120.98822661355905" y="-476.0" z="-203.2336025700722"/>
+ <position name="COMPOUND00728_v370" unit="mm" x="122.09909608978623" y="-476.0" z="-204.4875149985468"/>
+ <position name="COMPOUND00728_v371" unit="mm" x="115.5" y="-476.0" z="-206.1140461007"/>
+ <position name="COMPOUND00728_v372" unit="mm" x="120.24111710464888" y="-476.0" z="-202.84148925130106"/>
+ <position name="COMPOUND00728_v373" unit="mm" x="118.57812161910637" y="-476.0" z="-209.58852716004318"/>
+ <position name="COMPOUND00728_v374" unit="mm" x="122.39829636099118" y="-476.0" z="-205.27644127569354"/>
+ <position name="COMPOUND00728_v375" unit="mm" x="119.42187838089363" y="-476.0" z="-202.6395650413568"/>
+ <position name="COMPOUND00728_v376" unit="mm" x="122.5" y="-476.0" z="-206.1140461007"/>
+ <position name="COMPOUND00728_v377" unit="mm" x="118.57812161910637" y="-476.0" z="-202.6395650413568"/>
+ <position name="COMPOUND00728_v378" unit="mm" x="115.60170363900882" y="-476.0" z="-206.95165092570645"/>
+ <position name="COMPOUND00728_v379" unit="mm" x="115.90090391021377" y="-476.0" z="-207.7405772028532"/>
+ <position name="COMPOUND00728_v380" unit="mm" x="122.39829636099118" y="-476.0" z="-206.95165092570645"/>
+ <position name="COMPOUND00728_v381" unit="mm" x="117.75888289535112" y="-476.0" z="-202.84148925130106"/>
+ <position name="COMPOUND00728_v382" unit="mm" x="117.75888289535112" y="-476.0" z="-209.38660295009893"/>
+ <position name="COMPOUND00728_v383" unit="mm" x="116.38021238140115" y="-476.0" z="-208.43497540454277"/>
+ <position name="COMPOUND00728_v384" unit="mm" x="117.01177338644095" y="-476.0" z="-208.99448963132778"/>
+ <position name="COMPOUND00728_v385" unit="mm" x="122.09909608978623" y="-476.0" z="-207.7405772028532"/>
+ <position name="COMPOUND00728_v386" unit="mm" x="117.01177338644095" y="-476.0" z="-203.2336025700722"/>
+ <position name="COMPOUND00728_v387" unit="mm" x="121.61978761859885" y="-476.0" z="-208.43497540454277"/>
+ <position name="COMPOUND00728_v388" unit="mm" x="116.38021238140115" y="-476.0" z="-203.79311679685722"/>
+ <position name="COMPOUND00728_v389" unit="mm" x="120.98822661355905" y="-476.0" z="-208.99448963132778"/>
+ <position name="COMPOUND00728_v390" unit="mm" x="-123.0" y="-476.0" z="-206.1140461007"/>
+ <position name="COMPOUND00728_v391" unit="mm" x="-123.0" y="-486.0" z="-206.1140461007"/>
+ <position name="COMPOUND00728_v392" unit="mm" x="-122.88376726970421" y="-476.0" z="-207.07130875785023"/>
+ <position name="COMPOUND00728_v393" unit="mm" x="-122.88376726970421" y="-486.0" z="-207.07130875785023"/>
+ <position name="COMPOUND00728_v394" unit="mm" x="-122.54182410261284" y="-476.0" z="-207.97293878887507"/>
+ <position name="COMPOUND00728_v395" unit="mm" x="-122.54182410261284" y="-486.0" z="-207.97293878887507"/>
+ <position name="COMPOUND00728_v396" unit="mm" x="-121.9940429926844" y="-476.0" z="-208.76653673366317"/>
+ <position name="COMPOUND00728_v397" unit="mm" x="-121.9940429926844" y="-486.0" z="-208.76653673366317"/>
+ <position name="COMPOUND00728_v398" unit="mm" x="-121.27225898692463" y="-476.0" z="-209.4059815642746"/>
+ <position name="COMPOUND00728_v399" unit="mm" x="-121.27225898692463" y="-486.0" z="-209.4059815642746"/>
+ <position name="COMPOUND00728_v400" unit="mm" x="-120.41841954817014" y="-486.0" z="-209.85411107144165"/>
+ <position name="COMPOUND00728_v401" unit="mm" x="-120.41841954817015" y="-476.0" z="-209.85411107144165"/>
+ <position name="COMPOUND00728_v402" unit="mm" x="-119.4821467210213" y="-476.0" z="-210.08488159709222"/>
+ <position name="COMPOUND00728_v403" unit="mm" x="-119.4821467210213" y="-486.0" z="-210.08488159709222"/>
+ <position name="COMPOUND00728_v404" unit="mm" x="-118.5178532789787" y="-476.0" z="-210.08488159709222"/>
+ <position name="COMPOUND00728_v405" unit="mm" x="-118.5178532789787" y="-486.0" z="-210.08488159709222"/>
+ <position name="COMPOUND00728_v406" unit="mm" x="-117.58158045182986" y="-476.0" z="-209.85411107144165"/>
+ <position name="COMPOUND00728_v407" unit="mm" x="-117.58158045182985" y="-486.0" z="-209.85411107144165"/>
+ <position name="COMPOUND00728_v408" unit="mm" x="-116.72774101307537" y="-486.0" z="-209.4059815642746"/>
+ <position name="COMPOUND00728_v409" unit="mm" x="-116.72774101307537" y="-476.0" z="-209.4059815642746"/>
+ <position name="COMPOUND00728_v410" unit="mm" x="-116.0059570073156" y="-476.0" z="-208.76653673366317"/>
+ <position name="COMPOUND00728_v411" unit="mm" x="-116.0059570073156" y="-486.0" z="-208.76653673366317"/>
+ <position name="COMPOUND00728_v412" unit="mm" x="-115.45817589738716" y="-476.0" z="-207.97293878887507"/>
+ <position name="COMPOUND00728_v413" unit="mm" x="-115.45817589738716" y="-486.0" z="-207.97293878887507"/>
+ <position name="COMPOUND00728_v414" unit="mm" x="-115.11623273029579" y="-476.0" z="-207.07130875785023"/>
+ <position name="COMPOUND00728_v415" unit="mm" x="-115.11623273029579" y="-486.0" z="-207.07130875785023"/>
+ <position name="COMPOUND00728_v416" unit="mm" x="-115.0" y="-476.0" z="-206.1140461007"/>
+ <position name="COMPOUND00728_v417" unit="mm" x="-115.0" y="-486.0" z="-206.1140461007"/>
+ <position name="COMPOUND00728_v418" unit="mm" x="-115.11623273029579" y="-486.0" z="-205.15678344354976"/>
+ <position name="COMPOUND00728_v419" unit="mm" x="-115.11623273029579" y="-476.0" z="-205.15678344354976"/>
+ <position name="COMPOUND00728_v420" unit="mm" x="-115.45817589738716" y="-486.0" z="-204.25515341252492"/>
+ <position name="COMPOUND00728_v421" unit="mm" x="-115.45817589738716" y="-476.0" z="-204.25515341252492"/>
+ <position name="COMPOUND00728_v422" unit="mm" x="-116.0059570073156" y="-486.0" z="-203.46155546773682"/>
+ <position name="COMPOUND00728_v423" unit="mm" x="-116.0059570073156" y="-476.0" z="-203.46155546773682"/>
+ <position name="COMPOUND00728_v424" unit="mm" x="-116.72774101307537" y="-486.0" z="-202.82211063712538"/>
+ <position name="COMPOUND00728_v425" unit="mm" x="-116.72774101307537" y="-476.0" z="-202.82211063712538"/>
+ <position name="COMPOUND00728_v426" unit="mm" x="-117.58158045182986" y="-486.0" z="-202.37398112995834"/>
+ <position name="COMPOUND00728_v427" unit="mm" x="-117.58158045182986" y="-476.0" z="-202.37398112995834"/>
+ <position name="COMPOUND00728_v428" unit="mm" x="-118.5178532789787" y="-476.0" z="-202.14321060430777"/>
+ <position name="COMPOUND00728_v429" unit="mm" x="-118.5178532789787" y="-486.0" z="-202.14321060430777"/>
+ <position name="COMPOUND00728_v430" unit="mm" x="-119.4821467210213" y="-476.0" z="-202.14321060430777"/>
+ <position name="COMPOUND00728_v431" unit="mm" x="-119.4821467210213" y="-486.0" z="-202.14321060430777"/>
+ <position name="COMPOUND00728_v432" unit="mm" x="-120.41841954817015" y="-486.0" z="-202.37398112995834"/>
+ <position name="COMPOUND00728_v433" unit="mm" x="-120.41841954817015" y="-476.0" z="-202.37398112995834"/>
+ <position name="COMPOUND00728_v434" unit="mm" x="-121.27225898692463" y="-486.0" z="-202.82211063712538"/>
+ <position name="COMPOUND00728_v435" unit="mm" x="-121.27225898692463" y="-476.0" z="-202.82211063712538"/>
+ <position name="COMPOUND00728_v436" unit="mm" x="-121.9940429926844" y="-486.0" z="-203.46155546773682"/>
+ <position name="COMPOUND00728_v437" unit="mm" x="-121.9940429926844" y="-476.0" z="-203.46155546773682"/>
+ <position name="COMPOUND00728_v438" unit="mm" x="-122.54182410261284" y="-486.0" z="-204.25515341252492"/>
+ <position name="COMPOUND00728_v439" unit="mm" x="-122.54182410261284" y="-476.0" z="-204.25515341252492"/>
+ <position name="COMPOUND00728_v440" unit="mm" x="-122.88376726970421" y="-486.0" z="-205.15678344354976"/>
+ <position name="COMPOUND00728_v441" unit="mm" x="-122.88376726970421" y="-476.0" z="-205.15678344354976"/>
+ <position name="COMPOUND00728_v442" unit="mm" x="-117.75888289535112" y="-476.0" z="-209.38660295009893"/>
+ <position name="COMPOUND00728_v443" unit="mm" x="-122.39829636099118" y="-476.0" z="-205.27644127569354"/>
+ <position name="COMPOUND00728_v444" unit="mm" x="-122.09909608978623" y="-476.0" z="-204.4875149985468"/>
+ <position name="COMPOUND00728_v445" unit="mm" x="-118.57812161910637" y="-476.0" z="-209.58852716004318"/>
+ <position name="COMPOUND00728_v446" unit="mm" x="-116.38021238140115" y="-476.0" z="-203.79311679685722"/>
+ <position name="COMPOUND00728_v447" unit="mm" x="-117.01177338644095" y="-476.0" z="-203.2336025700722"/>
+ <position name="COMPOUND00728_v448" unit="mm" x="-115.90090391021377" y="-476.0" z="-204.4875149985468"/>
+ <position name="COMPOUND00728_v449" unit="mm" x="-122.5" y="-476.0" z="-206.1140461007"/>
+ <position name="COMPOUND00728_v450" unit="mm" x="-117.75888289535112" y="-476.0" z="-202.84148925130106"/>
+ <position name="COMPOUND00728_v451" unit="mm" x="-119.42187838089363" y="-476.0" z="-209.58852716004318"/>
+ <position name="COMPOUND00728_v452" unit="mm" x="-115.60170363900882" y="-476.0" z="-205.27644127569354"/>
+ <position name="COMPOUND00728_v453" unit="mm" x="-118.57812161910637" y="-476.0" z="-202.6395650413568"/>
+ <position name="COMPOUND00728_v454" unit="mm" x="-115.5" y="-476.0" z="-206.1140461007"/>
+ <position name="COMPOUND00728_v455" unit="mm" x="-119.42187838089363" y="-476.0" z="-202.6395650413568"/>
+ <position name="COMPOUND00728_v456" unit="mm" x="-122.39829636099118" y="-476.0" z="-206.95165092570645"/>
+ <position name="COMPOUND00728_v457" unit="mm" x="-122.09909608978623" y="-476.0" z="-207.7405772028532"/>
+ <position name="COMPOUND00728_v458" unit="mm" x="-115.60170363900882" y="-476.0" z="-206.95165092570645"/>
+ <position name="COMPOUND00728_v459" unit="mm" x="-120.24111710464888" y="-476.0" z="-202.84148925130106"/>
+ <position name="COMPOUND00728_v460" unit="mm" x="-120.24111710464888" y="-476.0" z="-209.38660295009893"/>
+ <position name="COMPOUND00728_v461" unit="mm" x="-121.61978761859885" y="-476.0" z="-208.43497540454277"/>
+ <position name="COMPOUND00728_v462" unit="mm" x="-120.98822661355905" y="-476.0" z="-208.99448963132778"/>
+ <position name="COMPOUND00728_v463" unit="mm" x="-115.90090391021377" y="-476.0" z="-207.7405772028532"/>
+ <position name="COMPOUND00728_v464" unit="mm" x="-120.98822661355905" y="-476.0" z="-203.2336025700722"/>
+ <position name="COMPOUND00728_v465" unit="mm" x="-116.38021238140115" y="-476.0" z="-208.43497540454277"/>
+ <position name="COMPOUND00728_v466" unit="mm" x="-121.61978761859885" y="-476.0" z="-203.79311679685722"/>
+ <position name="COMPOUND00728_v467" unit="mm" x="-117.01177338644095" y="-476.0" z="-208.99448963132778"/>
+ </define>
+
+ <solids>
+ <tessellated aunit="deg" lunit="mm" name="COMPOUND00728_solid">
+ <triangular vertex1="COMPOUND00728_v0" vertex2="COMPOUND00728_v1" vertex3="COMPOUND00728_v2"/>
+ <triangular vertex1="COMPOUND00728_v2" vertex2="COMPOUND00728_v3" vertex3="COMPOUND00728_v4"/>
+ <triangular vertex1="COMPOUND00728_v1" vertex2="COMPOUND00728_v3" vertex3="COMPOUND00728_v2"/>
+ <triangular vertex1="COMPOUND00728_v4" vertex2="COMPOUND00728_v5" vertex3="COMPOUND00728_v6"/>
+ <triangular vertex1="COMPOUND00728_v3" vertex2="COMPOUND00728_v5" vertex3="COMPOUND00728_v4"/>
+ <triangular vertex1="COMPOUND00728_v6" vertex2="COMPOUND00728_v7" vertex3="COMPOUND00728_v8"/>
+ <triangular vertex1="COMPOUND00728_v5" vertex2="COMPOUND00728_v7" vertex3="COMPOUND00728_v6"/>
+ <triangular vertex1="COMPOUND00728_v7" vertex2="COMPOUND00728_v9" vertex3="COMPOUND00728_v8"/>
+ <triangular vertex1="COMPOUND00728_v8" vertex2="COMPOUND00728_v10" vertex3="COMPOUND00728_v11"/>
+ <triangular vertex1="COMPOUND00728_v11" vertex2="COMPOUND00728_v10" vertex3="COMPOUND00728_v12"/>
+ <triangular vertex1="COMPOUND00728_v9" vertex2="COMPOUND00728_v10" vertex3="COMPOUND00728_v8"/>
+ <triangular vertex1="COMPOUND00728_v12" vertex2="COMPOUND00728_v13" vertex3="COMPOUND00728_v14"/>
+ <triangular vertex1="COMPOUND00728_v10" vertex2="COMPOUND00728_v13" vertex3="COMPOUND00728_v12"/>
+ <triangular vertex1="COMPOUND00728_v14" vertex2="COMPOUND00728_v15" vertex3="COMPOUND00728_v16"/>
+ <triangular vertex1="COMPOUND00728_v13" vertex2="COMPOUND00728_v15" vertex3="COMPOUND00728_v14"/>
+ <triangular vertex1="COMPOUND00728_v15" vertex2="COMPOUND00728_v17" vertex3="COMPOUND00728_v16"/>
+ <triangular vertex1="COMPOUND00728_v16" vertex2="COMPOUND00728_v18" vertex3="COMPOUND00728_v19"/>
+ <triangular vertex1="COMPOUND00728_v19" vertex2="COMPOUND00728_v18" vertex3="COMPOUND00728_v20"/>
+ <triangular vertex1="COMPOUND00728_v17" vertex2="COMPOUND00728_v18" vertex3="COMPOUND00728_v16"/>
+ <triangular vertex1="COMPOUND00728_v20" vertex2="COMPOUND00728_v21" vertex3="COMPOUND00728_v22"/>
+ <triangular vertex1="COMPOUND00728_v18" vertex2="COMPOUND00728_v21" vertex3="COMPOUND00728_v20"/>
+ <triangular vertex1="COMPOUND00728_v22" vertex2="COMPOUND00728_v23" vertex3="COMPOUND00728_v24"/>
+ <triangular vertex1="COMPOUND00728_v21" vertex2="COMPOUND00728_v23" vertex3="COMPOUND00728_v22"/>
+ <triangular vertex1="COMPOUND00728_v24" vertex2="COMPOUND00728_v25" vertex3="COMPOUND00728_v26"/>
+ <triangular vertex1="COMPOUND00728_v23" vertex2="COMPOUND00728_v25" vertex3="COMPOUND00728_v24"/>
+ <triangular vertex1="COMPOUND00728_v25" vertex2="COMPOUND00728_v27" vertex3="COMPOUND00728_v26"/>
+ <triangular vertex1="COMPOUND00728_v27" vertex2="COMPOUND00728_v28" vertex3="COMPOUND00728_v26"/>
+ <triangular vertex1="COMPOUND00728_v26" vertex2="COMPOUND00728_v28" vertex3="COMPOUND00728_v29"/>
+ <triangular vertex1="COMPOUND00728_v29" vertex2="COMPOUND00728_v30" vertex3="COMPOUND00728_v31"/>
+ <triangular vertex1="COMPOUND00728_v28" vertex2="COMPOUND00728_v30" vertex3="COMPOUND00728_v29"/>
+ <triangular vertex1="COMPOUND00728_v31" vertex2="COMPOUND00728_v32" vertex3="COMPOUND00728_v33"/>
+ <triangular vertex1="COMPOUND00728_v30" vertex2="COMPOUND00728_v32" vertex3="COMPOUND00728_v31"/>
+ <triangular vertex1="COMPOUND00728_v33" vertex2="COMPOUND00728_v34" vertex3="COMPOUND00728_v35"/>
+ <triangular vertex1="COMPOUND00728_v32" vertex2="COMPOUND00728_v34" vertex3="COMPOUND00728_v33"/>
+ <triangular vertex1="COMPOUND00728_v35" vertex2="COMPOUND00728_v36" vertex3="COMPOUND00728_v37"/>
+ <triangular vertex1="COMPOUND00728_v34" vertex2="COMPOUND00728_v36" vertex3="COMPOUND00728_v35"/>
+ <triangular vertex1="COMPOUND00728_v38" vertex2="COMPOUND00728_v39" vertex3="COMPOUND00728_v40"/>
+ <triangular vertex1="COMPOUND00728_v37" vertex2="COMPOUND00728_v39" vertex3="COMPOUND00728_v38"/>
+ <triangular vertex1="COMPOUND00728_v36" vertex2="COMPOUND00728_v39" vertex3="COMPOUND00728_v37"/>
+ <triangular vertex1="COMPOUND00728_v39" vertex2="COMPOUND00728_v41" vertex3="COMPOUND00728_v40"/>
+ <triangular vertex1="COMPOUND00728_v40" vertex2="COMPOUND00728_v42" vertex3="COMPOUND00728_v43"/>
+ <triangular vertex1="COMPOUND00728_v41" vertex2="COMPOUND00728_v42" vertex3="COMPOUND00728_v40"/>
+ <triangular vertex1="COMPOUND00728_v43" vertex2="COMPOUND00728_v44" vertex3="COMPOUND00728_v45"/>
+ <triangular vertex1="COMPOUND00728_v42" vertex2="COMPOUND00728_v44" vertex3="COMPOUND00728_v43"/>
+ <triangular vertex1="COMPOUND00728_v45" vertex2="COMPOUND00728_v46" vertex3="COMPOUND00728_v47"/>
+ <triangular vertex1="COMPOUND00728_v44" vertex2="COMPOUND00728_v46" vertex3="COMPOUND00728_v45"/>
+ <triangular vertex1="COMPOUND00728_v47" vertex2="COMPOUND00728_v48" vertex3="COMPOUND00728_v49"/>
+ <triangular vertex1="COMPOUND00728_v46" vertex2="COMPOUND00728_v48" vertex3="COMPOUND00728_v47"/>
+ <triangular vertex1="COMPOUND00728_v49" vertex2="COMPOUND00728_v50" vertex3="COMPOUND00728_v51"/>
+ <triangular vertex1="COMPOUND00728_v48" vertex2="COMPOUND00728_v50" vertex3="COMPOUND00728_v49"/>
+ <triangular vertex1="COMPOUND00728_v51" vertex2="COMPOUND00728_v1" vertex3="COMPOUND00728_v0"/>
+ <triangular vertex1="COMPOUND00728_v50" vertex2="COMPOUND00728_v1" vertex3="COMPOUND00728_v51"/>
+ <triangular vertex1="COMPOUND00728_v51" vertex2="COMPOUND00728_v52" vertex3="COMPOUND00728_v49"/>
+ <triangular vertex1="COMPOUND00728_v14" vertex2="COMPOUND00728_v16" vertex3="COMPOUND00728_v53"/>
+ <triangular vertex1="COMPOUND00728_v54" vertex2="COMPOUND00728_v31" vertex3="COMPOUND00728_v33"/>
+ <triangular vertex1="COMPOUND00728_v14" vertex2="COMPOUND00728_v53" vertex3="COMPOUND00728_v55"/>
+ <triangular vertex1="COMPOUND00728_v56" vertex2="COMPOUND00728_v33" vertex3="COMPOUND00728_v35"/>
+ <triangular vertex1="COMPOUND00728_v56" vertex2="COMPOUND00728_v54" vertex3="COMPOUND00728_v33"/>
+ <triangular vertex1="COMPOUND00728_v57" vertex2="COMPOUND00728_v29" vertex3="COMPOUND00728_v31"/>
+ <triangular vertex1="COMPOUND00728_v58" vertex2="COMPOUND00728_v52" vertex3="COMPOUND00728_v51"/>
+ <triangular vertex1="COMPOUND00728_v57" vertex2="COMPOUND00728_v31" vertex3="COMPOUND00728_v54"/>
+ <triangular vertex1="COMPOUND00728_v59" vertex2="COMPOUND00728_v14" vertex3="COMPOUND00728_v55"/>
+ <triangular vertex1="COMPOUND00728_v60" vertex2="COMPOUND00728_v35" vertex3="COMPOUND00728_v37"/>
+ <triangular vertex1="COMPOUND00728_v0" vertex2="COMPOUND00728_v58" vertex3="COMPOUND00728_v51"/>
+ <triangular vertex1="COMPOUND00728_v60" vertex2="COMPOUND00728_v56" vertex3="COMPOUND00728_v35"/>
+ <triangular vertex1="COMPOUND00728_v12" vertex2="COMPOUND00728_v14" vertex3="COMPOUND00728_v59"/>
+ <triangular vertex1="COMPOUND00728_v61" vertex2="COMPOUND00728_v29" vertex3="COMPOUND00728_v57"/>
+ <triangular vertex1="COMPOUND00728_v26" vertex2="COMPOUND00728_v29" vertex3="COMPOUND00728_v61"/>
+ <triangular vertex1="COMPOUND00728_v62" vertex2="COMPOUND00728_v37" vertex3="COMPOUND00728_v38"/>
+ <triangular vertex1="COMPOUND00728_v62" vertex2="COMPOUND00728_v60" vertex3="COMPOUND00728_v37"/>
+ <triangular vertex1="COMPOUND00728_v63" vertex2="COMPOUND00728_v26" vertex3="COMPOUND00728_v61"/>
+ <triangular vertex1="COMPOUND00728_v2" vertex2="COMPOUND00728_v58" vertex3="COMPOUND00728_v0"/>
+ <triangular vertex1="COMPOUND00728_v2" vertex2="COMPOUND00728_v64" vertex3="COMPOUND00728_v58"/>
+ <triangular vertex1="COMPOUND00728_v65" vertex2="COMPOUND00728_v38" vertex3="COMPOUND00728_v40"/>
+ <triangular vertex1="COMPOUND00728_v65" vertex2="COMPOUND00728_v62" vertex3="COMPOUND00728_v38"/>
+ <triangular vertex1="COMPOUND00728_v66" vertex2="COMPOUND00728_v24" vertex3="COMPOUND00728_v26"/>
+ <triangular vertex1="COMPOUND00728_v11" vertex2="COMPOUND00728_v12" vertex3="COMPOUND00728_v59"/>
+ <triangular vertex1="COMPOUND00728_v66" vertex2="COMPOUND00728_v26" vertex3="COMPOUND00728_v63"/>
+ <triangular vertex1="COMPOUND00728_v11" vertex2="COMPOUND00728_v59" vertex3="COMPOUND00728_v67"/>
+ <triangular vertex1="COMPOUND00728_v4" vertex2="COMPOUND00728_v68" vertex3="COMPOUND00728_v64"/>
+ <triangular vertex1="COMPOUND00728_v4" vertex2="COMPOUND00728_v69" vertex3="COMPOUND00728_v68"/>
+ <triangular vertex1="COMPOUND00728_v70" vertex2="COMPOUND00728_v40" vertex3="COMPOUND00728_v43"/>
+ <triangular vertex1="COMPOUND00728_v4" vertex2="COMPOUND00728_v64" vertex3="COMPOUND00728_v2"/>
+ <triangular vertex1="COMPOUND00728_v8" vertex2="COMPOUND00728_v67" vertex3="COMPOUND00728_v71"/>
+ <triangular vertex1="COMPOUND00728_v70" vertex2="COMPOUND00728_v65" vertex3="COMPOUND00728_v40"/>
+ <triangular vertex1="COMPOUND00728_v8" vertex2="COMPOUND00728_v11" vertex3="COMPOUND00728_v67"/>
+ <triangular vertex1="COMPOUND00728_v6" vertex2="COMPOUND00728_v69" vertex3="COMPOUND00728_v4"/>
+ <triangular vertex1="COMPOUND00728_v6" vertex2="COMPOUND00728_v8" vertex3="COMPOUND00728_v71"/>
+ <triangular vertex1="COMPOUND00728_v6" vertex2="COMPOUND00728_v71" vertex3="COMPOUND00728_v69"/>
+ <triangular vertex1="COMPOUND00728_v72" vertex2="COMPOUND00728_v22" vertex3="COMPOUND00728_v24"/>
+ <triangular vertex1="COMPOUND00728_v72" vertex2="COMPOUND00728_v24" vertex3="COMPOUND00728_v66"/>
+ <triangular vertex1="COMPOUND00728_v73" vertex2="COMPOUND00728_v43" vertex3="COMPOUND00728_v45"/>
+ <triangular vertex1="COMPOUND00728_v73" vertex2="COMPOUND00728_v70" vertex3="COMPOUND00728_v43"/>
+ <triangular vertex1="COMPOUND00728_v74" vertex2="COMPOUND00728_v20" vertex3="COMPOUND00728_v22"/>
+ <triangular vertex1="COMPOUND00728_v74" vertex2="COMPOUND00728_v22" vertex3="COMPOUND00728_v72"/>
+ <triangular vertex1="COMPOUND00728_v75" vertex2="COMPOUND00728_v73" vertex3="COMPOUND00728_v45"/>
+ <triangular vertex1="COMPOUND00728_v47" vertex2="COMPOUND00728_v75" vertex3="COMPOUND00728_v45"/>
+ <triangular vertex1="COMPOUND00728_v19" vertex2="COMPOUND00728_v20" vertex3="COMPOUND00728_v74"/>
+ <triangular vertex1="COMPOUND00728_v19" vertex2="COMPOUND00728_v74" vertex3="COMPOUND00728_v76"/>
+ <triangular vertex1="COMPOUND00728_v77" vertex2="COMPOUND00728_v75" vertex3="COMPOUND00728_v47"/>
+ <triangular vertex1="COMPOUND00728_v49" vertex2="COMPOUND00728_v77" vertex3="COMPOUND00728_v47"/>
+ <triangular vertex1="COMPOUND00728_v53" vertex2="COMPOUND00728_v19" vertex3="COMPOUND00728_v76"/>
+ <triangular vertex1="COMPOUND00728_v16" vertex2="COMPOUND00728_v19" vertex3="COMPOUND00728_v53"/>
+ <triangular vertex1="COMPOUND00728_v52" vertex2="COMPOUND00728_v77" vertex3="COMPOUND00728_v49"/>
+ <triangular vertex1="COMPOUND00728_v78" vertex2="COMPOUND00728_v79" vertex3="COMPOUND00728_v80"/>
+ <triangular vertex1="COMPOUND00728_v80" vertex2="COMPOUND00728_v81" vertex3="COMPOUND00728_v82"/>
+ <triangular vertex1="COMPOUND00728_v79" vertex2="COMPOUND00728_v81" vertex3="COMPOUND00728_v80"/>
+ <triangular vertex1="COMPOUND00728_v82" vertex2="COMPOUND00728_v83" vertex3="COMPOUND00728_v84"/>
+ <triangular vertex1="COMPOUND00728_v81" vertex2="COMPOUND00728_v83" vertex3="COMPOUND00728_v82"/>
+ <triangular vertex1="COMPOUND00728_v84" vertex2="COMPOUND00728_v85" vertex3="COMPOUND00728_v86"/>
+ <triangular vertex1="COMPOUND00728_v83" vertex2="COMPOUND00728_v85" vertex3="COMPOUND00728_v84"/>
+ <triangular vertex1="COMPOUND00728_v85" vertex2="COMPOUND00728_v87" vertex3="COMPOUND00728_v86"/>
+ <triangular vertex1="COMPOUND00728_v86" vertex2="COMPOUND00728_v88" vertex3="COMPOUND00728_v89"/>
+ <triangular vertex1="COMPOUND00728_v89" vertex2="COMPOUND00728_v88" vertex3="COMPOUND00728_v90"/>
+ <triangular vertex1="COMPOUND00728_v87" vertex2="COMPOUND00728_v88" vertex3="COMPOUND00728_v86"/>
+ <triangular vertex1="COMPOUND00728_v90" vertex2="COMPOUND00728_v91" vertex3="COMPOUND00728_v92"/>
+ <triangular vertex1="COMPOUND00728_v88" vertex2="COMPOUND00728_v91" vertex3="COMPOUND00728_v90"/>
+ <triangular vertex1="COMPOUND00728_v92" vertex2="COMPOUND00728_v93" vertex3="COMPOUND00728_v94"/>
+ <triangular vertex1="COMPOUND00728_v91" vertex2="COMPOUND00728_v93" vertex3="COMPOUND00728_v92"/>
+ <triangular vertex1="COMPOUND00728_v93" vertex2="COMPOUND00728_v95" vertex3="COMPOUND00728_v94"/>
+ <triangular vertex1="COMPOUND00728_v94" vertex2="COMPOUND00728_v96" vertex3="COMPOUND00728_v97"/>
+ <triangular vertex1="COMPOUND00728_v97" vertex2="COMPOUND00728_v96" vertex3="COMPOUND00728_v98"/>
+ <triangular vertex1="COMPOUND00728_v95" vertex2="COMPOUND00728_v96" vertex3="COMPOUND00728_v94"/>
+ <triangular vertex1="COMPOUND00728_v98" vertex2="COMPOUND00728_v99" vertex3="COMPOUND00728_v100"/>
+ <triangular vertex1="COMPOUND00728_v96" vertex2="COMPOUND00728_v99" vertex3="COMPOUND00728_v98"/>
+ <triangular vertex1="COMPOUND00728_v100" vertex2="COMPOUND00728_v101" vertex3="COMPOUND00728_v102"/>
+ <triangular vertex1="COMPOUND00728_v99" vertex2="COMPOUND00728_v101" vertex3="COMPOUND00728_v100"/>
+ <triangular vertex1="COMPOUND00728_v102" vertex2="COMPOUND00728_v103" vertex3="COMPOUND00728_v104"/>
+ <triangular vertex1="COMPOUND00728_v101" vertex2="COMPOUND00728_v103" vertex3="COMPOUND00728_v102"/>
+ <triangular vertex1="COMPOUND00728_v103" vertex2="COMPOUND00728_v105" vertex3="COMPOUND00728_v104"/>
+ <triangular vertex1="COMPOUND00728_v105" vertex2="COMPOUND00728_v106" vertex3="COMPOUND00728_v104"/>
+ <triangular vertex1="COMPOUND00728_v104" vertex2="COMPOUND00728_v106" vertex3="COMPOUND00728_v107"/>
+ <triangular vertex1="COMPOUND00728_v107" vertex2="COMPOUND00728_v108" vertex3="COMPOUND00728_v109"/>
+ <triangular vertex1="COMPOUND00728_v106" vertex2="COMPOUND00728_v108" vertex3="COMPOUND00728_v107"/>
+ <triangular vertex1="COMPOUND00728_v109" vertex2="COMPOUND00728_v110" vertex3="COMPOUND00728_v111"/>
+ <triangular vertex1="COMPOUND00728_v108" vertex2="COMPOUND00728_v110" vertex3="COMPOUND00728_v109"/>
+ <triangular vertex1="COMPOUND00728_v111" vertex2="COMPOUND00728_v112" vertex3="COMPOUND00728_v113"/>
+ <triangular vertex1="COMPOUND00728_v110" vertex2="COMPOUND00728_v112" vertex3="COMPOUND00728_v111"/>
+ <triangular vertex1="COMPOUND00728_v113" vertex2="COMPOUND00728_v114" vertex3="COMPOUND00728_v115"/>
+ <triangular vertex1="COMPOUND00728_v112" vertex2="COMPOUND00728_v114" vertex3="COMPOUND00728_v113"/>
+ <triangular vertex1="COMPOUND00728_v116" vertex2="COMPOUND00728_v117" vertex3="COMPOUND00728_v118"/>
+ <triangular vertex1="COMPOUND00728_v115" vertex2="COMPOUND00728_v117" vertex3="COMPOUND00728_v116"/>
+ <triangular vertex1="COMPOUND00728_v114" vertex2="COMPOUND00728_v117" vertex3="COMPOUND00728_v115"/>
+ <triangular vertex1="COMPOUND00728_v117" vertex2="COMPOUND00728_v119" vertex3="COMPOUND00728_v118"/>
+ <triangular vertex1="COMPOUND00728_v118" vertex2="COMPOUND00728_v120" vertex3="COMPOUND00728_v121"/>
+ <triangular vertex1="COMPOUND00728_v119" vertex2="COMPOUND00728_v120" vertex3="COMPOUND00728_v118"/>
+ <triangular vertex1="COMPOUND00728_v121" vertex2="COMPOUND00728_v122" vertex3="COMPOUND00728_v123"/>
+ <triangular vertex1="COMPOUND00728_v120" vertex2="COMPOUND00728_v122" vertex3="COMPOUND00728_v121"/>
+ <triangular vertex1="COMPOUND00728_v123" vertex2="COMPOUND00728_v124" vertex3="COMPOUND00728_v125"/>
+ <triangular vertex1="COMPOUND00728_v122" vertex2="COMPOUND00728_v124" vertex3="COMPOUND00728_v123"/>
+ <triangular vertex1="COMPOUND00728_v125" vertex2="COMPOUND00728_v126" vertex3="COMPOUND00728_v127"/>
+ <triangular vertex1="COMPOUND00728_v124" vertex2="COMPOUND00728_v126" vertex3="COMPOUND00728_v125"/>
+ <triangular vertex1="COMPOUND00728_v127" vertex2="COMPOUND00728_v128" vertex3="COMPOUND00728_v129"/>
+ <triangular vertex1="COMPOUND00728_v126" vertex2="COMPOUND00728_v128" vertex3="COMPOUND00728_v127"/>
+ <triangular vertex1="COMPOUND00728_v129" vertex2="COMPOUND00728_v79" vertex3="COMPOUND00728_v78"/>
+ <triangular vertex1="COMPOUND00728_v128" vertex2="COMPOUND00728_v79" vertex3="COMPOUND00728_v129"/>
+ <triangular vertex1="COMPOUND00728_v94" vertex2="COMPOUND00728_v97" vertex3="COMPOUND00728_v130"/>
+ <triangular vertex1="COMPOUND00728_v131" vertex2="COMPOUND00728_v132" vertex3="COMPOUND00728_v127"/>
+ <triangular vertex1="COMPOUND00728_v129" vertex2="COMPOUND00728_v131" vertex3="COMPOUND00728_v127"/>
+ <triangular vertex1="COMPOUND00728_v133" vertex2="COMPOUND00728_v94" vertex3="COMPOUND00728_v130"/>
+ <triangular vertex1="COMPOUND00728_v134" vertex2="COMPOUND00728_v109" vertex3="COMPOUND00728_v111"/>
+ <triangular vertex1="COMPOUND00728_v135" vertex2="COMPOUND00728_v111" vertex3="COMPOUND00728_v113"/>
+ <triangular vertex1="COMPOUND00728_v135" vertex2="COMPOUND00728_v134" vertex3="COMPOUND00728_v111"/>
+ <triangular vertex1="COMPOUND00728_v92" vertex2="COMPOUND00728_v94" vertex3="COMPOUND00728_v133"/>
+ <triangular vertex1="COMPOUND00728_v136" vertex2="COMPOUND00728_v107" vertex3="COMPOUND00728_v109"/>
+ <triangular vertex1="COMPOUND00728_v137" vertex2="COMPOUND00728_v131" vertex3="COMPOUND00728_v129"/>
+ <triangular vertex1="COMPOUND00728_v136" vertex2="COMPOUND00728_v109" vertex3="COMPOUND00728_v134"/>
+ <triangular vertex1="COMPOUND00728_v138" vertex2="COMPOUND00728_v113" vertex3="COMPOUND00728_v115"/>
+ <triangular vertex1="COMPOUND00728_v138" vertex2="COMPOUND00728_v135" vertex3="COMPOUND00728_v113"/>
+ <triangular vertex1="COMPOUND00728_v139" vertex2="COMPOUND00728_v92" vertex3="COMPOUND00728_v133"/>
+ <triangular vertex1="COMPOUND00728_v78" vertex2="COMPOUND00728_v137" vertex3="COMPOUND00728_v129"/>
+ <triangular vertex1="COMPOUND00728_v140" vertex2="COMPOUND00728_v107" vertex3="COMPOUND00728_v136"/>
+ <triangular vertex1="COMPOUND00728_v104" vertex2="COMPOUND00728_v107" vertex3="COMPOUND00728_v140"/>
+ <triangular vertex1="COMPOUND00728_v141" vertex2="COMPOUND00728_v115" vertex3="COMPOUND00728_v116"/>
+ <triangular vertex1="COMPOUND00728_v90" vertex2="COMPOUND00728_v92" vertex3="COMPOUND00728_v139"/>
+ <triangular vertex1="COMPOUND00728_v141" vertex2="COMPOUND00728_v138" vertex3="COMPOUND00728_v115"/>
+ <triangular vertex1="COMPOUND00728_v142" vertex2="COMPOUND00728_v104" vertex3="COMPOUND00728_v140"/>
+ <triangular vertex1="COMPOUND00728_v143" vertex2="COMPOUND00728_v116" vertex3="COMPOUND00728_v118"/>
+ <triangular vertex1="COMPOUND00728_v80" vertex2="COMPOUND00728_v137" vertex3="COMPOUND00728_v78"/>
+ <triangular vertex1="COMPOUND00728_v80" vertex2="COMPOUND00728_v144" vertex3="COMPOUND00728_v137"/>
+ <triangular vertex1="COMPOUND00728_v143" vertex2="COMPOUND00728_v141" vertex3="COMPOUND00728_v116"/>
+ <triangular vertex1="COMPOUND00728_v80" vertex2="COMPOUND00728_v145" vertex3="COMPOUND00728_v144"/>
+ <triangular vertex1="COMPOUND00728_v146" vertex2="COMPOUND00728_v102" vertex3="COMPOUND00728_v104"/>
+ <triangular vertex1="COMPOUND00728_v146" vertex2="COMPOUND00728_v104" vertex3="COMPOUND00728_v142"/>
+ <triangular vertex1="COMPOUND00728_v147" vertex2="COMPOUND00728_v118" vertex3="COMPOUND00728_v121"/>
+ <triangular vertex1="COMPOUND00728_v89" vertex2="COMPOUND00728_v139" vertex3="COMPOUND00728_v148"/>
+ <triangular vertex1="COMPOUND00728_v89" vertex2="COMPOUND00728_v90" vertex3="COMPOUND00728_v139"/>
+ <triangular vertex1="COMPOUND00728_v82" vertex2="COMPOUND00728_v145" vertex3="COMPOUND00728_v80"/>
+ <triangular vertex1="COMPOUND00728_v82" vertex2="COMPOUND00728_v149" vertex3="COMPOUND00728_v145"/>
+ <triangular vertex1="COMPOUND00728_v147" vertex2="COMPOUND00728_v143" vertex3="COMPOUND00728_v118"/>
+ <triangular vertex1="COMPOUND00728_v86" vertex2="COMPOUND00728_v148" vertex3="COMPOUND00728_v150"/>
+ <triangular vertex1="COMPOUND00728_v151" vertex2="COMPOUND00728_v100" vertex3="COMPOUND00728_v102"/>
+ <triangular vertex1="COMPOUND00728_v86" vertex2="COMPOUND00728_v89" vertex3="COMPOUND00728_v148"/>
+ <triangular vertex1="COMPOUND00728_v151" vertex2="COMPOUND00728_v102" vertex3="COMPOUND00728_v146"/>
+ <triangular vertex1="COMPOUND00728_v84" vertex2="COMPOUND00728_v150" vertex3="COMPOUND00728_v149"/>
+ <triangular vertex1="COMPOUND00728_v84" vertex2="COMPOUND00728_v149" vertex3="COMPOUND00728_v82"/>
+ <triangular vertex1="COMPOUND00728_v84" vertex2="COMPOUND00728_v86" vertex3="COMPOUND00728_v150"/>
+ <triangular vertex1="COMPOUND00728_v152" vertex2="COMPOUND00728_v121" vertex3="COMPOUND00728_v123"/>
+ <triangular vertex1="COMPOUND00728_v152" vertex2="COMPOUND00728_v147" vertex3="COMPOUND00728_v121"/>
+ <triangular vertex1="COMPOUND00728_v153" vertex2="COMPOUND00728_v98" vertex3="COMPOUND00728_v100"/>
+ <triangular vertex1="COMPOUND00728_v153" vertex2="COMPOUND00728_v100" vertex3="COMPOUND00728_v151"/>
+ <triangular vertex1="COMPOUND00728_v125" vertex2="COMPOUND00728_v154" vertex3="COMPOUND00728_v152"/>
+ <triangular vertex1="COMPOUND00728_v125" vertex2="COMPOUND00728_v152" vertex3="COMPOUND00728_v123"/>
+ <triangular vertex1="COMPOUND00728_v155" vertex2="COMPOUND00728_v98" vertex3="COMPOUND00728_v153"/>
+ <triangular vertex1="COMPOUND00728_v97" vertex2="COMPOUND00728_v98" vertex3="COMPOUND00728_v155"/>
+ <triangular vertex1="COMPOUND00728_v132" vertex2="COMPOUND00728_v154" vertex3="COMPOUND00728_v125"/>
+ <triangular vertex1="COMPOUND00728_v127" vertex2="COMPOUND00728_v132" vertex3="COMPOUND00728_v125"/>
+ <triangular vertex1="COMPOUND00728_v130" vertex2="COMPOUND00728_v97" vertex3="COMPOUND00728_v155"/>
+ <triangular vertex1="COMPOUND00728_v156" vertex2="COMPOUND00728_v157" vertex3="COMPOUND00728_v158"/>
+ <triangular vertex1="COMPOUND00728_v158" vertex2="COMPOUND00728_v159" vertex3="COMPOUND00728_v160"/>
+ <triangular vertex1="COMPOUND00728_v157" vertex2="COMPOUND00728_v159" vertex3="COMPOUND00728_v158"/>
+ <triangular vertex1="COMPOUND00728_v160" vertex2="COMPOUND00728_v161" vertex3="COMPOUND00728_v162"/>
+ <triangular vertex1="COMPOUND00728_v159" vertex2="COMPOUND00728_v161" vertex3="COMPOUND00728_v160"/>
+ <triangular vertex1="COMPOUND00728_v162" vertex2="COMPOUND00728_v163" vertex3="COMPOUND00728_v164"/>
+ <triangular vertex1="COMPOUND00728_v161" vertex2="COMPOUND00728_v163" vertex3="COMPOUND00728_v162"/>
+ <triangular vertex1="COMPOUND00728_v163" vertex2="COMPOUND00728_v165" vertex3="COMPOUND00728_v164"/>
+ <triangular vertex1="COMPOUND00728_v164" vertex2="COMPOUND00728_v166" vertex3="COMPOUND00728_v167"/>
+ <triangular vertex1="COMPOUND00728_v167" vertex2="COMPOUND00728_v166" vertex3="COMPOUND00728_v168"/>
+ <triangular vertex1="COMPOUND00728_v165" vertex2="COMPOUND00728_v166" vertex3="COMPOUND00728_v164"/>
+ <triangular vertex1="COMPOUND00728_v168" vertex2="COMPOUND00728_v169" vertex3="COMPOUND00728_v170"/>
+ <triangular vertex1="COMPOUND00728_v166" vertex2="COMPOUND00728_v169" vertex3="COMPOUND00728_v168"/>
+ <triangular vertex1="COMPOUND00728_v170" vertex2="COMPOUND00728_v171" vertex3="COMPOUND00728_v172"/>
+ <triangular vertex1="COMPOUND00728_v169" vertex2="COMPOUND00728_v171" vertex3="COMPOUND00728_v170"/>
+ <triangular vertex1="COMPOUND00728_v171" vertex2="COMPOUND00728_v173" vertex3="COMPOUND00728_v172"/>
+ <triangular vertex1="COMPOUND00728_v172" vertex2="COMPOUND00728_v174" vertex3="COMPOUND00728_v175"/>
+ <triangular vertex1="COMPOUND00728_v175" vertex2="COMPOUND00728_v174" vertex3="COMPOUND00728_v176"/>
+ <triangular vertex1="COMPOUND00728_v173" vertex2="COMPOUND00728_v174" vertex3="COMPOUND00728_v172"/>
+ <triangular vertex1="COMPOUND00728_v176" vertex2="COMPOUND00728_v177" vertex3="COMPOUND00728_v178"/>
+ <triangular vertex1="COMPOUND00728_v174" vertex2="COMPOUND00728_v177" vertex3="COMPOUND00728_v176"/>
+ <triangular vertex1="COMPOUND00728_v178" vertex2="COMPOUND00728_v179" vertex3="COMPOUND00728_v180"/>
+ <triangular vertex1="COMPOUND00728_v177" vertex2="COMPOUND00728_v179" vertex3="COMPOUND00728_v178"/>
+ <triangular vertex1="COMPOUND00728_v180" vertex2="COMPOUND00728_v181" vertex3="COMPOUND00728_v182"/>
+ <triangular vertex1="COMPOUND00728_v179" vertex2="COMPOUND00728_v181" vertex3="COMPOUND00728_v180"/>
+ <triangular vertex1="COMPOUND00728_v181" vertex2="COMPOUND00728_v183" vertex3="COMPOUND00728_v182"/>
+ <triangular vertex1="COMPOUND00728_v183" vertex2="COMPOUND00728_v184" vertex3="COMPOUND00728_v182"/>
+ <triangular vertex1="COMPOUND00728_v182" vertex2="COMPOUND00728_v184" vertex3="COMPOUND00728_v185"/>
+ <triangular vertex1="COMPOUND00728_v185" vertex2="COMPOUND00728_v186" vertex3="COMPOUND00728_v187"/>
+ <triangular vertex1="COMPOUND00728_v184" vertex2="COMPOUND00728_v186" vertex3="COMPOUND00728_v185"/>
+ <triangular vertex1="COMPOUND00728_v187" vertex2="COMPOUND00728_v188" vertex3="COMPOUND00728_v189"/>
+ <triangular vertex1="COMPOUND00728_v186" vertex2="COMPOUND00728_v188" vertex3="COMPOUND00728_v187"/>
+ <triangular vertex1="COMPOUND00728_v189" vertex2="COMPOUND00728_v190" vertex3="COMPOUND00728_v191"/>
+ <triangular vertex1="COMPOUND00728_v188" vertex2="COMPOUND00728_v190" vertex3="COMPOUND00728_v189"/>
+ <triangular vertex1="COMPOUND00728_v191" vertex2="COMPOUND00728_v192" vertex3="COMPOUND00728_v193"/>
+ <triangular vertex1="COMPOUND00728_v190" vertex2="COMPOUND00728_v192" vertex3="COMPOUND00728_v191"/>
+ <triangular vertex1="COMPOUND00728_v194" vertex2="COMPOUND00728_v195" vertex3="COMPOUND00728_v196"/>
+ <triangular vertex1="COMPOUND00728_v193" vertex2="COMPOUND00728_v195" vertex3="COMPOUND00728_v194"/>
+ <triangular vertex1="COMPOUND00728_v192" vertex2="COMPOUND00728_v195" vertex3="COMPOUND00728_v193"/>
+ <triangular vertex1="COMPOUND00728_v195" vertex2="COMPOUND00728_v197" vertex3="COMPOUND00728_v196"/>
+ <triangular vertex1="COMPOUND00728_v196" vertex2="COMPOUND00728_v198" vertex3="COMPOUND00728_v199"/>
+ <triangular vertex1="COMPOUND00728_v197" vertex2="COMPOUND00728_v198" vertex3="COMPOUND00728_v196"/>
+ <triangular vertex1="COMPOUND00728_v199" vertex2="COMPOUND00728_v200" vertex3="COMPOUND00728_v201"/>
+ <triangular vertex1="COMPOUND00728_v198" vertex2="COMPOUND00728_v200" vertex3="COMPOUND00728_v199"/>
+ <triangular vertex1="COMPOUND00728_v201" vertex2="COMPOUND00728_v202" vertex3="COMPOUND00728_v203"/>
+ <triangular vertex1="COMPOUND00728_v200" vertex2="COMPOUND00728_v202" vertex3="COMPOUND00728_v201"/>
+ <triangular vertex1="COMPOUND00728_v203" vertex2="COMPOUND00728_v204" vertex3="COMPOUND00728_v205"/>
+ <triangular vertex1="COMPOUND00728_v202" vertex2="COMPOUND00728_v204" vertex3="COMPOUND00728_v203"/>
+ <triangular vertex1="COMPOUND00728_v205" vertex2="COMPOUND00728_v206" vertex3="COMPOUND00728_v207"/>
+ <triangular vertex1="COMPOUND00728_v204" vertex2="COMPOUND00728_v206" vertex3="COMPOUND00728_v205"/>
+ <triangular vertex1="COMPOUND00728_v207" vertex2="COMPOUND00728_v157" vertex3="COMPOUND00728_v156"/>
+ <triangular vertex1="COMPOUND00728_v206" vertex2="COMPOUND00728_v157" vertex3="COMPOUND00728_v207"/>
+ <triangular vertex1="COMPOUND00728_v172" vertex2="COMPOUND00728_v175" vertex3="COMPOUND00728_v208"/>
+ <triangular vertex1="COMPOUND00728_v209" vertex2="COMPOUND00728_v210" vertex3="COMPOUND00728_v205"/>
+ <triangular vertex1="COMPOUND00728_v207" vertex2="COMPOUND00728_v209" vertex3="COMPOUND00728_v205"/>
+ <triangular vertex1="COMPOUND00728_v211" vertex2="COMPOUND00728_v172" vertex3="COMPOUND00728_v208"/>
+ <triangular vertex1="COMPOUND00728_v212" vertex2="COMPOUND00728_v187" vertex3="COMPOUND00728_v189"/>
+ <triangular vertex1="COMPOUND00728_v213" vertex2="COMPOUND00728_v189" vertex3="COMPOUND00728_v191"/>
+ <triangular vertex1="COMPOUND00728_v213" vertex2="COMPOUND00728_v212" vertex3="COMPOUND00728_v189"/>
+ <triangular vertex1="COMPOUND00728_v170" vertex2="COMPOUND00728_v172" vertex3="COMPOUND00728_v211"/>
+ <triangular vertex1="COMPOUND00728_v214" vertex2="COMPOUND00728_v185" vertex3="COMPOUND00728_v187"/>
+ <triangular vertex1="COMPOUND00728_v215" vertex2="COMPOUND00728_v209" vertex3="COMPOUND00728_v207"/>
+ <triangular vertex1="COMPOUND00728_v214" vertex2="COMPOUND00728_v187" vertex3="COMPOUND00728_v212"/>
+ <triangular vertex1="COMPOUND00728_v216" vertex2="COMPOUND00728_v191" vertex3="COMPOUND00728_v193"/>
+ <triangular vertex1="COMPOUND00728_v216" vertex2="COMPOUND00728_v213" vertex3="COMPOUND00728_v191"/>
+ <triangular vertex1="COMPOUND00728_v217" vertex2="COMPOUND00728_v170" vertex3="COMPOUND00728_v211"/>
+ <triangular vertex1="COMPOUND00728_v156" vertex2="COMPOUND00728_v215" vertex3="COMPOUND00728_v207"/>
+ <triangular vertex1="COMPOUND00728_v218" vertex2="COMPOUND00728_v185" vertex3="COMPOUND00728_v214"/>
+ <triangular vertex1="COMPOUND00728_v182" vertex2="COMPOUND00728_v185" vertex3="COMPOUND00728_v218"/>
+ <triangular vertex1="COMPOUND00728_v219" vertex2="COMPOUND00728_v193" vertex3="COMPOUND00728_v194"/>
+ <triangular vertex1="COMPOUND00728_v168" vertex2="COMPOUND00728_v170" vertex3="COMPOUND00728_v217"/>
+ <triangular vertex1="COMPOUND00728_v219" vertex2="COMPOUND00728_v216" vertex3="COMPOUND00728_v193"/>
+ <triangular vertex1="COMPOUND00728_v220" vertex2="COMPOUND00728_v182" vertex3="COMPOUND00728_v218"/>
+ <triangular vertex1="COMPOUND00728_v221" vertex2="COMPOUND00728_v194" vertex3="COMPOUND00728_v196"/>
+ <triangular vertex1="COMPOUND00728_v158" vertex2="COMPOUND00728_v215" vertex3="COMPOUND00728_v156"/>
+ <triangular vertex1="COMPOUND00728_v158" vertex2="COMPOUND00728_v222" vertex3="COMPOUND00728_v215"/>
+ <triangular vertex1="COMPOUND00728_v221" vertex2="COMPOUND00728_v219" vertex3="COMPOUND00728_v194"/>
+ <triangular vertex1="COMPOUND00728_v158" vertex2="COMPOUND00728_v223" vertex3="COMPOUND00728_v222"/>
+ <triangular vertex1="COMPOUND00728_v224" vertex2="COMPOUND00728_v180" vertex3="COMPOUND00728_v182"/>
+ <triangular vertex1="COMPOUND00728_v224" vertex2="COMPOUND00728_v182" vertex3="COMPOUND00728_v220"/>
+ <triangular vertex1="COMPOUND00728_v225" vertex2="COMPOUND00728_v196" vertex3="COMPOUND00728_v199"/>
+ <triangular vertex1="COMPOUND00728_v167" vertex2="COMPOUND00728_v217" vertex3="COMPOUND00728_v226"/>
+ <triangular vertex1="COMPOUND00728_v167" vertex2="COMPOUND00728_v168" vertex3="COMPOUND00728_v217"/>
+ <triangular vertex1="COMPOUND00728_v160" vertex2="COMPOUND00728_v223" vertex3="COMPOUND00728_v158"/>
+ <triangular vertex1="COMPOUND00728_v160" vertex2="COMPOUND00728_v227" vertex3="COMPOUND00728_v223"/>
+ <triangular vertex1="COMPOUND00728_v225" vertex2="COMPOUND00728_v221" vertex3="COMPOUND00728_v196"/>
+ <triangular vertex1="COMPOUND00728_v164" vertex2="COMPOUND00728_v226" vertex3="COMPOUND00728_v228"/>
+ <triangular vertex1="COMPOUND00728_v229" vertex2="COMPOUND00728_v178" vertex3="COMPOUND00728_v180"/>
+ <triangular vertex1="COMPOUND00728_v164" vertex2="COMPOUND00728_v167" vertex3="COMPOUND00728_v226"/>
+ <triangular vertex1="COMPOUND00728_v229" vertex2="COMPOUND00728_v180" vertex3="COMPOUND00728_v224"/>
+ <triangular vertex1="COMPOUND00728_v162" vertex2="COMPOUND00728_v228" vertex3="COMPOUND00728_v227"/>
+ <triangular vertex1="COMPOUND00728_v162" vertex2="COMPOUND00728_v227" vertex3="COMPOUND00728_v160"/>
+ <triangular vertex1="COMPOUND00728_v162" vertex2="COMPOUND00728_v164" vertex3="COMPOUND00728_v228"/>
+ <triangular vertex1="COMPOUND00728_v230" vertex2="COMPOUND00728_v199" vertex3="COMPOUND00728_v201"/>
+ <triangular vertex1="COMPOUND00728_v230" vertex2="COMPOUND00728_v225" vertex3="COMPOUND00728_v199"/>
+ <triangular vertex1="COMPOUND00728_v231" vertex2="COMPOUND00728_v176" vertex3="COMPOUND00728_v178"/>
+ <triangular vertex1="COMPOUND00728_v231" vertex2="COMPOUND00728_v178" vertex3="COMPOUND00728_v229"/>
+ <triangular vertex1="COMPOUND00728_v203" vertex2="COMPOUND00728_v232" vertex3="COMPOUND00728_v230"/>
+ <triangular vertex1="COMPOUND00728_v203" vertex2="COMPOUND00728_v230" vertex3="COMPOUND00728_v201"/>
+ <triangular vertex1="COMPOUND00728_v233" vertex2="COMPOUND00728_v176" vertex3="COMPOUND00728_v231"/>
+ <triangular vertex1="COMPOUND00728_v175" vertex2="COMPOUND00728_v176" vertex3="COMPOUND00728_v233"/>
+ <triangular vertex1="COMPOUND00728_v210" vertex2="COMPOUND00728_v232" vertex3="COMPOUND00728_v203"/>
+ <triangular vertex1="COMPOUND00728_v205" vertex2="COMPOUND00728_v210" vertex3="COMPOUND00728_v203"/>
+ <triangular vertex1="COMPOUND00728_v208" vertex2="COMPOUND00728_v175" vertex3="COMPOUND00728_v233"/>
+ <triangular vertex1="COMPOUND00728_v234" vertex2="COMPOUND00728_v235" vertex3="COMPOUND00728_v236"/>
+ <triangular vertex1="COMPOUND00728_v236" vertex2="COMPOUND00728_v237" vertex3="COMPOUND00728_v238"/>
+ <triangular vertex1="COMPOUND00728_v235" vertex2="COMPOUND00728_v237" vertex3="COMPOUND00728_v236"/>
+ <triangular vertex1="COMPOUND00728_v238" vertex2="COMPOUND00728_v239" vertex3="COMPOUND00728_v240"/>
+ <triangular vertex1="COMPOUND00728_v237" vertex2="COMPOUND00728_v239" vertex3="COMPOUND00728_v238"/>
+ <triangular vertex1="COMPOUND00728_v240" vertex2="COMPOUND00728_v241" vertex3="COMPOUND00728_v242"/>
+ <triangular vertex1="COMPOUND00728_v239" vertex2="COMPOUND00728_v241" vertex3="COMPOUND00728_v240"/>
+ <triangular vertex1="COMPOUND00728_v241" vertex2="COMPOUND00728_v243" vertex3="COMPOUND00728_v242"/>
+ <triangular vertex1="COMPOUND00728_v242" vertex2="COMPOUND00728_v244" vertex3="COMPOUND00728_v245"/>
+ <triangular vertex1="COMPOUND00728_v245" vertex2="COMPOUND00728_v244" vertex3="COMPOUND00728_v246"/>
+ <triangular vertex1="COMPOUND00728_v243" vertex2="COMPOUND00728_v244" vertex3="COMPOUND00728_v242"/>
+ <triangular vertex1="COMPOUND00728_v246" vertex2="COMPOUND00728_v247" vertex3="COMPOUND00728_v248"/>
+ <triangular vertex1="COMPOUND00728_v244" vertex2="COMPOUND00728_v247" vertex3="COMPOUND00728_v246"/>
+ <triangular vertex1="COMPOUND00728_v248" vertex2="COMPOUND00728_v249" vertex3="COMPOUND00728_v250"/>
+ <triangular vertex1="COMPOUND00728_v247" vertex2="COMPOUND00728_v249" vertex3="COMPOUND00728_v248"/>
+ <triangular vertex1="COMPOUND00728_v249" vertex2="COMPOUND00728_v251" vertex3="COMPOUND00728_v250"/>
+ <triangular vertex1="COMPOUND00728_v250" vertex2="COMPOUND00728_v252" vertex3="COMPOUND00728_v253"/>
+ <triangular vertex1="COMPOUND00728_v253" vertex2="COMPOUND00728_v252" vertex3="COMPOUND00728_v254"/>
+ <triangular vertex1="COMPOUND00728_v251" vertex2="COMPOUND00728_v252" vertex3="COMPOUND00728_v250"/>
+ <triangular vertex1="COMPOUND00728_v254" vertex2="COMPOUND00728_v255" vertex3="COMPOUND00728_v256"/>
+ <triangular vertex1="COMPOUND00728_v252" vertex2="COMPOUND00728_v255" vertex3="COMPOUND00728_v254"/>
+ <triangular vertex1="COMPOUND00728_v256" vertex2="COMPOUND00728_v257" vertex3="COMPOUND00728_v258"/>
+ <triangular vertex1="COMPOUND00728_v255" vertex2="COMPOUND00728_v257" vertex3="COMPOUND00728_v256"/>
+ <triangular vertex1="COMPOUND00728_v258" vertex2="COMPOUND00728_v259" vertex3="COMPOUND00728_v260"/>
+ <triangular vertex1="COMPOUND00728_v257" vertex2="COMPOUND00728_v259" vertex3="COMPOUND00728_v258"/>
+ <triangular vertex1="COMPOUND00728_v259" vertex2="COMPOUND00728_v261" vertex3="COMPOUND00728_v260"/>
+ <triangular vertex1="COMPOUND00728_v261" vertex2="COMPOUND00728_v262" vertex3="COMPOUND00728_v260"/>
+ <triangular vertex1="COMPOUND00728_v260" vertex2="COMPOUND00728_v262" vertex3="COMPOUND00728_v263"/>
+ <triangular vertex1="COMPOUND00728_v263" vertex2="COMPOUND00728_v264" vertex3="COMPOUND00728_v265"/>
+ <triangular vertex1="COMPOUND00728_v262" vertex2="COMPOUND00728_v264" vertex3="COMPOUND00728_v263"/>
+ <triangular vertex1="COMPOUND00728_v265" vertex2="COMPOUND00728_v266" vertex3="COMPOUND00728_v267"/>
+ <triangular vertex1="COMPOUND00728_v264" vertex2="COMPOUND00728_v266" vertex3="COMPOUND00728_v265"/>
+ <triangular vertex1="COMPOUND00728_v267" vertex2="COMPOUND00728_v268" vertex3="COMPOUND00728_v269"/>
+ <triangular vertex1="COMPOUND00728_v266" vertex2="COMPOUND00728_v268" vertex3="COMPOUND00728_v267"/>
+ <triangular vertex1="COMPOUND00728_v269" vertex2="COMPOUND00728_v270" vertex3="COMPOUND00728_v271"/>
+ <triangular vertex1="COMPOUND00728_v268" vertex2="COMPOUND00728_v270" vertex3="COMPOUND00728_v269"/>
+ <triangular vertex1="COMPOUND00728_v272" vertex2="COMPOUND00728_v273" vertex3="COMPOUND00728_v274"/>
+ <triangular vertex1="COMPOUND00728_v271" vertex2="COMPOUND00728_v273" vertex3="COMPOUND00728_v272"/>
+ <triangular vertex1="COMPOUND00728_v270" vertex2="COMPOUND00728_v273" vertex3="COMPOUND00728_v271"/>
+ <triangular vertex1="COMPOUND00728_v273" vertex2="COMPOUND00728_v275" vertex3="COMPOUND00728_v274"/>
+ <triangular vertex1="COMPOUND00728_v274" vertex2="COMPOUND00728_v276" vertex3="COMPOUND00728_v277"/>
+ <triangular vertex1="COMPOUND00728_v275" vertex2="COMPOUND00728_v276" vertex3="COMPOUND00728_v274"/>
+ <triangular vertex1="COMPOUND00728_v277" vertex2="COMPOUND00728_v278" vertex3="COMPOUND00728_v279"/>
+ <triangular vertex1="COMPOUND00728_v276" vertex2="COMPOUND00728_v278" vertex3="COMPOUND00728_v277"/>
+ <triangular vertex1="COMPOUND00728_v279" vertex2="COMPOUND00728_v280" vertex3="COMPOUND00728_v281"/>
+ <triangular vertex1="COMPOUND00728_v278" vertex2="COMPOUND00728_v280" vertex3="COMPOUND00728_v279"/>
+ <triangular vertex1="COMPOUND00728_v281" vertex2="COMPOUND00728_v282" vertex3="COMPOUND00728_v283"/>
+ <triangular vertex1="COMPOUND00728_v280" vertex2="COMPOUND00728_v282" vertex3="COMPOUND00728_v281"/>
+ <triangular vertex1="COMPOUND00728_v283" vertex2="COMPOUND00728_v284" vertex3="COMPOUND00728_v285"/>
+ <triangular vertex1="COMPOUND00728_v282" vertex2="COMPOUND00728_v284" vertex3="COMPOUND00728_v283"/>
+ <triangular vertex1="COMPOUND00728_v285" vertex2="COMPOUND00728_v235" vertex3="COMPOUND00728_v234"/>
+ <triangular vertex1="COMPOUND00728_v284" vertex2="COMPOUND00728_v235" vertex3="COMPOUND00728_v285"/>
+ <triangular vertex1="COMPOUND00728_v285" vertex2="COMPOUND00728_v286" vertex3="COMPOUND00728_v283"/>
+ <triangular vertex1="COMPOUND00728_v248" vertex2="COMPOUND00728_v250" vertex3="COMPOUND00728_v287"/>
+ <triangular vertex1="COMPOUND00728_v248" vertex2="COMPOUND00728_v287" vertex3="COMPOUND00728_v288"/>
+ <triangular vertex1="COMPOUND00728_v289" vertex2="COMPOUND00728_v265" vertex3="COMPOUND00728_v267"/>
+ <triangular vertex1="COMPOUND00728_v290" vertex2="COMPOUND00728_v286" vertex3="COMPOUND00728_v285"/>
+ <triangular vertex1="COMPOUND00728_v291" vertex2="COMPOUND00728_v267" vertex3="COMPOUND00728_v269"/>
+ <triangular vertex1="COMPOUND00728_v291" vertex2="COMPOUND00728_v289" vertex3="COMPOUND00728_v267"/>
+ <triangular vertex1="COMPOUND00728_v292" vertex2="COMPOUND00728_v248" vertex3="COMPOUND00728_v288"/>
+ <triangular vertex1="COMPOUND00728_v293" vertex2="COMPOUND00728_v263" vertex3="COMPOUND00728_v265"/>
+ <triangular vertex1="COMPOUND00728_v293" vertex2="COMPOUND00728_v265" vertex3="COMPOUND00728_v289"/>
+ <triangular vertex1="COMPOUND00728_v294" vertex2="COMPOUND00728_v269" vertex3="COMPOUND00728_v271"/>
+ <triangular vertex1="COMPOUND00728_v234" vertex2="COMPOUND00728_v290" vertex3="COMPOUND00728_v285"/>
+ <triangular vertex1="COMPOUND00728_v294" vertex2="COMPOUND00728_v291" vertex3="COMPOUND00728_v269"/>
+ <triangular vertex1="COMPOUND00728_v295" vertex2="COMPOUND00728_v263" vertex3="COMPOUND00728_v293"/>
+ <triangular vertex1="COMPOUND00728_v246" vertex2="COMPOUND00728_v248" vertex3="COMPOUND00728_v292"/>
+ <triangular vertex1="COMPOUND00728_v260" vertex2="COMPOUND00728_v263" vertex3="COMPOUND00728_v295"/>
+ <triangular vertex1="COMPOUND00728_v296" vertex2="COMPOUND00728_v271" vertex3="COMPOUND00728_v272"/>
+ <triangular vertex1="COMPOUND00728_v296" vertex2="COMPOUND00728_v294" vertex3="COMPOUND00728_v271"/>
+ <triangular vertex1="COMPOUND00728_v297" vertex2="COMPOUND00728_v260" vertex3="COMPOUND00728_v295"/>
+ <triangular vertex1="COMPOUND00728_v236" vertex2="COMPOUND00728_v290" vertex3="COMPOUND00728_v234"/>
+ <triangular vertex1="COMPOUND00728_v236" vertex2="COMPOUND00728_v298" vertex3="COMPOUND00728_v290"/>
+ <triangular vertex1="COMPOUND00728_v299" vertex2="COMPOUND00728_v272" vertex3="COMPOUND00728_v274"/>
+ <triangular vertex1="COMPOUND00728_v299" vertex2="COMPOUND00728_v296" vertex3="COMPOUND00728_v272"/>
+ <triangular vertex1="COMPOUND00728_v300" vertex2="COMPOUND00728_v258" vertex3="COMPOUND00728_v260"/>
+ <triangular vertex1="COMPOUND00728_v300" vertex2="COMPOUND00728_v260" vertex3="COMPOUND00728_v297"/>
+ <triangular vertex1="COMPOUND00728_v245" vertex2="COMPOUND00728_v246" vertex3="COMPOUND00728_v292"/>
+ <triangular vertex1="COMPOUND00728_v245" vertex2="COMPOUND00728_v292" vertex3="COMPOUND00728_v301"/>
+ <triangular vertex1="COMPOUND00728_v302" vertex2="COMPOUND00728_v274" vertex3="COMPOUND00728_v277"/>
+ <triangular vertex1="COMPOUND00728_v238" vertex2="COMPOUND00728_v298" vertex3="COMPOUND00728_v236"/>
+ <triangular vertex1="COMPOUND00728_v238" vertex2="COMPOUND00728_v303" vertex3="COMPOUND00728_v298"/>
+ <triangular vertex1="COMPOUND00728_v302" vertex2="COMPOUND00728_v299" vertex3="COMPOUND00728_v274"/>
+ <triangular vertex1="COMPOUND00728_v242" vertex2="COMPOUND00728_v301" vertex3="COMPOUND00728_v304"/>
+ <triangular vertex1="COMPOUND00728_v242" vertex2="COMPOUND00728_v245" vertex3="COMPOUND00728_v301"/>
+ <triangular vertex1="COMPOUND00728_v240" vertex2="COMPOUND00728_v305" vertex3="COMPOUND00728_v303"/>
+ <triangular vertex1="COMPOUND00728_v240" vertex2="COMPOUND00728_v304" vertex3="COMPOUND00728_v305"/>
+ <triangular vertex1="COMPOUND00728_v240" vertex2="COMPOUND00728_v303" vertex3="COMPOUND00728_v238"/>
+ <triangular vertex1="COMPOUND00728_v306" vertex2="COMPOUND00728_v256" vertex3="COMPOUND00728_v258"/>
+ <triangular vertex1="COMPOUND00728_v240" vertex2="COMPOUND00728_v242" vertex3="COMPOUND00728_v304"/>
+ <triangular vertex1="COMPOUND00728_v306" vertex2="COMPOUND00728_v258" vertex3="COMPOUND00728_v300"/>
+ <triangular vertex1="COMPOUND00728_v307" vertex2="COMPOUND00728_v277" vertex3="COMPOUND00728_v279"/>
+ <triangular vertex1="COMPOUND00728_v307" vertex2="COMPOUND00728_v302" vertex3="COMPOUND00728_v277"/>
+ <triangular vertex1="COMPOUND00728_v308" vertex2="COMPOUND00728_v254" vertex3="COMPOUND00728_v256"/>
+ <triangular vertex1="COMPOUND00728_v308" vertex2="COMPOUND00728_v256" vertex3="COMPOUND00728_v306"/>
+ <triangular vertex1="COMPOUND00728_v309" vertex2="COMPOUND00728_v307" vertex3="COMPOUND00728_v279"/>
+ <triangular vertex1="COMPOUND00728_v281" vertex2="COMPOUND00728_v309" vertex3="COMPOUND00728_v279"/>
+ <triangular vertex1="COMPOUND00728_v310" vertex2="COMPOUND00728_v254" vertex3="COMPOUND00728_v308"/>
+ <triangular vertex1="COMPOUND00728_v253" vertex2="COMPOUND00728_v254" vertex3="COMPOUND00728_v310"/>
+ <triangular vertex1="COMPOUND00728_v311" vertex2="COMPOUND00728_v309" vertex3="COMPOUND00728_v281"/>
+ <triangular vertex1="COMPOUND00728_v283" vertex2="COMPOUND00728_v311" vertex3="COMPOUND00728_v281"/>
+ <triangular vertex1="COMPOUND00728_v287" vertex2="COMPOUND00728_v253" vertex3="COMPOUND00728_v310"/>
+ <triangular vertex1="COMPOUND00728_v250" vertex2="COMPOUND00728_v253" vertex3="COMPOUND00728_v287"/>
+ <triangular vertex1="COMPOUND00728_v286" vertex2="COMPOUND00728_v311" vertex3="COMPOUND00728_v283"/>
+ <triangular vertex1="COMPOUND00728_v312" vertex2="COMPOUND00728_v313" vertex3="COMPOUND00728_v314"/>
+ <triangular vertex1="COMPOUND00728_v314" vertex2="COMPOUND00728_v315" vertex3="COMPOUND00728_v316"/>
+ <triangular vertex1="COMPOUND00728_v313" vertex2="COMPOUND00728_v315" vertex3="COMPOUND00728_v314"/>
+ <triangular vertex1="COMPOUND00728_v316" vertex2="COMPOUND00728_v317" vertex3="COMPOUND00728_v318"/>
+ <triangular vertex1="COMPOUND00728_v315" vertex2="COMPOUND00728_v317" vertex3="COMPOUND00728_v316"/>
+ <triangular vertex1="COMPOUND00728_v318" vertex2="COMPOUND00728_v319" vertex3="COMPOUND00728_v320"/>
+ <triangular vertex1="COMPOUND00728_v317" vertex2="COMPOUND00728_v319" vertex3="COMPOUND00728_v318"/>
+ <triangular vertex1="COMPOUND00728_v319" vertex2="COMPOUND00728_v321" vertex3="COMPOUND00728_v320"/>
+ <triangular vertex1="COMPOUND00728_v320" vertex2="COMPOUND00728_v322" vertex3="COMPOUND00728_v323"/>
+ <triangular vertex1="COMPOUND00728_v323" vertex2="COMPOUND00728_v322" vertex3="COMPOUND00728_v324"/>
+ <triangular vertex1="COMPOUND00728_v321" vertex2="COMPOUND00728_v322" vertex3="COMPOUND00728_v320"/>
+ <triangular vertex1="COMPOUND00728_v324" vertex2="COMPOUND00728_v325" vertex3="COMPOUND00728_v326"/>
+ <triangular vertex1="COMPOUND00728_v322" vertex2="COMPOUND00728_v325" vertex3="COMPOUND00728_v324"/>
+ <triangular vertex1="COMPOUND00728_v326" vertex2="COMPOUND00728_v327" vertex3="COMPOUND00728_v328"/>
+ <triangular vertex1="COMPOUND00728_v325" vertex2="COMPOUND00728_v327" vertex3="COMPOUND00728_v326"/>
+ <triangular vertex1="COMPOUND00728_v327" vertex2="COMPOUND00728_v329" vertex3="COMPOUND00728_v328"/>
+ <triangular vertex1="COMPOUND00728_v328" vertex2="COMPOUND00728_v330" vertex3="COMPOUND00728_v331"/>
+ <triangular vertex1="COMPOUND00728_v331" vertex2="COMPOUND00728_v330" vertex3="COMPOUND00728_v332"/>
+ <triangular vertex1="COMPOUND00728_v329" vertex2="COMPOUND00728_v330" vertex3="COMPOUND00728_v328"/>
+ <triangular vertex1="COMPOUND00728_v332" vertex2="COMPOUND00728_v333" vertex3="COMPOUND00728_v334"/>
+ <triangular vertex1="COMPOUND00728_v330" vertex2="COMPOUND00728_v333" vertex3="COMPOUND00728_v332"/>
+ <triangular vertex1="COMPOUND00728_v334" vertex2="COMPOUND00728_v335" vertex3="COMPOUND00728_v336"/>
+ <triangular vertex1="COMPOUND00728_v333" vertex2="COMPOUND00728_v335" vertex3="COMPOUND00728_v334"/>
+ <triangular vertex1="COMPOUND00728_v336" vertex2="COMPOUND00728_v337" vertex3="COMPOUND00728_v338"/>
+ <triangular vertex1="COMPOUND00728_v335" vertex2="COMPOUND00728_v337" vertex3="COMPOUND00728_v336"/>
+ <triangular vertex1="COMPOUND00728_v337" vertex2="COMPOUND00728_v339" vertex3="COMPOUND00728_v338"/>
+ <triangular vertex1="COMPOUND00728_v339" vertex2="COMPOUND00728_v340" vertex3="COMPOUND00728_v338"/>
+ <triangular vertex1="COMPOUND00728_v338" vertex2="COMPOUND00728_v340" vertex3="COMPOUND00728_v341"/>
+ <triangular vertex1="COMPOUND00728_v341" vertex2="COMPOUND00728_v342" vertex3="COMPOUND00728_v343"/>
+ <triangular vertex1="COMPOUND00728_v340" vertex2="COMPOUND00728_v342" vertex3="COMPOUND00728_v341"/>
+ <triangular vertex1="COMPOUND00728_v343" vertex2="COMPOUND00728_v344" vertex3="COMPOUND00728_v345"/>
+ <triangular vertex1="COMPOUND00728_v342" vertex2="COMPOUND00728_v344" vertex3="COMPOUND00728_v343"/>
+ <triangular vertex1="COMPOUND00728_v345" vertex2="COMPOUND00728_v346" vertex3="COMPOUND00728_v347"/>
+ <triangular vertex1="COMPOUND00728_v344" vertex2="COMPOUND00728_v346" vertex3="COMPOUND00728_v345"/>
+ <triangular vertex1="COMPOUND00728_v347" vertex2="COMPOUND00728_v348" vertex3="COMPOUND00728_v349"/>
+ <triangular vertex1="COMPOUND00728_v346" vertex2="COMPOUND00728_v348" vertex3="COMPOUND00728_v347"/>
+ <triangular vertex1="COMPOUND00728_v350" vertex2="COMPOUND00728_v351" vertex3="COMPOUND00728_v352"/>
+ <triangular vertex1="COMPOUND00728_v349" vertex2="COMPOUND00728_v351" vertex3="COMPOUND00728_v350"/>
+ <triangular vertex1="COMPOUND00728_v348" vertex2="COMPOUND00728_v351" vertex3="COMPOUND00728_v349"/>
+ <triangular vertex1="COMPOUND00728_v351" vertex2="COMPOUND00728_v353" vertex3="COMPOUND00728_v352"/>
+ <triangular vertex1="COMPOUND00728_v352" vertex2="COMPOUND00728_v354" vertex3="COMPOUND00728_v355"/>
+ <triangular vertex1="COMPOUND00728_v353" vertex2="COMPOUND00728_v354" vertex3="COMPOUND00728_v352"/>
+ <triangular vertex1="COMPOUND00728_v355" vertex2="COMPOUND00728_v356" vertex3="COMPOUND00728_v357"/>
+ <triangular vertex1="COMPOUND00728_v354" vertex2="COMPOUND00728_v356" vertex3="COMPOUND00728_v355"/>
+ <triangular vertex1="COMPOUND00728_v357" vertex2="COMPOUND00728_v358" vertex3="COMPOUND00728_v359"/>
+ <triangular vertex1="COMPOUND00728_v356" vertex2="COMPOUND00728_v358" vertex3="COMPOUND00728_v357"/>
+ <triangular vertex1="COMPOUND00728_v359" vertex2="COMPOUND00728_v360" vertex3="COMPOUND00728_v361"/>
+ <triangular vertex1="COMPOUND00728_v358" vertex2="COMPOUND00728_v360" vertex3="COMPOUND00728_v359"/>
+ <triangular vertex1="COMPOUND00728_v361" vertex2="COMPOUND00728_v362" vertex3="COMPOUND00728_v363"/>
+ <triangular vertex1="COMPOUND00728_v360" vertex2="COMPOUND00728_v362" vertex3="COMPOUND00728_v361"/>
+ <triangular vertex1="COMPOUND00728_v363" vertex2="COMPOUND00728_v313" vertex3="COMPOUND00728_v312"/>
+ <triangular vertex1="COMPOUND00728_v362" vertex2="COMPOUND00728_v313" vertex3="COMPOUND00728_v363"/>
+ <triangular vertex1="COMPOUND00728_v328" vertex2="COMPOUND00728_v331" vertex3="COMPOUND00728_v364"/>
+ <triangular vertex1="COMPOUND00728_v365" vertex2="COMPOUND00728_v366" vertex3="COMPOUND00728_v361"/>
+ <triangular vertex1="COMPOUND00728_v363" vertex2="COMPOUND00728_v365" vertex3="COMPOUND00728_v361"/>
+ <triangular vertex1="COMPOUND00728_v367" vertex2="COMPOUND00728_v328" vertex3="COMPOUND00728_v364"/>
+ <triangular vertex1="COMPOUND00728_v368" vertex2="COMPOUND00728_v343" vertex3="COMPOUND00728_v345"/>
+ <triangular vertex1="COMPOUND00728_v369" vertex2="COMPOUND00728_v345" vertex3="COMPOUND00728_v347"/>
+ <triangular vertex1="COMPOUND00728_v369" vertex2="COMPOUND00728_v368" vertex3="COMPOUND00728_v345"/>
+ <triangular vertex1="COMPOUND00728_v326" vertex2="COMPOUND00728_v328" vertex3="COMPOUND00728_v367"/>
+ <triangular vertex1="COMPOUND00728_v370" vertex2="COMPOUND00728_v341" vertex3="COMPOUND00728_v343"/>
+ <triangular vertex1="COMPOUND00728_v371" vertex2="COMPOUND00728_v365" vertex3="COMPOUND00728_v363"/>
+ <triangular vertex1="COMPOUND00728_v370" vertex2="COMPOUND00728_v343" vertex3="COMPOUND00728_v368"/>
+ <triangular vertex1="COMPOUND00728_v372" vertex2="COMPOUND00728_v347" vertex3="COMPOUND00728_v349"/>
+ <triangular vertex1="COMPOUND00728_v372" vertex2="COMPOUND00728_v369" vertex3="COMPOUND00728_v347"/>
+ <triangular vertex1="COMPOUND00728_v373" vertex2="COMPOUND00728_v326" vertex3="COMPOUND00728_v367"/>
+ <triangular vertex1="COMPOUND00728_v312" vertex2="COMPOUND00728_v371" vertex3="COMPOUND00728_v363"/>
+ <triangular vertex1="COMPOUND00728_v374" vertex2="COMPOUND00728_v341" vertex3="COMPOUND00728_v370"/>
+ <triangular vertex1="COMPOUND00728_v338" vertex2="COMPOUND00728_v341" vertex3="COMPOUND00728_v374"/>
+ <triangular vertex1="COMPOUND00728_v375" vertex2="COMPOUND00728_v349" vertex3="COMPOUND00728_v350"/>
+ <triangular vertex1="COMPOUND00728_v324" vertex2="COMPOUND00728_v326" vertex3="COMPOUND00728_v373"/>
+ <triangular vertex1="COMPOUND00728_v375" vertex2="COMPOUND00728_v372" vertex3="COMPOUND00728_v349"/>
+ <triangular vertex1="COMPOUND00728_v376" vertex2="COMPOUND00728_v338" vertex3="COMPOUND00728_v374"/>
+ <triangular vertex1="COMPOUND00728_v377" vertex2="COMPOUND00728_v350" vertex3="COMPOUND00728_v352"/>
+ <triangular vertex1="COMPOUND00728_v314" vertex2="COMPOUND00728_v371" vertex3="COMPOUND00728_v312"/>
+ <triangular vertex1="COMPOUND00728_v314" vertex2="COMPOUND00728_v378" vertex3="COMPOUND00728_v371"/>
+ <triangular vertex1="COMPOUND00728_v377" vertex2="COMPOUND00728_v375" vertex3="COMPOUND00728_v350"/>
+ <triangular vertex1="COMPOUND00728_v314" vertex2="COMPOUND00728_v379" vertex3="COMPOUND00728_v378"/>
+ <triangular vertex1="COMPOUND00728_v380" vertex2="COMPOUND00728_v336" vertex3="COMPOUND00728_v338"/>
+ <triangular vertex1="COMPOUND00728_v380" vertex2="COMPOUND00728_v338" vertex3="COMPOUND00728_v376"/>
+ <triangular vertex1="COMPOUND00728_v381" vertex2="COMPOUND00728_v352" vertex3="COMPOUND00728_v355"/>
+ <triangular vertex1="COMPOUND00728_v323" vertex2="COMPOUND00728_v373" vertex3="COMPOUND00728_v382"/>
+ <triangular vertex1="COMPOUND00728_v323" vertex2="COMPOUND00728_v324" vertex3="COMPOUND00728_v373"/>
+ <triangular vertex1="COMPOUND00728_v316" vertex2="COMPOUND00728_v379" vertex3="COMPOUND00728_v314"/>
+ <triangular vertex1="COMPOUND00728_v316" vertex2="COMPOUND00728_v383" vertex3="COMPOUND00728_v379"/>
+ <triangular vertex1="COMPOUND00728_v381" vertex2="COMPOUND00728_v377" vertex3="COMPOUND00728_v352"/>
+ <triangular vertex1="COMPOUND00728_v320" vertex2="COMPOUND00728_v382" vertex3="COMPOUND00728_v384"/>
+ <triangular vertex1="COMPOUND00728_v385" vertex2="COMPOUND00728_v334" vertex3="COMPOUND00728_v336"/>
+ <triangular vertex1="COMPOUND00728_v320" vertex2="COMPOUND00728_v323" vertex3="COMPOUND00728_v382"/>
+ <triangular vertex1="COMPOUND00728_v385" vertex2="COMPOUND00728_v336" vertex3="COMPOUND00728_v380"/>
+ <triangular vertex1="COMPOUND00728_v318" vertex2="COMPOUND00728_v384" vertex3="COMPOUND00728_v383"/>
+ <triangular vertex1="COMPOUND00728_v318" vertex2="COMPOUND00728_v383" vertex3="COMPOUND00728_v316"/>
+ <triangular vertex1="COMPOUND00728_v318" vertex2="COMPOUND00728_v320" vertex3="COMPOUND00728_v384"/>
+ <triangular vertex1="COMPOUND00728_v386" vertex2="COMPOUND00728_v355" vertex3="COMPOUND00728_v357"/>
+ <triangular vertex1="COMPOUND00728_v386" vertex2="COMPOUND00728_v381" vertex3="COMPOUND00728_v355"/>
+ <triangular vertex1="COMPOUND00728_v387" vertex2="COMPOUND00728_v332" vertex3="COMPOUND00728_v334"/>
+ <triangular vertex1="COMPOUND00728_v387" vertex2="COMPOUND00728_v334" vertex3="COMPOUND00728_v385"/>
+ <triangular vertex1="COMPOUND00728_v359" vertex2="COMPOUND00728_v388" vertex3="COMPOUND00728_v386"/>
+ <triangular vertex1="COMPOUND00728_v359" vertex2="COMPOUND00728_v386" vertex3="COMPOUND00728_v357"/>
+ <triangular vertex1="COMPOUND00728_v389" vertex2="COMPOUND00728_v332" vertex3="COMPOUND00728_v387"/>
+ <triangular vertex1="COMPOUND00728_v331" vertex2="COMPOUND00728_v332" vertex3="COMPOUND00728_v389"/>
+ <triangular vertex1="COMPOUND00728_v366" vertex2="COMPOUND00728_v388" vertex3="COMPOUND00728_v359"/>
+ <triangular vertex1="COMPOUND00728_v361" vertex2="COMPOUND00728_v366" vertex3="COMPOUND00728_v359"/>
+ <triangular vertex1="COMPOUND00728_v364" vertex2="COMPOUND00728_v331" vertex3="COMPOUND00728_v389"/>
+ <triangular vertex1="COMPOUND00728_v390" vertex2="COMPOUND00728_v391" vertex3="COMPOUND00728_v392"/>
+ <triangular vertex1="COMPOUND00728_v392" vertex2="COMPOUND00728_v393" vertex3="COMPOUND00728_v394"/>
+ <triangular vertex1="COMPOUND00728_v391" vertex2="COMPOUND00728_v393" vertex3="COMPOUND00728_v392"/>
+ <triangular vertex1="COMPOUND00728_v394" vertex2="COMPOUND00728_v395" vertex3="COMPOUND00728_v396"/>
+ <triangular vertex1="COMPOUND00728_v393" vertex2="COMPOUND00728_v395" vertex3="COMPOUND00728_v394"/>
+ <triangular vertex1="COMPOUND00728_v396" vertex2="COMPOUND00728_v397" vertex3="COMPOUND00728_v398"/>
+ <triangular vertex1="COMPOUND00728_v395" vertex2="COMPOUND00728_v397" vertex3="COMPOUND00728_v396"/>
+ <triangular vertex1="COMPOUND00728_v397" vertex2="COMPOUND00728_v399" vertex3="COMPOUND00728_v398"/>
+ <triangular vertex1="COMPOUND00728_v398" vertex2="COMPOUND00728_v400" vertex3="COMPOUND00728_v401"/>
+ <triangular vertex1="COMPOUND00728_v401" vertex2="COMPOUND00728_v400" vertex3="COMPOUND00728_v402"/>
+ <triangular vertex1="COMPOUND00728_v399" vertex2="COMPOUND00728_v400" vertex3="COMPOUND00728_v398"/>
+ <triangular vertex1="COMPOUND00728_v402" vertex2="COMPOUND00728_v403" vertex3="COMPOUND00728_v404"/>
+ <triangular vertex1="COMPOUND00728_v400" vertex2="COMPOUND00728_v403" vertex3="COMPOUND00728_v402"/>
+ <triangular vertex1="COMPOUND00728_v404" vertex2="COMPOUND00728_v405" vertex3="COMPOUND00728_v406"/>
+ <triangular vertex1="COMPOUND00728_v403" vertex2="COMPOUND00728_v405" vertex3="COMPOUND00728_v404"/>
+ <triangular vertex1="COMPOUND00728_v405" vertex2="COMPOUND00728_v407" vertex3="COMPOUND00728_v406"/>
+ <triangular vertex1="COMPOUND00728_v406" vertex2="COMPOUND00728_v408" vertex3="COMPOUND00728_v409"/>
+ <triangular vertex1="COMPOUND00728_v409" vertex2="COMPOUND00728_v408" vertex3="COMPOUND00728_v410"/>
+ <triangular vertex1="COMPOUND00728_v407" vertex2="COMPOUND00728_v408" vertex3="COMPOUND00728_v406"/>
+ <triangular vertex1="COMPOUND00728_v410" vertex2="COMPOUND00728_v411" vertex3="COMPOUND00728_v412"/>
+ <triangular vertex1="COMPOUND00728_v408" vertex2="COMPOUND00728_v411" vertex3="COMPOUND00728_v410"/>
+ <triangular vertex1="COMPOUND00728_v412" vertex2="COMPOUND00728_v413" vertex3="COMPOUND00728_v414"/>
+ <triangular vertex1="COMPOUND00728_v411" vertex2="COMPOUND00728_v413" vertex3="COMPOUND00728_v412"/>
+ <triangular vertex1="COMPOUND00728_v414" vertex2="COMPOUND00728_v415" vertex3="COMPOUND00728_v416"/>
+ <triangular vertex1="COMPOUND00728_v413" vertex2="COMPOUND00728_v415" vertex3="COMPOUND00728_v414"/>
+ <triangular vertex1="COMPOUND00728_v415" vertex2="COMPOUND00728_v417" vertex3="COMPOUND00728_v416"/>
+ <triangular vertex1="COMPOUND00728_v417" vertex2="COMPOUND00728_v418" vertex3="COMPOUND00728_v416"/>
+ <triangular vertex1="COMPOUND00728_v416" vertex2="COMPOUND00728_v418" vertex3="COMPOUND00728_v419"/>
+ <triangular vertex1="COMPOUND00728_v419" vertex2="COMPOUND00728_v420" vertex3="COMPOUND00728_v421"/>
+ <triangular vertex1="COMPOUND00728_v418" vertex2="COMPOUND00728_v420" vertex3="COMPOUND00728_v419"/>
+ <triangular vertex1="COMPOUND00728_v421" vertex2="COMPOUND00728_v422" vertex3="COMPOUND00728_v423"/>
+ <triangular vertex1="COMPOUND00728_v420" vertex2="COMPOUND00728_v422" vertex3="COMPOUND00728_v421"/>
+ <triangular vertex1="COMPOUND00728_v423" vertex2="COMPOUND00728_v424" vertex3="COMPOUND00728_v425"/>
+ <triangular vertex1="COMPOUND00728_v422" vertex2="COMPOUND00728_v424" vertex3="COMPOUND00728_v423"/>
+ <triangular vertex1="COMPOUND00728_v425" vertex2="COMPOUND00728_v426" vertex3="COMPOUND00728_v427"/>
+ <triangular vertex1="COMPOUND00728_v424" vertex2="COMPOUND00728_v426" vertex3="COMPOUND00728_v425"/>
+ <triangular vertex1="COMPOUND00728_v428" vertex2="COMPOUND00728_v429" vertex3="COMPOUND00728_v430"/>
+ <triangular vertex1="COMPOUND00728_v427" vertex2="COMPOUND00728_v429" vertex3="COMPOUND00728_v428"/>
+ <triangular vertex1="COMPOUND00728_v426" vertex2="COMPOUND00728_v429" vertex3="COMPOUND00728_v427"/>
+ <triangular vertex1="COMPOUND00728_v429" vertex2="COMPOUND00728_v431" vertex3="COMPOUND00728_v430"/>
+ <triangular vertex1="COMPOUND00728_v430" vertex2="COMPOUND00728_v432" vertex3="COMPOUND00728_v433"/>
+ <triangular vertex1="COMPOUND00728_v431" vertex2="COMPOUND00728_v432" vertex3="COMPOUND00728_v430"/>
+ <triangular vertex1="COMPOUND00728_v433" vertex2="COMPOUND00728_v434" vertex3="COMPOUND00728_v435"/>
+ <triangular vertex1="COMPOUND00728_v432" vertex2="COMPOUND00728_v434" vertex3="COMPOUND00728_v433"/>
+ <triangular vertex1="COMPOUND00728_v435" vertex2="COMPOUND00728_v436" vertex3="COMPOUND00728_v437"/>
+ <triangular vertex1="COMPOUND00728_v434" vertex2="COMPOUND00728_v436" vertex3="COMPOUND00728_v435"/>
+ <triangular vertex1="COMPOUND00728_v437" vertex2="COMPOUND00728_v438" vertex3="COMPOUND00728_v439"/>
+ <triangular vertex1="COMPOUND00728_v436" vertex2="COMPOUND00728_v438" vertex3="COMPOUND00728_v437"/>
+ <triangular vertex1="COMPOUND00728_v439" vertex2="COMPOUND00728_v440" vertex3="COMPOUND00728_v441"/>
+ <triangular vertex1="COMPOUND00728_v438" vertex2="COMPOUND00728_v440" vertex3="COMPOUND00728_v439"/>
+ <triangular vertex1="COMPOUND00728_v441" vertex2="COMPOUND00728_v391" vertex3="COMPOUND00728_v390"/>
+ <triangular vertex1="COMPOUND00728_v440" vertex2="COMPOUND00728_v391" vertex3="COMPOUND00728_v441"/>
+ <triangular vertex1="COMPOUND00728_v406" vertex2="COMPOUND00728_v409" vertex3="COMPOUND00728_v442"/>
+ <triangular vertex1="COMPOUND00728_v443" vertex2="COMPOUND00728_v444" vertex3="COMPOUND00728_v439"/>
+ <triangular vertex1="COMPOUND00728_v441" vertex2="COMPOUND00728_v443" vertex3="COMPOUND00728_v439"/>
+ <triangular vertex1="COMPOUND00728_v445" vertex2="COMPOUND00728_v406" vertex3="COMPOUND00728_v442"/>
+ <triangular vertex1="COMPOUND00728_v446" vertex2="COMPOUND00728_v421" vertex3="COMPOUND00728_v423"/>
+ <triangular vertex1="COMPOUND00728_v447" vertex2="COMPOUND00728_v423" vertex3="COMPOUND00728_v425"/>
+ <triangular vertex1="COMPOUND00728_v447" vertex2="COMPOUND00728_v446" vertex3="COMPOUND00728_v423"/>
+ <triangular vertex1="COMPOUND00728_v404" vertex2="COMPOUND00728_v406" vertex3="COMPOUND00728_v445"/>
+ <triangular vertex1="COMPOUND00728_v448" vertex2="COMPOUND00728_v419" vertex3="COMPOUND00728_v421"/>
+ <triangular vertex1="COMPOUND00728_v449" vertex2="COMPOUND00728_v443" vertex3="COMPOUND00728_v441"/>
+ <triangular vertex1="COMPOUND00728_v448" vertex2="COMPOUND00728_v421" vertex3="COMPOUND00728_v446"/>
+ <triangular vertex1="COMPOUND00728_v450" vertex2="COMPOUND00728_v425" vertex3="COMPOUND00728_v427"/>
+ <triangular vertex1="COMPOUND00728_v450" vertex2="COMPOUND00728_v447" vertex3="COMPOUND00728_v425"/>
+ <triangular vertex1="COMPOUND00728_v451" vertex2="COMPOUND00728_v404" vertex3="COMPOUND00728_v445"/>
+ <triangular vertex1="COMPOUND00728_v390" vertex2="COMPOUND00728_v449" vertex3="COMPOUND00728_v441"/>
+ <triangular vertex1="COMPOUND00728_v452" vertex2="COMPOUND00728_v419" vertex3="COMPOUND00728_v448"/>
+ <triangular vertex1="COMPOUND00728_v416" vertex2="COMPOUND00728_v419" vertex3="COMPOUND00728_v452"/>
+ <triangular vertex1="COMPOUND00728_v453" vertex2="COMPOUND00728_v427" vertex3="COMPOUND00728_v428"/>
+ <triangular vertex1="COMPOUND00728_v402" vertex2="COMPOUND00728_v404" vertex3="COMPOUND00728_v451"/>
+ <triangular vertex1="COMPOUND00728_v453" vertex2="COMPOUND00728_v450" vertex3="COMPOUND00728_v427"/>
+ <triangular vertex1="COMPOUND00728_v454" vertex2="COMPOUND00728_v416" vertex3="COMPOUND00728_v452"/>
+ <triangular vertex1="COMPOUND00728_v455" vertex2="COMPOUND00728_v428" vertex3="COMPOUND00728_v430"/>
+ <triangular vertex1="COMPOUND00728_v392" vertex2="COMPOUND00728_v449" vertex3="COMPOUND00728_v390"/>
+ <triangular vertex1="COMPOUND00728_v392" vertex2="COMPOUND00728_v456" vertex3="COMPOUND00728_v449"/>
+ <triangular vertex1="COMPOUND00728_v455" vertex2="COMPOUND00728_v453" vertex3="COMPOUND00728_v428"/>
+ <triangular vertex1="COMPOUND00728_v392" vertex2="COMPOUND00728_v457" vertex3="COMPOUND00728_v456"/>
+ <triangular vertex1="COMPOUND00728_v458" vertex2="COMPOUND00728_v414" vertex3="COMPOUND00728_v416"/>
+ <triangular vertex1="COMPOUND00728_v458" vertex2="COMPOUND00728_v416" vertex3="COMPOUND00728_v454"/>
+ <triangular vertex1="COMPOUND00728_v459" vertex2="COMPOUND00728_v430" vertex3="COMPOUND00728_v433"/>
+ <triangular vertex1="COMPOUND00728_v401" vertex2="COMPOUND00728_v451" vertex3="COMPOUND00728_v460"/>
+ <triangular vertex1="COMPOUND00728_v401" vertex2="COMPOUND00728_v402" vertex3="COMPOUND00728_v451"/>
+ <triangular vertex1="COMPOUND00728_v394" vertex2="COMPOUND00728_v457" vertex3="COMPOUND00728_v392"/>
+ <triangular vertex1="COMPOUND00728_v394" vertex2="COMPOUND00728_v461" vertex3="COMPOUND00728_v457"/>
+ <triangular vertex1="COMPOUND00728_v459" vertex2="COMPOUND00728_v455" vertex3="COMPOUND00728_v430"/>
+ <triangular vertex1="COMPOUND00728_v398" vertex2="COMPOUND00728_v460" vertex3="COMPOUND00728_v462"/>
+ <triangular vertex1="COMPOUND00728_v463" vertex2="COMPOUND00728_v412" vertex3="COMPOUND00728_v414"/>
+ <triangular vertex1="COMPOUND00728_v398" vertex2="COMPOUND00728_v401" vertex3="COMPOUND00728_v460"/>
+ <triangular vertex1="COMPOUND00728_v463" vertex2="COMPOUND00728_v414" vertex3="COMPOUND00728_v458"/>
+ <triangular vertex1="COMPOUND00728_v396" vertex2="COMPOUND00728_v462" vertex3="COMPOUND00728_v461"/>
+ <triangular vertex1="COMPOUND00728_v396" vertex2="COMPOUND00728_v461" vertex3="COMPOUND00728_v394"/>
+ <triangular vertex1="COMPOUND00728_v396" vertex2="COMPOUND00728_v398" vertex3="COMPOUND00728_v462"/>
+ <triangular vertex1="COMPOUND00728_v464" vertex2="COMPOUND00728_v433" vertex3="COMPOUND00728_v435"/>
+ <triangular vertex1="COMPOUND00728_v464" vertex2="COMPOUND00728_v459" vertex3="COMPOUND00728_v433"/>
+ <triangular vertex1="COMPOUND00728_v465" vertex2="COMPOUND00728_v410" vertex3="COMPOUND00728_v412"/>
+ <triangular vertex1="COMPOUND00728_v465" vertex2="COMPOUND00728_v412" vertex3="COMPOUND00728_v463"/>
+ <triangular vertex1="COMPOUND00728_v437" vertex2="COMPOUND00728_v466" vertex3="COMPOUND00728_v464"/>
+ <triangular vertex1="COMPOUND00728_v437" vertex2="COMPOUND00728_v464" vertex3="COMPOUND00728_v435"/>
+ <triangular vertex1="COMPOUND00728_v467" vertex2="COMPOUND00728_v410" vertex3="COMPOUND00728_v465"/>
+ <triangular vertex1="COMPOUND00728_v409" vertex2="COMPOUND00728_v410" vertex3="COMPOUND00728_v467"/>
+ <triangular vertex1="COMPOUND00728_v444" vertex2="COMPOUND00728_v466" vertex3="COMPOUND00728_v437"/>
+ <triangular vertex1="COMPOUND00728_v439" vertex2="COMPOUND00728_v444" vertex3="COMPOUND00728_v437"/>
+ <triangular vertex1="COMPOUND00728_v442" vertex2="COMPOUND00728_v409" vertex3="COMPOUND00728_v467"/>
+ </tessellated>
+ <box lunit="mm" name="worldsolid" x="1000" y="1000" z="1000"/>
+ </solids>
+ <structure>
+ <volume name="COMPOUND00728">
+ <materialref ref="G4_Si"/>
+ <solidref ref="COMPOUND00728_solid"/>
+ </volume>
+ </structure>
+ <setup name="Default" version="1.0">
+ <world ref="COMPOUND00728"/>
+ </setup>
+</gdml>

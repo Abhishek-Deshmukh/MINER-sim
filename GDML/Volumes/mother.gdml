@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<gdml   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="/Users/shsu/Documents/James/Projects/MINER/GEANT/geant4_10_06_p02/source/persistency/gdml/schema/gdml.xsd">
+<!--<gdml xmlns:gdml="../schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schema/gdml.xsd" >-->
+<define>
+<position name="center" x="0" y="0" z="0"/>
+<rotation name="identity" x="0" y="0" z="0"/>
+</define>
+<materials>
+<element name="Vacuum_el"  formula="Hv" Z="1">
+<atom value="1.008"/>
+</element> 
+<material name="Vacuum_ref">
+<D value="0.0000000000000000000001" unit="mg/cm3"/>
+<fraction n="1.0" ref="Vacuum_el"/>
+</material>
+</materials>
+<solids>
+<box name="WorldBox" x="3.0" y="3.0" z="3.0" lunit="m"/>
+</solids>
+<structure>
+<volume name="World">
+<materialref ref="Vacuum_ref"/>
+<solidref ref="WorldBox"/>
+<physvol>
+<file name="Volumes/ASM_LD400_ALL_SVC_SW00011.gdml"/>
+<positionref ref="center"/>
+<rotationref ref="identity"/>
+</physvol>
+<physvol>
+<file name="Volumes/P00073-SH-LD-STILL-RING2.gdml"/>
+<positionref ref="center"/>
+<rotationref ref="identity"/>
+</physvol>
+<physvol>
+<file name="Volumes/P00818-SH-ST-LD-TUBE-500_AF03.gdml"/>
+<positionref ref="center"/>
+<rotationref ref="identity"/>
+</physvol>
+<physvol>
+<file name="Volumes/SOLID4.gdml"/>
+<positionref ref="center"/>
+<rotationref ref="identity"/>
+</physvol>
+<physvol>
+<file name="Volumes/COMPOUND5.gdml"/>
+<positionref ref="center"/>
+<rotationref ref="identity"/>
+</physvol>
+<physvol>
+<file name="Volumes/SOLID0016.gdml"/>
+<positionref ref="center"/>
+<rotationref ref="identity"/>
+</physvol>
+<physvol>
+<file name="Volumes/COMPOUND0017.gdml"/>
+<positionref ref="center"/>
+<rotationref ref="identity"/>
+</physvol>
+<physvol>
+<file name="Volumes/M00890-SH-LD-ST-BOT-PL-D3008.gdml"/>
+<positionref ref="center"/>
+<rotationref ref="identity"/>
+</physvol>
+<physvol>
+<file name="Volumes/4K_SHIELD_BODY_LD_SP3_AF09.gdml"/>
+<positionref ref="center"/>
+<rotationref ref="identity"/>
+</physvol>
+<physvol>
+<file name="Volumes/P01070-SH-LD-4K-RING-TOP10.gdml"/>
+<positionref ref="center"/>
+<rotationref ref="identity"/>
+</physvol>
+<physvol>
+<file name="Volumes/SOLID00211.gdml"/>
+<positionref ref="center"/>
+<rotationref ref="identity"/>
+</physvol>
+<physvol>
+<file name="Volumes/COMPOUND00212.gdml"/>
+<positionref ref="center"/>
+<rotationref ref="identity"/>
+</physvol>
+<physvol>
+<file name="Volumes/SOLID00313.gdml"/>
+<positionref ref="center"/>
+<rotationref ref="identity"/>
+</physvol>
+<physvol>
+<file name="Volumes/COMPOUND00314.gdml"/>
+<positionref ref="center"/>
+<rotationref ref="identity"/>
+</physvol>
+<physvol>
+<file name="Volumes/P01600-SH-LD-4K-BOT-PL-D32515.gdml"/>
+<positionref ref="center"/>
+<rotationref ref="identity"/>
+</physvol>
+<physvol>
+<file name="Volumes/P01072-SH-LD-50K-TOP-RING-TOP16.gdml"/>
+<positionref ref="center"/>
+<rotationref ref="identity"/>
+</physvol>
+<physvol>
+<file name="Volumes/P01075-SH-LD-50K-TOP-TUBE-L27017.gdml"/>
+<positionref ref="center"/>
+<rotationref ref="identity"/>
+</physvol>
+<physvol>
+<file name="Volumes/SOLID00418.gdml"/>
+<positionref ref="center"/>
+<rotationref ref="identity"/>
+</physvol>
+<physvol>
+<file name="Volumes/COMPOUND00419.gdml"/>
+<positionref ref="center"/>
+<rotationref ref="identity"/>
+</physvol>
+<physvol>
+<file name="Volumes/P01074-SH-LD-50K-BOT-RING-TOP20.gdml"/>
+<positionref ref="center"/>
+<rotationref ref="identity"/>
+</physvol>
+<physvol>
+<file name="Volumes/SH-LD-50K-TUBE-L420_AF021.gdml"/>
+<positionref ref="center"/>
+<rotationref ref="identity"/>
+</physvol>
+<physvol>
+<file name="Volumes/SOLID00522.gdml"/>
+<positionref ref="center"/>
+<rotationref ref="identity"/>
+</physvol>
+<physvol>
+<file name="Volumes/COMPOUND00523.gdml"/>
+<positionref ref="center"/>
+<rotationref ref="identity"/>
+</physvol>
+<physvol>
+<file name="Volumes/SOLID00624.gdml"/>
+<positionref ref="center"/>
+<rotationref ref="identity"/>
+</physvol>
+<physvol>
+<file name="Volumes/COMPOUND00625.gdml"/>
+<positionref ref="center"/>
+<rotationref ref="identity"/>
+</physvol>
+<physvol>
+<file name="Volumes/P01515-SH-LD-50K-BOT-PL-D36526.gdml"/>
+<positionref ref="center"/>
+<rotationref ref="identity"/>
+</physvol>
+<physvol>
+<file name="Volumes/SOLID00727.gdml"/>
+<positionref ref="center"/>
+<rotationref ref="identity"/>
+</physvol>
+<physvol>
+<file name="Volumes/COMPOUND00728.gdml"/>
+<positionref ref="center"/>
+<rotationref ref="identity"/>
+</physvol>
+<physvol>
+<file name="Volumes/SOLID00829.gdml"/>
+<positionref ref="center"/>
+<rotationref ref="identity"/>
+</physvol>
+<physvol>
+<file name="Volumes/COMPOUND00830.gdml"/>
+<positionref ref="center"/>
+<rotationref ref="identity"/>
+</physvol>
+<physvol>
+<file name="Volumes/P00887-VC-LD-BOT-PLATE31.gdml"/>
+<positionref ref="center"/>
+<rotationref ref="identity"/>
+</physvol>
+</volume>
+</structure>
+<setup name="Default" version="1.0">
+<world ref="World"/>
+</setup>
+</gdml>
