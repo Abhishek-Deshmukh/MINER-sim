@@ -32,23 +32,44 @@
 #ifndef PrimaryGeneratorAction_h
 #define PrimaryGeneratorAction_h 1
 
+#include "G4ParticleTable.hh"
+// #include "CRYSetup.h"
+// #include "CRYGenerator.h"
+// #include "CRYParticle.h"
+// #include "CRYUtils.h"
+#include "vector"
+#include "RNGWrapper.hh"
 #include "G4VUserPrimaryGeneratorAction.hh"
+#include "G4ParticleGun.hh"
+//#include "PrimaryGeneratorMessenger.hh"
 
+class G4ParticleGun;
 class G4GeneralParticleSource;
 class G4Event;
-
+class CRYGenerator;
+class CRYParticle;
+class PrimaryGeneratorMessenger;
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 class PrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction
 {
 public:
-    PrimaryGeneratorAction();
-    ~PrimaryGeneratorAction();
+  PrimaryGeneratorAction(const char *inputfile);
+  ~PrimaryGeneratorAction();
     
-    virtual void GeneratePrimaries(G4Event*);
-    
+  virtual void GeneratePrimaries(G4Event*);
+  void UpdateCRY(std::string* MessInput);
+  void UpdateCRYFile(G4String newValue);
+  void SetSourceZPosition(G4double);
 private:
-    G4GeneralParticleSource* fParticleGun;
+  G4ParticleGun* fParticleGun;
+  G4GeneralParticleSource* fParticleSource;
+  std::vector<CRYParticle*> *vect; // vector of generated particles
+  G4ParticleTable* particleTable;
+  CRYGenerator* gen;
+  G4int InputState;
+  G4double SourceZPosition;
+  PrimaryGeneratorMessenger *fMessenger;
 };
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
