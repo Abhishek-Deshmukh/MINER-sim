@@ -1,0 +1,4175 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<gdml   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="/Users/shsu/Documents/James/Projects/MINER/GEANT/geant4_10_06_p02/source/persistency/gdml/schema/gdml.xsd">
+    
+    <define>
+        <position name="det_in_sky" unit="cm" x="0" y="0" z="0" />
+        <position name="FridgeCoordinate" unit="cm" x="0" y="0" z="-12.74" />
+        <position name="center" unit="cm" x="0" y="0" z="0" />
+        <position name="SteelTableCoordinates" unit="cm" x="-18.0*2.54" y="-15.0*2.54" z="-36*2.54" />
+        <constant name="HLFPI" value="0.5*pi"/>
+        <rotation name="rotatebyZ" z="HLFPI" />
+        <rotation name="rotatebyY" y="HLFPI" />
+        <rotation name="rotatebyX" x="HLFPI" />
+        <rotation name="RotateNegX" x="-90" unit="deg"/>
+        <position name="subtraction_position" unit="cm" x ="0.0" y = "0.0" z = "0.0"/>
+        <position name="hybrid_subtraction" unit = "cm" x = "0.0" y = "0.0" z = "-1.016*0.5"/>
+        <position name="neckOffset" unit="cm" x ="0.0" y = "0.0" z = "0.7239"/>
+        <position name="topOffset" unit="cm" x ="0.0" y = "0.0" z = "1.25222"/>
+        <constant name="TWOPI" value="2.*pi"/>
+        <quantity name="Pblength" value="8*2.54" />
+        <quantity name="Pbwidth"  value="4*2.54" />
+        <quantity name="Pbheight" value="2.0*2.54" />
+        <quantity name="CsIlength" value="12.0*2.54" />
+        <quantity name="CsIwidth"  value="2.0*2.54" />
+        <quantity name="CsIheight" value="2.0*2.54" />
+    </define>
+    
+    <materials>
+        
+        
+    
+    <element Z="8" formula ="O" name="Oxygen">
+        <atom value="16"/>
+    </element>
+
+    <element Z="7" formula ="N" name="Nitrogen">
+        <atom value="14"/>
+    </element>
+    
+
+
+    
+    <material formula="air" name="Air">
+        <D value="0.00128999999999"/>
+        <fraction n="0.7" ref="Nitrogen"/>
+        <fraction n="0.3" ref="Oxygen" />
+    </material>
+    
+    
+        <material name="Pb" Z="82">
+            <D value="11.34"/>
+            <atom value="207.2"/>
+        </material>
+        
+        
+        
+        
+    </materials>
+    
+    <solids>
+        
+        <box aunit="radian" lunit="m" name="PbWorldSolid" x="10" y="10" z="10" />
+        
+
+        
+        <!--    *************************************-->
+        <!--    **-->
+        <!--    **    Define the Lead Bricks Floor 1 - 28 Bricks-->
+        <!--    **-->
+        <!--    *************************************-->
+
+        <box aunit="radian" lunit="cm" name="floor1brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor1brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor1brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor1brck4" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor1brck5" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor1brck6" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor1brck7" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor1brck8" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor1brck9" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor1brck10" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor1brck11" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor1brck12" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor1brck13" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor1brck14" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor1brck15" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor1brck16" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor1brck17" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor1brck18" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor1brck19" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor1brck20" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor1brck21" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor1brck22" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor1brck23" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor1brck24" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor1brck25" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor1brck26" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor1brck27" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor1brck28" x="Pbwidth" y="Pblength" z="Pbheight" />
+        
+        
+        <!--    *************************************-->
+        <!--    **-->
+        <!--    **    Define the Lead Bricks Floor 2 Eight Across-->
+        <!--    **-->
+        <!--    *************************************-->
+
+        <box aunit="radian" lunit="cm" name="floor2brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor2brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor2brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor2brck4" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor2brck5" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor2brck6" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor2brck7" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor2brck8" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor2brck9" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor2brck10" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor2brck11" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor2brck12" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor2brck13" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor2brck14" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor2brck15" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor2brck16" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor2brck17" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor2brck18" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor2brck19" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor2brck20" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor2brck21" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor2brck22" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor2brck23" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor2brck24" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor2brck25" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor2brck26" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor2brck27" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="floor2brck28" x="Pbwidth" y="Pblength" z="Pbheight" />
+        
+        
+        
+        <!--    *************************************-->
+        <!--    **-->
+        <!--    **    Define the Lead Bricks Wall 1 Odd Rows-->
+        <!--    **-->
+        <!--    *************************************-->
+
+        
+        <box aunit="radian" lunit="cm" name="w1r1brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r1brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r1brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r1brck4" x="Pbwidth" y="Pblength" z="Pbheight" />
+
+
+        <box aunit="radian" lunit="cm" name="w1r3brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r3brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r3brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r3brck4" x="Pbwidth" y="Pblength" z="Pbheight" />
+
+
+        <box aunit="radian" lunit="cm" name="w1r5brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r5brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r5brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r5brck4" x="Pbwidth" y="Pblength" z="Pbheight" />
+
+
+        <box aunit="radian" lunit="cm" name="w1r7brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r7brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r7brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r7brck4" x="Pbwidth" y="Pblength" z="Pbheight" />
+
+        <box aunit="radian" lunit="cm" name="w1r9brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r9brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r9brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r9brck4" x="Pbwidth" y="Pblength" z="Pbheight" />
+
+
+        <box aunit="radian" lunit="cm" name="w1r11brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r11brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r11brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r11brck4" x="Pbwidth" y="Pblength" z="Pbheight" />
+
+
+        <box aunit="radian" lunit="cm" name="w1r13brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r13brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r13brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r13brck4" x="Pbwidth" y="Pblength" z="Pbheight" />
+
+
+        <box aunit="radian" lunit="cm" name="w1r15brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r15brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r15brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r15brck4" x="Pbwidth" y="Pblength" z="Pbheight" />
+
+
+        
+   
+        <!--    *************************************-->
+        <!--    **-->
+        <!--    **    Define the Lead Bricks Wall 1 Even Rows-->
+        <!--    **-->
+        <!--    *************************************-->
+
+        
+        <box aunit="radian" lunit="cm" name="w1r2brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r2brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r2brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r2brck4" x="Pbwidth" y="Pblength" z="Pbheight" />
+
+
+        <box aunit="radian" lunit="cm" name="w1r4brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r4brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r4brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r4brck4" x="Pbwidth" y="Pblength" z="Pbheight" />
+
+
+        <box aunit="radian" lunit="cm" name="w1r6brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r6brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r6brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r6brck4" x="Pbwidth" y="Pblength" z="Pbheight" />
+
+
+        <box aunit="radian" lunit="cm" name="w1r8brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r8brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r8brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r8brck4" x="Pbwidth" y="Pblength" z="Pbheight" />
+
+        <box aunit="radian" lunit="cm" name="w1r10brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r10brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r10brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r10brck4" x="Pbwidth" y="Pblength" z="Pbheight" />
+
+
+        <box aunit="radian" lunit="cm" name="w1r12brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r12brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r12brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r12brck4" x="Pbwidth" y="Pblength" z="Pbheight" />
+
+
+        <box aunit="radian" lunit="cm" name="w1r14brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r14brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r14brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w1r14brck4" x="Pbwidth" y="Pblength" z="Pbheight" />
+
+
+        <!--    *************************************-->
+        <!--    **-->
+        <!--    **    Define the Lead Bricks Wall 2 Odd Rows-->
+        <!--    **-->
+        <!--    *************************************-->
+        
+        <box aunit="radian" lunit="cm" name="w2r1brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w2r1brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w2r1brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+        
+
+
+        <box aunit="radian" lunit="cm" name="w2r3brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w2r3brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w2r3brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+    
+
+
+        <box aunit="radian" lunit="cm" name="w2r5brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w2r5brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w2r5brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+   
+
+
+        <box aunit="radian" lunit="cm" name="w2r7brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w2r7brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w2r7brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+   
+
+        <box aunit="radian" lunit="cm" name="w2r9brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w2r9brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w2r9brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+    
+
+
+        <box aunit="radian" lunit="cm" name="w2r11brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w2r11brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w2r11brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+      
+
+
+        <box aunit="radian" lunit="cm" name="w2r13brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w2r13brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w2r13brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+      
+
+
+        <box aunit="radian" lunit="cm" name="w2r15brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w2r15brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+        <box aunit="radian" lunit="cm" name="w2r15brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+      
+
+
+        
+ 
+        <!--    *************************************-->
+        <!--    **-->
+        <!--    **    Define the Lead Bricks Wall 2 Even Rows-->
+        <!--    **-->
+        <!--    *************************************-->
+        
+             <box aunit="radian" lunit="cm" name="w2r2brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+             <box aunit="radian" lunit="cm" name="w2r2brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+             <box aunit="radian" lunit="cm" name="w2r2brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+             
+
+
+             <box aunit="radian" lunit="cm" name="w2r4brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+             <box aunit="radian" lunit="cm" name="w2r4brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+             <box aunit="radian" lunit="cm" name="w2r4brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+         
+
+
+             <box aunit="radian" lunit="cm" name="w2r6brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+             <box aunit="radian" lunit="cm" name="w2r6brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+             <box aunit="radian" lunit="cm" name="w2r6brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+        
+
+
+             <box aunit="radian" lunit="cm" name="w2r8brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+             <box aunit="radian" lunit="cm" name="w2r8brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+             <box aunit="radian" lunit="cm" name="w2r8brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+        
+
+             <box aunit="radian" lunit="cm" name="w2r10brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+             <box aunit="radian" lunit="cm" name="w2r10brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+             <box aunit="radian" lunit="cm" name="w2r10brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+         
+
+
+             <box aunit="radian" lunit="cm" name="w2r12brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+             <box aunit="radian" lunit="cm" name="w2r12brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+             <box aunit="radian" lunit="cm" name="w2r12brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+           
+
+
+             <box aunit="radian" lunit="cm" name="w2r14brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+             <box aunit="radian" lunit="cm" name="w2r14brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+             <box aunit="radian" lunit="cm" name="w2r14brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+
+        
+               <!--    *************************************-->
+               <!--    **-->
+               <!--    **    Define the Lead Bricks Wall 3 Odd Rows-->
+               <!--    **-->
+               <!--    *************************************-->
+               
+               <box aunit="radian" lunit="cm" name="w3r1brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+               <box aunit="radian" lunit="cm" name="w3r1brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+               <box aunit="radian" lunit="cm" name="w3r1brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+               
+
+
+               <box aunit="radian" lunit="cm" name="w3r3brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+               <box aunit="radian" lunit="cm" name="w3r3brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+               <box aunit="radian" lunit="cm" name="w3r3brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+           
+
+
+               <box aunit="radian" lunit="cm" name="w3r5brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+               <box aunit="radian" lunit="cm" name="w3r5brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+               <box aunit="radian" lunit="cm" name="w3r5brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+          
+
+
+               <box aunit="radian" lunit="cm" name="w3r7brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+               <box aunit="radian" lunit="cm" name="w3r7brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+               <box aunit="radian" lunit="cm" name="w3r7brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+          
+
+               <box aunit="radian" lunit="cm" name="w3r9brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+               <box aunit="radian" lunit="cm" name="w3r9brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+               <box aunit="radian" lunit="cm" name="w3r9brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+           
+
+
+               <box aunit="radian" lunit="cm" name="w3r11brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+               <box aunit="radian" lunit="cm" name="w3r11brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+               <box aunit="radian" lunit="cm" name="w3r11brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+             
+
+
+               <box aunit="radian" lunit="cm" name="w3r13brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+               <box aunit="radian" lunit="cm" name="w3r13brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+               <box aunit="radian" lunit="cm" name="w3r13brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+             
+
+
+               <box aunit="radian" lunit="cm" name="w3r15brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+               <box aunit="radian" lunit="cm" name="w3r15brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+               <box aunit="radian" lunit="cm" name="w3r15brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+             
+
+
+               
+        
+               <!--    *************************************-->
+               <!--    **-->
+               <!--    **    Define the Lead Bricks Wall 3 Even Rows-->
+               <!--    **-->
+               <!--    *************************************-->
+               
+                    <box aunit="radian" lunit="cm" name="w3r2brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+                    <box aunit="radian" lunit="cm" name="w3r2brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+                    <box aunit="radian" lunit="cm" name="w3r2brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+                    
+
+
+                    <box aunit="radian" lunit="cm" name="w3r4brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+                    <box aunit="radian" lunit="cm" name="w3r4brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+                    <box aunit="radian" lunit="cm" name="w3r4brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+                
+
+
+                    <box aunit="radian" lunit="cm" name="w3r6brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+                    <box aunit="radian" lunit="cm" name="w3r6brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+                    <box aunit="radian" lunit="cm" name="w3r6brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+               
+
+
+                    <box aunit="radian" lunit="cm" name="w3r8brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+                    <box aunit="radian" lunit="cm" name="w3r8brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+                    <box aunit="radian" lunit="cm" name="w3r8brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+               
+
+                    <box aunit="radian" lunit="cm" name="w3r10brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+                    <box aunit="radian" lunit="cm" name="w3r10brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+                    <box aunit="radian" lunit="cm" name="w3r10brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+                
+
+
+                    <box aunit="radian" lunit="cm" name="w3r12brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+                    <box aunit="radian" lunit="cm" name="w3r12brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+                    <box aunit="radian" lunit="cm" name="w3r12brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+                  
+
+
+                    <box aunit="radian" lunit="cm" name="w3r14brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+                    <box aunit="radian" lunit="cm" name="w3r14brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+                    <box aunit="radian" lunit="cm" name="w3r14brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+
+
+               
+                             <!--    *************************************-->
+                             <!--    **-->
+                             <!--    **    Define the Lead Bricks Wall 4 Odd Rows-->
+                             <!--    **-->
+                             <!--    *************************************-->
+                             
+                             <box aunit="radian" lunit="cm" name="w4r1brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+                             <box aunit="radian" lunit="cm" name="w4r1brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+                             <box aunit="radian" lunit="cm" name="w4r1brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+                             
+
+
+                             <box aunit="radian" lunit="cm" name="w4r3brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+                             <box aunit="radian" lunit="cm" name="w4r3brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+                             <box aunit="radian" lunit="cm" name="w4r3brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+                         
+
+
+                             <box aunit="radian" lunit="cm" name="w4r5brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+                             <box aunit="radian" lunit="cm" name="w4r5brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+                             <box aunit="radian" lunit="cm" name="w4r5brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+                        
+
+
+                             <box aunit="radian" lunit="cm" name="w4r7brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+                             <box aunit="radian" lunit="cm" name="w4r7brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+                             <box aunit="radian" lunit="cm" name="w4r7brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+                        
+
+                             <box aunit="radian" lunit="cm" name="w4r9brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+                             <box aunit="radian" lunit="cm" name="w4r9brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+                             <box aunit="radian" lunit="cm" name="w4r9brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+                         
+
+
+                             <box aunit="radian" lunit="cm" name="w4r11brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+                             <box aunit="radian" lunit="cm" name="w4r11brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+                             <box aunit="radian" lunit="cm" name="w4r11brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+                           
+
+
+                             <box aunit="radian" lunit="cm" name="w4r13brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+                             <box aunit="radian" lunit="cm" name="w4r13brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+                             <box aunit="radian" lunit="cm" name="w4r13brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+                           
+
+
+                             <box aunit="radian" lunit="cm" name="w4r15brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+                             <box aunit="radian" lunit="cm" name="w4r15brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+                             <box aunit="radian" lunit="cm" name="w4r15brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+                           
+
+
+                             
+                      
+                             <!--    *************************************-->
+                             <!--    **-->
+                             <!--    **    Define the Lead Bricks Wall 4 Even Rows-->
+                             <!--    **-->
+                             <!--    *************************************-->
+                             
+                                  <box aunit="radian" lunit="cm" name="w4r2brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+                                  <box aunit="radian" lunit="cm" name="w4r2brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+                                  <box aunit="radian" lunit="cm" name="w4r2brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+                                  
+
+
+                                  <box aunit="radian" lunit="cm" name="w4r4brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+                                  <box aunit="radian" lunit="cm" name="w4r4brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+                                  <box aunit="radian" lunit="cm" name="w4r4brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+                              
+
+
+                                  <box aunit="radian" lunit="cm" name="w4r6brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+                                  <box aunit="radian" lunit="cm" name="w4r6brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+                                  <box aunit="radian" lunit="cm" name="w4r6brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+                             
+
+
+                                  <box aunit="radian" lunit="cm" name="w4r8brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+                                  <box aunit="radian" lunit="cm" name="w4r8brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+                                  <box aunit="radian" lunit="cm" name="w4r8brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+                             
+
+                                  <box aunit="radian" lunit="cm" name="w4r10brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+                                  <box aunit="radian" lunit="cm" name="w4r10brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+                                  <box aunit="radian" lunit="cm" name="w4r10brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+                              
+
+
+                                  <box aunit="radian" lunit="cm" name="w4r12brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+                                  <box aunit="radian" lunit="cm" name="w4r12brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+                                  <box aunit="radian" lunit="cm" name="w4r12brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+                                
+
+
+                                  <box aunit="radian" lunit="cm" name="w4r14brck1" x="Pbwidth" y="Pblength" z="Pbheight" />
+                                  <box aunit="radian" lunit="cm" name="w4r14brck2" x="Pbwidth" y="Pblength" z="Pbheight" />
+                                  <box aunit="radian" lunit="cm" name="w4r14brck3" x="Pbwidth" y="Pblength" z="Pbheight" />
+
+        
+
+
+              
+        
+        
+    </solids>
+    
+<!--    *************************************-->
+<!--    **-->
+<!--    **    Structure-->
+<!--    **-->
+<!--    *************************************-->
+    
+    <structure>
+        
+        
+        <!--        ************************************-->
+        <!--        **-->
+        <!--        **    Pb bricks Floor 1 Eight Across-->
+        <!--        **-->
+        <!--        ************************************-->
+        
+        
+        <!--   Row 1         -->
+        
+        <volume name ="Vol1fl1" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor1brck1" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol2fl1" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor1brck2" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol3fl1" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor1brck3" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol4fl1" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor1brck4" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol5fl1" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor1brck5" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol6fl1" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor1brck6" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol7fl1" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor1brck7" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol8fl1" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor1brck8" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <!--   Row 2         -->
+        
+                <volume name ="Vol9fl1" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor1brck9" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol10fl1" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor1brck10" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol11fl1" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor1brck11" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol12fl1" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor1brck12" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol13fl1" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor1brck13" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol14fl1" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor1brck14" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol15fl1" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor1brck15" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol16fl1" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor1brck16" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        
+        <!--   Row 3         -->
+        
+                <volume name ="Vol17fl1" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor1brck17" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol18fl1" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor1brck18" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol19fl1" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor1brck19" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol20fl1" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor1brck20" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol21fl1" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor1brck21" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol22fl1" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor1brck22" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol23fl1" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor1brck23" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol24fl1" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor1brck24" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <!--   Row 4         -->
+        
+        <volume name ="Vol25fl1" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor1brck25" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol26fl1" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor1brck26" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol27fl1" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor1brck27" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol28fl1" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor1brck28" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+                
+        <!--        ************************************-->
+        <!--        **-->
+        <!--        **    Pb bricks Floor 2 Eight Across-->
+        <!--        **-->
+        <!--        ************************************-->
+        
+        
+        <!--   Row 1         -->
+        
+        <volume name ="Vol1fl2" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor2brck1" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol2fl2" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor2brck2" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol3fl2" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor2brck3" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol4fl2" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor2brck4" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol5fl2" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor2brck5" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol6fl2" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor2brck6" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol7fl2" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor2brck7" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol8fl2" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor2brck8" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <!--   Row 2         -->
+        
+        <volume name ="Vol9fl2" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor2brck9" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol10fl2" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor2brck10" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol11fl2" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor2brck11" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol12fl2" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor2brck12" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol13fl2" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor2brck13" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol14fl2" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor2brck14" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol15fl2" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor2brck15" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol16fl2" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor2brck16" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        
+        <!--   Row 3         -->
+        
+        <volume name ="Vol17fl2" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor2brck17" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol18fl2" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor2brck18" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol19fl2" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor2brck19" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol20fl2" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor2brck20" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol21fl2" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor2brck21" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol22fl2" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor2brck22" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol23fl2" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor2brck23" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol24fl2" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor2brck24" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <!--   Row 4         -->
+        
+        <volume name ="Vol25fl2" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor2brck25" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol26fl2" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor2brck26" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol27fl2" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor2brck27" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="Vol28fl2" >
+            <materialref ref ="Pb" />
+            <solidref ref="floor2brck28" />
+            
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+
+        
+        <!--        ************************************-->
+        <!--        **-->
+        <!--        **    Pb bricks Wall 1 Odd Rows-->
+        <!--        **-->
+        <!--        ************************************-->
+        
+        <!--   Row 1         -->
+        
+        <volume name ="Vol1w1r1" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r1brck1" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol2w1r1" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r1brck2" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol3w1r1" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r1brck3" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol4w1r1" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r1brck4" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <!--   Row 3         -->
+        
+        <volume name ="Vol1w1r3" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r3brck1" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol2w1r3" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r3brck2" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol3w1r3" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r3brck3" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol4w1r3" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r3brck4" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <!--   Row 5        -->
+        
+        <volume name ="Vol1w1r5" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r5brck1" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol2w1r5" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r5brck2" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol3w1r5" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r5brck3" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol4w1r5" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r5brck4" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <!--   Row 7         -->
+        
+        <volume name ="Vol1w1r7" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r7brck1" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol2w1r7" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r7brck2" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol3w1r7" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r7brck3" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol4w1r7" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r7brck4" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <!--   Row 9         -->
+        
+        <volume name ="Vol1w1r9" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r9brck1" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol2w1r9" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r9brck2" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol3w1r9" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r9brck3" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol4w1r9" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r9brck4" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <!--   Row 11         -->
+        
+        <volume name ="Vol1w1r11" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r11brck1" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol2w1r11" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r11brck2" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol3w1r11" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r11brck3" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol4w1r11" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r11brck4" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <!--   Row 13         -->
+        
+        <volume name ="Vol1w1r13" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r13brck1" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol2w1r13" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r13brck2" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol3w1r13" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r13brck3" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol4w1r13" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r13brck4" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <!--   Row 15         -->
+        
+        <volume name ="Vol1w1r15" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r15brck1" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol2w1r15" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r15brck2" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol3w1r15" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r15brck3" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol4w1r15" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r15brck4" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+  
+        <!--        ************************************-->
+        <!--        **-->
+        <!--        **    Pb bricks Wall 1 Even Rows-->
+        <!--        **-->
+        <!--        ************************************-->
+        
+        <!--   Row 2       -->
+        
+        <volume name ="Vol1w1r2" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r2brck1" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol2w1r2" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r2brck2" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol3w1r2" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r2brck3" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol4w1r2" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r2brck4" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <!--   Row 4         -->
+        
+        <volume name ="Vol1w1r4" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r4brck1" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol2w1r4" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r4brck2" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol3w1r4" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r4brck3" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol4w1r4" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r4brck4" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <!--   Row 6       -->
+        
+        <volume name ="Vol1w1r6" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r6brck1" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol2w1r6" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r6brck2" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol3w1r6" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r6brck3" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol4w1r6" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r6brck4" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <!--   Row 8        -->
+        
+        <volume name ="Vol1w1r8" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r8brck1" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol2w1r8" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r8brck2" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol3w1r8" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r8brck3" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol4w1r8" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r8brck4" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <!--   Row 10         -->
+        
+        <volume name ="Vol1w1r10" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r10brck1" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol2w1r10" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r10brck2" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol3w1r10" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r10brck3" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol4w1r10" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r10brck4" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <!--   Row 12         -->
+        
+        <volume name ="Vol1w1r12" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r12brck1" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol2w1r12" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r12brck2" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol3w1r12" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r12brck3" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol4w1r12" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r12brck4" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <!--   Row 14         -->
+        
+        <volume name ="Vol1w1r14" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r14brck1" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol2w1r14" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r14brck2" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol3w1r14" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r14brck3" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol4w1r14" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r14brck4" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+     
+        
+        <!--        ************************************-->
+        <!--        **-->
+        <!--        **    Pb bricks Wall 2 Odd Rows-->
+        <!--        **-->
+        <!--        ************************************-->
+        
+        <!--   Row 1         -->
+        
+        <volume name ="Vol1w2r1" >
+            <materialref ref ="Pb" />
+            <solidref ref="w2r1brck1" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol2w2r1" >
+            <materialref ref ="Pb" />
+            <solidref ref="w2r1brck2" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol3w2r1" >
+            <materialref ref ="Pb" />
+            <solidref ref="w2r1brck3" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        
+        
+        <!--   Row 3         -->
+        
+        <volume name ="Vol1w2r3" >
+            <materialref ref ="Pb" />
+            <solidref ref="w2r3brck1" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol2w2r3" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r3brck2" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol3w2r3" >
+            <materialref ref ="Pb" />
+            <solidref ref="w1r3brck3" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+       
+        
+        <!--   Row 5        -->
+        
+        <volume name ="Vol1w2r5" >
+            <materialref ref ="Pb" />
+            <solidref ref="w2r5brck1" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol2w2r5" >
+            <materialref ref ="Pb" />
+            <solidref ref="w2r5brck2" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol3w2r5" >
+            <materialref ref ="Pb" />
+            <solidref ref="w2r5brck3" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        
+        <!--   Row 7         -->
+        
+        <volume name ="Vol1w2r7" >
+            <materialref ref ="Pb" />
+            <solidref ref="w2r7brck1" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol2w2r7" >
+            <materialref ref ="Pb" />
+            <solidref ref="w2r7brck2" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol3w2r7" >
+            <materialref ref ="Pb" />
+            <solidref ref="w2r7brck3" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+    
+        
+        <!--   Row 9         -->
+        
+        <volume name ="Vol1w2r9" >
+            <materialref ref ="Pb" />
+            <solidref ref="w2r9brck1" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol2w2r9" >
+            <materialref ref ="Pb" />
+            <solidref ref="w2r9brck2" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol3w2r9" >
+            <materialref ref ="Pb" />
+            <solidref ref="w2r9brck3" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+  
+        
+        <!--   Row 11         -->
+        
+        <volume name ="Vol1w2r11" >
+            <materialref ref ="Pb" />
+            <solidref ref="w2r11brck1" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol2w2r11" >
+            <materialref ref ="Pb" />
+            <solidref ref="w2r11brck2" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol3w2r11" >
+            <materialref ref ="Pb" />
+            <solidref ref="w2r11brck3" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+    
+        
+        <!--   Row 13         -->
+        
+        <volume name ="Vol1w2r13" >
+            <materialref ref ="Pb" />
+            <solidref ref="w2r13brck1" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol2w2r13" >
+            <materialref ref ="Pb" />
+            <solidref ref="w2r13brck2" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol3w2r13" >
+            <materialref ref ="Pb" />
+            <solidref ref="w2r13brck3" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+      
+        
+        <!--   Row 15         -->
+        
+        <volume name ="Vol1w2r15" >
+            <materialref ref ="Pb" />
+            <solidref ref="w2r15brck1" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol2w2r15" >
+            <materialref ref ="Pb" />
+            <solidref ref="w2r15brck2" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <volume name ="Vol3w2r15" >
+            <materialref ref ="Pb" />
+            <solidref ref="w2r15brck3" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <!--        ************************************-->
+        <!--        **-->
+        <!--        **    Pb bricks Wall 2 Even Rows-->
+        <!--        **-->
+        <!--        ************************************-->
+        
+              <!--   Row 2         -->
+              
+              <volume name ="Vol1w2r2" >
+                  <materialref ref ="Pb" />
+                  <solidref ref="w2r2brck1" />
+                  <auxiliary auxtype="Color" auxvalue="Blue"/>
+              </volume>
+
+              <volume name ="Vol2w2r2" >
+                  <materialref ref ="Pb" />
+                  <solidref ref="w1r2brck2" />
+                  <auxiliary auxtype="Color" auxvalue="Blue"/>
+              </volume>
+
+              <volume name ="Vol3w2r2" >
+                  <materialref ref ="Pb" />
+                  <solidref ref="w1r2brck3" />
+                  <auxiliary auxtype="Color" auxvalue="Blue"/>
+              </volume>
+
+             
+              
+              <!--   Row 4        -->
+              
+              <volume name ="Vol1w2r4" >
+                  <materialref ref ="Pb" />
+                  <solidref ref="w2r4brck1" />
+                  <auxiliary auxtype="Color" auxvalue="Blue"/>
+              </volume>
+
+              <volume name ="Vol2w2r4" >
+                  <materialref ref ="Pb" />
+                  <solidref ref="w2r4brck2" />
+                  <auxiliary auxtype="Color" auxvalue="Blue"/>
+              </volume>
+
+              <volume name ="Vol3w2r4" >
+                  <materialref ref ="Pb" />
+                  <solidref ref="w2r4brck3" />
+                  <auxiliary auxtype="Color" auxvalue="Blue"/>
+              </volume>
+
+              
+              <!--   Row 6         -->
+              
+              <volume name ="Vol1w2r6" >
+                  <materialref ref ="Pb" />
+                  <solidref ref="w2r6brck1" />
+                  <auxiliary auxtype="Color" auxvalue="Blue"/>
+              </volume>
+
+              <volume name ="Vol2w2r6" >
+                  <materialref ref ="Pb" />
+                  <solidref ref="w2r6brck2" />
+                  <auxiliary auxtype="Color" auxvalue="Blue"/>
+              </volume>
+
+              <volume name ="Vol3w2r6" >
+                  <materialref ref ="Pb" />
+                  <solidref ref="w2r6brck3" />
+                  <auxiliary auxtype="Color" auxvalue="Blue"/>
+              </volume>
+
+          
+              
+              <!--   Row 8         -->
+              
+              <volume name ="Vol1w2r8" >
+                  <materialref ref ="Pb" />
+                  <solidref ref="w2r8brck1" />
+                  <auxiliary auxtype="Color" auxvalue="Blue"/>
+              </volume>
+
+              <volume name ="Vol2w2r8" >
+                  <materialref ref ="Pb" />
+                  <solidref ref="w2r8brck2" />
+                  <auxiliary auxtype="Color" auxvalue="Blue"/>
+              </volume>
+
+              <volume name ="Vol3w2r8" >
+                  <materialref ref ="Pb" />
+                  <solidref ref="w2r8brck3" />
+                  <auxiliary auxtype="Color" auxvalue="Blue"/>
+              </volume>
+
+        
+              
+              <!--   Row 10         -->
+              
+              <volume name ="Vol1w2r10" >
+                  <materialref ref ="Pb" />
+                  <solidref ref="w2r10brck1" />
+                  <auxiliary auxtype="Color" auxvalue="Blue"/>
+              </volume>
+
+              <volume name ="Vol2w2r10" >
+                  <materialref ref ="Pb" />
+                  <solidref ref="w2r10brck2" />
+                  <auxiliary auxtype="Color" auxvalue="Blue"/>
+              </volume>
+
+              <volume name ="Vol3w2r10" >
+                  <materialref ref ="Pb" />
+                  <solidref ref="w2r10brck3" />
+                  <auxiliary auxtype="Color" auxvalue="Blue"/>
+              </volume>
+
+          
+              
+              <!--   Row 12         -->
+              
+              <volume name ="Vol1w2r12" >
+                  <materialref ref ="Pb" />
+                  <solidref ref="w2r12brck1" />
+                  <auxiliary auxtype="Color" auxvalue="Blue"/>
+              </volume>
+
+              <volume name ="Vol2w2r12" >
+                  <materialref ref ="Pb" />
+                  <solidref ref="w2r12brck2" />
+                  <auxiliary auxtype="Color" auxvalue="Blue"/>
+              </volume>
+
+              <volume name ="Vol3w2r12" >
+                  <materialref ref ="Pb" />
+                  <solidref ref="w2r12brck3" />
+                  <auxiliary auxtype="Color" auxvalue="Blue"/>
+              </volume>
+
+            
+              
+              <!--   Row 14         -->
+              
+              <volume name ="Vol1w2r14" >
+                  <materialref ref ="Pb" />
+                  <solidref ref="w2r14brck1" />
+                  <auxiliary auxtype="Color" auxvalue="Blue"/>
+              </volume>
+
+              <volume name ="Vol2w2r14" >
+                  <materialref ref ="Pb" />
+                  <solidref ref="w2r14brck2" />
+                  <auxiliary auxtype="Color" auxvalue="Blue"/>
+              </volume>
+
+              <volume name ="Vol3w2r14" >
+                  <materialref ref ="Pb" />
+                  <solidref ref="w2r14brck3" />
+                  <auxiliary auxtype="Color" auxvalue="Blue"/>
+              </volume>
+              
+                    <!--        ************************************-->
+                    <!--        **-->
+                    <!--        **    Pb bricks Wall 3 Odd Rows-->
+                    <!--        **-->
+                    <!--        ************************************-->
+                    
+                    <!--   Row 1         -->
+                    
+                    <volume name ="Vol1w3r1" >
+                        <materialref ref ="Pb" />
+                        <solidref ref="w3r1brck1" />
+                        <auxiliary auxtype="Color" auxvalue="Blue"/>
+                    </volume>
+
+                    <volume name ="Vol2w3r1" >
+                        <materialref ref ="Pb" />
+                        <solidref ref="w3r1brck2" />
+                        <auxiliary auxtype="Color" auxvalue="Blue"/>
+                    </volume>
+
+                    <volume name ="Vol3w3r1" >
+                        <materialref ref ="Pb" />
+                        <solidref ref="w3r1brck3" />
+                        <auxiliary auxtype="Color" auxvalue="Blue"/>
+                    </volume>
+
+                    
+                    
+                    <!--   Row 3         -->
+                    
+                    <volume name ="Vol1w3r3" >
+                        <materialref ref ="Pb" />
+                        <solidref ref="w3r3brck1" />
+                        <auxiliary auxtype="Color" auxvalue="Blue"/>
+                    </volume>
+
+                    <volume name ="Vol2w3r3" >
+                        <materialref ref ="Pb" />
+                        <solidref ref="w1r3brck2" />
+                        <auxiliary auxtype="Color" auxvalue="Blue"/>
+                    </volume>
+
+                    <volume name ="Vol3w3r3" >
+                        <materialref ref ="Pb" />
+                        <solidref ref="w1r3brck3" />
+                        <auxiliary auxtype="Color" auxvalue="Blue"/>
+                    </volume>
+
+                   
+                    
+                    <!--   Row 5        -->
+                    
+                    <volume name ="Vol1w3r5" >
+                        <materialref ref ="Pb" />
+                        <solidref ref="w3r5brck1" />
+                        <auxiliary auxtype="Color" auxvalue="Blue"/>
+                    </volume>
+
+                    <volume name ="Vol2w3r5" >
+                        <materialref ref ="Pb" />
+                        <solidref ref="w3r5brck2" />
+                        <auxiliary auxtype="Color" auxvalue="Blue"/>
+                    </volume>
+
+                    <volume name ="Vol3w3r5" >
+                        <materialref ref ="Pb" />
+                        <solidref ref="w3r5brck3" />
+                        <auxiliary auxtype="Color" auxvalue="Blue"/>
+                    </volume>
+
+                    
+                    <!--   Row 7         -->
+                    
+                    <volume name ="Vol1w3r7" >
+                        <materialref ref ="Pb" />
+                        <solidref ref="w3r7brck1" />
+                        <auxiliary auxtype="Color" auxvalue="Blue"/>
+                    </volume>
+
+                    <volume name ="Vol2w3r7" >
+                        <materialref ref ="Pb" />
+                        <solidref ref="w3r7brck2" />
+                        <auxiliary auxtype="Color" auxvalue="Blue"/>
+                    </volume>
+
+                    <volume name ="Vol3w3r7" >
+                        <materialref ref ="Pb" />
+                        <solidref ref="w3r7brck3" />
+                        <auxiliary auxtype="Color" auxvalue="Blue"/>
+                    </volume>
+
+                
+                    
+                    <!--   Row 9         -->
+                    
+                    <volume name ="Vol1w3r9" >
+                        <materialref ref ="Pb" />
+                        <solidref ref="w3r9brck1" />
+                        <auxiliary auxtype="Color" auxvalue="Blue"/>
+                    </volume>
+
+                    <volume name ="Vol2w3r9" >
+                        <materialref ref ="Pb" />
+                        <solidref ref="w3r9brck2" />
+                        <auxiliary auxtype="Color" auxvalue="Blue"/>
+                    </volume>
+
+                    <volume name ="Vol3w3r9" >
+                        <materialref ref ="Pb" />
+                        <solidref ref="w3r9brck3" />
+                        <auxiliary auxtype="Color" auxvalue="Blue"/>
+                    </volume>
+
+              
+                    
+                    <!--   Row 11         -->
+                    
+                    <volume name ="Vol1w3r11" >
+                        <materialref ref ="Pb" />
+                        <solidref ref="w3r11brck1" />
+                        <auxiliary auxtype="Color" auxvalue="Blue"/>
+                    </volume>
+
+                    <volume name ="Vol2w3r11" >
+                        <materialref ref ="Pb" />
+                        <solidref ref="w3r11brck2" />
+                        <auxiliary auxtype="Color" auxvalue="Blue"/>
+                    </volume>
+
+                    <volume name ="Vol3w3r11" >
+                        <materialref ref ="Pb" />
+                        <solidref ref="w3r11brck3" />
+                        <auxiliary auxtype="Color" auxvalue="Blue"/>
+                    </volume>
+
+                
+                    
+                    <!--   Row 13         -->
+                    
+                    <volume name ="Vol1w3r13" >
+                        <materialref ref ="Pb" />
+                        <solidref ref="w3r13brck1" />
+                        <auxiliary auxtype="Color" auxvalue="Blue"/>
+                    </volume>
+
+                    <volume name ="Vol2w3r13" >
+                        <materialref ref ="Pb" />
+                        <solidref ref="w3r13brck2" />
+                        <auxiliary auxtype="Color" auxvalue="Blue"/>
+                    </volume>
+
+                    <volume name ="Vol3w3r13" >
+                        <materialref ref ="Pb" />
+                        <solidref ref="w3r13brck3" />
+                        <auxiliary auxtype="Color" auxvalue="Blue"/>
+                    </volume>
+
+                  
+                    
+                    <!--   Row 15         -->
+                    
+                    <volume name ="Vol1w3r15" >
+                        <materialref ref ="Pb" />
+                        <solidref ref="w3r15brck1" />
+                        <auxiliary auxtype="Color" auxvalue="Blue"/>
+                    </volume>
+
+                    <volume name ="Vol2w3r15" >
+                        <materialref ref ="Pb" />
+                        <solidref ref="w3r15brck2" />
+                        <auxiliary auxtype="Color" auxvalue="Blue"/>
+                    </volume>
+
+                    <volume name ="Vol3w3r15" >
+                        <materialref ref ="Pb" />
+                        <solidref ref="w3r15brck3" />
+                        <auxiliary auxtype="Color" auxvalue="Blue"/>
+                    </volume>
+
+                    <!--        ************************************-->
+                    <!--        **-->
+                    <!--        **    Pb bricks Wall 3 Even Rows-->
+                    <!--        **-->
+                    <!--        ************************************-->
+                    
+                          <!--   Row 2         -->
+                          
+                          <volume name ="Vol1w3r2" >
+                              <materialref ref ="Pb" />
+                              <solidref ref="w3r2brck1" />
+                              <auxiliary auxtype="Color" auxvalue="Blue"/>
+                          </volume>
+
+                          <volume name ="Vol2w3r2" >
+                              <materialref ref ="Pb" />
+                              <solidref ref="w1r2brck2" />
+                              <auxiliary auxtype="Color" auxvalue="Blue"/>
+                          </volume>
+
+                          <volume name ="Vol3w3r2" >
+                              <materialref ref ="Pb" />
+                              <solidref ref="w1r2brck3" />
+                              <auxiliary auxtype="Color" auxvalue="Blue"/>
+                          </volume>
+
+                         
+                          
+                          <!--   Row 4        -->
+                          
+                          <volume name ="Vol1w3r4" >
+                              <materialref ref ="Pb" />
+                              <solidref ref="w3r4brck1" />
+                              <auxiliary auxtype="Color" auxvalue="Blue"/>
+                          </volume>
+
+                          <volume name ="Vol2w3r4" >
+                              <materialref ref ="Pb" />
+                              <solidref ref="w3r4brck2" />
+                              <auxiliary auxtype="Color" auxvalue="Blue"/>
+                          </volume>
+
+                          <volume name ="Vol3w3r4" >
+                              <materialref ref ="Pb" />
+                              <solidref ref="w3r4brck3" />
+                              <auxiliary auxtype="Color" auxvalue="Blue"/>
+                          </volume>
+
+                          
+                          <!--   Row 6         -->
+                          
+                          <volume name ="Vol1w3r6" >
+                              <materialref ref ="Pb" />
+                              <solidref ref="w3r6brck1" />
+                              <auxiliary auxtype="Color" auxvalue="Blue"/>
+                          </volume>
+
+                          <volume name ="Vol2w3r6" >
+                              <materialref ref ="Pb" />
+                              <solidref ref="w3r6brck2" />
+                              <auxiliary auxtype="Color" auxvalue="Blue"/>
+                          </volume>
+
+                          <volume name ="Vol3w3r6" >
+                              <materialref ref ="Pb" />
+                              <solidref ref="w3r6brck3" />
+                              <auxiliary auxtype="Color" auxvalue="Blue"/>
+                          </volume>
+
+                      
+                          
+                          <!--   Row 8         -->
+                          
+                          <volume name ="Vol1w3r8" >
+                              <materialref ref ="Pb" />
+                              <solidref ref="w3r8brck1" />
+                              <auxiliary auxtype="Color" auxvalue="Blue"/>
+                          </volume>
+
+                          <volume name ="Vol2w3r8" >
+                              <materialref ref ="Pb" />
+                              <solidref ref="w3r8brck2" />
+                              <auxiliary auxtype="Color" auxvalue="Blue"/>
+                          </volume>
+
+                          <volume name ="Vol3w3r8" >
+                              <materialref ref ="Pb" />
+                              <solidref ref="w3r8brck3" />
+                              <auxiliary auxtype="Color" auxvalue="Blue"/>
+                          </volume>
+
+                    
+                          
+                          <!--   Row 10         -->
+                          
+                          <volume name ="Vol1w3r10" >
+                              <materialref ref ="Pb" />
+                              <solidref ref="w3r10brck1" />
+                              <auxiliary auxtype="Color" auxvalue="Blue"/>
+                          </volume>
+
+                          <volume name ="Vol2w3r10" >
+                              <materialref ref ="Pb" />
+                              <solidref ref="w3r10brck2" />
+                              <auxiliary auxtype="Color" auxvalue="Blue"/>
+                          </volume>
+
+                          <volume name ="Vol3w3r10" >
+                              <materialref ref ="Pb" />
+                              <solidref ref="w3r10brck3" />
+                              <auxiliary auxtype="Color" auxvalue="Blue"/>
+                          </volume>
+
+                      
+                          
+                          <!--   Row 12         -->
+                          
+                          <volume name ="Vol1w3r12" >
+                              <materialref ref ="Pb" />
+                              <solidref ref="w3r12brck1" />
+                              <auxiliary auxtype="Color" auxvalue="Blue"/>
+                          </volume>
+
+                          <volume name ="Vol2w3r12" >
+                              <materialref ref ="Pb" />
+                              <solidref ref="w3r12brck2" />
+                              <auxiliary auxtype="Color" auxvalue="Blue"/>
+                          </volume>
+
+                          <volume name ="Vol3w3r12" >
+                              <materialref ref ="Pb" />
+                              <solidref ref="w3r12brck3" />
+                              <auxiliary auxtype="Color" auxvalue="Blue"/>
+                          </volume>
+
+                        
+                          
+                          <!--   Row 14         -->
+                          
+                          <volume name ="Vol1w3r14" >
+                              <materialref ref ="Pb" />
+                              <solidref ref="w3r14brck1" />
+                              <auxiliary auxtype="Color" auxvalue="Blue"/>
+                          </volume>
+
+                          <volume name ="Vol2w3r14" >
+                              <materialref ref ="Pb" />
+                              <solidref ref="w3r14brck2" />
+                              <auxiliary auxtype="Color" auxvalue="Blue"/>
+                          </volume>
+
+                          <volume name ="Vol3w3r14" >
+                              <materialref ref ="Pb" />
+                              <solidref ref="w3r14brck3" />
+                              <auxiliary auxtype="Color" auxvalue="Blue"/>
+                          </volume>
+
+                          
+                                <!--        ************************************-->
+                                <!--        **-->
+                                <!--        **    Pb bricks Wall 4 Odd Rows-->
+                                <!--        **-->
+                                <!--        ************************************-->
+                                
+                                <!--   Row 1         -->
+                                
+                                <volume name ="Vol1w4r1" >
+                                    <materialref ref ="Pb" />
+                                    <solidref ref="w4r1brck1" />
+                                    <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                </volume>
+
+                                <volume name ="Vol2w4r1" >
+                                    <materialref ref ="Pb" />
+                                    <solidref ref="w4r1brck2" />
+                                    <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                </volume>
+
+                                <volume name ="Vol3w4r1" >
+                                    <materialref ref ="Pb" />
+                                    <solidref ref="w4r1brck3" />
+                                    <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                </volume>
+
+                                
+                                
+                                <!--   Row 3         -->
+                                
+                                <volume name ="Vol1w4r3" >
+                                    <materialref ref ="Pb" />
+                                    <solidref ref="w4r3brck1" />
+                                    <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                </volume>
+
+                                <volume name ="Vol2w4r3" >
+                                    <materialref ref ="Pb" />
+                                    <solidref ref="w1r3brck2" />
+                                    <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                </volume>
+
+                                <volume name ="Vol3w4r3" >
+                                    <materialref ref ="Pb" />
+                                    <solidref ref="w1r3brck3" />
+                                    <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                </volume>
+
+                               
+                                
+                                <!--   Row 5        -->
+                                
+                                <volume name ="Vol1w4r5" >
+                                    <materialref ref ="Pb" />
+                                    <solidref ref="w4r5brck1" />
+                                    <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                </volume>
+
+                                <volume name ="Vol2w4r5" >
+                                    <materialref ref ="Pb" />
+                                    <solidref ref="w4r5brck2" />
+                                    <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                </volume>
+
+                                <volume name ="Vol3w4r5" >
+                                    <materialref ref ="Pb" />
+                                    <solidref ref="w4r5brck3" />
+                                    <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                </volume>
+
+                                
+                                <!--   Row 7         -->
+                                
+                                <volume name ="Vol1w4r7" >
+                                    <materialref ref ="Pb" />
+                                    <solidref ref="w4r7brck1" />
+                                    <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                </volume>
+
+                                <volume name ="Vol2w4r7" >
+                                    <materialref ref ="Pb" />
+                                    <solidref ref="w4r7brck2" />
+                                    <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                </volume>
+
+                                <volume name ="Vol3w4r7" >
+                                    <materialref ref ="Pb" />
+                                    <solidref ref="w4r7brck3" />
+                                    <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                </volume>
+
+                            
+                                
+                                <!--   Row 9         -->
+                                
+                                <volume name ="Vol1w4r9" >
+                                    <materialref ref ="Pb" />
+                                    <solidref ref="w4r9brck1" />
+                                    <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                </volume>
+
+                                <volume name ="Vol2w4r9" >
+                                    <materialref ref ="Pb" />
+                                    <solidref ref="w4r9brck2" />
+                                    <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                </volume>
+
+                                <volume name ="Vol3w4r9" >
+                                    <materialref ref ="Pb" />
+                                    <solidref ref="w4r9brck3" />
+                                    <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                </volume>
+
+                          
+                                
+                                <!--   Row 11         -->
+                                
+                                <volume name ="Vol1w4r11" >
+                                    <materialref ref ="Pb" />
+                                    <solidref ref="w4r11brck1" />
+                                    <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                </volume>
+
+                                <volume name ="Vol2w4r11" >
+                                    <materialref ref ="Pb" />
+                                    <solidref ref="w4r11brck2" />
+                                    <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                </volume>
+
+                                <volume name ="Vol3w4r11" >
+                                    <materialref ref ="Pb" />
+                                    <solidref ref="w4r11brck3" />
+                                    <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                </volume>
+
+                            
+                                
+                                <!--   Row 13         -->
+                                
+                                <volume name ="Vol1w4r13" >
+                                    <materialref ref ="Pb" />
+                                    <solidref ref="w4r13brck1" />
+                                    <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                </volume>
+
+                                <volume name ="Vol2w4r13" >
+                                    <materialref ref ="Pb" />
+                                    <solidref ref="w4r13brck2" />
+                                    <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                </volume>
+
+                                <volume name ="Vol3w4r13" >
+                                    <materialref ref ="Pb" />
+                                    <solidref ref="w4r13brck3" />
+                                    <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                </volume>
+
+                              
+                                
+                                <!--   Row 15         -->
+                                
+                                <volume name ="Vol1w4r15" >
+                                    <materialref ref ="Pb" />
+                                    <solidref ref="w4r15brck1" />
+                                    <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                </volume>
+
+                                <volume name ="Vol2w4r15" >
+                                    <materialref ref ="Pb" />
+                                    <solidref ref="w4r15brck2" />
+                                    <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                </volume>
+
+                                <volume name ="Vol3w4r15" >
+                                    <materialref ref ="Pb" />
+                                    <solidref ref="w4r15brck3" />
+                                    <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                </volume>
+
+                                <!--        ************************************-->
+                                <!--        **-->
+                                <!--        **    Pb bricks Wall 4 Even Rows-->
+                                <!--        **-->
+                                <!--        ************************************-->
+                                
+                                      <!--   Row 2         -->
+                                      
+                                      <volume name ="Vol1w4r2" >
+                                          <materialref ref ="Pb" />
+                                          <solidref ref="w4r2brck1" />
+                                          <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                      </volume>
+
+                                      <volume name ="Vol2w4r2" >
+                                          <materialref ref ="Pb" />
+                                          <solidref ref="w1r2brck2" />
+                                          <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                      </volume>
+
+                                      <volume name ="Vol3w4r2" >
+                                          <materialref ref ="Pb" />
+                                          <solidref ref="w1r2brck3" />
+                                          <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                      </volume>
+
+                                     
+                                      
+                                      <!--   Row 4        -->
+                                      
+                                      <volume name ="Vol1w4r4" >
+                                          <materialref ref ="Pb" />
+                                          <solidref ref="w4r4brck1" />
+                                          <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                      </volume>
+
+                                      <volume name ="Vol2w4r4" >
+                                          <materialref ref ="Pb" />
+                                          <solidref ref="w4r4brck2" />
+                                          <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                      </volume>
+
+                                      <volume name ="Vol3w4r4" >
+                                          <materialref ref ="Pb" />
+                                          <solidref ref="w4r4brck3" />
+                                          <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                      </volume>
+
+                                      
+                                      <!--   Row 6         -->
+                                      
+                                      <volume name ="Vol1w4r6" >
+                                          <materialref ref ="Pb" />
+                                          <solidref ref="w4r6brck1" />
+                                          <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                      </volume>
+
+                                      <volume name ="Vol2w4r6" >
+                                          <materialref ref ="Pb" />
+                                          <solidref ref="w4r6brck2" />
+                                          <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                      </volume>
+
+                                      <volume name ="Vol3w4r6" >
+                                          <materialref ref ="Pb" />
+                                          <solidref ref="w4r6brck3" />
+                                          <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                      </volume>
+
+                                  
+                                      
+                                      <!--   Row 8         -->
+                                      
+                                      <volume name ="Vol1w4r8" >
+                                          <materialref ref ="Pb" />
+                                          <solidref ref="w4r8brck1" />
+                                          <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                      </volume>
+
+                                      <volume name ="Vol2w4r8" >
+                                          <materialref ref ="Pb" />
+                                          <solidref ref="w4r8brck2" />
+                                          <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                      </volume>
+
+                                      <volume name ="Vol3w4r8" >
+                                          <materialref ref ="Pb" />
+                                          <solidref ref="w4r8brck3" />
+                                          <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                      </volume>
+
+                                
+                                      
+                                      <!--   Row 10         -->
+                                      
+                                      <volume name ="Vol1w4r10" >
+                                          <materialref ref ="Pb" />
+                                          <solidref ref="w4r10brck1" />
+                                          <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                      </volume>
+
+                                      <volume name ="Vol2w4r10" >
+                                          <materialref ref ="Pb" />
+                                          <solidref ref="w4r10brck2" />
+                                          <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                      </volume>
+
+                                      <volume name ="Vol3w4r10" >
+                                          <materialref ref ="Pb" />
+                                          <solidref ref="w4r10brck3" />
+                                          <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                      </volume>
+
+                                  
+                                      
+                                      <!--   Row 12         -->
+                                      
+                                      <volume name ="Vol1w4r12" >
+                                          <materialref ref ="Pb" />
+                                          <solidref ref="w4r12brck1" />
+                                          <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                      </volume>
+
+                                      <volume name ="Vol2w4r12" >
+                                          <materialref ref ="Pb" />
+                                          <solidref ref="w4r12brck2" />
+                                          <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                      </volume>
+
+                                      <volume name ="Vol3w4r12" >
+                                          <materialref ref ="Pb" />
+                                          <solidref ref="w4r12brck3" />
+                                          <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                      </volume>
+
+                                    
+                                      
+                                      <!--   Row 14         -->
+                                      
+                                      <volume name ="Vol1w4r14" >
+                                          <materialref ref ="Pb" />
+                                          <solidref ref="w4r14brck1" />
+                                          <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                      </volume>
+
+                                      <volume name ="Vol2w4r14" >
+                                          <materialref ref ="Pb" />
+                                          <solidref ref="w4r14brck2" />
+                                          <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                      </volume>
+
+                                      <volume name ="Vol3w4r14" >
+                                          <materialref ref ="Pb" />
+                                          <solidref ref="w4r14brck3" />
+                                          <auxiliary auxtype="Color" auxvalue="Blue"/>
+                                      </volume>
+
+
+
+
+  
+        
+        
+<!---->
+<!---->
+<!---->
+<!---->
+<!--ASSEMBLY VOLUME-->
+<!---->
+<!---->
+<!---->
+<!---->
+        
+        <assembly name="AssemblyVol">
+            
+            
+            <!--        ************************************-->
+            <!--        **-->
+            <!--        **    Pb bricks Floor 1 Eight Across-->
+            <!--        **-->
+            <!--        ************************************-->
+            
+            <!--   Row 1         -->
+            
+            <physvol>
+                <volumeref ref="Vol1fl1" />
+                <position name="pos1fl1" unit="cm" x="-1.25*Pblength" y="-3.5*Pbwidth" z="0.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol2fl1" />
+                <position name="pos2fl1" unit="cm" x="-1.25*Pblength" y="-2.5*Pbwidth" z="0.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol3fl1" />
+                <position name="pos3fl1" unit="cm" x="-1.25*Pblength" y="-1.5*Pbwidth" z="0.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol4fl1" />
+                <position name="pos4fl1" unit="cm" x="-1.25*Pblength" y="-0.5*Pbwidth" z="0.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol5fl1" />
+                <position name="pos5fl1" unit="cm" x="-1.25*Pblength" y="0.5*Pbwidth" z="0.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol6fl1" />
+                <position name="pos6fl1" unit="cm" x="-1.25*Pblength" y="1.5*Pbwidth" z="0.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol7fl1" />
+                <position name="pos7fl1" unit="cm" x="-1.25*Pblength" y="2.5*Pbwidth" z="0.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol8fl1" />
+                <position name="pos8fl1" unit="cm" x="-1.25*Pblength" y="3.5*Pbwidth" z="0.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            
+            
+            
+            <!--   Row 2        -->
+            
+                      <physvol>
+                           <volumeref ref="Vol9fl1" />
+                           <position name="pos9fl1" unit="cm" x="-0.25*Pblength" y="-3.5*Pbwidth" z="0.5*Pbheight" />
+                           <rotationref ref="rotatebyZ"/>
+                       </physvol>
+                       
+                       <physvol>
+                           <volumeref ref="Vol10fl1" />
+                           <position name="pos10fl1" unit="cm" x="-0.25*Pblength" y="-2.5*Pbwidth" z="0.5*Pbheight" />
+                           <rotationref ref="rotatebyZ"/>
+                       </physvol>
+                       
+                       <physvol>
+                           <volumeref ref="Vol11fl1" />
+                           <position name="pos11fl1" unit="cm" x="-0.25*Pblength" y="-1.5*Pbwidth" z="0.5*Pbheight" />
+                           <rotationref ref="rotatebyZ"/>
+                       </physvol>
+                       
+                       <physvol>
+                           <volumeref ref="Vol12fl1" />
+                           <position name="pos12fl1" unit="cm" x="-0.25*Pblength" y="-0.5*Pbwidth" z="0.5*Pbheight" />
+                           <rotationref ref="rotatebyZ"/>
+                       </physvol>
+                       
+                       <physvol>
+                           <volumeref ref="Vol13fl1" />
+                           <position name="pos13fl1" unit="cm" x="-0.25*Pblength" y="0.5*Pbwidth" z="0.5*Pbheight" />
+                           <rotationref ref="rotatebyZ"/>
+                       </physvol>
+                       
+                       <physvol>
+                           <volumeref ref="Vol14fl1" />
+                           <position name="pos14fl1" unit="cm" x="-0.25*Pblength" y="1.5*Pbwidth" z="0.5*Pbheight" />
+                           <rotationref ref="rotatebyZ"/>
+                       </physvol>
+                       
+                       <physvol>
+                           <volumeref ref="Vol15fl1" />
+                           <position name="pos15fl1" unit="cm" x="-0.25*Pblength" y="2.5*Pbwidth" z="0.5*Pbheight" />
+                           <rotationref ref="rotatebyZ"/>
+                       </physvol>
+                       
+                       <physvol>
+                           <volumeref ref="Vol16fl1" />
+                           <position name="pos16fl1" unit="cm" x="-0.25*Pblength" y="3.5*Pbwidth" z="0.5*Pbheight" />
+                           <rotationref ref="rotatebyZ"/>
+                       </physvol>
+            
+            
+            <!--   Row 3         -->
+            
+                       <physvol>
+                           <volumeref ref="Vol17fl1" />
+                           <position name="pos17fl1" unit="cm" x="0.75*Pblength" y="-3.5*Pbwidth" z="0.5*Pbheight" />
+                           <rotationref ref="rotatebyZ"/>
+                       </physvol>
+                       
+                       <physvol>
+                           <volumeref ref="Vol18fl1" />
+                           <position name="pos18fl1" unit="cm" x="0.75*Pblength" y="-2.5*Pbwidth" z="0.5*Pbheight" />
+                           <rotationref ref="rotatebyZ"/>
+                       </physvol>
+                       
+                       <physvol>
+                           <volumeref ref="Vol19fl1" />
+                           <position name="pos19fl1" unit="cm" x="0.75*Pblength" y="-1.5*Pbwidth" z="0.5*Pbheight" />
+                           <rotationref ref="rotatebyZ"/>
+                       </physvol>
+                       
+                       <physvol>
+                           <volumeref ref="Vol20fl1" />
+                           <position name="pos20fl1" unit="cm" x="0.75*Pblength" y="-0.5*Pbwidth" z="0.5*Pbheight" />
+                           <rotationref ref="rotatebyZ"/>
+                       </physvol>
+                       
+                       <physvol>
+                           <volumeref ref="Vol21fl1" />
+                           <position name="pos21fl1" unit="cm" x="0.75*Pblength" y="0.5*Pbwidth" z="0.5*Pbheight" />
+                           <rotationref ref="rotatebyZ"/>
+                       </physvol>
+                       
+                       <physvol>
+                           <volumeref ref="Vol22fl1" />
+                           <position name="pos22fl1" unit="cm" x="0.75*Pblength" y="1.5*Pbwidth" z="0.5*Pbheight" />
+                           <rotationref ref="rotatebyZ"/>
+                       </physvol>
+                       
+                       <physvol>
+                           <volumeref ref="Vol23fl1" />
+                           <position name="pos23fl1" unit="cm" x="0.75*Pblength" y="2.5*Pbwidth" z="0.5*Pbheight" />
+                           <rotationref ref="rotatebyZ"/>
+                       </physvol>
+                       
+                       <physvol>
+                           <volumeref ref="Vol24fl1" />
+                           <position name="pos24fl1" unit="cm" x="0.75*Pblength" y="3.5*Pbwidth" z="0.5*Pbheight" />
+                           <rotationref ref="rotatebyZ"/>
+                       </physvol>
+            
+            
+            <!--   Row 4         -->
+            
+                       <physvol>
+                           <volumeref ref="Vol25fl1" />
+                           <position name="pos25fl1" unit="cm" x="1.5*Pblength" y="-3.0*Pbwidth" z="0.5*Pbheight" />
+                           
+                       </physvol>
+                       
+                       <physvol>
+                           <volumeref ref="Vol26fl1" />
+                           <position name="pos26fl1" unit="cm" x="1.5*Pblength" y="-1.0*Pbwidth" z="0.5*Pbheight" />
+                           
+                       </physvol>
+                       
+                       <physvol>
+                           <volumeref ref="Vol27fl1" />
+                           <position name="pos27fl1" unit="cm" x="1.5*Pblength" y="1.0*Pbwidth" z="0.5*Pbheight" />
+                       </physvol>
+                       
+                       <physvol>
+                           <volumeref ref="Vol28fl1" />
+                           <position name="pos28fl1" unit="cm" x="1.5*Pblength" y="3.0*Pbwidth" z="0.5*Pbheight" />
+                       </physvol>
+                       
+                       
+            
+            <!--        ************************************-->
+            <!--        **-->
+            <!--        **    Pb bricks Floor 2 Eight Across-->
+            <!--        **-->
+            <!--        ************************************-->
+            
+            <!--   Row 1         -->
+            
+            <physvol>
+                <volumeref ref="Vol1fl2" />
+                <position name="pos1fl2" unit="cm" x="1.25*Pblength" y="-3.5*Pbwidth" z="1.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol2fl2" />
+                <position name="pos2fl2" unit="cm" x="1.25*Pblength" y="-2.5*Pbwidth" z="1.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol3fl2" />
+                <position name="pos3fl2" unit="cm" x="1.25*Pblength" y="-1.5*Pbwidth" z="1.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol4fl2" />
+                <position name="pos4fl2" unit="cm" x="1.25*Pblength" y="-0.5*Pbwidth" z="1.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol5fl2" />
+                <position name="pos5fl2" unit="cm" x="1.25*Pblength" y="0.5*Pbwidth" z="1.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol6fl2" />
+                <position name="pos6fl2" unit="cm" x="1.25*Pblength" y="1.5*Pbwidth" z="1.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol7fl2" />
+                <position name="pos7fl2" unit="cm" x="1.25*Pblength" y="2.5*Pbwidth" z="1.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol8fl2" />
+                <position name="pos8fl2" unit="cm" x="1.25*Pblength" y="3.5*Pbwidth" z="1.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            
+            
+            
+            <!--   Row 2        -->
+            
+                      <physvol>
+                           <volumeref ref="Vol9fl2" />
+                           <position name="pos9fl2" unit="cm" x="0.25*Pblength" y="-3.5*Pbwidth" z="1.5*Pbheight" />
+                           <rotationref ref="rotatebyZ"/>
+                       </physvol>
+                       
+                       <physvol>
+                           <volumeref ref="Vol10fl2" />
+                           <position name="pos10fl2" unit="cm" x="0.25*Pblength" y="-2.5*Pbwidth" z="1.5*Pbheight" />
+                           <rotationref ref="rotatebyZ"/>
+                       </physvol>
+                       
+                       <physvol>
+                           <volumeref ref="Vol11fl2" />
+                           <position name="pos11fl2" unit="cm" x="0.25*Pblength" y="-1.5*Pbwidth" z="1.5*Pbheight" />
+                           <rotationref ref="rotatebyZ"/>
+                       </physvol>
+                       
+                       <physvol>
+                           <volumeref ref="Vol12fl2" />
+                           <position name="pos12fl2" unit="cm" x="0.25*Pblength" y="-0.5*Pbwidth" z="1.5*Pbheight" />
+                           <rotationref ref="rotatebyZ"/>
+                       </physvol>
+                       
+                       <physvol>
+                           <volumeref ref="Vol13fl2" />
+                           <position name="pos13fl2" unit="cm" x="0.25*Pblength" y="0.5*Pbwidth" z="1.5*Pbheight" />
+                           <rotationref ref="rotatebyZ"/>
+                       </physvol>
+                       
+                       <physvol>
+                           <volumeref ref="Vol14fl2" />
+                           <position name="pos14fl2" unit="cm" x="0.25*Pblength" y="1.5*Pbwidth" z="1.5*Pbheight" />
+                           <rotationref ref="rotatebyZ"/>
+                       </physvol>
+                       
+                       <physvol>
+                           <volumeref ref="Vol15fl2" />
+                           <position name="pos15fl2" unit="cm" x="0.25*Pblength" y="2.5*Pbwidth" z="1.5*Pbheight" />
+                           <rotationref ref="rotatebyZ"/>
+                       </physvol>
+                       
+                       <physvol>
+                           <volumeref ref="Vol16fl2" />
+                           <position name="pos16fl2" unit="cm" x="0.25*Pblength" y="3.5*Pbwidth" z="1.5*Pbheight" />
+                           <rotationref ref="rotatebyZ"/>
+                       </physvol>
+            
+            
+            <!--   Row 3         -->
+            
+                       <physvol>
+                           <volumeref ref="Vol17fl2" />
+                           <position name="pos17fl2" unit="cm" x="-0.75*Pblength" y="-3.5*Pbwidth" z="1.5*Pbheight" />
+                           <rotationref ref="rotatebyZ"/>
+                       </physvol>
+                       
+                       <physvol>
+                           <volumeref ref="Vol18fl2" />
+                           <position name="pos18fl2" unit="cm" x="-0.75*Pblength" y="-2.5*Pbwidth" z="1.5*Pbheight" />
+                           <rotationref ref="rotatebyZ"/>
+                       </physvol>
+                       
+                       <physvol>
+                           <volumeref ref="Vol19fl2" />
+                           <position name="pos19fl2" unit="cm" x="-0.75*Pblength" y="-1.5*Pbwidth" z="1.5*Pbheight" />
+                           <rotationref ref="rotatebyZ"/>
+                       </physvol>
+                       
+                       <physvol>
+                           <volumeref ref="Vol20fl2" />
+                           <position name="pos20fl2" unit="cm" x="-0.75*Pblength" y="-0.5*Pbwidth" z="1.5*Pbheight" />
+                           <rotationref ref="rotatebyZ"/>
+                       </physvol>
+                       
+                       <physvol>
+                           <volumeref ref="Vol21fl2" />
+                           <position name="pos21fl2" unit="cm" x="-0.75*Pblength" y="0.5*Pbwidth" z="1.5*Pbheight" />
+                           <rotationref ref="rotatebyZ"/>
+                       </physvol>
+                       
+                       <physvol>
+                           <volumeref ref="Vol22fl2" />
+                           <position name="pos22fl2" unit="cm" x="-0.75*Pblength" y="1.5*Pbwidth" z="1.5*Pbheight" />
+                           <rotationref ref="rotatebyZ"/>
+                       </physvol>
+                       
+                       <physvol>
+                           <volumeref ref="Vol23fl2" />
+                           <position name="pos23fl2" unit="cm" x="-0.75*Pblength" y="2.5*Pbwidth" z="1.5*Pbheight" />
+                           <rotationref ref="rotatebyZ"/>
+                       </physvol>
+                       
+                       <physvol>
+                           <volumeref ref="Vol24fl2" />
+                           <position name="pos24fl2" unit="cm" x="-0.75*Pblength" y="3.5*Pbwidth" z="1.5*Pbheight" />
+                           <rotationref ref="rotatebyZ"/>
+                       </physvol>
+            
+            
+            <!--   Row 4         -->
+            
+                       <physvol>
+                           <volumeref ref="Vol25fl2" />
+                           <position name="pos25fl2" unit="cm" x="-1.5*Pblength" y="-3.0*Pbwidth" z="1.5*Pbheight" />
+                           
+                       </physvol>
+                       
+                       <physvol>
+                           <volumeref ref="Vol26fl2" />
+                           <position name="pos26fl2" unit="cm" x="-1.5*Pblength" y="-1.0*Pbwidth" z="1.5*Pbheight" />
+                           
+                       </physvol>
+                       
+                       <physvol>
+                           <volumeref ref="Vol27fl2" />
+                           <position name="pos27fl2" unit="cm" x="-1.5*Pblength" y="1.0*Pbwidth" z="1.5*Pbheight" />
+                           
+                       </physvol>
+                       
+                       <physvol>
+                           <volumeref ref="Vol28fl2" />
+                           <position name="pos28fl2" unit="cm" x="-1.5*Pblength" y="3.0*Pbwidth" z="1.5*Pbheight" />
+                           
+                       </physvol>
+
+            <!--        ************************************-->
+            <!--        **-->
+            <!--        **    Pb bricks Wall 1 Odd Rows-->
+            <!--        **-->
+            <!--        ************************************-->
+            
+            <!--   Row 1        -->
+            
+            
+            <physvol>
+                <volumeref ref="Vol1w1r1" />
+                <position name="pos1w1r1" unit="cm" x="-1.25*Pblength" y="-3.5*Pbwidth" z="2.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol2w1r1" />
+                <position name="pos2w1r1" unit="cm" x="-0.25*Pblength" y="-3.5*Pbwidth" z="2.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol3w1r1" />
+                <position name="pos3w1r1" unit="cm" x="0.75*Pblength" y="-3.5*Pbwidth" z="2.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol4w1r1" />
+                <position name="pos4w1r1" unit="cm" x="1.5*Pblength" y="-3.0*Pbwidth" z="2.5*Pbheight" />
+                
+            </physvol>
+            
+            <!--   Row 3        -->
+            
+            
+            <physvol>
+                <volumeref ref="Vol1w1r3" />
+                <position name="pos1w1r3" unit="cm" x="-1.25*Pblength" y="-3.5*Pbwidth" z="4.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol2w1r3" />
+                <position name="pos2w1r3" unit="cm" x="-0.25*Pblength" y="-3.5*Pbwidth" z="4.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol3w1r3" />
+                <position name="pos3w1r3" unit="cm" x="0.75*Pblength" y="-3.5*Pbwidth" z="4.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol4w1r3" />
+                <position name="pos4w1r3" unit="cm" x="1.5*Pblength" y="-3.0*Pbwidth" z="4.5*Pbheight" />
+                
+            </physvol>
+            
+            <!--   Row 5        -->
+            
+            
+            <physvol>
+                <volumeref ref="Vol1w1r5" />
+                <position name="pos1w1r5" unit="cm" x="-1.25*Pblength" y="-3.5*Pbwidth" z="6.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol2w1r5" />
+                <position name="pos2w1r5" unit="cm" x="-0.25*Pblength" y="-3.5*Pbwidth" z="6.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol3w1r5" />
+                <position name="pos3w1r5" unit="cm" x="0.75*Pblength" y="-3.5*Pbwidth" z="6.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol4w1r5" />
+                <position name="pos4w1r5" unit="cm" x="1.5*Pblength" y="-3.0*Pbwidth" z="6.5*Pbheight" />
+                
+            </physvol>
+            
+            <!--   Row 7        -->
+            
+            
+            <physvol>
+                <volumeref ref="Vol1w1r7" />
+                <position name="pos1w1r7" unit="cm" x="-1.25*Pblength" y="-3.5*Pbwidth" z="8.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol2w1r7" />
+                <position name="pos2w1r7" unit="cm" x="-0.25*Pblength" y="-3.5*Pbwidth" z="8.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol3w1r7" />
+                <position name="pos3w1r7" unit="cm" x="0.75*Pblength" y="-3.5*Pbwidth" z="8.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol4w1r7" />
+                <position name="pos4w1r7" unit="cm" x="1.5*Pblength" y="-3.0*Pbwidth" z="8.5*Pbheight" />
+                
+            </physvol>
+            
+            <!--   Row 9        -->
+            
+            
+            <physvol>
+                <volumeref ref="Vol1w1r9" />
+                <position name="pos1w1r9" unit="cm" x="-1.25*Pblength" y="-3.5*Pbwidth" z="10.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol2w1r9" />
+                <position name="pos2w1r9" unit="cm" x="-0.25*Pblength" y="-3.5*Pbwidth" z="10.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol3w1r9" />
+                <position name="pos3w1r9" unit="cm" x="0.75*Pblength" y="-3.5*Pbwidth" z="10.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol4w1r9" />
+                <position name="pos4w1r9" unit="cm" x="1.5*Pblength" y="-3.0*Pbwidth" z="10.5*Pbheight" />
+                
+            </physvol>
+            
+            <!--   Row 11        -->
+            
+            
+            <physvol>
+                <volumeref ref="Vol1w1r11" />
+                <position name="pos1w1r11" unit="cm" x="-1.25*Pblength" y="-3.5*Pbwidth" z="12.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol2w1r11" />
+                <position name="pos2w1r11" unit="cm" x="-0.25*Pblength" y="-3.5*Pbwidth" z="12.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol3w1r11" />
+                <position name="pos3w1r11" unit="cm" x="0.75*Pblength" y="-3.5*Pbwidth" z="12.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol4w1r11" />
+                <position name="pos4w1r11" unit="cm" x="1.5*Pblength" y="-3.0*Pbwidth" z="12.5*Pbheight" />
+                
+            </physvol>
+            
+            <!--   Row 13        -->
+            
+            
+            <physvol>
+                <volumeref ref="Vol1w1r13" />
+                <position name="pos1w1r13" unit="cm" x="-1.25*Pblength" y="-3.5*Pbwidth" z="14.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol2w1r13" />
+                <position name="pos2w1r13" unit="cm" x="-0.25*Pblength" y="-3.5*Pbwidth" z="14.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol3w1r13" />
+                <position name="pos3w1r13" unit="cm" x="0.75*Pblength" y="-3.5*Pbwidth" z="14.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol4w1r13" />
+                <position name="pos4w1r13" unit="cm" x="1.5*Pblength" y="-3.0*Pbwidth" z="14.5*Pbheight" />
+                
+            </physvol>
+            
+            <!--   Row 15        -->
+            
+            
+            <physvol>
+                <volumeref ref="Vol1w1r15" />
+                <position name="pos1w1r15" unit="cm" x="-1.25*Pblength" y="-3.5*Pbwidth" z="16.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol2w1r15" />
+                <position name="pos2w1r15" unit="cm" x="-0.25*Pblength" y="-3.5*Pbwidth" z="16.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol3w1r15" />
+                <position name="pos3w1r15" unit="cm" x="0.75*Pblength" y="-3.5*Pbwidth" z="16.5*Pbheight" />
+                <rotationref ref="rotatebyZ"/>
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="Vol4w1r15" />
+                <position name="pos4w1r15" unit="cm" x="1.5*Pblength" y="-3.0*Pbwidth" z="16.5*Pbheight" />
+                
+            </physvol>
+            
+            
+             <!--        ************************************-->
+             <!--        **-->
+             <!--        **    Pb bricks Wall 1 Even Rows-->
+             <!--        **-->
+             <!--        ************************************-->
+             
+             <!--   Row 2        -->
+             
+             
+             <physvol>
+                 <volumeref ref="Vol1w1r2" />
+                 <position name="pos1w1r2" unit="cm" x="1.25*Pblength" y="-3.5*Pbwidth" z="3.5*Pbheight" />
+                 <rotationref ref="rotatebyZ"/>
+             </physvol>
+             
+             <physvol>
+                 <volumeref ref="Vol2w1r2" />
+                 <position name="pos2w1r2" unit="cm" x="0.25*Pblength" y="-3.5*Pbwidth" z="3.5*Pbheight" />
+                 <rotationref ref="rotatebyZ"/>
+             </physvol>
+             
+             <physvol>
+                 <volumeref ref="Vol3w1r2" />
+                 <position name="pos3w1r2" unit="cm" x="-0.75*Pblength" y="-3.5*Pbwidth" z="3.5*Pbheight" />
+                 <rotationref ref="rotatebyZ"/>
+             </physvol>
+             
+             <physvol>
+                 <volumeref ref="Vol4w1r2" />
+                 <position name="pos4w1r2" unit="cm" x="-1.5*Pblength" y="-3.0*Pbwidth" z="3.5*Pbheight" />
+                 
+             </physvol>
+             
+             <!--   Row 4        -->
+             
+             
+             <physvol>
+                 <volumeref ref="Vol1w1r4" />
+                 <position name="pos1w1r4" unit="cm" x="1.25*Pblength" y="-3.5*Pbwidth" z="5.5*Pbheight" />
+                 <rotationref ref="rotatebyZ"/>
+             </physvol>
+             
+             <physvol>
+                 <volumeref ref="Vol2w1r4" />
+                 <position name="pos2w1r4" unit="cm" x="0.25*Pblength" y="-3.5*Pbwidth" z="5.5*Pbheight" />
+                 <rotationref ref="rotatebyZ"/>
+             </physvol>
+             
+             <physvol>
+                 <volumeref ref="Vol3w1r4" />
+                 <position name="pos3w1r4" unit="cm" x="-0.75*Pblength" y="-3.5*Pbwidth" z="5.5*Pbheight" />
+                 <rotationref ref="rotatebyZ"/>
+             </physvol>
+             
+             <physvol>
+                 <volumeref ref="Vol4w1r4" />
+                 <position name="pos4w1r4" unit="cm" x="-1.5*Pblength" y="-3.0*Pbwidth" z="5.5*Pbheight" />
+                 
+             </physvol>
+             
+             <!--   Row 6        -->
+             
+             
+             <physvol>
+                 <volumeref ref="Vol1w1r6" />
+                 <position name="pos1w1r6" unit="cm" x="1.25*Pblength" y="-3.5*Pbwidth" z="7.5*Pbheight" />
+                 <rotationref ref="rotatebyZ"/>
+             </physvol>
+             
+             <physvol>
+                 <volumeref ref="Vol2w1r6" />
+                 <position name="pos2w1r6" unit="cm" x="0.25*Pblength" y="-3.5*Pbwidth" z="7.5*Pbheight" />
+                 <rotationref ref="rotatebyZ"/>
+             </physvol>
+             
+             <physvol>
+                 <volumeref ref="Vol3w1r6" />
+                 <position name="pos3w1r6" unit="cm" x="-0.75*Pblength" y="-3.5*Pbwidth" z="7.5*Pbheight" />
+                 <rotationref ref="rotatebyZ"/>
+             </physvol>
+             
+             <physvol>
+                 <volumeref ref="Vol4w1r6" />
+                 <position name="pos4w1r6" unit="cm" x="-1.5*Pblength" y="-3.0*Pbwidth" z="7.5*Pbheight" />
+                 
+             </physvol>
+             
+             <!--   Row 8        -->
+             
+             
+             <physvol>
+                 <volumeref ref="Vol1w1r8" />
+                 <position name="pos1w1r8" unit="cm" x="1.25*Pblength" y="-3.5*Pbwidth" z="9.5*Pbheight" />
+                 <rotationref ref="rotatebyZ"/>
+             </physvol>
+             
+             <physvol>
+                 <volumeref ref="Vol2w1r8" />
+                 <position name="pos2w1r8" unit="cm" x="0.25*Pblength" y="-3.5*Pbwidth" z="9.5*Pbheight" />
+                 <rotationref ref="rotatebyZ"/>
+             </physvol>
+             
+             <physvol>
+                 <volumeref ref="Vol3w1r8" />
+                 <position name="pos3w1r8" unit="cm" x="-0.75*Pblength" y="-3.5*Pbwidth" z="9.5*Pbheight" />
+                 <rotationref ref="rotatebyZ"/>
+             </physvol>
+             
+             <physvol>
+                 <volumeref ref="Vol4w1r8" />
+                 <position name="pos4w1r8" unit="cm" x="-1.5*Pblength" y="-3.0*Pbwidth" z="9.5*Pbheight" />
+                 
+             </physvol>
+             
+             <!--   Row 10        -->
+             
+             
+             <physvol>
+                 <volumeref ref="Vol1w1r10" />
+                 <position name="pos1w1r10" unit="cm" x="1.25*Pblength" y="-3.5*Pbwidth" z="11.5*Pbheight" />
+                 <rotationref ref="rotatebyZ"/>
+             </physvol>
+             
+             <physvol>
+                 <volumeref ref="Vol2w1r10" />
+                 <position name="pos2w1r10" unit="cm" x="0.25*Pblength" y="-3.5*Pbwidth" z="11.5*Pbheight" />
+                 <rotationref ref="rotatebyZ"/>
+             </physvol>
+             
+             <physvol>
+                 <volumeref ref="Vol3w1r10" />
+                 <position name="pos3w1r10" unit="cm" x="-0.75*Pblength" y="-3.5*Pbwidth" z="11.5*Pbheight" />
+                 <rotationref ref="rotatebyZ"/>
+             </physvol>
+             
+             <physvol>
+                 <volumeref ref="Vol4w1r10" />
+                 <position name="pos4w1r10" unit="cm" x="-1.5*Pblength" y="-3.0*Pbwidth" z="11.5*Pbheight" />
+                 
+             </physvol>
+             
+             <!--   Row 12        -->
+             
+             
+             <physvol>
+                 <volumeref ref="Vol1w1r12" />
+                 <position name="pos1w1r12" unit="cm" x="1.25*Pblength" y="-3.5*Pbwidth" z="13.5*Pbheight" />
+                 <rotationref ref="rotatebyZ"/>
+             </physvol>
+             
+             <physvol>
+                 <volumeref ref="Vol2w1r12" />
+                 <position name="pos2w1r12" unit="cm" x="0.25*Pblength" y="-3.5*Pbwidth" z="13.5*Pbheight" />
+                 <rotationref ref="rotatebyZ"/>
+             </physvol>
+             
+             <physvol>
+                 <volumeref ref="Vol3w1r12" />
+                 <position name="pos3w1r12" unit="cm" x="-0.75*Pblength" y="-3.5*Pbwidth" z="13.5*Pbheight" />
+                 <rotationref ref="rotatebyZ"/>
+             </physvol>
+             
+             <physvol>
+                 <volumeref ref="Vol4w1r12" />
+                 <position name="pos4w1r12" unit="cm" x="-1.5*Pblength" y="-3.0*Pbwidth" z="13.5*Pbheight" />
+                 
+             </physvol>
+             
+             <!--   Row 14        -->
+             
+             
+             <physvol>
+                 <volumeref ref="Vol1w1r14" />
+                 <position name="pos1w1r14" unit="cm" x="1.25*Pblength" y="-3.5*Pbwidth" z="15.5*Pbheight" />
+                 <rotationref ref="rotatebyZ"/>
+             </physvol>
+             
+             <physvol>
+                 <volumeref ref="Vol2w1r14" />
+                 <position name="pos2w1r14" unit="cm" x="0.25*Pblength" y="-3.5*Pbwidth" z="15.5*Pbheight" />
+                 <rotationref ref="rotatebyZ"/>
+             </physvol>
+             
+             <physvol>
+                 <volumeref ref="Vol3w1r14" />
+                 <position name="pos3w1r14" unit="cm" x="-0.75*Pblength" y="-3.5*Pbwidth" z="15.5*Pbheight" />
+                 <rotationref ref="rotatebyZ"/>
+             </physvol>
+             
+             <physvol>
+                 <volumeref ref="Vol4w1r14" />
+                 <position name="pos4w1r14" unit="cm" x="-1.5*Pblength" y="-3.0*Pbwidth" z="15.5*Pbheight" />
+                 
+             </physvol>
+             
+             
+           
+              <!--        ************************************-->
+               <!--        **-->
+               <!--        **    Pb bricks Wall 2 Odd Rows-->
+               <!--        **-->
+               <!--        ************************************-->
+               
+               <!--   Row 1         -->
+               
+                          
+                          <physvol>
+                              <volumeref ref="Vol1w2r1" />
+                              <position name="pos1w2r1" unit="cm" x="1.5*Pblength" y="-1.0*Pbwidth" z="2.5*Pbheight" />
+                              
+                          </physvol>
+                          
+                          <physvol>
+                              <volumeref ref="Vol2w2r1" />
+                              <position name="pos2w2r1" unit="cm" x="1.5*Pblength" y="1.0*Pbwidth" z="2.5*Pbheight" />
+                          </physvol>
+                          
+                          <physvol>
+                              <volumeref ref="Vol3w2r1" />
+                              <position name="pos3w2r1" unit="cm" x="1.5*Pblength" y="3.0*Pbwidth" z="2.5*Pbheight" />
+                          </physvol>
+
+                <!--   Row 3         -->
+                
+                           
+                           <physvol>
+                               <volumeref ref="Vol1w2r3" />
+                               <position name="pos1w2r3" unit="cm" x="1.5*Pblength" y="-1.0*Pbwidth" z="4.5*Pbheight" />
+                               
+                           </physvol>
+                           
+                           <physvol>
+                               <volumeref ref="Vol2w2r3" />
+                               <position name="pos2w2r3" unit="cm" x="1.5*Pblength" y="1.0*Pbwidth" z="4.5*Pbheight" />
+                           </physvol>
+                           
+                           <physvol>
+                               <volumeref ref="Vol3w2r3" />
+                               <position name="pos3w2r3" unit="cm" x="1.5*Pblength" y="3.0*Pbwidth" z="4.5*Pbheight" />
+                           </physvol>
+
+                           
+                <!--   Row 5         -->
+                
+                           
+                           <physvol>
+                               <volumeref ref="Vol1w2r5" />
+                               <position name="pos1w2r5" unit="cm" x="1.5*Pblength" y="-1.0*Pbwidth" z="6.5*Pbheight" />
+                               
+                           </physvol>
+                           
+                           <physvol>
+                               <volumeref ref="Vol2w2r5" />
+                               <position name="pos2w2r5" unit="cm" x="1.5*Pblength" y="1.0*Pbwidth" z="6.5*Pbheight" />
+                           </physvol>
+                           
+                           <physvol>
+                               <volumeref ref="Vol3w2r5" />
+                               <position name="pos3w2r5" unit="cm" x="1.5*Pblength" y="3.0*Pbwidth" z="6.5*Pbheight" />
+                           </physvol>
+
+                <!--   Row 7         -->
+                
+                           
+                           <physvol>
+                               <volumeref ref="Vol1w2r7" />
+                               <position name="pos1w2r7" unit="cm" x="1.5*Pblength" y="-1.0*Pbwidth" z="8.5*Pbheight" />
+                               
+                           </physvol>
+                           
+                           <physvol>
+                               <volumeref ref="Vol2w2r7" />
+                               <position name="pos2w2r7" unit="cm" x="1.5*Pblength" y="1.0*Pbwidth" z="8.5*Pbheight" />
+                           </physvol>
+                           
+                           <physvol>
+                               <volumeref ref="Vol3w2r7" />
+                               <position name="pos3w2r7" unit="cm" x="1.5*Pblength" y="3.0*Pbwidth" z="8.5*Pbheight" />
+                           </physvol>
+                           
+                <!--   Row 9        -->
+                
+                           
+                           <physvol>
+                               <volumeref ref="Vol1w2r9" />
+                               <position name="pos1w2r9" unit="cm" x="1.5*Pblength" y="-1.0*Pbwidth" z="10.5*Pbheight" />
+                               
+                           </physvol>
+                           
+                           <physvol>
+                               <volumeref ref="Vol2w2r9" />
+                               <position name="pos2w2r9" unit="cm" x="1.5*Pblength" y="1.0*Pbwidth" z="10.5*Pbheight" />
+                           </physvol>
+                           
+                           <physvol>
+                               <volumeref ref="Vol3w2r9" />
+                               <position name="pos3w2r9" unit="cm" x="1.5*Pblength" y="3.0*Pbwidth" z="10.5*Pbheight" />
+                           </physvol>
+
+                <!--   Row 11       -->
+                
+                           
+                           <physvol>
+                               <volumeref ref="Vol1w2r11" />
+                               <position name="pos1w2r11" unit="cm" x="1.5*Pblength" y="-1.0*Pbwidth" z="12.5*Pbheight" />
+                               
+                           </physvol>
+                           
+                           <physvol>
+                               <volumeref ref="Vol2w2r11" />
+                               <position name="pos2w2r11" unit="cm" x="1.5*Pblength" y="1.0*Pbwidth" z="12.5*Pbheight" />
+                           </physvol>
+                           
+                           <physvol>
+                               <volumeref ref="Vol3w2r11" />
+                               <position name="pos3w2r11" unit="cm" x="1.5*Pblength" y="3.0*Pbwidth" z="12.5*Pbheight" />
+                           </physvol>
+
+                <!--   Row 13         -->
+                
+                           
+                           <physvol>
+                               <volumeref ref="Vol1w2r13" />
+                               <position name="pos1w2r13" unit="cm" x="1.5*Pblength" y="-1.0*Pbwidth" z="14.5*Pbheight" />
+                               
+                           </physvol>
+                           
+                           <physvol>
+                               <volumeref ref="Vol2w2r13" />
+                               <position name="pos2w2r13" unit="cm" x="1.5*Pblength" y="1.0*Pbwidth" z="14.5*Pbheight" />
+                           </physvol>
+                           
+                           <physvol>
+                               <volumeref ref="Vol3w2r13" />
+                               <position name="pos3w2r13" unit="cm" x="1.5*Pblength" y="3.0*Pbwidth" z="14.5*Pbheight" />
+                           </physvol>
+                           
+                           
+                <!--   Row 15         -->
+                
+                           
+                           <physvol>
+                               <volumeref ref="Vol1w2r15" />
+                               <position name="pos1w2r15" unit="cm" x="1.5*Pblength" y="-1.0*Pbwidth" z="16.5*Pbheight" />
+                               
+                           </physvol>
+                           
+                           <physvol>
+                               <volumeref ref="Vol2w2r15" />
+                               <position name="pos2w2r15" unit="cm" x="1.5*Pblength" y="1.0*Pbwidth" z="16.5*Pbheight" />
+                           </physvol>
+                           
+                           <physvol>
+                               <volumeref ref="Vol3w2r15" />
+                               <position name="pos3w2r15" unit="cm" x="1.5*Pblength" y="3.0*Pbwidth" z="16.5*Pbheight" />
+                           </physvol>
+
+
+               
+               
+               
+               <!--        ************************************-->
+                <!--        **-->
+                <!--        **    Pb bricks Wall 2 Even Rows-->
+                <!--        **-->
+                <!--        ************************************-->
+                
+
+
+                 <!--   Row 2         -->
+                 
+                            
+                            <physvol>
+                                <volumeref ref="Vol1w2r2" />
+                                <position name="pos1w2r2" unit="cm" x="1.5*Pblength" y="-1.0*Pbwidth" z="3.5*Pbheight" />
+                                
+                            </physvol>
+                            
+                            <physvol>
+                                <volumeref ref="Vol2w2r2" />
+                                <position name="pos2w2r2" unit="cm" x="1.5*Pblength" y="0.0*Pbwidth" z="3.5*Pbheight" />
+                            </physvol>
+                            
+                            <physvol>
+                                <volumeref ref="Vol3w2r2" />
+                                <position name="pos3w2r2" unit="cm" x="1.5*Pblength" y="2.0*Pbwidth" z="3.5*Pbheight" />
+                            </physvol>
+
+                            
+                 <!--   Row 4        -->
+                 
+                            
+                            <physvol>
+                                <volumeref ref="Vol1w2r4" />
+                                <position name="pos1w2r4" unit="cm" x="1.5*Pblength" y="-2.0*Pbwidth" z="5.5*Pbheight" />
+                                
+                            </physvol>
+                            
+                            <physvol>
+                                <volumeref ref="Vol2w2r4" />
+                                <position name="pos2w2r4" unit="cm" x="1.5*Pblength" y="0.0*Pbwidth" z="5.5*Pbheight" />
+                            </physvol>
+                            
+                            <physvol>
+                                <volumeref ref="Vol3w2r4" />
+                                <position name="pos3w2r4" unit="cm" x="1.5*Pblength" y="2.0*Pbwidth" z="5.5*Pbheight" />
+                            </physvol>
+
+                 <!--   Row 6         -->
+                 
+                            
+                            <physvol>
+                                <volumeref ref="Vol1w2r6" />
+                                <position name="pos1w2r6" unit="cm" x="1.5*Pblength" y="-2.0*Pbwidth" z="7.5*Pbheight" />
+                                
+                            </physvol>
+                            
+                            <physvol>
+                                <volumeref ref="Vol2w2r6" />
+                                <position name="pos2w2r6" unit="cm" x="1.5*Pblength" y="0.0*Pbwidth" z="7.5*Pbheight" />
+                            </physvol>
+                            
+                            <physvol>
+                                <volumeref ref="Vol3w2r6" />
+                                <position name="pos3w2r6" unit="cm" x="1.5*Pblength" y="2.0*Pbwidth" z="7.5*Pbheight" />
+                            </physvol>
+                            
+                 <!--   Row 8        -->
+                 
+                            
+                            <physvol>
+                                <volumeref ref="Vol1w2r8" />
+                                <position name="pos1w2r8" unit="cm" x="1.5*Pblength" y="-2.0*Pbwidth" z="9.5*Pbheight" />
+                                
+                            </physvol>
+                            
+                            <physvol>
+                                <volumeref ref="Vol2w2r8" />
+                                <position name="pos2w2r8" unit="cm" x="1.5*Pblength" y="0.0*Pbwidth" z="9.5*Pbheight" />
+                            </physvol>
+                            
+                            <physvol>
+                                <volumeref ref="Vol3w2r8" />
+                                <position name="pos3w2r8" unit="cm" x="1.5*Pblength" y="2.0*Pbwidth" z="9.5*Pbheight" />
+                            </physvol>
+
+                 <!--   Row 10       -->
+                 
+                            
+                            <physvol>
+                                <volumeref ref="Vol1w2r10" />
+                                <position name="pos1w2r10" unit="cm" x="1.5*Pblength" y="-2.0*Pbwidth" z="11.5*Pbheight" />
+                                
+                            </physvol>
+                            
+                            <physvol>
+                                <volumeref ref="Vol2w2r10" />
+                                <position name="pos2w2r10" unit="cm" x="1.5*Pblength" y="0.0*Pbwidth" z="11.5*Pbheight" />
+                            </physvol>
+                            
+                            <physvol>
+                                <volumeref ref="Vol3w2r10" />
+                                <position name="pos3w2r10" unit="cm" x="1.5*Pblength" y="2.0*Pbwidth" z="11.5*Pbheight" />
+                            </physvol>
+
+                 <!--   Row 12         -->
+                 
+                            
+                            <physvol>
+                                <volumeref ref="Vol1w2r12" />
+                                <position name="pos1w2r12" unit="cm" x="1.5*Pblength" y="-2.0*Pbwidth" z="13.5*Pbheight" />
+                                
+                            </physvol>
+                            
+                            <physvol>
+                                <volumeref ref="Vol2w2r12" />
+                                <position name="pos2w2r12" unit="cm" x="1.5*Pblength" y="0.0*Pbwidth" z="13.5*Pbheight" />
+                            </physvol>
+                            
+                            <physvol>
+                                <volumeref ref="Vol3w2r12" />
+                                <position name="pos3w2r12" unit="cm" x="1.5*Pblength" y="2.0*Pbwidth" z="13.5*Pbheight" />
+                            </physvol>
+                            
+                            
+                 <!--   Row 14         -->
+                 
+                            
+                            <physvol>
+                                <volumeref ref="Vol1w2r14" />
+                                <position name="pos1w2r14" unit="cm" x="1.5*Pblength" y="-2.0*Pbwidth" z="15.5*Pbheight" />
+                                
+                            </physvol>
+                            
+                            <physvol>
+                                <volumeref ref="Vol2w2r14" />
+                                <position name="pos2w2r14" unit="cm" x="1.5*Pblength" y="0.0*Pbwidth" z="15.5*Pbheight" />
+                            </physvol>
+                            
+                            <physvol>
+                                <volumeref ref="Vol3w2r14" />
+                                <position name="pos3w2r14" unit="cm" x="1.5*Pblength" y="2.0*Pbwidth" z="15.5*Pbheight" />
+                            </physvol>
+
+              
+              
+
+             
+              <!--        ************************************-->
+              <!--        **-->
+              <!--        **    Pb bricks Wall 3 Odd Rows-->
+              <!--        **-->
+              <!--        ************************************-->
+              
+              
+              <!--   Row 1        -->
+              
+              
+              <physvol>
+                  <volumeref ref="Vol1w3r1" />
+                  <position name="pos1w3r1" unit="cm" x="-1.25*Pblength" y="3.5*Pbwidth" z="2.5*Pbheight" />
+                  <rotationref ref="rotatebyZ"/>
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol2w3r1" />
+                  <position name="pos2w3r1" unit="cm" x="-0.25*Pblength" y="3.5*Pbwidth" z="2.5*Pbheight" />
+                  <rotationref ref="rotatebyZ"/>
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol3w3r1" />
+                  <position name="pos3w3r1" unit="cm" x="0.75*Pblength" y="3.5*Pbwidth" z="2.5*Pbheight" />
+                  <rotationref ref="rotatebyZ"/>
+              </physvol>
+
+              
+              <!--   Row 3        -->
+              
+              
+              <physvol>
+                  <volumeref ref="Vol1w3r3" />
+                  <position name="pos1w3r3" unit="cm" x="-1.25*Pblength" y="3.5*Pbwidth" z="4.5*Pbheight" />
+                  <rotationref ref="rotatebyZ"/>
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol2w3r3" />
+                  <position name="pos2w3r3" unit="cm" x="-0.25*Pblength" y="3.5*Pbwidth" z="4.5*Pbheight" />
+                  <rotationref ref="rotatebyZ"/>
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol3w3r3" />
+                  <position name="pos3w3r3" unit="cm" x="0.75*Pblength" y="3.5*Pbwidth" z="4.5*Pbheight" />
+                  <rotationref ref="rotatebyZ"/>
+              </physvol>
+              
+              <!--   Row 5        -->
+              
+              
+              <physvol>
+                  <volumeref ref="Vol1w3r5" />
+                  <position name="pos1w3r5" unit="cm" x="-1.25*Pblength" y="3.5*Pbwidth" z="6.5*Pbheight" />
+                  <rotationref ref="rotatebyZ"/>
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol2w3r5" />
+                  <position name="pos2w3r5" unit="cm" x="-0.25*Pblength" y="3.5*Pbwidth" z="6.5*Pbheight" />
+                  <rotationref ref="rotatebyZ"/>
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol3w3r5" />
+                  <position name="pos3w3r5" unit="cm" x="0.75*Pblength" y="3.5*Pbwidth" z="6.5*Pbheight" />
+                  <rotationref ref="rotatebyZ"/>
+              </physvol>
+              
+              <!--   Row 7        -->
+              
+              
+              <physvol>
+                  <volumeref ref="Vol1w3r7" />
+                  <position name="pos1w3r7" unit="cm" x="-1.25*Pblength" y="3.5*Pbwidth" z="8.5*Pbheight" />
+                  <rotationref ref="rotatebyZ"/>
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol2w3r7" />
+                  <position name="pos2w3r7" unit="cm" x="-0.25*Pblength" y="3.5*Pbwidth" z="8.5*Pbheight" />
+                  <rotationref ref="rotatebyZ"/>
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol3w3r7" />
+                  <position name="pos3w3r7" unit="cm" x="0.75*Pblength" y="3.5*Pbwidth" z="8.5*Pbheight" />
+                  <rotationref ref="rotatebyZ"/>
+              </physvol>
+              
+              
+              <!--   Row 9        -->
+              
+              
+              <physvol>
+                  <volumeref ref="Vol1w3r9" />
+                  <position name="pos1w3r9" unit="cm" x="-1.25*Pblength" y="3.5*Pbwidth" z="10.5*Pbheight" />
+                  <rotationref ref="rotatebyZ"/>
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol2w3r9" />
+                  <position name="pos2w3r9" unit="cm" x="-0.25*Pblength" y="3.5*Pbwidth" z="10.5*Pbheight" />
+                  <rotationref ref="rotatebyZ"/>
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol3w3r9" />
+                  <position name="pos3w3r9" unit="cm" x="0.75*Pblength" y="3.5*Pbwidth" z="10.5*Pbheight" />
+                  <rotationref ref="rotatebyZ"/>
+              </physvol>
+              
+              <!--   Row 11        -->
+              
+              
+              <physvol>
+                  <volumeref ref="Vol1w3r11" />
+                  <position name="pos1w3r11" unit="cm" x="-1.25*Pblength" y="3.5*Pbwidth" z="12.5*Pbheight" />
+                  <rotationref ref="rotatebyZ"/>
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol2w3r11" />
+                  <position name="pos2w3r11" unit="cm" x="-0.25*Pblength" y="3.5*Pbwidth" z="12.5*Pbheight" />
+                  <rotationref ref="rotatebyZ"/>
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol3w3r11" />
+                  <position name="pos3w3r11" unit="cm" x="0.75*Pblength" y="3.5*Pbwidth" z="12.5*Pbheight" />
+                  <rotationref ref="rotatebyZ"/>
+              </physvol>
+              
+              <!--   Row 13        -->
+              
+              
+              <physvol>
+                  <volumeref ref="Vol1w3r13" />
+                  <position name="pos1w3r13" unit="cm" x="-1.25*Pblength" y="3.5*Pbwidth" z="14.5*Pbheight" />
+                  <rotationref ref="rotatebyZ"/>
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol2w3r13" />
+                  <position name="pos2w3r13" unit="cm" x="-0.25*Pblength" y="3.5*Pbwidth" z="14.5*Pbheight" />
+                  <rotationref ref="rotatebyZ"/>
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol3w3r13" />
+                  <position name="pos3w3r13" unit="cm" x="0.75*Pblength" y="3.5*Pbwidth" z="14.5*Pbheight" />
+                  <rotationref ref="rotatebyZ"/>
+              </physvol>
+              
+              <!--   Row 15       -->
+              
+              
+              <physvol>
+                  <volumeref ref="Vol1w3r15" />
+                  <position name="pos1w3r15" unit="cm" x="-1.25*Pblength" y="3.5*Pbwidth" z="16.5*Pbheight" />
+                  <rotationref ref="rotatebyZ"/>
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol2w3r15" />
+                  <position name="pos2w3r15" unit="cm" x="-0.25*Pblength" y="3.5*Pbwidth" z="16.5*Pbheight" />
+                  <rotationref ref="rotatebyZ"/>
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol3w3r15" />
+                  <position name="pos3w3r15" unit="cm" x="0.75*Pblength" y="3.5*Pbwidth" z="16.5*Pbheight" />
+                  <rotationref ref="rotatebyZ"/>
+              </physvol>
+
+
+              
+              <!--        ************************************-->
+              <!--        **-->
+              <!--        **    Pb bricks Wall 3 Even Rows-->
+              <!--        **-->
+              <!--        ************************************-->
+              
+              
+            <!--   Row 2       -->
+              
+              
+              <physvol>
+                  <volumeref ref="Vol1w3r2" />
+                  <position name="pos1w3r2" unit="cm" x="1.25*Pblength" y="3.5*Pbwidth" z="3.5*Pbheight" />
+                  <rotationref ref="rotatebyZ"/>
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol2w3r2" />
+                  <position name="pos2w3r2" unit="cm" x="0.25*Pblength" y="3.5*Pbwidth" z="3.5*Pbheight" />
+                  <rotationref ref="rotatebyZ"/>
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol3w3r2" />
+                  <position name="pos3w3r2" unit="cm" x="-0.75*Pblength" y="3.5*Pbwidth" z="3.5*Pbheight" />
+                  <rotationref ref="rotatebyZ"/>
+              </physvol>
+
+              <!--   Row 4       -->
+                
+                
+                <physvol>
+                    <volumeref ref="Vol1w3r4" />
+                    <position name="pos1w3r4" unit="cm" x="1.25*Pblength" y="3.5*Pbwidth" z="5.5*Pbheight" />
+                    <rotationref ref="rotatebyZ"/>
+                </physvol>
+                
+                <physvol>
+                    <volumeref ref="Vol2w3r4" />
+                    <position name="pos2w3r4" unit="cm" x="0.25*Pblength" y="3.5*Pbwidth" z="5.5*Pbheight" />
+                    <rotationref ref="rotatebyZ"/>
+                </physvol>
+                
+                <physvol>
+                    <volumeref ref="Vol3w3r4" />
+                    <position name="pos3w3r4" unit="cm" x="-0.75*Pblength" y="3.5*Pbwidth" z="5.5*Pbheight" />
+                    <rotationref ref="rotatebyZ"/>
+                </physvol>
+               
+               <!--   Row 6       -->
+                  
+                  
+                  <physvol>
+                      <volumeref ref="Vol1w3r6" />
+                      <position name="pos1w3r6" unit="cm" x="1.25*Pblength" y="3.5*Pbwidth" z="7.5*Pbheight" />
+                      <rotationref ref="rotatebyZ"/>
+                  </physvol>
+                  
+                  <physvol>
+                      <volumeref ref="Vol2w3r6" />
+                      <position name="pos2w3r6" unit="cm" x="0.25*Pblength" y="3.5*Pbwidth" z="7.5*Pbheight" />
+                      <rotationref ref="rotatebyZ"/>
+                  </physvol>
+                  
+                  <physvol>
+                      <volumeref ref="Vol3w3r6" />
+                      <position name="pos3w3r6" unit="cm" x="-0.75*Pblength" y="3.5*Pbwidth" z="7.5*Pbheight" />
+                      <rotationref ref="rotatebyZ"/>
+                  </physvol>
+                  
+                  
+                  <!--   Row 8       -->
+                    
+                    
+                    <physvol>
+                        <volumeref ref="Vol1w3r8" />
+                        <position name="pos1w3r8" unit="cm" x="1.25*Pblength" y="3.5*Pbwidth" z="9.5*Pbheight" />
+                        <rotationref ref="rotatebyZ"/>
+                    </physvol>
+                    
+                    <physvol>
+                        <volumeref ref="Vol2w3r8" />
+                        <position name="pos2w3r8" unit="cm" x="0.25*Pblength" y="3.5*Pbwidth" z="9.5*Pbheight" />
+                        <rotationref ref="rotatebyZ"/>
+                    </physvol>
+                    
+                    <physvol>
+                        <volumeref ref="Vol3w3r8" />
+                        <position name="pos3w3r8" unit="cm" x="-0.75*Pblength" y="3.5*Pbwidth" z="9.5*Pbheight" />
+                        <rotationref ref="rotatebyZ"/>
+                    </physvol>
+                    
+                    <!--   Row 10       -->
+                      
+                      
+                      <physvol>
+                          <volumeref ref="Vol1w3r10" />
+                          <position name="pos1w3r10" unit="cm" x="1.25*Pblength" y="3.5*Pbwidth" z="11.5*Pbheight" />
+                          <rotationref ref="rotatebyZ"/>
+                      </physvol>
+                      
+                      <physvol>
+                          <volumeref ref="Vol2w3r10" />
+                          <position name="pos2w3r10" unit="cm" x="0.25*Pblength" y="3.5*Pbwidth" z="11.5*Pbheight" />
+                          <rotationref ref="rotatebyZ"/>
+                      </physvol>
+                      
+                      <physvol>
+                          <volumeref ref="Vol3w3r10" />
+                          <position name="pos3w3r10" unit="cm" x="-0.75*Pblength" y="3.5*Pbwidth" z="11.5*Pbheight" />
+                          <rotationref ref="rotatebyZ"/>
+                      </physvol>
+                      
+                      <!--   Row 12       -->
+                        
+                        
+                        <physvol>
+                            <volumeref ref="Vol1w3r12" />
+                            <position name="pos1w3r12" unit="cm" x="1.25*Pblength" y="3.5*Pbwidth" z="13.5*Pbheight" />
+                            <rotationref ref="rotatebyZ"/>
+                        </physvol>
+                        
+                        <physvol>
+                            <volumeref ref="Vol2w3r12" />
+                            <position name="pos2w3r12" unit="cm" x="0.25*Pblength" y="3.5*Pbwidth" z="13.5*Pbheight" />
+                            <rotationref ref="rotatebyZ"/>
+                        </physvol>
+                        
+                        <physvol>
+                            <volumeref ref="Vol3w3r12" />
+                            <position name="pos3w3r12" unit="cm" x="-0.75*Pblength" y="3.5*Pbwidth" z="13.5*Pbheight" />
+                            <rotationref ref="rotatebyZ"/>
+                        </physvol>
+                        
+                        <!--   Row 14       -->
+                          
+                          
+                          <physvol>
+                              <volumeref ref="Vol1w3r14" />
+                              <position name="pos1w3r14" unit="cm" x="1.25*Pblength" y="3.5*Pbwidth" z="15.5*Pbheight" />
+                              <rotationref ref="rotatebyZ"/>
+                          </physvol>
+                          
+                          <physvol>
+                              <volumeref ref="Vol2w3r14" />
+                              <position name="pos2w3r14" unit="cm" x="0.25*Pblength" y="3.5*Pbwidth" z="15.5*Pbheight" />
+                              <rotationref ref="rotatebyZ"/>
+                          </physvol>
+                          
+                          <physvol>
+                              <volumeref ref="Vol3w3r14" />
+                              <position name="pos3w3r14" unit="cm" x="-0.75*Pblength" y="3.5*Pbwidth" z="15.5*Pbheight" />
+                              <rotationref ref="rotatebyZ"/>
+                          </physvol>
+
+              
+
+              <!--        ************************************-->
+              <!--        **-->
+              <!--        **    Pb bricks Wall 4 Odd Rows-->
+              <!--        **-->
+              <!--        ************************************-->
+              
+              
+              <!--   Row 1        -->
+              
+              <physvol>
+                  <volumeref ref="Vol1w4r1" />
+                  <position name="pos1w4r1" unit="cm" x="-1.5*Pblength" y="-2.0*Pbwidth" z="2.5*Pbheight" />
+                  
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol2w4r1" />
+                  <position name="pos2w4r1" unit="cm" x="-1.5*Pblength" y="0.0*Pbwidth" z="2.5*Pbheight" />
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol3w4r1" />
+                  <position name="pos3w4r1" unit="cm" x="-1.5*Pblength" y="2.0*Pbwidth" z="2.5*Pbheight" />
+              </physvol>
+              
+              <!--   Row 3        -->
+              
+              <physvol>
+                  <volumeref ref="Vol1w4r3" />
+                  <position name="pos1w4r3" unit="cm" x="-1.5*Pblength" y="-2.0*Pbwidth" z="4.5*Pbheight" />
+                  
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol2w4r3" />
+                  <position name="pos2w4r3" unit="cm" x="-1.5*Pblength" y="0.0*Pbwidth" z="4.5*Pbheight" />
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol3w4r3" />
+                  <position name="pos3w4r3" unit="cm" x="-1.5*Pblength" y="2.0*Pbwidth" z="4.5*Pbheight" />
+              </physvol>
+
+              <!--   Row 5        -->
+              
+              <physvol>
+                  <volumeref ref="Vol1w4r5" />
+                  <position name="pos1w4r5" unit="cm" x="-1.5*Pblength" y="-2.0*Pbwidth" z="6.5*Pbheight" />
+                  
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol2w4r5" />
+                  <position name="pos2w4r5" unit="cm" x="-1.5*Pblength" y="0.0*Pbwidth" z="6.5*Pbheight" />
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol3w4r5" />
+                  <position name="pos3w4r5" unit="cm" x="-1.5*Pblength" y="2.0*Pbwidth" z="6.5*Pbheight" />
+              </physvol>
+
+              <!--   Row 7        -->
+              
+              <physvol>
+                  <volumeref ref="Vol1w4r7" />
+                  <position name="pos1w4r7" unit="cm" x="-1.5*Pblength" y="-2.0*Pbwidth" z="8.5*Pbheight" />
+                  
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol2w4r7" />
+                  <position name="pos2w4r7" unit="cm" x="-1.5*Pblength" y="0.0*Pbwidth" z="8.5*Pbheight" />
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol3w4r7" />
+                  <position name="pos3w4r7" unit="cm" x="-1.5*Pblength" y="2.0*Pbwidth" z="8.5*Pbheight" />
+              </physvol>
+
+              <!--   Row 9        -->
+              
+              <physvol>
+                  <volumeref ref="Vol1w4r9" />
+                  <position name="pos1w4r9" unit="cm" x="-1.5*Pblength" y="-2.0*Pbwidth" z="10.5*Pbheight" />
+                  
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol2w4r9" />
+                  <position name="pos2w4r9" unit="cm" x="-1.5*Pblength" y="0.0*Pbwidth" z="10.5*Pbheight" />
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol3w4r9" />
+                  <position name="pos3w4r9" unit="cm" x="-1.5*Pblength" y="2.0*Pbwidth" z="10.5*Pbheight" />
+              </physvol>
+
+              <!--   Row 11        -->
+              
+              <physvol>
+                  <volumeref ref="Vol1w4r11" />
+                  <position name="pos1w4r11" unit="cm" x="-1.5*Pblength" y="-2.0*Pbwidth" z="12.5*Pbheight" />
+                  
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol2w4r11" />
+                  <position name="pos2w4r11" unit="cm" x="-1.5*Pblength" y="0.0*Pbwidth" z="12.5*Pbheight" />
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol3w4r11" />
+                  <position name="pos3w4r11" unit="cm" x="-1.5*Pblength" y="2.0*Pbwidth" z="12.5*Pbheight" />
+              </physvol>
+
+              <!--   Row 13        -->
+              
+              <physvol>
+                  <volumeref ref="Vol1w4r13" />
+                  <position name="pos1w4r13" unit="cm" x="-1.5*Pblength" y="-2.0*Pbwidth" z="14.5*Pbheight" />
+                  
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol2w4r13" />
+                  <position name="pos2w4r13" unit="cm" x="-1.5*Pblength" y="0.0*Pbwidth" z="14.5*Pbheight" />
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol3w4r13" />
+                  <position name="pos3w4r13" unit="cm" x="-1.5*Pblength" y="2.0*Pbwidth" z="14.5*Pbheight" />
+              </physvol>
+
+              <!--   Row 15        -->
+              
+              <physvol>
+                  <volumeref ref="Vol1w4r15" />
+                  <position name="pos1w4r15" unit="cm" x="-1.5*Pblength" y="-2.0*Pbwidth" z="16.5*Pbheight" />
+                  
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol2w4r15" />
+                  <position name="pos2w4r15" unit="cm" x="-1.5*Pblength" y="0.0*Pbwidth" z="16.5*Pbheight" />
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol3w4r15" />
+                  <position name="pos3w4r15" unit="cm" x="-1.5*Pblength" y="2.0*Pbwidth" z="16.5*Pbheight" />
+              </physvol>
+
+              
+              
+              <!--        ************************************-->
+              <!--        **-->
+              <!--        **    Pb bricks Wall 4 Even Rows-->
+              <!--        **-->
+              <!--        ************************************-->
+              
+              
+              <!--   Row 2        -->
+              
+              <physvol>
+                  <volumeref ref="Vol1w4r2" />
+                  <position name="pos1w4r2" unit="cm" x="-1.5*Pblength" y="-1.0*Pbwidth" z="3.5*Pbheight" />
+                  
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol2w4r2" />
+                  <position name="pos2w4r2" unit="cm" x="-1.5*Pblength" y="1.0*Pbwidth" z="3.5*Pbheight" />
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol3w4r2" />
+                  <position name="pos3w4r2" unit="cm" x="-1.5*Pblength" y="3.0*Pbwidth" z="3.5*Pbheight" />
+              </physvol>
+
+              <!--   Row 4        -->
+              
+              <physvol>
+                  <volumeref ref="Vol1w4r4" />
+                  <position name="pos1w4r4" unit="cm" x="-1.5*Pblength" y="-1.0*Pbwidth" z="5.5*Pbheight" />
+                  
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol2w4r4" />
+                  <position name="pos2w4r4" unit="cm" x="-1.5*Pblength" y="1.0*Pbwidth" z="5.5*Pbheight" />
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol3w4r4" />
+                  <position name="pos3w4r4" unit="cm" x="-1.5*Pblength" y="3.0*Pbwidth" z="5.5*Pbheight" />
+              </physvol>
+
+              <!--   Row 6        -->
+              
+              <physvol>
+                  <volumeref ref="Vol1w4r6" />
+                  <position name="pos1w4r6" unit="cm" x="-1.5*Pblength" y="-1.0*Pbwidth" z="7.5*Pbheight" />
+                  
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol2w4r6" />
+                  <position name="pos2w4r6" unit="cm" x="-1.5*Pblength" y="1.0*Pbwidth" z="7.5*Pbheight" />
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol3w4r6" />
+                  <position name="pos3w4r6" unit="cm" x="-1.5*Pblength" y="3.0*Pbwidth" z="7.5*Pbheight" />
+              </physvol>
+
+              <!--   Row 8        -->
+              
+              <physvol>
+                  <volumeref ref="Vol1w4r8" />
+                  <position name="pos1w4r8" unit="cm" x="-1.5*Pblength" y="-1.0*Pbwidth" z="9.5*Pbheight" />
+                  
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol2w4r8" />
+                  <position name="pos2w4r8" unit="cm" x="-1.5*Pblength" y="1.0*Pbwidth" z="9.5*Pbheight" />
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol3w4r8" />
+                  <position name="pos3w4r8" unit="cm" x="-1.5*Pblength" y="3.0*Pbwidth" z="9.5*Pbheight" />
+              </physvol>
+
+              <!--   Row 10        -->
+              
+              <physvol>
+                  <volumeref ref="Vol1w4r10" />
+                  <position name="pos1w4r10" unit="cm" x="-1.5*Pblength" y="-1.0*Pbwidth" z="11.5*Pbheight" />
+                  
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol2w4r10" />
+                  <position name="pos2w4r10" unit="cm" x="-1.5*Pblength" y="1.0*Pbwidth" z="11.5*Pbheight" />
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol3w4r10" />
+                  <position name="pos3w4r10" unit="cm" x="-1.5*Pblength" y="3.0*Pbwidth" z="11.5*Pbheight" />
+              </physvol>
+
+              <!--   Row 12        -->
+              
+              <physvol>
+                  <volumeref ref="Vol1w4r12" />
+                  <position name="pos1w4r12" unit="cm" x="-1.5*Pblength" y="-1.0*Pbwidth" z="13.5*Pbheight" />
+                  
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol2w4r12" />
+                  <position name="pos2w4r12" unit="cm" x="-1.5*Pblength" y="1.0*Pbwidth" z="13.5*Pbheight" />
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol3w4r12" />
+                  <position name="pos3w4r12" unit="cm" x="-1.5*Pblength" y="3.0*Pbwidth" z="13.5*Pbheight" />
+              </physvol>
+
+              <!--   Row 14        -->
+              
+              <physvol>
+                  <volumeref ref="Vol1w4r14" />
+                  <position name="pos1w4r14" unit="cm" x="-1.5*Pblength" y="-1.0*Pbwidth" z="15.5*Pbheight" />
+                  
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol2w4r14" />
+                  <position name="pos2w4r14" unit="cm" x="-1.5*Pblength" y="1.0*Pbwidth" z="15.5*Pbheight" />
+              </physvol>
+              
+              <physvol>
+                  <volumeref ref="Vol3w4r14" />
+                  <position name="pos3w4r14" unit="cm" x="-1.5*Pblength" y="3.0*Pbwidth" z="15.5*Pbheight" />
+              </physvol>
+
+              
+            
+        </assembly>
+        
+        
+            
+        
+        
+        <volume name="PbWorld" >
+            
+            <materialref ref="Air" />
+            <solidref ref="PbWorldSolid" />
+            
+            <physvol>
+                <volumeref ref="AssemblyVol"/>
+                <position name="AssemblyName" x="0" y="0" z="0"/>
+            </physvol>
+            
+        </volume>
+    </structure>
+    
+    <setup version="1.0" name="Default">
+        <world ref="PbWorld"/>
+    </setup>
+    
+</gdml>

@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<gdml   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="/Users/shsu/Documents/James/Projects/MINER/GEANT/geant4_10_06_p02/source/persistency/gdml/schema/gdml.xsd">
+    
+    <define>
+        <position name="det_in_sky" unit="cm" x="0" y="0" z="0" />
+        <position name="FridgeCoordinate" unit="cm" x="0" y="0" z="-12.74" />
+        <position name="center" unit="cm" x="0" y="0" z="0" />
+        <position name="SteelTableCoordinates" unit="cm" x="-18.0*2.54" y="-15.0*2.54" z="-36*2.54" />
+        <constant name="HLFPI" value="0.5*pi"/>
+        <rotation name="rotatebyZ" z="HLFPI" />
+        <rotation name="rotatebyY" y="HLFPI" />
+        <rotation name="rotatebyX" x="HLFPI" />
+        <rotation name="RotateNegX" x="-90" unit="deg"/>
+        <position name="subtraction_position" unit="cm" x ="0.0" y = "0.0" z = "0.0"/>
+        <position name="hybrid_subtraction" unit = "cm" x = "0.0" y = "0.0" z = "-1.016*0.5"/>
+        <position name="neckOffset" unit="cm" x ="0.0" y = "0.0" z = "0.7239"/>
+        <position name="topOffset" unit="cm" x ="0.0" y = "0.0" z = "1.25222"/>
+        <constant name="TWOPI" value="2.*pi"/>
+        <quantity name="Pblength" value="8*2.54" />
+        <quantity name="Pbwidth"  value="4*2.54" />
+        <quantity name="Pbheight" value="2.0*2.54" />
+        <quantity name="CsIlength" value="12.0*2.54" />
+        <quantity name="CsIwidth"  value="2.0*2.54" />
+        <quantity name="CsIheight" value="2.0*2.54" />
+    </define>
+    
+    <materials>
+        
+        
+        <material name="Cu" Z="29">
+            <D value="8.96"/>
+            <atom value="63.55"/>
+        </material>
+    
+    <material name="Si" Z="14">
+        <D value="2.329" unit = "g/cm3"/>
+        <atom value="28.0855"/>
+    </material>
+    
+    <material name="Hydrogen" Z="1">
+        <D value=".08988" unit = "g/cm3"/>
+        <atom value="1.008"/>
+    </material>
+    
+    <material name="Calcium" Z="20">
+        <D value="1.55" unit = "g/cm3"/>
+        <atom value="40.078"/>
+    </material>
+    
+    <material name="Fe" Z="26">
+        <D value="7.874" unit = "g/cm3"/>
+        <atom value="55.845"/>
+    </material>
+    
+    <element Z="8" formula ="O" name="Oxygen">
+        <atom value="16"/>
+    </element>
+
+    <element Z="7" formula ="N" name="Nitrogen">
+        <atom value="14"/>
+    </element>
+    
+    
+    
+    <material name="Al" Z="13">
+        <D value="2.7"/>
+        <atom value="26.981538"/>
+    </material>
+
+    <material formula="concrete" name="Concrete">
+        <D value="0.00128999999999"/>
+        <fraction n="0.227915" ref="Si"/>
+        <fraction n="0.60541" ref="Oxygen" />
+        <fraction n="0.09972" ref="Hydrogen" />
+        <fraction n="0.04986" ref="Calcium" />
+        <fraction n="0.014245" ref="Al" />
+        <fraction n="0.00285" ref="Fe" />
+    </material>
+
+    
+    <material formula="air" name="Air">
+        <D value="0.00128999999999"/>
+        <fraction n="0.7" ref="Nitrogen"/>
+        <fraction n="0.3" ref="Oxygen" />
+    </material>
+    
+    
+        <material name="Pb" Z="82">
+            <D value="11.34"/>
+            <atom value="207.2"/>
+        </material>
+        
+        
+        <material name="Cs" Z="55">
+            <D value="1.93"/>
+            <atom value="132.905"/>
+        </material>
+            
+        <material name="I" Z="53">
+            <D value="4.933"/>
+            <atom value="126.904"/>
+        </material>
+        
+        
+        <material name="CsI" formula="CsI">
+            <D value="4.51"/>
+            <composite n="1" ref="Cs"/>
+            <composite n="1" ref="I"/>
+        </material>
+        
+<!--Stainless Steel -->
+        
+        <material name="Fe" Z="26">
+            <D value="7.874"/>
+            <atom value="55.845"/>
+        </material>
+        
+        <material name="Cr" Z="24">
+            <D value="7.19"/>
+            <atom value="51.9961"/>
+        </material>
+        
+        <material name="Ni" Z="28">
+            <D value="7.81"/>
+            <atom value="58.6934"/>
+        </material>
+        
+        <material formula="steel" name="StainlessSteel">
+            <D value="7.74576"/>
+            <fraction n="0.74" ref="Fe"/>
+            <fraction n="0.18" ref="Cr" />
+            <fraction n="0.08" ref="Ni" />
+        </material>
+        
+        
+    </materials>
+    
+    <solids>
+        
+        <box aunit="radian" lunit="m" name="world" x="10" y="10" z="10" />
+        
+        <!-- Make a concrete slab for the floor  across the whole volume    -->
+        
+        <box aunit="radian" lunit="m" name="floorslab" x="10.0" y="10.0" z="1.0" />
+        
+
+
+        <!--    *************************************-->
+        <!--    **-->
+        <!--    **    Define the Hybrid Detector-->
+        <!--    **-->
+        <!--    *************************************-->
+        
+        
+        
+        <!--  Hybrid Detector      -->
+                
+                <cone name = "basecone" rmin1 = "0" rmax1 = "7.62*0.5" rmin2 = "0" rmax2 = "5.57251*0.5" z = "1.4478" startphi = "0" deltaphi ="TWOPI" aunit = "rad" lunit = "cm" />
+                       
+                <tube name="topPiece" rmin="0" rmax="2.54*0.5" z="1.016" deltaphi="TWOPI" aunit="radian" lunit="cm"/>
+                <tube name="neck" rmin="0" rmax="1.2*0.57" z="0.04064" deltaphi="TWOPI" aunit="radian" lunit="cm"/>
+                      
+                
+                <union name ="BottomPart">
+                    <first ref ="basecone"/>
+                    <second ref ="neck"/>
+                    <positionref ref="neckOffset"/>
+                </union>
+                
+                <union name ="hybrid">
+                    <first ref ="BottomPart"/>
+                    <second ref ="topPiece"/>
+                    <positionref ref="topOffset"/>
+                </union>
+                
+                       
+                      
+                      
+                      
+        <!--  Cu Solid Hybrid Detector  -->
+
+                <tube name="CuSolid" rmin="0" rmax="7.62*0.5+0.11" z="1.4478+0.04064+1.016+0.11" deltaphi="TWOPI" aunit="radian" lunit="cm"/>
+
+                <cone name = "Cubasecone" rmin1 = "0" rmax1 = "7.62*0.5+0.11" rmin2 = "0" rmax2 = "5.57251*0.5+0.11" z = "1.4478+0.11" startphi = "0" deltaphi ="TWOPI" aunit = "rad" lunit = "cm" />
+                       
+                <tube name="CutopPiece" rmin="0" rmax="2.54*0.5+0.11" z="1.016+0.15" deltaphi="TWOPI" aunit="radian" lunit="cm"/>
+                <tube name="Cuneck" rmin="0" rmax="1.2*0.57+0.11" z="0.04064" deltaphi="TWOPI" aunit="radian" lunit="cm"/>
+                      
+                
+     
+                
+                
+        <!--  Cu Hollow for Hybrid Detector -->
+
+                     
+                <cone name = "Hollowbasecone" rmin1 = "0" rmax1 = "7.62*0.5+0.01" rmin2 = "0" rmax2 = "5.57251*0.5+0.01" z = "1.4478+0.01" startphi = "0" deltaphi ="TWOPI" aunit = "rad" lunit = "cm" />
+                       
+                <tube name="HollowtopPiece" rmin="0" rmax="2.54*0.5+0.01" z="1.016+0.05" deltaphi="TWOPI" aunit="radian" lunit="cm"/>
+                <tube name="Hollowneck" rmin="0" rmax="1.2*0.57+0.01" z="0.04064" deltaphi="TWOPI" aunit="radian" lunit="cm"/>
+                      
+                
+                <union name ="HollowBottomPart">
+                    <first ref ="Hollowbasecone"/>
+                    <second ref ="Hollowneck"/>
+                    <positionref ref="neckOffset"/>
+                </union>
+                
+                <union name ="HollowSolid">
+                    <first ref ="HollowBottomPart"/>
+                    <second ref ="HollowtopPiece"/>
+                    <positionref ref="topOffset"/>
+                </union>
+                
+        <!--  Cu Housing for Hybrid Detector -->
+
+                <subtraction name ="HybridHollowTube">
+                    <first ref = "CuSolid"/>
+                    <second ref = "HollowSolid"/>
+                    <positionref ref="hybrid_subtraction"/>
+                </subtraction>
+
+        
+        <!--    *************************************-->
+        <!--    **-->
+        <!--    **    Define the HV Detector-->
+        <!--    **-->
+        <!--    *************************************-->
+
+        
+ <!--  HV Silicon Detector  7.62 cm radius    -->
+                
+                <tube name="SiDetector" rmin="0" rmax="7.62*0.5" z="2.54*0.5" deltaphi="TWOPI" aunit="radian" lunit="cm"/>
+                
+        <!--  Cu Housing for HV Detector 1mm thickness -->
+                <tube name = "OuterCopper" rmin="0" rmax="7.62*0.5+0.11" z="2.54*0.5+0.11" deltaphi="TWOPI" aunit="radian" lunit="cm"/>
+                <tube name = "InnerCopper" rmin="0" rmax="7.62*0.5+0.01" z="2.54*0.5+0.01" deltaphi="TWOPI" aunit="radian" lunit="cm"/>
+                
+                <subtraction name ="HVhollowTube">
+                    <first ref = "OuterCopper"/>
+                    <second ref = "InnerCopper"/>
+                    <positionref ref="subtraction_position"/>
+                </subtraction>
+        
+        <!--    *************************************-->
+        <!--    **-->
+        <!--    **    Define the CsI Detector-->
+        <!--    **-->
+        <!--    *************************************-->
+
+        <box aunit="radian" lunit="cm" name="CsIBlock" x="CsIlength" y="CsIwidth" z="CsIheight" />
+              
+        
+        
+    </solids>
+    
+<!--    *************************************-->
+<!--    **-->
+<!--    **    Structure-->
+<!--    **-->
+<!--    *************************************-->
+    
+    <structure>
+        
+        <!--  Concrete slab      -->
+
+        <volume name ="ConcreteVol" >
+            <materialref ref ="Concrete" />
+            <solidref ref="floorslab" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+
+
+        
+        
+        <!--        *************************************-->
+        <!--        **-->
+        <!--        **    Hybrid-->
+        <!--        **-->
+        <!--        *************************************-->
+        
+        <volume name ="hybridDetector" >
+            <materialref ref ="Si" />
+            <solidref ref="hybrid" />
+            <auxiliary auxtype="SensDet" auxvalue="HybridSD"/>
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+         
+         <volume name ="HybridHousing" >
+             <materialref ref ="Cu" />
+             <solidref ref="HybridHollowTube" />
+             <auxiliary auxtype="SensDet" auxvalue="veloSD"/>
+             <auxiliary auxtype="Color" auxvalue="Blue"/>
+         </volume>
+        
+        <!--        *************************************-->
+        <!--        **-->
+        <!--        **    HV-->
+        <!--        **-->
+        <!--        *************************************-->
+        
+        <volume name ="HVDetector" >
+            <materialref ref ="Si" />
+            <solidref ref="SiDetector" />
+            <auxiliary auxtype="SensDet" auxvalue="HVSD"/>
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="HVHousing" >
+            <materialref ref ="Cu" />
+            <solidref ref="HVhollowTube" />
+            <auxiliary auxtype="SensDet" auxvalue="veloSD"/>
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        <!--        *************************************-->
+        <!--        **-->
+        <!--        **    CsI-->
+        <!--        **-->
+        <!--        *************************************-->
+        
+        <volume name ="CsIDetector" >
+            <materialref ref ="CsI" />
+            <solidref ref="CsIBlock" />
+            <auxiliary auxtype="SensDet" auxvalue="CsISD"/>
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+        
+        
+<!---->
+<!---->
+<!---->
+<!---->
+<!--ASSEMBLY VOLUME-->
+<!---->
+<!---->
+<!---->
+<!---->
+        
+        <assembly name="AssemblyVol">
+            
+            <physvol>
+                <volumeref ref="ConcreteVol" />
+                <position name="posConcrete" unit="cm" x="0.0" y="0.0" z="-36*2.54-50.0" />
+            </physvol>
+            
+            
+               
+
+            
+            <!--        ************************************-->
+            <!--        **-->
+            <!--        **    Hybrid Detector-->
+            <!--        **-->
+            <!--        ************************************-->
+            
+            <physvol>
+                <volumeref ref="hybridDetector" />
+                <position name="hybridPosition" unit="cm" x = "10.16" y = "0.0" z = "47.32" />
+            </physvol>
+            
+           
+            
+            <physvol>
+                <volumeref ref="HybridHousing" />
+                <position name="B" unit="cm" x = "10.16" y = "0.0" z = "47.32+1.016*0.5" />
+            </physvol>
+            
+            
+            <!--        ************************************-->
+            <!--        **-->
+            <!--        **    HV Detector-->
+            <!--        **-->
+            <!--        ************************************-->
+            
+            <physvol>
+                <volumeref ref="HVDetector" />
+                <position name="HVPosition" unit="cm" x = "-10.16" y = "0.0" z = "47.32" />
+            </physvol>
+            
+            <physvol>
+                           <volumeref ref="HVHousing" />
+                           <position name="BB" unit="cm" x = "-10.16" y = "0.0" z = "47.32" />
+                       </physvol>
+            
+            <!--        ************************************-->
+            <!--        **-->
+            <!--        **    CsI Detector-->
+            <!--        **-->
+            <!--        ************************************-->
+            
+            <physvol>
+                <volumeref ref="CsIDetector" />
+                <position name="CsIPosition" unit="cm" x = "Pbwidth" y = "2*Pbwidth " z = "2.5*Pbheight" />
+            </physvol>
+            
+            <physvol>
+                <file name="motherPuzzle.gdml"/>
+                <rotationref ref="RotateNegX"/>
+                <positionref ref="FridgeCoordinate" />
+            </physvol>
+            
+           <physvol>
+                <file name="SteelTable.gdml"/>
+                <rotationref ref="rotatebyZ"/>
+                <position name="SteelTablePosition" unit="cm" x="-15.0*2.54" y="18.0*2.54" z="-36*2.54"/>
+           </physvol>
+           
+           <physvol>
+                <file name="PbShielding.gdml"/>
+                <positionref ref="center"/>
+           </physvol>
+            
+        
+
+            
+        </assembly>
+        
+        
+            
+        
+        
+        <volume name="World" >
+            
+            <materialref ref="Air" />
+            <solidref ref="world" />
+            
+            <physvol>
+                <volumeref ref="AssemblyVol"/>
+                <position name="AssemblyName" x="0" y="0" z="0"/>
+            </physvol>
+            
+        </volume>
+    </structure>
+    
+    <setup version="1.0" name="Default">
+        <world ref="World"/>
+    </setup>
+    
+</gdml>
