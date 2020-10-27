@@ -10,4 +10,10 @@ a /gdml/schema/files.xsd pattern.
 
 HybridShieldingHVShielding.gdml Has the Si hybrid and HV detectors along with their copper shielding.
 
-MINERSetupAugust30.gdml is the MINER setup that contains the shielded detectors along with the original Pb brick configuration.
+PbShielding.gdml is the current Pb shielding configuration as of October 22.
+
+SteelTable.gdml is the steel table that holds up the Pb shielding.
+
+motherpuzzle.gdml is the converted CAD to gdml for the fridge.
+
+MINERSetupOctober22.gdml is the MINER setup that contains the shielded detectors along with the updated and correct Pb brick configuration.

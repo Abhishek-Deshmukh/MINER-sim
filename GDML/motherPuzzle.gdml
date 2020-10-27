@@ -46,8 +46,8 @@ xsi:noNamespaceSchemaLocation="/Users/shsu/Documents/James/Projects/MINER/GEANT/
     <rotation name="RotateSolid6" x="90" y = "0" unit="deg" />
 <!-- Solid 6 rotation   -->
     <position name="PosCOMPOUND00625" x="0.0" y="405.0" z = "220.0" unit="mm" />
-    <!-- Compound 6 rotation   -->
-    <rotation name="RotateSolid6" x="90" y = "0" unit="deg" />
+    <!-- Compound 6 rotation   Same as Solid 6-->
+<!--    <rotation name="RotateSolid6" x="90" y = "0" unit="deg" />-->
     <!-- Compound 6 rotation   -->
     <position name="PosP01515-SH-LD-50K-BOT-PL-D36526" x="0.0" y="1609.00" z = "0.0" unit="mm" />
 <!--    <position name="PosP01515-SH-LD-50K-BOT-PL-D36526" x="0.0" y="312.00" z = "0.0" unit="mm" />-->
@@ -81,7 +81,7 @@ xsi:noNamespaceSchemaLocation="/Users/shsu/Documents/James/Projects/MINER/GEANT/
 <!--Solids-->
 
     <solids>
-        <box name="WorldBox2" x="8.0" y="8.0" z="8.0" lunit="m"/>
+        <box name="WorldBox2" x="10.0" y="10.0" z="10.0" lunit="m"/>
     </solids>
 
     

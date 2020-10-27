@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<gdml   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="/Users/shsu/Documents/James/Projects/MINER/GEANT/geant4_10_06_p02/source/persistency/gdml/schema/gdml.xsd">
+
+
+
+    <define>
+        <position name="det_in_sky" unit="cm" x="0" y="0" z="0" />
+        <constant name="HLFPI" value="0.5*pi"/>
+        <rotation name="rotatebyx" z="HLFPI" />
+        <rotation name="rotateZPiOver2" z="HLFPI" />
+        <position name="subtraction_position" unit="cm" x ="0.0" y = "0.0" z = "0.0"/>
+    </define>
+    
+    <materials>
+        <material name="Cs" Z="55">
+            <D value="1.93"/>
+            <atom value="132.905"/>
+        </material>
+            
+        <material name="I" Z="53">
+            <D value="4.933"/>
+            <atom value="126.904"/>
+        </material>
+        
+        <material name="CsI" formula="CsI">
+            <D value="4.51"/>
+            <composite n="1" ref="Cs"/>
+            <composite n="1" ref="I"/>
+        </material>
+        
+        <element Z="8" formula ="O" name="Oxygen">
+            <atom value="16"/>
+        </element>
+
+        <element Z="7" formula ="N" name="Nitrogen">
+            <atom value="14"/>
+        </element>
+        
+        <material formula="air" name="Air">
+            <D value="0.00128999999999"/>
+            <fraction n="0.7" ref="Nitrogen"/>
+            <fraction n="0.3" ref="Oxygen" />
+        </material>
+        
+        <!--Stainless Steel -->
+        
+        <material name="Fe" Z="26">
+            <D value="7.874"/>
+            <atom value="55.845"/>
+        </material>
+        
+        <material name="Cr" Z="24">
+            <D value="7.19"/>
+            <atom value="51.9961"/>
+        </material>
+        
+        <material name="Ni" Z="28">
+            <D value="7.81"/>
+            <atom value="58.6934"/>
+        </material>
+        
+        <material formula="StainlessSteel" name="StainlessSteel">
+            <D value="7.74576"/>
+            <fraction n="0.74" ref="Fe"/>
+            <fraction n="0.18" ref="Cr" />
+            <fraction n="0.08" ref="Ni" />
+        </material>
+        
+        
+    </materials>
+    
+    <solids>
+        
+        <box name="SteelWorld" x="10.0" y="10.0" z="10.0" lunit="m"/>
+        
+        
+<!-- Table Top       -->
+        
+        <box aunit="radian" lunit="cm" name="TableTopBox" x = "36.0*2.54" y="30.0*2.54" z="0.2*2.54" />
+        
+        <!-- Table Top Lip       -->
+        
+        <box aunit="radian" lunit="cm" name="TableTopLip1Box" x = "36*2.54" y="0.2*2.54" z="2*2.54" />
+        <box aunit="radian" lunit="cm" name="TableTopLip2Box" x = "0.2*2.54" y="30.0*2.54" z="2*2.54" />
+        <box aunit="radian" lunit="cm" name="TableTopLip3Box" x = "36*2.54" y="0.2*2.54" z="2*2.54" />
+        <box aunit="radian" lunit="cm" name="TableTopLip4Box" x = "0.2*2.54" y="30.0*2.54" z="2*2.54" />
+        
+        <!-- Table Legs       -->
+        
+        <box aunit="radian" lunit="cm" name="TableLeg1aBox" x = "2.0*2.54" y="0.2*2.54" z="36.0*2.54" />
+        <box aunit="radian" lunit="cm" name="TableLeg1bBox" x = "0.2*2.54" y="2.0*2.54" z="36.0*2.54" />
+        <box aunit="radian" lunit="cm" name="TableLeg2aBox" x = "0.2*2.54" y="2.0*2.54" z="36.0*2.54" />
+        <box aunit="radian" lunit="cm" name="TableLeg2bBox" x = "2.0*2.54" y="0.2*2.54" z="36.0*2.54" />
+        <box aunit="radian" lunit="cm" name="TableLeg3aBox" x = "2.0*2.54" y="0.2*2.54" z="36.0*2.54" />
+        <box aunit="radian" lunit="cm" name="TableLeg3bBox" x = "0.2*2.54" y="2.0*2.54" z="36.0*2.54" />
+        <box aunit="radian" lunit="cm" name="TableLeg4aBox" x = "0.2*2.54" y="2.0*2.54" z="36.0*2.54" />
+        <box aunit="radian" lunit="cm" name="TableLeg4bBox" x = "2.0*2.54" y="0.2*2.54" z="36.0*2.54" />
+
+        <!-- Table Leg Braces       -->
+        
+        <box aunit="radian" lunit="cm" name="TableBrace1Box" x = "36.0*2.54" y="0.2*2.54" z="2.0*2.54" />
+        <box aunit="radian" lunit="cm" name="TableBrace2Box" x = "0.2*2.54" y="30.0*2.54" z="2.0*2.54" />
+        <box aunit="radian" lunit="cm" name="TableBrace3Box" x = "36.0*2.54" y="0.2*2.54" z="2.0*2.54" />
+        <box aunit="radian" lunit="cm" name="TableBrace4Box" x = "0.2*2.54" y="30.0*2.54" z="2.0*2.54" />
+        
+        
+        
+        
+<!--        <orb name = "OuterOrb" r = "18.58" lunit = "cm" />-->
+<!--        <orb name = "InnerOrb" r = "13.0" lunit = "cm" />-->
+        
+<!--        <subtraction name ="subblock">-->
+<!--            <first ref = "OuterOrb"/>-->
+<!--            <second ref = "InnerOrb"/>-->
+<!--            <positionref ref="subtraction_position"/>-->
+<!--        </subtraction>-->
+        
+        
+    </solids>
+    
+    <structure>
+        
+        
+<!-- Table Top       -->
+
+        <volume name ="TableTop" >
+            <materialref ref = "StainlessSteel" />
+            <solidref ref="TableTopBox" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+<!-- Table Top Lip       -->
+        
+        <volume name ="TableTopLip1" >
+            <materialref ref = "StainlessSteel" />
+            <solidref ref="TableTopLip1Box" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="TableTopLip2" >
+            <materialref ref = "StainlessSteel" />
+            <solidref ref="TableTopLip2Box" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="TableTopLip3" >
+            <materialref ref = "StainlessSteel" />
+            <solidref ref="TableTopLip3Box" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="TableTopLip4" >
+            <materialref ref = "StainlessSteel" />
+            <solidref ref="TableTopLip4Box" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+<!--  Table Legs      -->
+
+        <volume name ="TableLeg1a" >
+            <materialref ref = "StainlessSteel" />
+            <solidref ref="TableLeg1aBox" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="TableLeg1b" >
+            <materialref ref = "StainlessSteel" />
+            <solidref ref="TableLeg1bBox" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="TableLeg2a" >
+            <materialref ref = "StainlessSteel" />
+            <solidref ref="TableLeg2aBox" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="TableLeg2b" >
+            <materialref ref = "StainlessSteel" />
+            <solidref ref="TableLeg2bBox" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="TableLeg3a" >
+            <materialref ref = "StainlessSteel" />
+            <solidref ref="TableLeg3aBox" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="TableLeg3b" >
+            <materialref ref = "StainlessSteel" />
+            <solidref ref="TableLeg3bBox" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="TableLeg4a" >
+            <materialref ref = "StainlessSteel" />
+            <solidref ref="TableLeg4aBox" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="TableLeg4b" >
+            <materialref ref = "StainlessSteel" />
+            <solidref ref="TableLeg4bBox" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+
+
+
+
+
+<!--  Table Leg Braces      -->
+
+        <volume name ="TableBrace1" >
+            <materialref ref = "StainlessSteel" />
+            <solidref ref="TableBrace1Box" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="TableBrace2" >
+            <materialref ref = "StainlessSteel" />
+            <solidref ref="TableBrace2Box" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="TableBrace3" >
+            <materialref ref = "StainlessSteel" />
+            <solidref ref="TableBrace3Box" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        <volume name ="TableBrace4" >
+            <materialref ref = "StainlessSteel" />
+            <solidref ref="TableBrace4Box" />
+            <auxiliary auxtype="Color" auxvalue="Blue"/>
+        </volume>
+        
+        
+        <assembly name="AssemblyVolSteel">
+            
+<!--  Table Top          -->
+            
+            <physvol>
+                <volumeref ref="TableTop" />
+                <position name="SteelA" unit="cm" x = "18.0*2.54" y = "15.0*2.54" z = "36.0*2.54" />
+            </physvol>
+            
+            
+            <!--  Table Top Lip          -->
+            
+            <physvol>
+                <volumeref ref="TableTopLip1" />
+                <position name="SteelB" unit="cm" x = "18.0*2.54" y = "0.0" z = "35.0*2.54" />
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="TableTopLip2" />
+                <position name="SteelC" unit="cm" x = "0.0" y = "15.0*2.54" z = "35.0*2.54" />
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="TableTopLip3" />
+                <position name="SteelD" unit="cm" x = "18.0*2.54" y = "30.0*2.54" z = "35.0*2.54" />
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="TableTopLip4" />
+                <position name="SteelE" unit="cm" x = "36.0*2.54" y = "15.0*2.54" z = "35.0*2.54" />
+            </physvol>
+            
+            
+            
+            
+            <!--  Table Legs          -->
+            
+            <physvol>
+                <volumeref ref="TableLeg1a" />
+                <position name="SteelF" unit="cm" x = "1.0*2.54" y = "0.0" z = "18.0*2.54" />
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="TableLeg1b" />
+                <position name="SteelG" unit="cm" x = "0.0" y = "1.0*2.54" z = "18.0*2.54" />
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="TableLeg2a" />
+                <position name="SteelH" unit="cm" x = "0.0" y = "29.0*2.54" z = "18.0*2.54" />
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="TableLeg2b" />
+                <position name="SteelI" unit="cm" x = "1.0*2.54" y = "30.0*2.54" z = "18.0*2.54" />
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="TableLeg3a" />
+                <position name="SteelJ" unit="cm" x = "35.0*2.54" y = "30.0*2.54" z = "18.0*2.54" />
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="TableLeg3b" />
+                <position name="SteelK" unit="cm" x = "36.0*2.54" y = "29.0*2.54" z = "18.0*2.54" />
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="TableLeg4a" />
+                <position name="SteelL" unit="cm" x = "36.0*2.54" y = "1.0*2.54" z = "18.0*2.54" />
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="TableLeg4b" />
+                <position name="SteelM" unit="cm" x = "35.0*2.54" y = "0.0" z = "18.0*2.54" />
+            </physvol>
+            
+            
+            
+            
+            <!--  Table Braces          -->
+            
+            <physvol>
+                <volumeref ref="TableBrace1" />
+                <position name="SteelN" unit="cm" x = "18.0*2.54" y = "0.0" z = "4.0*2.54" />
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="TableBrace2" />
+                <position name="SteelO" unit="cm" x = "0.0" y = "15.0*2.54" z = "4.0*2.54" />
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="TableBrace3" />
+                <position name="SteelP" unit="cm" x = "18.0*2.54" y = "30.0*2.54" z = "4.0*2.54" />
+            </physvol>
+            
+            <physvol>
+                <volumeref ref="TableBrace4" />
+                <position name="SteelQ" unit="cm" x = "36.0*2.54" y = "15.0*2.54" z = "4.0*2.54" />
+            </physvol>
+            
+        </assembly>
+        
+        
+            
+        
+        
+        <volume name="World3" >
+            <materialref ref="Air" />
+            <solidref ref="SteelWorld" />
+            
+            <physvol>
+                <volumeref ref="AssemblyVolSteel"/>
+                <position name="AssemblyVolPosition" x="0" y="0" z="0"/>
+            </physvol>
+        </volume>
+    </structure>
+    
+    <setup version="1.0" name="Default">
+        <world ref="World3"/>
+    </setup>
+    
+</gdml>
