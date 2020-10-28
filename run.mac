@@ -1,0 +1,9 @@
+/run/initialize
+/control/saveHistory
+/tracking/verbose 0
+/control/verbose 0
+/run/verbose 0
+/CRY/distanceZ 1. m
+/CRY/file MINER_Cry.file
+/run/printProgress 1000000
+/run/beamOn 10000000
