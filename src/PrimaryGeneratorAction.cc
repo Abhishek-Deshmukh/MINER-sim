@@ -42,7 +42,6 @@
 //#include "radsource.h"
 //#include "cpp_api.h"
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 PrimaryGeneratorAction::PrimaryGeneratorAction(const char *inputfile)
 : G4VUserPrimaryGeneratorAction(),
@@ -69,7 +68,7 @@ PrimaryGeneratorAction::PrimaryGeneratorAction(const char *inputfile)
 
     //CRYSetup *setup=new CRYSetup(setupString,"cosmic_data");
     //CRYSetup *setup=new CRYSetup(setupString,"/home/samir/cry_v1.7/data/cosmics_0.data");
-    CRYSetup *setup=new CRYSetup(setupString,"/home/samir/cry_v1.7/data");
+    CRYSetup *setup=new CRYSetup(setupString,"/home/mercury/Downloads/CRY/cry_v1.7/data");
 
     gen = new CRYGenerator(setup);
 
@@ -86,11 +85,9 @@ PrimaryGeneratorAction::PrimaryGeneratorAction(const char *inputfile)
   fMessenger = new PrimaryGeneratorMessenger(this);
 }
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
 void PrimaryGeneratorAction::UpdateCRY(std::string* MessInput)
 {
-  CRYSetup *setup=new CRYSetup(*MessInput,"/home/samir/cry_v1.7/data");
+  CRYSetup *setup=new CRYSetup(*MessInput,"/home/mercury/Downloads/CRY/cry_v1.7/data");
   gen = new CRYGenerator(setup);
   // set random number generator
   // RNGWrapper<CLHEP::HepRandomEngine>::set(CLHEP::HepRandom::getTheEngine(),&CLHEP::HepRandomEngine::flat);
@@ -99,7 +96,6 @@ void PrimaryGeneratorAction::UpdateCRY(std::string* MessInput)
 
 }
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 void PrimaryGeneratorAction::UpdateCRYFile(G4String newValue)
 {
@@ -120,7 +116,7 @@ void PrimaryGeneratorAction::UpdateCRYFile(G4String newValue)
       setupString.append(" ");
     }
 
-    CRYSetup *setup=new CRYSetup(setupString,"/home/samir/cry_v1.7/data");
+    CRYSetup *setup=new CRYSetup(setupString,"/home/mercury/Downloads/CRY/cry_v1.7/data");
     gen = new CRYGenerator(setup);
 
     // set random number generator
@@ -133,18 +129,16 @@ void PrimaryGeneratorAction::SetSourceZPosition(G4double dist)
 {
   SourceZPosition = dist;
 }
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 PrimaryGeneratorAction::~PrimaryGeneratorAction()
 {
   delete fParticleGun;
   delete fParticleSource;
 }
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 {
-  
+
 if (InputState != 0) {
     G4String* str = new G4String("CRY library was not successfully initialized");
     //G4Exception(*str);
@@ -166,7 +160,7 @@ if (InputState != 0) {
 
 
 
-    //....debug output  
+    //....debug output
     // G4cout << "  "          << particleName << " "
     // 	   << "charge="      << (*vect)[j]->charge() << " "
     // 	   << "energy (MeV)=" << (*vect)[j]->ke()*MeV << " "
@@ -175,7 +169,7 @@ if (InputState != 0) {
     // 	   << " " << "direction cosines "
     // 	   << G4ThreeVector((*vect)[j]->u(), (*vect)[j]->v(), (*vect)[j]->w())
     // 	   << " " << G4endl;
-    
+
     fParticleGun->SetParticleDefinition(particleTable->FindParticle((*vect)[j]->PDGid()));
     fParticleGun->SetParticleEnergy((*vect)[j]->ke()*MeV);
     fParticleGun->SetParticlePosition(G4ThreeVector((*vect)[j]->x()*m, (*vect)[j]->y()*m, (*vect)[j]->z()*m + SourceZPosition));
@@ -186,5 +180,3 @@ if (InputState != 0) {
   }
   //fParticleSource->GeneratePrimaryVertex(anEvent);
 }
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo....
