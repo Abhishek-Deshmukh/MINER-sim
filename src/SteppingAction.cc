@@ -7,24 +7,21 @@
 #include "G4VPhysicalVolume.hh"
 #include "G4LogicalVolume.hh"
 #include "G4VProcess.hh"
-#include "RootIO.hh" 
+#include "RootIO.hh"
 #include "G4ParticleTypes.hh"
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 SteppingAction::SteppingAction()
 : G4UserSteppingAction()
 {;}
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 SteppingAction::~SteppingAction()
 {;}
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 void SteppingAction::UserSteppingAction(const G4Step * theStep)
 {
-    
+
     // If you want to do anything for every step, do it here
-    
+
     /*G4StepStatus stepStatus = theStep->GetPostStepPoint()->GetStepStatus();
     G4bool transmit = (stepStatus==fGeomBoundary || stepStatus==fWorldBoundary);
     if (transmit) {return;}
@@ -38,7 +35,7 @@ void SteppingAction::UserSteppingAction(const G4Step * theStep)
         G4double energy = (*secondary)[lp]->GetKineticEnergy();
         G4ThreeVector pos = (*secondary)[lp]->GetPosition();
         G4double weight = (*secondary)[lp]->GetWeight();
-        
+
         //G4int ih = 0;
         //if (particle == G4Gamma::Gamma())       ih = 2;
         //else if (particle == G4Neutron::Neutron())   ih = 3;
@@ -48,11 +45,11 @@ void SteppingAction::UserSteppingAction(const G4Step * theStep)
         //else if (type == "nucleus")                  ih = 7;
         //else if (type == "meson")                    ih = 8;
         //else if (type == "baryon")                   ih = 9;
-        
+
         if (particle == G4Neutron::Neutron()){
             RootIO::GetInstance()->FillNeutronStuff(energy,pos.x(),pos.y(),pos.z(),weight);
         }
-     
+
     }*/
-    
+
 }

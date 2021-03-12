@@ -35,8 +35,6 @@
 
 G4ThreadLocal G4Allocator<MinerHit>* MinerHitAllocator=0;
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
 MinerHit::MinerHit()
 : G4VHit(),
 fTrackID(-1),
@@ -51,11 +49,7 @@ fMom(G4ThreeVector()),
 fEnergy(0.)
 {}
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
 MinerHit::~MinerHit() {}
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 MinerHit::MinerHit(const MinerHit& right)
 : G4VHit()
@@ -72,8 +66,6 @@ MinerHit::MinerHit(const MinerHit& right)
     fMom       = right.fMom;
 }
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
 const MinerHit& MinerHit::operator=(const MinerHit& right)
 {
     fTrackID   = right.fTrackID;
@@ -86,18 +78,14 @@ const MinerHit& MinerHit::operator=(const MinerHit& right)
     fEnergy    = right.fEnergy;
     fPos       = right.fPos;
     fMom       = right.fMom;
-    
+
     return *this;
 }
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 G4int MinerHit::operator==(const MinerHit& right) const
 {
     return ( this == &right ) ? 1 : 0;
 }
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 void MinerHit::Draw()
 {
@@ -114,8 +102,6 @@ void MinerHit::Draw()
     }
 }
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
 void MinerHit::Print()
 {
     G4cout
@@ -128,5 +114,3 @@ void MinerHit::Print()
     << std::setw(7) << G4BestUnit( fPos,"Length")
     << G4endl;
 }
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

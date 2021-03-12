@@ -40,18 +40,18 @@ public:
     MinerHit();
     MinerHit(const MinerHit&);
     virtual ~MinerHit();
-    
+
     // operators
     const MinerHit& operator=(const MinerHit&);
     G4int operator==(const MinerHit&) const;
-    
+
     inline void* operator new(size_t);
     inline void  operator delete(void*);
-    
+
     // methods from base class
     virtual void Draw();
     virtual void Print();
-    
+
     // Set methods
     void SetTrackID  (G4int track)      { fTrackID = track; };
     void SetPDGID    (G4int pdgid)      { fPDGID = pdgid; };
@@ -63,7 +63,7 @@ public:
     void SetPreProcess (G4int pre)      { fPreProc = pre; };
     void SetPostProcess (G4int post)      { fPostProc = post; };
     void SetWeight (G4double weight)     { fWeight = weight; };
-    
+
     // Get methods
     G4int GetTrackID() const     { return fTrackID; };
     G4int GetPDGID() const     { return fPDGID; };
@@ -75,9 +75,9 @@ public:
     G4int GetPreProcess() const  {return fPreProc; };
     G4int GetPostProcess() const  {return fPostProc; };
     G4double GetWeight() const {return fWeight; };
-    
+
 private:
-    
+
     G4int         fTrackID;
     G4int         fPDGID;
     G4int         fPreProc;
@@ -90,13 +90,9 @@ private:
     G4double      fWeight;
 };
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
 typedef G4THitsCollection<MinerHit> MinerHitsCollection;
 
 extern G4ThreadLocal G4Allocator<MinerHit>* MinerHitAllocator;
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 inline void* MinerHit::operator new(size_t)
 {
@@ -105,13 +101,9 @@ inline void* MinerHit::operator new(size_t)
     return (void *) MinerHitAllocator->MallocSingle();
 }
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
 inline void MinerHit::operator delete(void *hit)
 {
     MinerHitAllocator->FreeSingle((MinerHit*) hit);
 }
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 #endif

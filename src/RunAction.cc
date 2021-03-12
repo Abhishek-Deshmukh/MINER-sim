@@ -29,8 +29,6 @@
 //
 // $Id: RunAction.cc 76411 2013-11-09 21:48:43Z ldesorgh $
 //
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 #include "globals.hh"
 
 #include "RunAction.hh"
@@ -39,20 +37,15 @@
 #include "G4UImanager.hh"
 #include "G4VVisManager.hh"
 #include "G4VisAttributes.hh"
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 RunAction::RunAction()
 : G4UserRunAction()
 {
 }
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
 RunAction::~RunAction()
 {
 }
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 void RunAction::BeginOfRunAction(const G4Run* aRun)
 {
@@ -60,11 +53,7 @@ void RunAction::BeginOfRunAction(const G4Run* aRun)
     RootIO::GetInstance()->Setup();
 }
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
 void RunAction::EndOfRunAction(const G4Run* )
 {
     RootIO::GetInstance()->Close();
 }
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

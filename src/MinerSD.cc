@@ -33,8 +33,6 @@
 #include "G4VProcess.hh"
 #include "TrackExtra.hh"
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
 MinerSD::MinerSD(const G4String& name, const G4String& hitsCollectionName)
 : G4VSensitiveDetector(name),
 fHitsCollection(NULL)
@@ -42,49 +40,43 @@ fHitsCollection(NULL)
     collectionName.insert(hitsCollectionName);
 }
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
 MinerSD::~MinerSD()
 {
 }
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
 void MinerSD::Initialize(G4HCofThisEvent* hce)
 {
     // Create hits collection
-    
+
     fHitsCollection  = new MinerHitsCollection(SensitiveDetectorName, collectionName[0]);
-    
+
     // Add this collection in hce
-    
+
     G4int hcID
     = G4SDManager::GetSDMpointer()->GetCollectionID(collectionName[0]);
     hce->AddHitsCollection( hcID, fHitsCollection );
-    
-}
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+}
 
 G4bool MinerSD::ProcessHits(G4Step* aStep,
                             G4TouchableHistory*)
 {
     // energy deposit
     G4double edep = aStep->GetTotalEnergyDeposit();
-    
-    
+
+
     //if (edep==0.) return false;
-    
+
     //TrackExtra *info = (TrackExtra*)(aStep->GetTrack()->GetUserInformation());
     //G4cout << "Original Track ID " << info->GetOriginalTrackID() << G4endl;
-    
+
     MinerHit* newHit = new MinerHit();
-    
-    
+
+
     G4int postproc = 0;
     //G4int preproc = 0;
-    
-    
+
+
     newHit->SetMom(aStep->GetTrack()->GetMomentum());
     newHit->SetTrackID  (aStep->GetTrack()->GetTrackID());
     newHit->SetPDGID (aStep->GetTrack()->GetDefinition()->GetPDGEncoding());
@@ -95,14 +87,12 @@ G4bool MinerSD::ProcessHits(G4Step* aStep,
     newHit->SetWeight(aStep->GetTrack()->GetWeight());
     newHit->SetPreProcess(postproc);
     newHit->SetPostProcess(postproc);
-    
+
     fHitsCollection->insert( newHit );
     newHit->Print();
-    
+
     return true;
 }
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 void MinerSD::EndOfEvent(G4HCofThisEvent*)
 {
@@ -114,5 +104,3 @@ void MinerSD::EndOfEvent(G4HCofThisEvent*)
         for ( G4int i=0; i<nofHits; i++ ) (*fHitsCollection)[i]->Print();
     }
 }
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

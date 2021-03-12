@@ -26,8 +26,6 @@
 // $Id: RunAction.hh 76411 2013-11-09 21:48:43Z ldesorgh $
 //
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 #ifndef RunAction_h
 #define RunAction_h 1
@@ -36,28 +34,20 @@
 #include "globals.hh"
 #include "TFile.h"
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
 class G4Run;
 class HistoManager;
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 class RunAction : public G4UserRunAction
 {
 public:
     RunAction();
     ~RunAction();
-    
+
     virtual void BeginOfRunAction(const G4Run*);
     virtual void EndOfRunAction(const G4Run*);
-    
+
 private:
     //HistoManager* fHistoManager;
 };
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
 #endif
-
-

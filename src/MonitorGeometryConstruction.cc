@@ -27,8 +27,6 @@
 // for importance biasing
 #include "G4IStore.hh"
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
 MonitorGeometryConstruction::
 MonitorGeometryConstruction(G4String worldName)
 :G4VUserParallelWorld(worldName)
@@ -36,47 +34,35 @@ MonitorGeometryConstruction(G4String worldName)
     //  Construct();
 }
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
 MonitorGeometryConstruction::~MonitorGeometryConstruction()
 {
 }
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
 void MonitorGeometryConstruction::SetSensitive(){
-    
-}
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+}
 void MonitorGeometryConstruction::ConstructSD()
 {
-    
+
     G4SDManager* SDman = G4SDManager::GetSDMpointer();
-    
+
     MinerSD* insideIB_Det = new MinerSD("/MINERsim/insideIB_Det","MS_insideIB_hits");
     SDman->AddNewDetector(insideIB_Det);
     SetSensitiveDetector("insideIB_log",insideIB_Det, true);
-    
+
     MinerSD* atMovable_Det = new MinerSD("/MINERsim/atMovable_Det","MS_atMovable_hits");
     SDman->AddNewDetector(atMovable_Det);
     SetSensitiveDetector("atMovable_log",atMovable_Det, true);
-    
+
     MinerSD* atNeutronDet_Det = new MinerSD("/MINERsim/atNeutronDet_Det","MS_atNeutronDet_hits");
     SDman->AddNewDetector(atNeutronDet_Det);
     SetSensitiveDetector("atNeutronDet_log",atNeutronDet_Det, true);
-    
+
     MinerSD* atLead_Det = new MinerSD("/MINERsim/atLead_Det","MS_atLead_hits");
     SDman->AddNewDetector(atLead_Det);
     SetSensitiveDetector("atLead_log",atLead_Det, true);
-    
+
     MinerSD* atStartTC_Det = new MinerSD("/MINERsim/atStartTC_Det","MS_atStartTC_hits");
     SDman->AddNewDetector(atStartTC_Det);
     SetSensitiveDetector("atStartTC_log",atStartTC_Det, true);
-    
-    
-    
 }

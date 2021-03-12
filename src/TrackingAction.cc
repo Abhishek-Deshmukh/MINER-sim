@@ -28,8 +28,6 @@
 /// \file eventgenerator/exgps/src/TrackingAction.cc
 /// \brief Implementation of the TrackingAction class
 //
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 #include "TrackingAction.hh"
 #include "TrackExtra.hh"
@@ -40,17 +38,13 @@
 #include "RootIO.hh"
 #include "G4TrackingManager.hh"
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo....
-
 TrackingAction::TrackingAction()
 :G4UserTrackingAction()
 { }
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo....
-
 void TrackingAction::PreUserTrackingAction(const G4Track* track)
 {
-    
+
     if (track->GetParentID() == 0){
         RootIO::GetInstance()->SetIncomingE(track->GetKineticEnergy());
         RootIO::GetInstance()->AddTrack(track);
@@ -58,8 +52,8 @@ void TrackingAction::PreUserTrackingAction(const G4Track* track)
         //TrackExtra *info = new TrackExtra(track);
         //mutableTrack->SetUserInformation(info);
     }
-    
-    
+
+
     // These are tracks created by the importance sampling
     /*
      if (track->GetParentID() != 0){
@@ -68,11 +62,8 @@ void TrackingAction::PreUserTrackingAction(const G4Track* track)
      }
      }
      */
-    
+
 }
-
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo....
 
 void TrackingAction::PostUserTrackingAction(const G4Track* track)
 {
@@ -130,5 +121,4 @@ void TrackingAction::PostUserTrackingAction(const G4Track* track)
      }
      }
      */
-    
 }

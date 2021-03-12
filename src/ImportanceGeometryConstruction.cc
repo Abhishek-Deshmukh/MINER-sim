@@ -26,8 +26,6 @@
 // for importance biasing
 #include "G4IStore.hh"
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
 ImportanceGeometryConstruction::
 ImportanceGeometryConstruction(G4String worldName)
 :G4VUserParallelWorld(worldName),fLogicalVolumeVector()
@@ -35,28 +33,16 @@ ImportanceGeometryConstruction(G4String worldName)
     //  Construct();
 }
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
 ImportanceGeometryConstruction::~ImportanceGeometryConstruction()
 {
     fLogicalVolumeVector.clear();
 }
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
 void ImportanceGeometryConstruction::SetSensitive(){
-    
+
 }
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 void ImportanceGeometryConstruction::ConstructSD()
 {
-    
+
 }
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
-

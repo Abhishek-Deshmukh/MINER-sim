@@ -41,45 +41,37 @@
 #include "RootIO.hh"
 
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
 EventAction::EventAction()
 : G4UserEventAction()
 {}
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
 EventAction::~EventAction()
 {}
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 void EventAction::BeginOfEventAction(const G4Event*)
 {}
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
 void EventAction::EndOfEventAction(const G4Event* event)
 {
-    
+
     G4SDManager* fSDM = G4SDManager::GetSDMpointer();
     G4HCofThisEvent* HCofEvent = event->GetHCofThisEvent();
-    
+
     // Get the Hits for the hybrid
     MinerHitsCollection*  HybridHits = (MinerHitsCollection*)(HCofEvent->GetHC(fSDM->GetCollectionID("Hybrid_hits")));
-    
+
     // Get the Hits for the HV
     MinerHitsCollection*  HVHits = (MinerHitsCollection*)(HCofEvent->GetHC(fSDM->GetCollectionID("HV_hits")));
-    
+
     // Get the Hits for the CsI
     MinerHitsCollection*  CsIHits = (MinerHitsCollection*)(HCofEvent->GetHC(fSDM->GetCollectionID("CsI_hits")));
 
 
-        
+
     if (HybridHits->entries() > 0){
     RootIO::GetInstance()->FillMonitoring(HybridHits,1);
     }
-    
+
     if (HVHits->entries() > 0){
     RootIO::GetInstance()->FillMonitoring(HVHits,2);
     }
@@ -87,11 +79,9 @@ void EventAction::EndOfEventAction(const G4Event* event)
     if (CsIHits->entries() > 0){
     RootIO::GetInstance()->FillMonitoring(CsIHits,3);
     }
-        
-    
-    RootIO::GetInstance()->Write();
-    
-    
-}
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+    RootIO::GetInstance()->Write();
+
+
+}

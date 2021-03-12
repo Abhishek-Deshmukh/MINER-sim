@@ -26,9 +26,6 @@
 // $Id: PrimaryGeneratorAction.hh 71200 2013-06-12 08:19:59Z ihrivnac $
 //
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
 #ifndef PrimaryGeneratorAction_h
 #define PrimaryGeneratorAction_h 1
 
@@ -49,14 +46,13 @@ class G4Event;
 class CRYGenerator;
 class CRYParticle;
 class PrimaryGeneratorMessenger;
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 class PrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction
 {
 public:
   PrimaryGeneratorAction(const char *inputfile);
   ~PrimaryGeneratorAction();
-    
+
   virtual void GeneratePrimaries(G4Event*);
   void UpdateCRY(std::string* MessInput);
   void UpdateCRYFile(G4String newValue);
@@ -71,7 +67,5 @@ private:
   G4double SourceZPosition;
   PrimaryGeneratorMessenger *fMessenger;
 };
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 #endif
