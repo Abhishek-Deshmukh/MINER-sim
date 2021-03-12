@@ -16,11 +16,19 @@ $ ./MINERsim  # this will run the visualisation
 
 ## Dependencies
 
+This has been tested on arch linux and ubuntu, so all arch based and
+debian/ubuntu based distrubutions should work with it.
+
+Change `mercury` with the name of your user on your machine.
+
 ### Preparing directories
 
 ```
 $ cd ~/Downloads
-$ mkdir CLHEP CLHEP/CLHEP-build ROOT ROOT/root-build ~/.local/CLHEP GEANT4 ~/.local/GEANT4 xerces-c CRY
+$ mkdir CLHEP CLHEP/CLHEP-build ~/.local/CLHEP \
+  ROOT ROOT/root-build \
+  GEANT4 ~/.local/GEANT4 \
+  xerces-c CRY
 ```
 
 ### Installing dependencies
@@ -49,7 +57,10 @@ $ git clone https://gitlab.cern.ch/CLHEP/CLHEP.git
 $ cd CLHEP
 $ git checkout master
 $ cd ../CLHEP-build
-$ cmake -DCMAKE_INSTALL_PREFIX=/home/mercury/.local/CLHEP -DCLHEP_BUILD_DOCS=ON ../CLHEP
+$ cmake \
+  -DCMAKE_INSTALL_PREFIX=/home/mercury/.local/CLHEP \
+  -DCLHEP_BUILD_DOCS=ON \
+  ../CLHEP
 $ cmake --build . --config RelWithDebInfo
 $ ctest
 $ cmake --build . --target install
@@ -66,7 +77,11 @@ $ cd ~/Downloads/xerces-c
 $ tar -xvzf xerces-c-3.2.3
 $ mkdir build ~/.local/xerces-c-3.2.3
 $ cd build
-$ cmake -DCMAKE_INSTALL_PREFIX=/home/mercury/.local/xerces-c-3.2.3 -DCMAKE_BUILD_TYPE=Debug -Dmessage-loader=icu ../xerces-c-3.2.3
+$ cmake \
+  -DCMAKE_INSTALL_PREFIX=/home/mercury/.local/xerces-c-3.2.3 \
+  -DCMAKE_BUILD_TYPE=Debug \
+  -Dmessage-loader=icu \
+  ../xerces-c-3.2.3
 $ make
 $ make test
 $ make install
@@ -97,6 +112,7 @@ $ cmake \
 $ make
 $ make install
 $ echo "source ~/.local/GEANT4/bin/geant4.sh" >> ~/.bashrc
+$ echo "source ~/.local/GEANT4/share/Geant4-10.7.1/geant4make/geant4make.sh" >> ~/.bashrc
 ```
 
 #### Installing ROOT
