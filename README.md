@@ -123,5 +123,5 @@ $ git clone https://github.com/root-project/root.git
 $ cd ./root-build
 $ cmake ../root
 $ sudo cmake --build . --target install
-$ echo "source ~/usr/local/bin/thisroot.sh" >> ~/.bashrc
+$ echo "source /usr/local/bin/thisroot.sh" >> ~/.bashrc
 ```
