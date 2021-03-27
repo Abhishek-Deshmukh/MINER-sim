@@ -3,8 +3,9 @@
 cmake_minimum_required(VERSION 3.4 FATAL_ERROR)
 project(MinerUC CXX) # Always specify the project type.
 
-set(CMAKE_CXX_STANDARD 17) # Works in recent cmakes
+set(CMAKE_CXX_STANDARD 14) # Works in recent cmakes
 set(CMAKE_POSITION_INDEPENDENT_CODE ON) # Requires CMake 2.8.9+
+add_compile_options(-fdiagnostics-color=always)
 
 #----------------------------------------------------------------------------
 # Find Geant4 package, activating all available UI and Vis drivers by default
