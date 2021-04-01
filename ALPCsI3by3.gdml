@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:/Users/shsu/Documents/James/Projects/MINER/GEANT/geant4_10_06_p02/examples/extended/persistency/gdml/G01-build/gdml.xsd">
+<gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:/home/mercury/Downloads/GEANT4/geant4.10.07.p01/source/persistency/gdml/schema/gdml.xsd">
 
     <define>
         <position name="det_in_sky" unit="cm" x="0" y="0" z="0" />

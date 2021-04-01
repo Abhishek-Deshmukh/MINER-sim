@@ -106,6 +106,7 @@ set(MINERUC_SCRIPTS
     Na22.in
 #    MCNP_gamma_pdf.gdat
     vis.mac
+    run.mac
     read_gdml.mac
     MINERSetupAugust30.gdml
   )
