@@ -68,8 +68,8 @@ PrimaryGeneratorAction::PrimaryGeneratorAction(const char *inputfile)
 
     //CRYSetup *setup=new CRYSetup(setupString,"cosmic_data");
     //CRYSetup *setup=new CRYSetup(setupString,"/home/samir/cry_v1.7/data/cosmics_0.data");
-    CRYSetup *setup=new CRYSetup(setupString,"/home/mercury/Downloads/CRY/cry_v1.7/data");
-
+//    CRYSetup *setup=new CRYSetup(setupString,"/home/mercury/Downloads/CRY/cry_v1.7/data");
+    CRYSetup *setup=new CRYSetup(setupString,"/home/mercury/Downloads/CRY/cry_v1.7/data/");
     gen = new CRYGenerator(setup);
 
     // set random number generator
@@ -87,7 +87,8 @@ PrimaryGeneratorAction::PrimaryGeneratorAction(const char *inputfile)
 
 void PrimaryGeneratorAction::UpdateCRY(std::string* MessInput)
 {
-  CRYSetup *setup=new CRYSetup(*MessInput,"/home/mercury/Downloads/CRY/cry_v1.7/data");
+//  CRYSetup *setup=new CRYSetup(*MessInput,"/home/mercury/Downloads/CRY/cry_v1.7/data");
+  CRYSetup *setup=new CRYSetup(*MessInput,"/home/mercury/Downloads/CRY/cry_v1.7/data/");
   gen = new CRYGenerator(setup);
   // set random number generator
   // RNGWrapper<CLHEP::HepRandomEngine>::set(CLHEP::HepRandom::getTheEngine(),&CLHEP::HepRandomEngine::flat);
@@ -139,12 +140,12 @@ PrimaryGeneratorAction::~PrimaryGeneratorAction()
 void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 {
 
-if (InputState != 0) {
-    G4String* str = new G4String("CRY library was not successfully initialized");
-    //G4Exception(*str);
-    G4Exception("CryPrimaryGeneratorAction", "1",
-                RunMustBeAborted, *str);
-  }
+//if (InputState != 0) {
+//    G4String* str = new G4String("CRY library was not successfully initialized (lmao)");
+//    //G4Exception(*str);
+//    G4Exception("CryPrimaryGeneratorAction", "1",
+//                RunMustBeAborted, *str);
+//  }
   G4String particleName;
   vect->clear();
   gen->genEvent(vect);

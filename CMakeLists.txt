@@ -109,6 +109,7 @@ set(MINERUC_SCRIPTS
     run.mac
     read_gdml.mac
     MINERSetupAugust30.gdml
+    MINER_Cry.file
   )
 
 foreach(_script ${MINERUC_SCRIPTS})
