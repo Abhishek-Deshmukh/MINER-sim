@@ -110,6 +110,7 @@ set(MINERUC_SCRIPTS
     read_gdml.mac
     MINERSetupAugust30.gdml
     MINER_Cry.file
+    james_stack.obj
   )
 
 foreach(_script ${MINERUC_SCRIPTS})

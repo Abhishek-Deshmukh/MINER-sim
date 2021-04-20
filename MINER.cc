@@ -35,12 +35,12 @@ int main(int argc,char** argv) {
     seeds[0] = (long) systime;
     seeds[1] = (long) (systime*G4UniformRand());
     G4Random::setTheSeeds(seeds);
-    G4RunManager * runManager = new G4RunManager;
+    auto * runManager = new G4RunManager;
     G4ScoringManager* scoringManager = G4ScoringManager::GetScoringManager();
 
     // set mandatory initialization classes
     //MINERMaterials::Instance();
-    GeometryConstruction* detector = new GeometryConstruction;
+    auto* detector = new GeometryConstruction;
     runManager->SetUserInitialization(detector);
 
     //detector->RegisterParallelWorld(pdet);
@@ -105,14 +105,14 @@ int main(int argc,char** argv) {
         // Define (G)UI terminal for interactive mode
         if ( argc==1 )   // Automatically run default macro for writing...
         {
-            G4UIExecutive* ui = new G4UIExecutive(argc, argv);
+            auto* ui = new G4UIExecutive(argc, argv);
             UImanager->ApplyCommand("/control/execute vis.mac");
             ui->SessionStart();
             delete ui;
         }
         else             // Interactive, provides macro in input
         {
-            G4UIExecutive* ui = new G4UIExecutive(argc, argv);
+            auto* ui = new G4UIExecutive(argc, argv);
             G4String command = "/control/execute ";
             G4String fileName = argv[1];
             UImanager->ApplyCommand(command+fileName);
